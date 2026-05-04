@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060E1A"/>
+      <stop offset="100%" stop-color="#0F1D33"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D4A843" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg3)"/>
+  <!-- Room outline -->
+  <g transform="translate(100, 60)">
+    <!-- Floor -->
+    <line x1="0" y1="460" x2="1000" y2="460" stroke="#1A2744" stroke-width="2"/>
+    <!-- Walls -->
+    <line x1="50" y1="60" x2="50" y2="460" stroke="#1A2744" stroke-width="2"/>
+    <line x1="950" y1="60" x2="950" y2="460" stroke="#1A2744" stroke-width="2"/>
+    <!-- Ceiling -->
+    <line x1="50" y1="60" x2="950" y2="60" stroke="#1A2744" stroke-width="2"/>
+    <!-- Ceiling light 1 — Warm -->
+    <ellipse cx="250" cy="60" rx="120" ry="200" fill="url(#glow1)"/>
+    <rect x="230" y="50" width="40" height="12" rx="3" fill="#D4A843" stroke="#D4A843" stroke-width="1"/>
+    <line x1="250" y1="62" x2="250" y2="90" stroke="#D4A843" stroke-width="1.5"/>
+    <circle cx="250" cy="100" r="18" fill="#D4A843" fill-opacity="0.8" stroke="#F0C75E" stroke-width="1.5"/>
+    <text x="250" y="105" text-anchor="middle" fill="#060E1A" font-family="system-ui" font-size="14" font-weight="700">💡</text>
+    <!-- Ceiling light 2 — Blue/Cool -->
+    <ellipse cx="500" cy="60" rx="120" ry="200" fill="url(#glow2)"/>
+    <rect x="480" y="50" width="40" height="12" rx="3" fill="#3B82F6" stroke="#3B82F6" stroke-width="1"/>
+    <line x1="500" y1="62" x2="500" y2="90" stroke="#3B82F6" stroke-width="1.5"/>
+    <circle cx="500" cy="100" r="18" fill="#3B82F6" fill-opacity="0.7" stroke="#60A5FA" stroke-width="1.5"/>
+    <!-- Ceiling light 3 — Warm accent -->
+    <ellipse cx="750" cy="60" rx="120" ry="200" fill="url(#glow3)"/>
+    <rect x="730" y="50" width="40" height="12" rx="3" fill="#F97316" stroke="#F97316" stroke-width="1"/>
+    <line x1="750" y1="62" x2="750" y2="90" stroke="#F97316" stroke-width="1.5"/>
+    <circle cx="750" cy="100" r="18" fill="#F97316" fill-opacity="0.7" stroke="#FB923C" stroke-width="1.5"/>
+    <!-- Furniture silhouettes -->
+    <!-- Sofa -->
+    <rect x="150" y="380" width="250" height="70" rx="8" fill="#1A2744" stroke="#243A5C" stroke-width="1.5"/>
+    <rect x="150" y="340" width="250" height="45" rx="6" fill="#162035" stroke="#243A5C" stroke-width="1"/>
+    <!-- Table -->
+    <rect x="450" y="400" width="100" height="50" rx="4" fill="#1A2744" stroke="#243A5C" stroke-width="1.5"/>
+    <!-- Lamp on table -->
+    <rect x="490" y="370" width="20" height="30" rx="2" fill="#243A5C"/>
+    <polygon points="480,370 520,370 510,340 490,340" fill="#D4A843" fill-opacity="0.4" stroke="#D4A843" stroke-width="1"/>
+    <!-- Scene labels -->
+    <g transform="translate(120, 490)">
+      <rect width="140" height="36" rx="8" fill="#D4A843" fill-opacity="0.15" stroke="#D4A843" stroke-width="1.2"/>
+      <text x="70" y="23" text-anchor="middle" fill="#D4A843" font-family="system-ui" font-size="12" font-weight="600">🎬 Movie Mode</text>
+    </g>
+    <g transform="translate(290, 490)">
+      <rect width="140" height="36" rx="8" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-width="1.2"/>
+      <text x="70" y="23" text-anchor="middle" fill="#3B82F6" font-family="system-ui" font-size="12" font-weight="600">📖 Reading</text>
+    </g>
+    <g transform="translate(460, 490)">
+      <rect width="140" height="36" rx="8" fill="#F97316" fill-opacity="0.15" stroke="#F97316" stroke-width="1.2"/>
+      <text x="70" y="23" text-anchor="middle" fill="#F97316" font-family="system-ui" font-size="12" font-weight="600">🍽️ Dinner</text>
+    </g>
+    <g transform="translate(630, 490)">
+      <rect width="140" height="36" rx="8" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-width="1.2"/>
+      <text x="70" y="23" text-anchor="middle" fill="#8B5CF6" font-family="system-ui" font-size="12" font-weight="600">🎉 Party</text>
+    </g>
+    <!-- Smart switch on wall -->
+    <rect x="80" y="220" width="40" height="60" rx="6" fill="#1E3352" stroke="#D4A843" stroke-width="1.5"/>
+    <circle cx="100" cy="238" r="5" fill="#4CAF50"/>
+    <circle cx="100" cy="255" r="5" fill="#D4A843" fill-opacity="0.4"/>
+    <circle cx="100" cy="272" r="5" fill="#D4A843" fill-opacity="0.4"/>
+  </g>
+  <!-- Title -->
+  <text x="600" y="600" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="700" opacity="0.9">Smart Lighting — Scene Control for Indian Homes</text>
+</svg>

@@ -1,0 +1,380 @@
+import { COMPANY } from "@/lib/constants";
+
+export type ServiceContent = {
+  slug: string;
+  headline: string;
+  introduction: string;
+  whatItIs: string;
+  whyItMatters: string;
+  howWeDoIt: { step: string; detail: string }[];
+  useCases: { title: string; description: string }[];
+  pricing: { tier: string; range: string; includes: string }[];
+  whyChooseUs: string[];
+  faqs: { question: string; answer: string }[];
+};
+
+export const SERVICE_CONTENT: ServiceContent[] = [
+  {
+    slug: "home-automation",
+    headline: "Complete Smart Home Automation Solutions in India",
+    introduction: `Home automation integrates lighting, security, climate, entertainment, and appliance control into a unified intelligent system that you can manage from a single app, voice command, or touch panel. ${COMPANY.name} has been delivering whole-home automation across India for ${COMPANY.experience} years — designing systems that simplify daily life, enhance security, cut energy bills by 20–40%, and significantly increase property value.`,
+    whatItIs: `Home automation — also called smart home technology or domotics — uses sensors, controllers, and a communication protocol (wired like KNX or wireless like ZigBee/Z-Wave) to connect every device in your home. A centralized processor or distributed intelligence coordinates actions: lights dim automatically at sunset, the AC adjusts when you leave, curtains close during peak heat, and the security system arms itself at night. The result is a home that anticipates your needs and responds without manual intervention.`,
+    whyItMatters: `Indian homeowners are spending ₹1–2 Crore on properties but living with light switches from the 1990s. Smart home automation is no longer a luxury — it's a practical investment. Automated energy management alone saves ₹30,000–80,000 per year on electricity in a typical 3BHK. Beyond savings, automation delivers convenience (one-touch scenes for morning, movie, dinner, goodnight), security (real-time alerts, smart locks, CCTV integration), and a future-proof home that commands 10–15% higher resale value.`,
+    howWeDoIt: [
+      { step: "Discovery & Consultation", detail: "Our engineers visit your home or review your floor plans. We understand your lifestyle, pain points, and budget to recommend the right protocol (KNX, Crestron, Control4, or Lutron) and feature scope." },
+      { step: "System Design & 3D Visualization", detail: "We produce detailed system schematics, wiring layouts, and 3D visualizations showing how automation will look and feel in your space. Every switch location, sensor placement, and scene is planned." },
+      { step: "Wiring & Infrastructure", detail: "Our certified electricians run dedicated automation wiring (bus cables, Cat6, HDMI runs) alongside your regular electrical work. For retrofits, we use wireless protocols to minimize disruption." },
+      { step: "Hardware Installation", detail: "Controllers, actuators, dimmers, sensors, touch panels, and keypads are installed and physically commissioned. Every device is tested individually before system integration." },
+      { step: "Programming & Scene Creation", detail: "Our certified programmers configure automation logic, create scenes (Morning, Movie, Dinner, Goodnight, Away), set schedules, and integrate voice assistants (Alexa, Google, Siri)." },
+      { step: "Training & Handover", detail: "We train you and your family on using the system — app controls, touch panels, voice commands, and manual overrides. You receive a complete system documentation package." },
+    ],
+    useCases: [
+      { title: "Luxury Villas & Bungalows", description: "Full KNX or Crestron automation covering 15–30 rooms with motorized curtains, multi-zone HVAC, landscape lighting, gate automation, and dedicated home theater." },
+      { title: "Premium Apartments (3BHK–5BHK)", description: "Control4 or Lutron-based packages with smart lighting scenes, split AC automation, video door phone, and multi-room audio. Most popular segment." },
+      { title: "Farmhouses & Weekend Homes", description: "Remote monitoring and control via app — check CCTV, control lights, manage irrigation, and pre-cool the house before you arrive." },
+      { title: "Penthouse & Duplex Units", description: "Multi-floor automation with floor-wise zones, staircase lighting automation, terrace scene control, and elevator integration." },
+    ],
+    pricing: [
+      { tier: "Essential", range: "₹2–5 Lakh", includes: "Smart lighting (scenes + dimming), 2–3 AC automation, basic security integration, app + voice control. Best for 2–3BHK apartments." },
+      { tier: "Premium", range: "₹5–15 Lakh", includes: "Full lighting + curtain automation, multi-zone HVAC, smart locks, CCTV integration, multi-room audio, touch panel. Best for 3–5BHK apartments and mid-size villas." },
+      { tier: "Luxury", range: "₹15–50 Lakh+", includes: "Whole-home KNX/Crestron with motorized everything, home theater, landscape automation, energy monitoring, dedicated touch panels per room, gate/elevator integration. For luxury villas and penthouses." },
+    ],
+    whyChooseUs: [
+      `${COMPANY.experience} years — India's longest-serving home automation company`,
+      "Certified KNX, Crestron, Control4, and Lutron partner — we don't sell one brand, we recommend the best fit",
+      `${COMPANY.projectsCompleted} successful installations across ${COMPANY.citiesServed} cities`,
+      "End-to-end in-house team — no subcontracting. Design, wiring, installation, and programming under one roof",
+      "1-year comprehensive warranty + AMC plans with 24/7 emergency support",
+      "Live Experience Center in Delhi — see automation working before you invest",
+    ],
+    faqs: [
+      { question: "What is the cost of home automation in India?", answer: `Home automation costs in India range from ₹2–5 Lakh for basic smart lighting and security in a 2–3BHK, ₹5–15 Lakh for comprehensive automation in a 3–5BHK, and ₹15–50 Lakh+ for luxury whole-home systems in villas. The cost depends on home size, chosen brand (KNX, Crestron, Control4, Lutron), and feature scope. ${COMPANY.name} offers free consultation to provide an accurate estimate for your specific requirements.` },
+      { question: "Can home automation be added to an existing home?", answer: "Yes. For existing homes (retrofits), we use wireless protocols like ZigBee, Z-Wave, or Control4's wireless technology to add automation without breaking walls or running new wires. Wireless retrofits typically cost 20–30% more than new construction automation but require zero civil work." },
+      { question: "Which is the best home automation brand for Indian homes?", answer: `The best brand depends on your priorities. KNX is ideal for new constructions wanting 20+ year reliability. Crestron is for ultra-luxury homes demanding custom interfaces. Control4 offers the best balance of features and price. Lutron is unmatched for lighting quality. ${COMPANY.name} is certified across all four brands and recommends based on your specific needs — not commission margins.` },
+      { question: "Does home automation increase property value?", answer: "Yes. Properties with professional home automation typically command 10–15% higher resale value. Smart home features are increasingly expected in premium segments. A well-designed automation system also significantly reduces selling time." },
+      { question: "How long does home automation installation take?", answer: `For new construction, automation wiring happens during the electrical phase and adds no time to your project. Hardware installation and programming takes 2–4 weeks depending on scope. For retrofits, a typical 3BHK takes 1–2 weeks. ${COMPANY.name} provides a detailed project timeline during consultation.` },
+    ],
+  },
+  {
+    slug: "conceptual-lighting",
+    headline: "Conceptual & Architectural Lighting Design in India",
+    introduction: `Conceptual lighting transforms spaces through carefully designed layers of ambient, task, accent, and decorative light — all controllable via automation. ${COMPANY.name} combines lighting design expertise with automation technology to create scenes that adapt to time of day, activity, and mood. Our ${COMPANY.experience} years of experience span luxury residences, boutique hotels, restaurants, and commercial facades.`,
+    whatItIs: `Conceptual lighting goes far beyond installing fixtures. It's the art and science of using light as a design element — creating depth, drama, and emotion in a space. It involves three core layers: ambient (general room lighting), task (focused light for work areas), and accent (highlighting architectural features, art, or textures). When combined with automation, these layers become programmable scenes: a "Dinner" scene dims ambient light to 20%, warms color temperature to 2700K, and highlights the dining table. A "Morning" scene gradually brightens to simulate sunrise.`,
+    whyItMatters: `Lighting accounts for 25–30% of a home's electricity consumption. Automated lighting with occupancy sensors and daylight harvesting reduces this by 30–50%. Beyond energy savings, the right lighting design dramatically improves aesthetics, makes spaces feel larger, enhances artwork, and directly impacts mood and well-being. Yet most Indian homes still use flat, uniform lighting with basic switches — leaving enormous untapped potential.`,
+    howWeDoIt: [
+      { step: "Lighting Audit & Design Brief", detail: "We study your architectural drawings, interior design mood boards, and lifestyle to create a detailed lighting design brief covering every room's functional and aesthetic requirements." },
+      { step: "Fixture Selection & Layout", detail: "We specify fixture types (recessed, track, cove, pendant, wall wash), positions, beam angles, color temperatures, and lumen output. Every fixture is selected for design integrity and automation compatibility." },
+      { step: "Scene Programming", detail: "We design and program lighting scenes — Morning, Work, Relax, Dinner, Movie, Entertain, Goodnight — each with precise dimming levels and color temperatures per fixture." },
+      { step: "Daylight Integration", detail: "Light sensors measure natural light and automatically adjust artificial lighting to maintain consistent lux levels while minimizing energy consumption." },
+      { step: "Facade & Landscape Lighting", detail: "For villas and commercial projects, we design exterior lighting including facade wash, pathway lighting, garden accents, and pool lighting — all automated with astronomical clock scheduling." },
+      { step: "Commissioning & Fine-Tuning", detail: "We commission the system on-site, fine-tune every scene with the client, and ensure smooth integration with the broader home automation system." },
+    ],
+    useCases: [
+      { title: "Living & Dining Areas", description: "Layered scenes for entertaining, family time, and formal dining. Cove lighting for ambient warmth, spotlights for art, and pendant control for dining." },
+      { title: "Bedrooms", description: "Circadian lighting that warms in the evening and gradually brightens in the morning. Reading lights, pathway lighting for nighttime, and romantic scene options." },
+      { title: "Facade & Landscape", description: "RGBW facade washing, pathway bollards, tree uplighting, pool lighting — all scheduled with astronomical clock for automatic sunset/sunrise transitions." },
+      { title: "Commercial & Hospitality", description: "Restaurant mood lighting, hotel lobby ambiance, retail display highlighting, and office biodynamic lighting for productivity." },
+    ],
+    pricing: [
+      { tier: "Design Only", range: "₹50,000–2 Lakh", includes: "Complete lighting design with fixture specifications, layout drawings, and scene definitions. You source and install separately." },
+      { tier: "Design + Automation", range: "₹2–8 Lakh", includes: "Lighting design plus Lutron or KNX dimming system, scene programming, and integration with home automation. For apartments and mid-size homes." },
+      { tier: "Full Turnkey", range: "₹8–25 Lakh+", includes: "Complete lighting design, fixture procurement, installation, automation, facade/landscape lighting, and commissioning. For luxury villas and commercial projects." },
+    ],
+    whyChooseUs: [
+      "Combined lighting design + automation expertise — most companies offer only one",
+      "Certified Lutron and KNX lighting partners with access to premium fixtures",
+      "Extensive portfolio of residential, hospitality, and commercial lighting projects",
+      "Energy-optimized designs that reduce lighting electricity by 30–50%",
+      "Scene programming included — not just hardware installation",
+      "Post-installation fine-tuning and lifetime support",
+    ],
+    faqs: [
+      { question: "How much does conceptual lighting cost in India?", answer: `Conceptual lighting design with automation costs ₹2–8 Lakh for apartments, ₹8–25 Lakh for luxury villas including facade lighting, and varies for commercial projects. Design-only services start at ₹50,000. ${COMPANY.name} provides detailed estimates after understanding your space and requirements.` },
+      { question: "What is the difference between regular and conceptual lighting?", answer: "Regular lighting uses standard fixtures with on/off switches — flat, uniform illumination. Conceptual lighting uses multiple layers (ambient, task, accent) with specific beam angles, color temperatures, and dimming controls to create atmosphere, highlight architecture, and respond to activities through programmable scenes." },
+      { question: "Can lighting automation save electricity?", answer: "Yes. Automated lighting with occupancy sensors, daylight harvesting, and dimming typically saves 30–50% on lighting electricity. A home spending ₹4,000/month on lighting electricity can save ₹1,500–2,000/month — paying back the automation investment within 3–5 years." },
+      { question: "Does conceptual lighting work with existing interiors?", answer: "Yes. While new constructions allow maximum flexibility for concealed fixtures and wiring, conceptual lighting can be retrofitted into existing spaces using surface-mounted fixtures, track systems, and wireless dimming controls like Lutron Caseta or RadioRA 3." },
+    ],
+  },
+  {
+    slug: "home-theater",
+    headline: "Home Theater & AV Solutions — Dolby Atmos, 4K/8K Projection",
+    introduction: `A dedicated home theater transforms how you experience movies, music, and gaming. ${COMPANY.name} designs and installs cinema-grade home theater systems with Dolby Atmos surround sound, 4K/8K laser projection, acoustic treatment, and one-touch automation — so starting a movie is as simple as pressing "Watch." ${COMPANY.experience} years of AV expertise across ${COMPANY.projectsCompleted} projects.`,
+    whatItIs: `A professional home theater combines high-performance audio (5.1, 7.1, 7.1.4, or 9.1.6 Dolby Atmos configurations), a reference-grade display (laser projector + acoustically transparent screen or 85"+ OLED/MicroLED), acoustic room treatment (absorption, diffusion, bass traps), and automation that controls lights, AV equipment, curtains, and climate with a single button press. Unlike a soundbar-and-TV setup, a properly designed theater delivers genuine cinema-quality audio and video with room-optimized acoustics.`,
+    whyItMatters: `Post-pandemic, home entertainment has become a priority for Indian families. A professionally designed home theater delivers an experience that no commercial cinema can match — personalized seating, perfect acoustics, no phone distractions, and content on demand. At ₹10–30 Lakh, a dedicated theater costs less than a premium car but delivers daily enjoyment for the entire family for 10–15 years. It also adds significant property value and lifestyle appeal.`,
+    howWeDoIt: [
+      { step: "Room Assessment", detail: "We evaluate the room dimensions, shape, ambient noise, and structural constraints to determine the optimal speaker layout, screen size, and acoustic treatment plan." },
+      { step: "Acoustic Design", detail: "Our acoustic consultant designs the treatment plan — absorption panels, diffusers, bass traps, and isolated walls/ceiling to achieve a reference-level listening environment." },
+      { step: "AV System Design", detail: "We specify the projector (JVC, Sony, Epson laser), screen (Stewart, Screen Innovations), speakers (JBL, KEF, B&W, Klipsch), amplifiers, and signal processing for your specific room and budget." },
+      { step: "Installation & Calibration", detail: "Equipment is installed, wired, and calibrated using professional measurement tools (REW, Audyssey, Dirac). Every speaker is time-aligned and EQ'd for your room." },
+      { step: "Automation Integration", detail: "One-touch scenes: 'Watch' dims lights, lowers curtains/screen, powers on projector, selects input. 'Pause' raises lights to 30%. 'Lights Up' returns to normal. Integrated with your whole-home system." },
+      { step: "Training & Support", detail: "We train your family on using the system and provide ongoing support including annual calibration checks and firmware updates." },
+    ],
+    useCases: [
+      { title: "Dedicated Theater Room", description: "Purpose-built theater with 7.1.4 Dolby Atmos, 4K laser projection, acoustic treatment, tiered seating, and full light control. The gold standard." },
+      { title: "Media Room / Living Room", description: "High-performance AV in a multi-purpose room — hidden speakers, motorized projector screen that descends from the ceiling, ambient lighting scenes." },
+      { title: "Multi-Room Audio", description: "Sonos, Crestron, or Control4-based audio distribution across 5–15 zones. Play different music in every room or group zones for parties." },
+      { title: "Outdoor Entertainment", description: "Weather-rated speakers, an outdoor-rated TV or projector, and landscape lighting scenes for poolside or terrace entertainment." },
+    ],
+    pricing: [
+      { tier: "Premium Living Room", range: "₹3–8 Lakh", includes: "75–85\" 4K TV or short-throw projector, 5.1 surround system, basic acoustic treatment, automation integration with existing smart home." },
+      { tier: "Dedicated Theater", range: "₹10–30 Lakh", includes: "4K laser projector, acoustically transparent screen, 7.1.4 Dolby Atmos speakers, full acoustic treatment, tiered seating platform, one-touch automation." },
+      { tier: "Reference Cinema", range: "₹30–75 Lakh+", includes: "8K/4K JVC or Sony projector, Dolby Atmos 9.1.6, premium audiophile speakers (B&W, KEF Reference), studio-grade acoustics, MicroLED display options, Crestron AV distribution." },
+    ],
+    whyChooseUs: [
+      "Acoustic design + AV engineering + automation — all under one roof",
+      `${COMPANY.experience} years of residential and commercial AV experience`,
+      "Crestron, Control4, and Sonos certified for AV distribution and control",
+      "In-house acoustic consultant — we don't outsource room treatment",
+      "Professional calibration using REW and Dirac measurement tools",
+      "Annual maintenance and recalibration support",
+    ],
+    faqs: [
+      { question: "How much does a home theater cost in India?", answer: `A premium living room setup costs ₹3–8 Lakh. A dedicated home theater with Dolby Atmos and acoustic treatment costs ₹10–30 Lakh. Reference-grade cinemas with 8K projection and audiophile speakers range from ₹30–75 Lakh+. ${COMPANY.name} designs systems for every budget level.` },
+      { question: "What is the ideal room size for a home theater?", answer: "The ideal dedicated home theater room is 15' × 20' × 10' (minimum 12' × 15'). However, great results are achievable in smaller rooms with proper speaker selection and acoustic treatment. We've designed outstanding theaters in rooms as compact as 10' × 12'." },
+      { question: "Is Dolby Atmos worth it for home theater?", answer: "Absolutely. Dolby Atmos adds height channels that create a three-dimensional sound field — helicopters fly overhead, rain falls around you. A properly installed 7.1.4 Atmos system transforms movie watching from 'watching a screen' to 'being inside the movie.' The incremental cost over 7.1 is modest." },
+      { question: "Can I add a home theater to an existing room?", answer: "Yes. Retrofit theaters use wireless surround speakers, soundbars with Atmos upfiring, and short-throw projectors that don't require ceiling mounting. Acoustic treatment panels can be wall-mounted as decorative art. The experience is slightly compromised vs. a purpose-built room but still dramatically better than a TV with a soundbar." },
+    ],
+  },
+  {
+    slug: "home-security",
+    headline: "Smart Security & CCTV Systems for Indian Homes",
+    introduction: `Smart security goes beyond basic CCTV cameras. ${COMPANY.name} designs integrated security systems combining IP surveillance, smart locks, motion sensors, intrusion detection, video door phones, and perimeter protection — all connected to your smart home and accessible from your phone. ${COMPANY.experience} years of security integration across residential, commercial, and hospitality projects.`,
+    whatItIs: `A smart security system uses IP cameras (2K/4K resolution with AI analytics), smart locks (fingerprint, PIN, RFID, remote unlock), motion and intrusion sensors (PIR, door/window contacts, glass break detectors), video door phones (two-way audio with remote unlock), and perimeter protection (beam sensors, electric fence integration). All devices feed into a unified dashboard accessible via app, touch panel, or TV — and integrate with lighting automation for panic scenes and presence simulation.`,
+    whyItMatters: `Property crime in Indian metropolitan areas remains a significant concern, especially for premium residences, farmhouses, and homes with frequent family travel. Traditional CCTV records footage but doesn't prevent or alert in real-time. Smart security provides instant push notifications, two-way audio deterrence, automated lighting responses, and remote lock control — turning passive surveillance into active protection. Integration with home automation adds force multipliers like simulated occupancy (lights and TV cycling when you're away).`,
+    howWeDoIt: [
+      { step: "Security Assessment", detail: "We assess your property layout, entry points, vulnerable areas, and family lifestyle to design a layered security plan covering perimeter, access points, and interior zones." },
+      { step: "Camera Placement Design", detail: "Strategic camera placement covering all entry points, driveways, gardens, and common areas. We specify resolution, field of view, and night vision requirements for each location." },
+      { step: "Access Control Design", detail: "Smart lock selection (Yale, Samsung, Godrej) for main door, service entrance, and internal doors. Video door phone with intercom for gate/door communication." },
+      { step: "Sensor & Alert Setup", detail: "PIR motion sensors, door/window contacts, glass break detectors, and perimeter beams are placed and configured with alert zones and schedules." },
+      { step: "Automation Integration", detail: "Security integrates with lighting (panic scene, welcome scene, away mode simulation), HVAC (shut down on intrusion), and smart locks (auto-lock schedules, guest access codes)." },
+      { step: "Monitoring & Support", detail: "NVR/cloud recording setup, mobile app configuration for all family members, and ongoing support for firmware updates and system health checks." },
+    ],
+    useCases: [
+      { title: "Apartment Security", description: "Video door phone, smart lock, hallway camera, motion-triggered alerts, and panic button integration with building security." },
+      { title: "Villa & Bungalow Protection", description: "Perimeter cameras with AI analytics, gate intercom, smart locks on all entries, PIR sensors, and automated away-mode lighting." },
+      { title: "Farmhouse & Remote Property", description: "Solar-powered cameras, 4G connectivity, remote monitoring, intrusion alerts, and landscape lighting automation for perimeter security." },
+      { title: "Commercial & Office", description: "Access control systems (RFID/biometric), visitor management, IP surveillance with analytics, and integration with BMS." },
+    ],
+    pricing: [
+      { tier: "Basic", range: "₹50,000–2 Lakh", includes: "4–8 IP cameras (2K), basic NVR with 1TB storage, smart lock for main door, video door phone, mobile app access." },
+      { tier: "Comprehensive", range: "₹2–6 Lakh", includes: "8–16 cameras (4K), enterprise NVR with AI analytics, smart locks on multiple doors, motion sensors, perimeter beams, automation integration." },
+      { tier: "Estate Security", range: "₹6–15 Lakh+", includes: "Full perimeter coverage with PTZ cameras, AI-powered analytics (face recognition, vehicle detection), electric fence integration, multi-gate intercom, panic room setup, 24/7 monitoring integration." },
+    ],
+    whyChooseUs: [
+      "Security + automation integration expertise — not just camera installation",
+      "AI-powered analytics: face recognition, vehicle detection, loitering alerts",
+      "Smart lock integration with guest access codes, auto-lock, and remote unlock",
+      "Panic scene automation — one button triggers lights, sirens, and alerts simultaneously",
+      "Simulated occupancy mode for when you're traveling",
+      "AMC plans with regular system health checks and firmware updates",
+    ],
+    faqs: [
+      { question: "How much does a smart security system cost in India?", answer: `Basic CCTV with smart lock starts at ₹50,000–2 Lakh. Comprehensive security with 4K cameras, multiple smart locks, sensors, and automation integration costs ₹2–6 Lakh. Full estate security with AI analytics and perimeter protection ranges from ₹6–15 Lakh+. ${COMPANY.name} provides customized security assessments and quotes.` },
+      { question: "Can smart locks be hacked?", answer: "Premium smart locks (Yale, Samsung, Assa Abloy) use AES-128/256 encryption and are significantly harder to bypass than traditional mechanical locks. They also provide audit trails (who opened when), auto-lock features, temporary guest codes, and remote lock verification — capabilities that mechanical locks simply can't offer." },
+      { question: "Do smart security cameras work without internet?", answer: "Yes. Cameras connected to a local NVR continue recording even without internet. You lose remote viewing capability during an outage, but all footage is saved locally. We configure 4G backup for critical installations to ensure uninterrupted remote access." },
+      { question: "Can CCTV integrate with home automation?", answer: "Absolutely. This is where smart security becomes truly powerful. Camera motion detection can trigger lights, lock-down sequences, and push notifications. Smart locks integrate with welcome/away scenes. Doorbells show video feeds on your TV or touch panel. Integration is our core expertise." },
+    ],
+  },
+  {
+    slug: "central-vacuum",
+    headline: "Central Vacuum Systems for Dust-Free Indian Homes",
+    introduction: `Central vacuum systems eliminate the need for heavy portable vacuum cleaners by building suction power directly into your home's infrastructure. ${COMPANY.name} designs and installs central vacuum systems with in-wall PVC piping, discreet wall inlets in every room, and a powerful central unit typically installed in a utility area or garage. The result: cleaner air, quieter operation, and effortless cleaning.`,
+    whatItIs: `A central vacuum system consists of a powerful motor unit (typically 600–1800 watts) installed in a garage, utility room, or terrace, connected to multiple rooms via concealed PVC piping within walls. Each room has a flush-mounted wall inlet. To clean, you simply plug a lightweight hose into any inlet — suction activates automatically. All dust, allergens, and debris are transported through pipes to the central unit's collection bin, exhausting filtered air outside the living space. Unlike portable vacuums that recirculate 30–50% of fine particles back into the room, central vacuums achieve 99.97% filtration and vent exhaust outside.`,
+    whyItMatters: `India's urban air quality consistently ranks among the world's worst. Delhi NCR regularly exceeds 300 AQI. Even inside premium homes, dust accumulates rapidly on surfaces, furniture, and fabrics. Portable vacuum cleaners are noisy (70–85 dB), heavy to carry between rooms, and recirculate fine dust particles. Central vacuums operate at 50–60 dB inside the living space (the motor is remote), are 3–5x more powerful than portable units, and genuinely remove allergens from your living environment by exhausting air outside. For families with allergies, asthma, or young children, this is a health investment.`,
+    howWeDoIt: [
+      { step: "Layout Planning", detail: "We map your floor plan to determine optimal inlet locations (typically one per 50–60 sqm), piping routes through walls, and the central unit location." },
+      { step: "Piping Installation", detail: "PVC piping is concealed within walls during construction or renovation. Pipes run from each inlet to the central unit location. This step must happen before wall finishing." },
+      { step: "Inlet Installation", detail: "Flush-mounted wall inlets are installed at convenient heights (usually 30 cm from floor) in each room, hallway, and common area." },
+      { step: "Central Unit Setup", detail: "The motor unit is installed in the designated location with proper ventilation and exhaust routing. We select unit capacity based on total piping length and number of inlets." },
+      { step: "Testing & Handover", detail: "Every inlet is tested for suction performance. We provide hoses, cleaning accessories, and training on maintenance (filter cleaning, bag replacement)." },
+    ],
+    useCases: [
+      { title: "New Construction Villas", description: "Ideal time to install — piping goes inside walls during construction with zero aesthetic impact. The most cost-effective approach." },
+      { title: "Large Apartments (3BHK+)", description: "Central vacuum eliminates storing a bulky vacuum cleaner and provides more powerful, quieter cleaning for daily use." },
+      { title: "Homes with Allergy Sufferers", description: "99.97% HEPA filtration with outside exhaust means allergens are genuinely removed — not just redistributed." },
+      { title: "Pet Owner Homes", description: "Central vacuums handle pet hair far more effectively than portable units, with specialized attachments for upholstery and pet grooming." },
+    ],
+    pricing: [
+      { tier: "Compact (2–3BHK)", range: "₹80,000–1.5 Lakh", includes: "3–5 wall inlets, concealed piping, compact central unit, standard hose and accessory kit." },
+      { tier: "Standard Villa", range: "₹1.5–3 Lakh", includes: "6–10 wall inlets across 2 floors, high-capacity unit, HEPA filtration, complete accessory set." },
+      { tier: "Large Estate", range: "₹3–6 Lakh+", includes: "10–20+ inlets, dual-motor high-power unit, multi-zone piping, garage and outdoor inlets, premium accessory kit." },
+    ],
+    whyChooseUs: [
+      "Specialized experience in central vacuum installation — not a side service",
+      "Precise piping layout planning for maximum suction at every inlet",
+      "Works with leading brands: Beam, Vacuflo, DuoVac, Cyclo Vac",
+      "Installation coordinated with your builder/contractor during construction",
+      "Annual maintenance support — filter replacement, motor service, pipe cleaning",
+      "Integration with home automation: auto-start when inlet is opened",
+    ],
+    faqs: [
+      { question: "How much does a central vacuum system cost in India?", answer: `Central vacuum systems in India cost ₹80,000–1.5 Lakh for a 2–3BHK apartment, ₹1.5–3 Lakh for a standard villa, and ₹3–6 Lakh+ for large estates. The cost includes piping, inlets, central unit, hose, and accessories. Installation during new construction is 20–30% cheaper than retrofit.` },
+      { question: "Can central vacuum be installed in an existing home?", answer: "It's possible but significantly more challenging and costly in existing homes since piping needs to be concealed in walls. It works best when combined with a major renovation where walls are being opened. For existing homes without renovation plans, we recommend premium robotic vacuum systems as an alternative." },
+      { question: "How often does a central vacuum need maintenance?", answer: "Empty the collection bin every 1–3 months (depending on usage). Replace or clean HEPA filters every 6–12 months. Professional motor service recommended every 2–3 years. Central vacuum motors typically last 15–20 years with proper maintenance." },
+      { question: "Is a central vacuum quieter than regular vacuum cleaners?", answer: "Significantly quieter inside the living space. The motor is located remotely (garage, utility area), so you only hear air flowing through the hose — approximately 50–60 dB vs. 70–85 dB for portable vacuums. You can vacuum while others sleep or watch TV in the next room." },
+    ],
+  },
+  {
+    slug: "clean-air-systems",
+    headline: "Indoor Air Quality & Clean Air Systems for Indian Homes",
+    introduction: `With Indian cities consistently recording hazardous AQI levels, indoor air quality has become a critical health concern. ${COMPANY.name} designs integrated clean air systems combining HEPA + activated carbon purifiers, fresh air ventilation (ERV/HRV), real-time AQI monitoring, and smart automation that responds to pollution levels automatically. ${COMPANY.experience} years of building healthy living environments.`,
+    whatItIs: `A clean air system goes beyond placing portable purifiers in rooms. It's an engineered solution that addresses the entire indoor air environment: HEPA purification removes 99.97% of particles down to 0.3 microns (dust, pollen, PM2.5), activated carbon filters absorb VOCs and odors, Energy Recovery Ventilators (ERV) bring in fresh outdoor air while recovering temperature/humidity, and CO2 sensors ensure adequate ventilation. Smart automation monitors indoor and outdoor AQI in real-time and adjusts purification and ventilation rates automatically.`,
+    whyItMatters: `Indians spend 80–90% of their time indoors, yet indoor air is often 2–5x more polluted than outdoor air due to cooking emissions, furniture off-gassing (formaldehyde), cleaning chemicals, and inadequate ventilation. In Delhi NCR, outdoor PM2.5 regularly exceeds 200 µg/m³ (safe limit: 25 µg/m³). Opening windows for "fresh air" actually makes indoor air worse during pollution seasons. A properly designed clean air system maintains PM2.5 below 15 µg/m³ indoors year-round — cleaner than Scandinavian outdoor air.`,
+    howWeDoIt: [
+      { step: "Air Quality Assessment", detail: "We measure baseline indoor air quality — PM2.5, PM10, CO2, VOC, temperature, and humidity — across all rooms to identify pollution sources and ventilation gaps." },
+      { step: "System Design", detail: "Based on room volumes, occupancy, and pollution sources, we design a system combining ceiling/wall-mounted purifiers, ducted fresh air units (ERV), and sensor placement." },
+      { step: "Installation", detail: "Purifiers, ERV units, ducting, and sensors are installed with minimal aesthetic impact. Ducted systems integrate with existing HVAC infrastructure where possible." },
+      { step: "Smart Integration", detail: "AQI sensors feed data to your home automation system. Purifiers and ERV units adjust speed automatically. Alerts notify you of unusual pollution spikes." },
+      { step: "Monitoring Dashboard", detail: "Real-time air quality data is accessible on your phone, touch panel, or TV — showing PM2.5, CO2, VOC, temperature, and humidity for every monitored room." },
+    ],
+    useCases: [
+      { title: "Delhi NCR Homes", description: "Essential for families in India's most polluted region. Whole-home HEPA purification + ERV ventilation maintaining PM2.5 below 15 µg/m³ even during severe pollution." },
+      { title: "Nurseries & Children's Rooms", description: "Priority zones for air purification — children's lungs are developing and more susceptible to PM2.5 damage." },
+      { title: "Luxury Villas & Penthouses", description: "Integrated clean air with centralized purification, ERV ventilation, and room-by-room AQI monitoring on automation touch panels." },
+      { title: "Commercial Offices", description: "Employee health and productivity improve significantly with clean indoor air. CO2 monitoring prevents 'brain fog' in meeting rooms." },
+    ],
+    pricing: [
+      { tier: "Room-Level", range: "₹50,000–1.5 Lakh", includes: "2–4 smart air purifiers (HEPA + carbon), PM2.5 sensors, app control and monitoring. For apartments." },
+      { tier: "Whole-Home", range: "₹2–6 Lakh", includes: "Centralized or distributed purification, ERV fresh air unit, multi-room AQI sensors, automation integration, real-time dashboard." },
+      { tier: "Premium Estate", range: "₹6–15 Lakh+", includes: "Ducted whole-home purification with ERV, room-by-room monitoring, medical-grade HEPA, integration with HVAC and home automation, outdoor AQI station." },
+    ],
+    whyChooseUs: [
+      "Engineering approach — not just placing purifiers, but designing airflow",
+      "ERV/HRV integration for fresh air without opening windows in polluted cities",
+      "Real-time AQI monitoring dashboard integrated with home automation",
+      "Smart automation: purifiers respond to pollution automatically",
+      "Filter replacement and system maintenance AMC plans available",
+      `${COMPANY.experience} years of building healthy living environments`,
+    ],
+    faqs: [
+      { question: "How much does a whole-home clean air system cost?", answer: `Room-level smart purifiers with sensors cost ₹50,000–1.5 Lakh. Whole-home systems with ERV ventilation and multi-room monitoring cost ₹2–6 Lakh. Premium estate solutions with ducted purification range from ₹6–15 Lakh+. ${COMPANY.name} conducts a free air quality assessment before recommending a system.` },
+      { question: "Are portable air purifiers enough for Indian homes?", answer: "Portable purifiers help individual rooms but don't address the root problem: lack of fresh air ventilation. They recirculate and filter room air but don't bring in fresh oxygen or remove CO2 buildup. A proper clean air system combines purification with controlled fresh air ventilation (ERV) for truly healthy indoor air." },
+      { question: "What is an ERV and why do I need one?", answer: "An Energy Recovery Ventilator (ERV) brings fresh outdoor air into your home while exhausting stale indoor air — but recovers 70–80% of the temperature and humidity from the outgoing air. This means you get fresh air without losing your AC cooling. In polluted Indian cities, the incoming air passes through HEPA filters before entering your home." },
+      { question: "How do clean air systems integrate with home automation?", answer: "AQI sensors in each room feed real-time data to your automation system. When PM2.5 rises (from cooking, opening doors, or outdoor pollution spikes), purifiers automatically increase speed. CO2 levels trigger ventilation. All data is visible on your app, touch panel, or TV dashboard. You can also set scene-based responses." },
+    ],
+  },
+  {
+    slug: "solar-power",
+    headline: "Rooftop Solar Power Systems for Indian Homes & Businesses",
+    introduction: `Rooftop solar is the single highest-ROI investment for Indian property owners — generating free electricity for 25+ years after a 3–5 year payback. ${COMPANY.name} designs and installs grid-tied solar power systems for residences and commercial properties, integrated with home automation for real-time generation monitoring and smart energy management.`,
+    whatItIs: `A rooftop solar power system consists of photovoltaic (PV) panels mounted on your roof, a solar inverter that converts DC to AC power, net metering that feeds excess energy back to the grid (reducing your bill), and an optional battery storage system for backup during power cuts. Modern panels produce 400–550 watts each and come with 25-year performance warranties. When integrated with home automation, you get real-time generation/consumption dashboards, automated load shifting (running heavy appliances during peak solar hours), and intelligent battery management.`,
+    whyItMatters: `Indian electricity tariffs have risen 8–12% annually, with residential rates now ₹6–10/unit across most states. A 5 kW rooftop system (typical for a 3BHK) generates 600–750 units/month, covering 70–90% of household electricity. With net metering, excess units are credited against your bill. The system pays for itself in 3–5 years and then generates free electricity for 20+ more years. Government subsidies of ₹30,000–78,000 further improve ROI. Combined with home automation energy management, total savings can exceed ₹1.5 Lakh/year for larger installations.`,
+    howWeDoIt: [
+      { step: "Site Assessment & Solar Audit", detail: "We analyze roof area, orientation, shading, structural capacity, and electricity consumption patterns to determine optimal system size and panel layout." },
+      { step: "System Design", detail: "Detailed design with panel layout, inverter sizing, wiring schematic, earthing plan, and net metering application documentation." },
+      { step: "Government Subsidy Filing", detail: "We handle the complete subsidy application process with your local DISCOM and MNRE portal — paperwork, approvals, and follow-up." },
+      { step: "Installation", detail: "Panel mounting, inverter installation, DC/AC wiring, earthing, and lightning protection. Typical installation takes 2–4 days." },
+      { step: "Net Metering & Commissioning", detail: "DISCOM inspection, bi-directional meter installation, and system commissioning. Your system starts generating and earning from day one." },
+      { step: "Automation Integration", detail: "Solar generation data feeds into your home automation dashboard. Smart energy management shifts high-consumption appliances to peak solar hours automatically." },
+    ],
+    useCases: [
+      { title: "Residential (3BHK–5BHK)", description: "3–10 kW systems covering 70–100% of household electricity. Net metering reduces bills to near-zero." },
+      { title: "Luxury Villas", description: "10–25 kW systems with battery backup for uninterrupted power. Integration with home automation for intelligent energy management." },
+      { title: "Commercial & Office", description: "25–500 kW systems for offices, factories, and hotels. Accelerated depreciation tax benefits for businesses." },
+      { title: "Society/RWA Common Areas", description: "Solar for common area lighting, lifts, water pumps, and STP — reducing maintenance charges for all residents." },
+    ],
+    pricing: [
+      { tier: "3 kW Residential", range: "₹1.5–2.5 Lakh (post-subsidy)", includes: "6–8 panels, grid-tied inverter, mounting structure, wiring, net metering, 5-year inverter + 25-year panel warranty." },
+      { tier: "5–10 kW Home", range: "₹3–7 Lakh (post-subsidy)", includes: "12–24 panels, string/micro inverter, complete BOS, net metering, monitoring app, optional battery backup." },
+      { tier: "10–25 kW Villa/Commercial", range: "₹6–18 Lakh", includes: "Premium panels, hybrid inverter with battery support, energy monitoring dashboard, home automation integration, comprehensive AMC." },
+    ],
+    whyChooseUs: [
+      "End-to-end service: design, subsidy filing, installation, net metering, and AMC",
+      "Integration with home automation for smart energy management — unique in the market",
+      "Premium Tier-1 panels with 25-year linear performance warranty",
+      "Government subsidy processing handled completely — you don't deal with paperwork",
+      "Real-time solar monitoring on your home automation dashboard",
+      `${COMPANY.experience} years of reliable installations`,
+    ],
+    faqs: [
+      { question: "How much does rooftop solar cost in India?", answer: `A 3 kW residential system costs ₹1.5–2.5 Lakh after government subsidy. A 5 kW system costs ₹3–4.5 Lakh post-subsidy. 10 kW+ systems for villas cost ₹6–12 Lakh. Government subsidies of ₹30,000–78,000 are available for residential installations up to 10 kW. ${COMPANY.name} handles the complete subsidy application.` },
+      { question: "What is the payback period for rooftop solar in India?", answer: "Typical payback period is 3–5 years depending on your electricity tariff, system size, and sunlight availability. After payback, you get free electricity for 20+ years. At current tariffs, a 5 kW system saves ₹5,000–8,000/month — increasing each year as tariffs rise." },
+      { question: "Does solar work during monsoon and cloudy days?", answer: "Solar panels produce reduced output (20–40% of peak) during cloudy weather but still generate electricity. Annual generation accounts for monsoon months. Grid-tied systems draw from the grid when solar is insufficient, using net metering credits earned during sunny months." },
+      { question: "Can solar integrate with home automation?", answer: "Yes. We integrate solar monitoring into your home automation dashboard showing real-time generation, consumption, grid export/import, and savings. Smart energy management can automatically schedule high-consumption appliances (water heaters, washing machines, pool pumps) during peak solar production hours." },
+    ],
+  },
+  {
+    slug: "hvac-automation",
+    headline: "Smart HVAC Automation — Intelligent Climate Control for Indian Homes",
+    introduction: `HVAC automation transforms your heating, ventilation, and air conditioning from manual thermostat adjustments into an intelligent climate management system. ${COMPANY.name} integrates VRV/VRF systems, ductable ACs, split units, and fresh air handling with smart zone management, occupancy sensing, and energy optimization — delivering 20–40% cooling energy savings with superior comfort.`,
+    whatItIs: `HVAC automation uses smart thermostats, temperature/humidity sensors, occupancy detectors, and motorized dampers to create a climate system that adapts automatically. Each room or zone can be independently controlled with different temperature setpoints and schedules. Integration with your building's VRV/VRF system (Daikin, Mitsubishi, LG) or ductable units enables precise capacity modulation. When connected to your home automation system, HVAC responds to scenes (away mode reduces cooling), occupancy (empty rooms stop cooling), and time schedules (pre-cool before you arrive).`,
+    whyItMatters: `HVAC accounts for 40–60% of electricity consumption in Indian homes during summer months. Most homes run ACs at fixed temperatures with manual on/off — cooling empty rooms, overcooling occupied ones, and wasting enormous energy. Smart HVAC automation with zone management and occupancy sensing reduces cooling energy by 20–40%. For a home spending ₹15,000/month on summer electricity, that's ₹3,000–6,000/month in savings — plus consistently better comfort.`,
+    howWeDoIt: [
+      { step: "HVAC Audit", detail: "We assess your existing HVAC setup (or planned installation), room sizes, insulation quality, sun exposure, and occupancy patterns to design an optimal automation strategy." },
+      { step: "Zone Planning", detail: "We divide your home into logical climate zones — bedrooms, living areas, home office, kitchen — each with independent temperature control and scheduling." },
+      { step: "Sensor & Thermostat Installation", detail: "Smart thermostats, room temperature/humidity sensors, and occupancy sensors are installed. For VRV/VRF systems, we integrate directly with the manufacturer's control interface." },
+      { step: "Control Logic Programming", detail: "Zone setpoints, schedules, occupancy rules, and scene integration are programmed. 'Away' mode setback, 'Sleep' mode temperature curve, and 'Pre-cool' timing are configured." },
+      { step: "Energy Dashboard", detail: "Real-time and historical energy consumption data per zone is accessible on your app and touch panel, helping you identify and eliminate waste." },
+      { step: "Optimization & Support", detail: "After 2–4 weeks of operation data, we fine-tune setpoints and schedules for optimal efficiency. Ongoing AMC ensures continued performance." },
+    ],
+    useCases: [
+      { title: "Large Villas with VRV/VRF", description: "Central VRV system with zone-wise automation — 8–15 indoor units managed intelligently based on occupancy, time, and temperature." },
+      { title: "Premium Apartments", description: "Split AC automation with smart thermostats, occupancy sensing, and scene integration (Movie mode sets 23°C, Sleep mode creates a gradual temperature curve)." },
+      { title: "Farmhouses & Weekend Homes", description: "Remote pre-cooling via app — start cooling 1 hour before arrival. System stays in energy-saver mode when unoccupied." },
+      { title: "Commercial Offices", description: "BMS-integrated HVAC for meeting rooms (occupancy-based), open offices (zone management), and server rooms (precision cooling)." },
+    ],
+    pricing: [
+      { tier: "Smart Thermostat Retrofit", range: "₹30,000–1 Lakh", includes: "Smart thermostats for 2–5 split ACs, app control, basic scheduling, energy monitoring. Quick retrofit with no rewiring." },
+      { tier: "Zone Automation", range: "₹1–4 Lakh", includes: "Temperature + occupancy sensors per zone, centralized control, scene integration, energy dashboard, VRV/VRF interface." },
+      { tier: "Comprehensive HVAC Control", range: "₹4–12 Lakh+", includes: "Full VRV/VRF integration, room-by-room sensors, motorized dampers for ductable systems, BMS integration, advanced energy analytics." },
+    ],
+    whyChooseUs: [
+      "Deep expertise in VRV/VRF integration (Daikin, Mitsubishi, LG, Toshiba)",
+      "Zone-wise automation — not just on/off control",
+      "20–40% energy reduction backed by real measurement data",
+      "Integration with whole-home automation scenes and schedules",
+      "Real-time energy consumption dashboard per zone",
+      "AMC plans ensuring continued optimal performance",
+    ],
+    faqs: [
+      { question: "How much does HVAC automation cost in India?", answer: `Smart thermostat retrofits for 2–5 ACs cost ₹30,000–1 Lakh. Zone-based automation with sensors and VRV integration costs ₹1–4 Lakh. Comprehensive systems with BMS integration range from ₹4–12 Lakh+. ${COMPANY.name} recommends the right level based on your HVAC setup and energy savings potential.` },
+      { question: "Can HVAC automation work with existing split ACs?", answer: "Yes. Smart thermostat modules (like Cielo, Sensibo, or Intesis) can retrofit any split AC with IR remote into a smart, automated unit — adding app control, scheduling, occupancy sensing, and energy monitoring without replacing the AC unit." },
+      { question: "How much energy does HVAC automation actually save?", answer: "Typically 20–40% on cooling energy. The savings come from: eliminating cooling in empty rooms (occupancy sensing), optimized setpoints (every 1°C higher saves 6% energy), scheduled setback during sleeping hours, and preventing overcooling. For a home with ₹15,000/month summer electricity, expect ₹3,000–6,000/month savings." },
+      { question: "What is VRV/VRF integration?", answer: "VRV (Variable Refrigerant Volume) and VRF (Variable Refrigerant Flow) are central cooling systems by Daikin, Mitsubishi, and LG that serve multiple indoor units from one outdoor unit. Our automation integrates directly with the VRV/VRF controller via BACnet or Modbus for precise capacity modulation, energy monitoring, and zone management — far beyond what the manufacturer's basic controller offers." },
+    ],
+  },
+  {
+    slug: "commercial",
+    headline: "Commercial & Building Automation Solutions (BMS) in India",
+    introduction: `Commercial automation — or Building Management Systems (BMS) — integrates HVAC, lighting, access control, fire safety, energy management, and surveillance into a unified platform for offices, hotels, hospitals, and commercial complexes. ${COMPANY.name} has ${COMPANY.experience} years of experience deploying commercial automation across hospitality, corporate, and healthcare sectors.`,
+    whatItIs: `A Building Management System (BMS) is the nervous system of a commercial building. It connects HVAC (chillers, AHUs, VRV), lighting (zone control, occupancy, daylight harvesting), access control (RFID, biometric, visitor management), fire alarm systems, elevator control, energy metering, and surveillance into a single supervisory platform. Operators monitor and control everything from a central dashboard, while automation rules optimize energy consumption, maintain comfort, and ensure safety compliance 24/7.`,
+    whyItMatters: `Commercial buildings account for 40% of India's energy consumption. A properly implemented BMS reduces energy costs by 20–35% through optimized HVAC scheduling, lighting automation, and demand-based ventilation. Beyond energy, BMS improves occupant comfort (consistent temperature, adequate ventilation), enhances security (integrated access control + surveillance), ensures fire safety compliance, and provides data for ESG reporting. For hotels, automated guest room management reduces energy waste by 30–40% while improving guest experience.`,
+    howWeDoIt: [
+      { step: "Building Assessment", detail: "We audit the building's mechanical, electrical, and plumbing (MEP) systems, understand operational requirements, and identify energy optimization opportunities." },
+      { step: "BMS Architecture Design", detail: "We design the BMS architecture — controller placement, network topology (BACnet/IP, Modbus, KNX), sensor locations, and integration points with existing systems." },
+      { step: "Hardware & Controller Installation", detail: "DDC controllers, sensors, actuators, and networking equipment are installed. Field devices are wired to controllers and tested point-by-point." },
+      { step: "Programming & Graphics", detail: "Control sequences (AHU staging, chiller optimization, lighting schedules) are programmed. Custom graphic dashboards are created for operator monitoring." },
+      { step: "Integration & Commissioning", detail: "All subsystems (HVAC, lighting, access, fire, elevator) are integrated and tested as a unified system. Performance is verified against design specifications." },
+      { step: "Training & Ongoing Support", detail: "Building operations team is trained on BMS operation. We provide AMC plans for ongoing optimization, firmware updates, and system expansion." },
+    ],
+    useCases: [
+      { title: "Corporate Offices", description: "Floor-wise HVAC and lighting automation, meeting room booking integration, access control with visitor management, energy dashboards for ESG reporting." },
+      { title: "Hotels & Resorts", description: "Guest room management (HVAC + lighting based on occupancy), ballroom scene control, back-of-house energy optimization, and PMS integration." },
+      { title: "Hospitals & Healthcare", description: "Precision climate control for OTs and ICUs, positive/negative pressure room management, infection control automation, and medical gas monitoring." },
+      { title: "Retail & Mixed-Use", description: "Zone-wise lighting and HVAC scheduling, footfall-based ventilation, common area energy optimization, and tenant energy sub-metering." },
+    ],
+    pricing: [
+      { tier: "Small Office (5,000–15,000 sqft)", range: "₹5–15 Lakh", includes: "HVAC and lighting automation, basic access control, energy monitoring dashboard, app-based control." },
+      { tier: "Mid-Size Commercial (15,000–50,000 sqft)", range: "₹15–40 Lakh", includes: "Full BMS with HVAC optimization, floor-wise lighting, access control + visitor management, fire system integration, energy analytics." },
+      { tier: "Large Complex (50,000+ sqft)", range: "₹40 Lakh–2 Crore+", includes: "Enterprise BMS with chiller plant optimization, comprehensive access control, integrated fire safety, elevator management, energy management + ESG reporting." },
+    ],
+    whyChooseUs: [
+      `${COMPANY.experience} years in both residential and commercial automation — we understand both worlds`,
+      "KNX, Crestron, and BACnet expertise for protocol-agnostic integration",
+      "Hospitality specialization — hotel guest room management is a core competency",
+      "Energy optimization focus — measurable 20–35% reduction in building energy costs",
+      "Complete MEP integration: HVAC + lighting + access + fire + elevators",
+      "Long-term AMC partnerships for continuous building optimization",
+    ],
+    faqs: [
+      { question: "How much does commercial building automation cost in India?", answer: `Commercial BMS costs vary by building size and scope: ₹5–15 Lakh for small offices, ₹15–40 Lakh for mid-size commercial buildings, and ₹40 Lakh–2 Crore+ for large complexes. The investment typically pays back within 2–4 years through energy savings alone. ${COMPANY.name} provides detailed ROI projections during consultation.` },
+      { question: "What is the ROI of a Building Management System?", answer: "A well-implemented BMS typically reduces building energy costs by 20–35%, delivering ROI within 2–4 years. For a building spending ₹5 Lakh/month on energy, a BMS saving 25% means ₹1.25 Lakh/month in savings — ₹15 Lakh/year. Additional value comes from reduced maintenance costs, improved compliance, and occupant satisfaction." },
+      { question: "Can BMS be added to an existing building?", answer: "Yes. Retrofit BMS is common for existing buildings undergoing renovation or energy efficiency upgrades. We install controllers, sensors, and actuators that integrate with existing MEP equipment. The key requirement is access to HVAC and lighting control points — which most commercial buildings already have." },
+      { question: "What protocols does your BMS support?", answer: "We work with all major building automation protocols: BACnet/IP and BACnet MS/TP (HVAC industry standard), KNX (lighting and room automation), Modbus (energy meters and VFDs), DALI (lighting control), and proprietary protocols for specific equipment brands. Our protocol-agnostic approach ensures we integrate with whatever equipment is already installed." },
+    ],
+  },
+];
+
+export function getServiceContent(slug: string): ServiceContent | undefined {
+  return SERVICE_CONTENT.find((s) => s.slug === slug);
+}

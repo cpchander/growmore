@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060E1A"/>
+      <stop offset="100%" stop-color="#0F1D33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#D4A843" stroke-width="1">
+    <line x1="400" y1="0" x2="400" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/><line x1="0" y1="420" x2="1200" y2="420"/>
+  </g>
+  <!-- KNX Card -->
+  <g transform="translate(60, 80)">
+    <rect width="320" height="400" rx="16" fill="#0F1D33" stroke="#D4A843" stroke-width="2"/>
+    <rect width="320" height="6" rx="3" fill="#4CAF50"/>
+    <!-- KNX icon: open network nodes -->
+    <circle cx="160" cy="100" r="24" fill="none" stroke="#4CAF50" stroke-width="2.5"/>
+    <circle cx="100" cy="170" r="16" fill="none" stroke="#4CAF50" stroke-width="2"/>
+    <circle cx="220" cy="170" r="16" fill="none" stroke="#4CAF50" stroke-width="2"/>
+    <circle cx="130" cy="240" r="12" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+    <circle cx="190" cy="240" r="12" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+    <line x1="145" y1="118" x2="110" y2="157" stroke="#4CAF50" stroke-width="1.5"/>
+    <line x1="175" y1="118" x2="210" y2="157" stroke="#4CAF50" stroke-width="1.5"/>
+    <line x1="100" y1="186" x2="130" y2="228" stroke="#4CAF50" stroke-width="1"/>
+    <line x1="220" y1="186" x2="190" y2="228" stroke="#4CAF50" stroke-width="1"/>
+    <text x="160" y="100" text-anchor="middle" dominant-baseline="central" fill="#4CAF50" font-family="system-ui" font-size="16" font-weight="800">KNX</text>
+    <!-- Label -->
+    <text x="160" y="290" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="22" font-weight="700">KNX</text>
+    <text x="160" y="316" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="13">Open Standard</text>
+    <text x="160" y="340" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="13">₹8-30 Lakh</text>
+    <!-- Rating dots -->
+    <g transform="translate(110, 360)">
+      <circle cx="0" cy="0" r="6" fill="#4CAF50"/><circle cx="20" cy="0" r="6" fill="#4CAF50"/>
+      <circle cx="40" cy="0" r="6" fill="#4CAF50"/><circle cx="60" cy="0" r="6" fill="#4CAF50"/>
+      <circle cx="80" cy="0" r="6" fill="#4CAF50" fill-opacity="0.3"/>
+    </g>
+  </g>
+  <!-- Crestron Card -->
+  <g transform="translate(440, 80)">
+    <rect width="320" height="400" rx="16" fill="#0F1D33" stroke="#D4A843" stroke-width="2"/>
+    <rect width="320" height="6" rx="3" fill="#D4A843"/>
+    <!-- Crestron icon: luxury diamond -->
+    <polygon points="160,60 220,130 160,200 100,130" fill="none" stroke="#D4A843" stroke-width="2.5"/>
+    <polygon points="160,80 200,130 160,180 120,130" fill="#D4A843" fill-opacity="0.15"/>
+    <line x1="100" y1="130" x2="220" y2="130" stroke="#D4A843" stroke-width="1.5"/>
+    <line x1="160" y1="60" x2="140" y2="130" stroke="#D4A843" stroke-width="1"/>
+    <line x1="160" y1="60" x2="180" y2="130" stroke="#D4A843" stroke-width="1"/>
+    <!-- Stars -->
+    <text x="130" y="240" fill="#D4A843" font-family="system-ui" font-size="18">★ ★ ★</text>
+    <text x="160" y="290" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="22" font-weight="700">Crestron</text>
+    <text x="160" y="316" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="13">Ultra-Luxury</text>
+    <text x="160" y="340" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="13">₹15-50 Lakh+</text>
+    <g transform="translate(110, 360)">
+      <circle cx="0" cy="0" r="6" fill="#D4A843"/><circle cx="20" cy="0" r="6" fill="#D4A843"/>
+      <circle cx="40" cy="0" r="6" fill="#D4A843"/><circle cx="60" cy="0" r="6" fill="#D4A843"/>
+      <circle cx="80" cy="0" r="6" fill="#D4A843"/>
+    </g>
+  </g>
+  <!-- Control4 Card -->
+  <g transform="translate(820, 80)">
+    <rect width="320" height="400" rx="16" fill="#0F1D33" stroke="#D4A843" stroke-width="2"/>
+    <rect width="320" height="6" rx="3" fill="#3B82F6"/>
+    <!-- Control4 icon: 4 quadrant control pad -->
+    <rect x="110" y="70" width="100" height="100" rx="12" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+    <line x1="160" y1="70" x2="160" y2="170" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="110" y1="120" x2="210" y2="120" stroke="#3B82F6" stroke-width="1.5"/>
+    <circle cx="135" cy="95" r="8" fill="#3B82F6" fill-opacity="0.3"/>
+    <circle cx="185" cy="95" r="8" fill="#3B82F6" fill-opacity="0.3"/>
+    <circle cx="135" cy="145" r="8" fill="#3B82F6" fill-opacity="0.3"/>
+    <circle cx="185" cy="145" r="8" fill="#3B82F6" fill-opacity="0.3"/>
+    <!-- Devices around -->
+    <rect x="90" y="190" width="30" height="20" rx="3" fill="none" stroke="#3B82F6" stroke-width="1.2"/>
+    <rect x="145" y="195" width="30" height="20" rx="3" fill="none" stroke="#3B82F6" stroke-width="1.2"/>
+    <rect x="200" y="190" width="30" height="20" rx="3" fill="none" stroke="#3B82F6" stroke-width="1.2"/>
+    <line x1="160" y1="170" x2="105" y2="190" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4,3"/>
+    <line x1="160" y1="170" x2="160" y2="195" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4,3"/>
+    <line x1="160" y1="170" x2="215" y2="190" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="160" y="260" text-anchor="middle" fill="#3B82F6" font-family="system-ui" font-size="14" font-weight="600">C4</text>
+    <text x="160" y="290" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="22" font-weight="700">Control4</text>
+    <text x="160" y="316" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="13">Smart Balance</text>
+    <text x="160" y="340" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="13">₹5-20 Lakh</text>
+    <g transform="translate(110, 360)">
+      <circle cx="0" cy="0" r="6" fill="#3B82F6"/><circle cx="20" cy="0" r="6" fill="#3B82F6"/>
+      <circle cx="40" cy="0" r="6" fill="#3B82F6"/><circle cx="60" cy="0" r="6" fill="#3B82F6"/>
+      <circle cx="80" cy="0" r="6" fill="#3B82F6" fill-opacity="0.3"/>
+    </g>
+  </g>
+  <!-- VS text -->
+  <text x="420" y="290" text-anchor="middle" fill="#D4A843" font-family="system-ui" font-size="28" font-weight="800" opacity="0.6">VS</text>
+  <text x="800" y="290" text-anchor="middle" fill="#D4A843" font-family="system-ui" font-size="28" font-weight="800" opacity="0.6">VS</text>
+  <!-- Title -->
+  <text x="600" y="580" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="700" opacity="0.9">KNX vs Crestron vs Control4 — India Buyer's Guide</text>
+</svg>

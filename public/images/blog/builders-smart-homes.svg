@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060E1A"/>
+      <stop offset="100%" stop-color="#0F1D33"/>
+    </linearGradient>
+    <linearGradient id="goldBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0C75E"/>
+      <stop offset="100%" stop-color="#D4A843"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg4)"/>
+  <!-- Building silhouettes -->
+  <g transform="translate(60, 50)">
+    <!-- Building 1 — standard -->
+    <rect x="0" y="180" width="140" height="320" rx="4" fill="#1A2744" stroke="#243A5C" stroke-width="1.5"/>
+    <!-- Windows grid -->
+    <g fill="#243A5C" stroke="#2B4060" stroke-width="0.5">
+      <rect x="15" y="200" width="30" height="25" rx="2"/><rect x="55" y="200" width="30" height="25" rx="2"/><rect x="95" y="200" width="30" height="25" rx="2"/>
+      <rect x="15" y="240" width="30" height="25" rx="2"/><rect x="55" y="240" width="30" height="25" rx="2"/><rect x="95" y="240" width="30" height="25" rx="2"/>
+      <rect x="15" y="280" width="30" height="25" rx="2"/><rect x="55" y="280" width="30" height="25" rx="2"/><rect x="95" y="280" width="30" height="25" rx="2"/>
+      <rect x="15" y="320" width="30" height="25" rx="2"/><rect x="55" y="320" width="30" height="25" rx="2"/><rect x="95" y="320" width="30" height="25" rx="2"/>
+      <rect x="15" y="360" width="30" height="25" rx="2"/><rect x="55" y="360" width="30" height="25" rx="2"/><rect x="95" y="360" width="30" height="25" rx="2"/>
+      <rect x="15" y="400" width="30" height="25" rx="2"/><rect x="55" y="400" width="30" height="25" rx="2"/><rect x="95" y="400" width="30" height="25" rx="2"/>
+      <rect x="15" y="440" width="30" height="25" rx="2"/><rect x="55" y="440" width="30" height="25" rx="2"/><rect x="95" y="440" width="30" height="25" rx="2"/>
+    </g>
+    <text x="70" y="165" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="12">Standard</text>
+    <!-- Building 2 — Smart (taller, glowing) -->
+    <rect x="180" y="80" width="160" height="420" rx="4" fill="#1A2744" stroke="#D4A843" stroke-width="2"/>
+    <!-- Smart windows — lit gold -->
+    <g fill="#D4A843" fill-opacity="0.2" stroke="#D4A843" stroke-width="1">
+      <rect x="198" y="100" width="35" height="28" rx="2"/><rect x="243" y="100" width="35" height="28" rx="2"/><rect x="288" y="100" width="35" height="28" rx="2"/>
+      <rect x="198" y="143" width="35" height="28" rx="2"/><rect x="243" y="143" width="35" height="28" rx="2"/><rect x="288" y="143" width="35" height="28" rx="2"/>
+      <rect x="198" y="186" width="35" height="28" rx="2"/><rect x="243" y="186" width="35" height="28" rx="2"/><rect x="288" y="186" width="35" height="28" rx="2"/>
+      <rect x="198" y="229" width="35" height="28" rx="2"/><rect x="243" y="229" width="35" height="28" rx="2"/><rect x="288" y="229" width="35" height="28" rx="2"/>
+      <rect x="198" y="272" width="35" height="28" rx="2"/><rect x="243" y="272" width="35" height="28" rx="2"/><rect x="288" y="272" width="35" height="28" rx="2"/>
+      <rect x="198" y="315" width="35" height="28" rx="2"/><rect x="243" y="315" width="35" height="28" rx="2"/><rect x="288" y="315" width="35" height="28" rx="2"/>
+      <rect x="198" y="358" width="35" height="28" rx="2"/><rect x="243" y="358" width="35" height="28" rx="2"/><rect x="288" y="358" width="35" height="28" rx="2"/>
+      <rect x="198" y="401" width="35" height="28" rx="2"/><rect x="243" y="401" width="35" height="28" rx="2"/><rect x="288" y="401" width="35" height="28" rx="2"/>
+      <rect x="198" y="444" width="35" height="28" rx="2"/><rect x="243" y="444" width="35" height="28" rx="2"/><rect x="288" y="444" width="35" height="28" rx="2"/>
+    </g>
+    <!-- Smart badge -->
+    <rect x="210" y="52" width="100" height="22" rx="11" fill="#D4A843"/>
+    <text x="260" y="67" text-anchor="middle" fill="#060E1A" font-family="system-ui" font-size="11" font-weight="700">SMART HOME</text>
+    <!-- Building 3 — standard -->
+    <rect x="380" y="220" width="130" height="280" rx="4" fill="#1A2744" stroke="#243A5C" stroke-width="1.5"/>
+    <g fill="#243A5C" stroke="#2B4060" stroke-width="0.5">
+      <rect x="395" y="240" width="28" height="22" rx="2"/><rect x="433" y="240" width="28" height="22" rx="2"/><rect x="471" y="240" width="28" height="22" rx="2"/>
+      <rect x="395" y="275" width="28" height="22" rx="2"/><rect x="433" y="275" width="28" height="22" rx="2"/><rect x="471" y="275" width="28" height="22" rx="2"/>
+      <rect x="395" y="310" width="28" height="22" rx="2"/><rect x="433" y="310" width="28" height="22" rx="2"/><rect x="471" y="310" width="28" height="22" rx="2"/>
+      <rect x="395" y="345" width="28" height="22" rx="2"/><rect x="433" y="345" width="28" height="22" rx="2"/><rect x="471" y="345" width="28" height="22" rx="2"/>
+      <rect x="395" y="380" width="28" height="22" rx="2"/><rect x="433" y="380" width="28" height="22" rx="2"/><rect x="471" y="380" width="28" height="22" rx="2"/>
+      <rect x="395" y="415" width="28" height="22" rx="2"/><rect x="433" y="415" width="28" height="22" rx="2"/><rect x="471" y="415" width="28" height="22" rx="2"/>
+      <rect x="395" y="450" width="28" height="22" rx="2"/><rect x="433" y="450" width="28" height="22" rx="2"/><rect x="471" y="450" width="28" height="22" rx="2"/>
+    </g>
+    <text x="445" y="205" text-anchor="middle" fill="#8B9BB4" font-family="system-ui" font-size="12">Standard</text>
+    <!-- Ground line -->
+    <line x1="0" y1="500" x2="520" y2="500" stroke="#1A2744" stroke-width="2"/>
+  </g>
+  <!-- Stats panel on right -->
+  <g transform="translate(650, 100)">
+    <rect width="460" height="400" rx="16" fill="#0F1D33" stroke="#1A2744" stroke-width="1.5"/>
+    <text x="230" y="45" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="700">Builder Advantage</text>
+    <!-- Stat 1 -->
+    <g transform="translate(30, 75)">
+      <text x="0" y="0" fill="#D4A843" font-family="system-ui" font-size="42" font-weight="800">8-15%</text>
+      <text x="0" y="25" fill="#8B9BB4" font-family="system-ui" font-size="14">Premium pricing on smart units</text>
+    </g>
+    <!-- Stat 2 -->
+    <g transform="translate(30, 155)">
+      <text x="0" y="0" fill="#4CAF50" font-family="system-ui" font-size="42" font-weight="800">2x</text>
+      <text x="0" y="25" fill="#8B9BB4" font-family="system-ui" font-size="14">Faster sales velocity</text>
+    </g>
+    <!-- Stat 3 -->
+    <g transform="translate(30, 235)">
+      <text x="0" y="0" fill="#3B82F6" font-family="system-ui" font-size="42" font-weight="800">30-50%</text>
+      <text x="0" y="25" fill="#8B9BB4" font-family="system-ui" font-size="14">Lower per-unit cost at scale</text>
+    </g>
+    <!-- Stat 4 -->
+    <g transform="translate(30, 315)">
+      <text x="0" y="0" fill="#F97316" font-family="system-ui" font-size="42" font-weight="800">Top 3</text>
+      <text x="0" y="25" fill="#8B9BB4" font-family="system-ui" font-size="14">Buyer priority — smart features</text>
+    </g>
+  </g>
+  <!-- Title -->
+  <text x="600" y="590" text-anchor="middle" fill="#ffffff" font-family="system-ui" font-size="20" font-weight="700" opacity="0.9">Why Builders Should Offer Smart Home Packages</text>
+</svg>

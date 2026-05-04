@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+/* ============================================================
+   HOMEAUTOMATION — DARK LUXURY THEME
+   Premium home automation brand with gold + navy palette
+   ============================================================ */
+
+@theme inline {
+  /* Primary — Luxury Gold */
+  --color-gold-50: #FFF9E6;
+  --color-gold-100: #FFF0BF;
+  --color-gold-200: #FFE699;
+  --color-gold-300: #FFD966;
+  --color-gold-400: #FFCC33;
+  --color-gold-500: #D4A843;
+  --color-gold-600: #B8922F;
+  --color-gold-700: #9A7A25;
+  --color-gold-800: #7C621E;
+  --color-gold-900: #5E4A17;
+
+  /* Secondary — Deep Navy */
+  --color-navy-50: #E8EDF5;
+  --color-navy-100: #C5D0E6;
+  --color-navy-200: #9FB3D4;
+  --color-navy-300: #7896C2;
+  --color-navy-400: #5279B0;
+  --color-navy-500: #2C5C9E;
+  --color-navy-600: #1E4478;
+  --color-navy-700: #1A2744;
+  --color-navy-800: #111D35;
+  --color-navy-900: #0A1628;
+  --color-navy-950: #060E1A;
+
+  /* Accent — Electric Blue */
+  --color-electric-400: #60A5FA;
+  --color-electric-500: #3B82F6;
+  --color-electric-600: #2563EB;
+
+  /* Font families */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #0A1628;
+  --foreground: #E8EDF5;
+  --card-bg: #111D35;
+  --card-border: #1A2744;
+  --muted: #7896C2;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gold gradient for text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D4A843 0%, #FFD966 50%, #B8922F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card glass effect */
+.glass-card {
+  background: rgba(17, 29, 53, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(26, 39, 68, 0.8);
+}
+
+/* 404 light flicker */
+@keyframes flicker {
+  0%, 100% { opacity: 0.15; }
+  10% { opacity: 0.4; }
+  12% { opacity: 0.1; }
+  20% { opacity: 0.35; }
+  25% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+  55% { opacity: 0.1; }
+  70% { opacity: 0.4; }
+  72% { opacity: 0.15; }
+  90% { opacity: 0.35; }
+}
+.animate-flicker {
+  animation: flicker 4s ease-in-out infinite;
+}
+
+/* Glow effects for 3D hotspots */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(212, 168, 67, 0.4), 0 0 60px rgba(212, 168, 67, 0.1);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 60px rgba(59, 130, 246, 0.1);
+}
+
+/* Section spacing */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* Animated underline for links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #D4A843;
+  transition: width 0.3s ease;
+}
+.link-underline:hover::after {
+  width: 100%;
+}
