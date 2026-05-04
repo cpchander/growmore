@@ -58,6 +58,32 @@ export default function VenturesPage() {
           ),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Grow More Hitech Solutions Private Limited",
+            url: "https://www.growmoresolutions.com",
+            foundingDate: "2009-09-30",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "New Delhi",
+              addressRegion: "Delhi",
+              addressCountry: "IN",
+            },
+            subOrganization: {
+              "@type": "Organization",
+              "@id": "https://zedtreeo.com/#organization",
+              name: "Zedtreeo",
+              url: "https://zedtreeo.com",
+              description:
+                "US-headquartered remote staffing company providing pre-vetted dedicated employees from India.",
+            },
+          }),
+        }}
+      />
 
       {/* Hero */}
       <section className="section-padding">
