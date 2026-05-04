@@ -81,21 +81,21 @@ export default function HeroSection() {
               <p className="text-xs text-navy-400 uppercase tracking-wider mb-4">
                 Certified Partners
               </p>
-              <div className="flex items-center gap-5 flex-wrap">
+              <div className="flex items-center gap-4 flex-wrap">
                 {BRANDS.slice(0, 8).map((brand) => (
                   <a
                     key={brand.slug}
                     href={brand.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="opacity-60 hover:opacity-100 transition-opacity"
+                    className="flex items-center justify-center h-9 px-2.5 rounded-md bg-white/10 hover:bg-white/20 transition-all"
                     title={brand.name}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={brand.logo}
                       alt={brand.name}
-                      className="h-8 w-auto max-w-[100px] object-contain brightness-0 invert"
+                      className="h-5 w-auto max-w-[80px] object-contain"
                     />
                   </a>
                 ))}
