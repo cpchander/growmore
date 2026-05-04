@@ -111,6 +111,12 @@ export default function Footer() {
               >
                 {COMPANY.email}
               </a>
+              <Link
+                href="/ventures"
+                className="block text-gold-500 hover:text-gold-400 transition-colors mt-4 font-medium"
+              >
+                Ventures & Partnerships →
+              </Link>
             </div>
             <Link
               href="/contact"

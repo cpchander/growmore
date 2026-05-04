@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# deploy scripts (contains PAT)
+deploy.sh
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

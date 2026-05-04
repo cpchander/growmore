@@ -9,7 +9,7 @@ import {
   Briefcase, Building2, PenTool, Hotel,
   FolderOpen, Award, GitCompare,
   BookOpen, Users, BadgeCheck, Cpu, Calculator,
-  Sparkles,
+  Sparkles, Globe,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -35,6 +35,7 @@ const RESOURCE_LINKS = [
   { href: "/about/team", label: "Our Team", desc: "Meet our engineers & leadership", icon: Users },
   { href: "/about/certifications", label: "Certifications", desc: "Brand partnerships & accreditations", icon: BadgeCheck },
   { href: "/get-quote", label: "Get Instant Quote", desc: "Online quote calculator", icon: Cpu },
+  { href: "/ventures", label: "Ventures & Partnerships", desc: "Zedtreeo remote staffing & more", icon: Globe },
 ];
 
 export default function Header() {
