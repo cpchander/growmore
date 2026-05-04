@@ -129,6 +129,30 @@ export default function OurStoryPage() {
         </div>
       </section>
 
+      {/* Founder Spotlight */}
+      <section className="py-12 bg-navy-900/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="glass-card rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6">
+            <div className="w-24 h-24 rounded-full overflow-hidden shrink-0 ring-2 ring-gold-500/30">
+              <Image
+                src="/images/team/anupam-mahajan.webp"
+                alt="Anupam Mahajan — Co-Founder & Managing Director"
+                width={96}
+                height={96}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <blockquote className="text-navy-200 italic leading-relaxed mb-3">
+                &ldquo;Our vision has always been simple — deliver a Single Window Solution so homeowners never have to juggle multiple vendors for automation, lighting, and energy. One team, one responsibility, one experience.&rdquo;
+              </blockquote>
+              <p className="text-sm font-semibold text-white">Anupam Mahajan</p>
+              <p className="text-xs text-gold-500">Co-Founder & Managing Director</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Milestone Stats */}
       <MilestoneStats />
 

@@ -16,6 +16,7 @@ const LEADERSHIP = [
   {
     name: "Anupam Mahajan",
     role: "Co-Founder & Managing Director",
+    image: "/images/team/anupam-mahajan.webp",
     bio: "25+ years of industry experience spanning electrical, lighting, and building materials. Former VP Sales & Marketing at KLG Systel and GM Business Development at GE Consumer. Leads Grow More's vision of delivering Single Window Solutions for smart home automation across residential, corporate, and hospitality sectors.",
     certifications: ["KNX Partner", "Electrical & Lighting Expert"],
     linkedin: "https://linkedin.com/in/anupam-mahajan-3882ba14",
@@ -23,6 +24,7 @@ const LEADERSHIP = [
   {
     name: "Technical Director",
     role: "Director — Engineering",
+    image: null,
     bio: "Leads the engineering team across 300+ completed projects. Deep expertise in KNX, Crestron, and Control4 systems integration, conceptual lighting design, and clean air solutions for residential and commercial spaces.",
     certifications: ["KNX Certified", "Crestron Certified"],
     linkedin: "#",
@@ -30,6 +32,7 @@ const LEADERSHIP = [
   {
     name: "Operations Head",
     role: "Head of Operations",
+    image: null,
     bio: "Manages end-to-end project delivery across Delhi NCR and pan-India. Coordinates multi-system installations including home automation, central vacuum, solar power, and clean air systems.",
     certifications: ["Project Management", "Control4 Dealer"],
     linkedin: "#",
@@ -37,6 +40,7 @@ const LEADERSHIP = [
   {
     name: "Design Lead",
     role: "Head of Design & Lighting",
+    image: null,
     bio: "Specializes in conceptual lighting design and smart home experience architecture. Creates custom automation blueprints that blend aesthetics with functionality for luxury residential and hospitality projects.",
     certifications: ["Lighting Design Certified", "CEDIA Member"],
     linkedin: "#",
@@ -124,12 +128,24 @@ export default function TeamPage() {
                 className="glass-card rounded-xl p-6 hover:border-gold-500/20 transition-colors"
               >
                 <div className="flex items-start gap-4">
-                  {/* Avatar placeholder */}
-                  <div className="w-16 h-16 rounded-full bg-navy-700 flex items-center justify-center shrink-0">
-                    <span className="text-2xl font-bold text-gold-500">
-                      {person.name.charAt(0)}
-                    </span>
-                  </div>
+                  {/* Avatar */}
+                  {person.image ? (
+                    <div className="w-16 h-16 rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src={person.image}
+                        alt={person.name}
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-16 h-16 rounded-full bg-navy-700 flex items-center justify-center shrink-0">
+                      <span className="text-2xl font-bold text-gold-500">
+                        {person.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-semibold text-white">
                       {person.name}
