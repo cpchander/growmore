@@ -99,7 +99,7 @@ export default function HeroSection() {
                     />
                   </a>
                 ))}
-                <span className="text-xs text-navy-500 font-medium">+{BRANDS.length - 8} more</span>
+                <Link href="/brands" className="text-xs text-navy-500 hover:text-gold-500 font-medium transition-colors">+{BRANDS.length - 8} more</Link>
               </div>
             </div>
           </div>
