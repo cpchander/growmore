@@ -44,7 +44,7 @@ Expanding into MEP required a fundamentally different talent pool. Mechanical en
 
 **Clients served** — MEP consulting firms in the United States, Australia, and the Middle East. Project types included commercial office buildings, hospitals, hospitality, and mixed-use developments.
 
-For companies looking to [outsource HVAC design to engineers in India](https://remotestaffingwiki.com/outsource-hvac-design-engineers-india/), this operational depth — built over years of actual project delivery — is what separates a staffing placement from a productive team member.
+For companies looking to [outsource HVAC design to engineers in India](https://remotestaffingwiki.com/insights/outsource-hvac-design-engineers-india), this operational depth — built over years of actual project delivery — is what separates a staffing placement from a productive team member.
 
 **Result:** By 2019, Grow More had 30+ MEP professionals across HVAC, plumbing, electrical, and fire protection disciplines. The multi-discipline coordination capability became a significant differentiator, and repeat client rates exceeded 85%.
 
