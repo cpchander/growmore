@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#060E1A"/>
+      <stop offset="100%" stop-color="#0F1B2E"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#B8922E"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D4A843" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#D4A843" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.06">
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(60,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(120,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(180,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(240,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(300,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(360,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(420,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(480,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(540,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#D4A843" stroke-width="0.5" transform="translate(600,0)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,60)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,120)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,180)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,240)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,300)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,360)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,420)" />
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#D4A843" stroke-width="0.5" transform="translate(0,480)" />
+  </g>
+
+  <!-- Glow orbs -->
+  <circle cx="200" cy="300" r="200" fill="#D4A843" opacity="0.04"/>
+  <circle cx="1000" cy="350" r="250" fill="#3B82F6" opacity="0.04"/>
+
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="#D4A843" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" letter-spacing="3">GROW MORE SOLUTIONS</text>
+  <text x="600" y="130" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700">From Smart Homes to Global Staffing</text>
+  <text x="600" y="165" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, -apple-system, sans-serif" font-size="16">17 Years of Technical Operations Powering Remote Talent Delivery</text>
+
+  <!-- Timeline line -->
+  <line x1="100" y1="315" x2="1100" y2="315" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Phase 1: Architecture (2009) -->
+  <g transform="translate(175, 230)">
+    <rect x="-55" y="-55" width="110" height="110" rx="16" fill="#0F1B2E" stroke="#D4A843" stroke-width="1.5" opacity="0.9"/>
+    <!-- Building icon -->
+    <rect x="-20" y="-30" width="40" height="45" rx="2" fill="none" stroke="#D4A843" stroke-width="2"/>
+    <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#D4A843" stroke-width="1.5"/>
+    <line x1="-20" y1="5" x2="20" y2="5" stroke="#D4A843" stroke-width="1.5"/>
+    <rect x="-6" y="5" width="12" height="10" fill="#D4A843" opacity="0.3"/>
+    <line x1="-10" y1="-20" x2="-4" y2="-20" stroke="#D4A843" stroke-width="1.5"/>
+    <line x1="4" y1="-20" x2="10" y2="-20" stroke="#D4A843" stroke-width="1.5"/>
+    <!-- Dot on timeline -->
+    <circle cx="0" cy="85" r="8" fill="#D4A843"/>
+    <circle cx="0" cy="85" r="4" fill="#060E1A"/>
+  </g>
+  <text x="175" y="365" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Architecture</text>
+  <text x="175" y="385" text-anchor="middle" fill="#D4A843" font-family="system-ui, sans-serif" font-size="12" font-weight="500">2009</text>
+  <text x="175" y="405" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">CAD/BIM</text>
+  <text x="175" y="420" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">5 → 50+ team</text>
+
+  <!-- Arrow 1 -->
+  <path d="M 255 315 L 310 315" stroke="#D4A843" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Phase 2: MEP/HVAC (2015) -->
+  <g transform="translate(400, 230)">
+    <rect x="-55" y="-55" width="110" height="110" rx="16" fill="#0F1B2E" stroke="#D4A843" stroke-width="1.5" opacity="0.9"/>
+    <!-- HVAC/Gear icon -->
+    <circle cx="0" cy="-10" r="18" fill="none" stroke="#D4A843" stroke-width="2"/>
+    <circle cx="0" cy="-10" r="8" fill="none" stroke="#D4A843" stroke-width="1.5"/>
+    <line x1="0" y1="-30" x2="0" y2="-28" stroke="#D4A843" stroke-width="3"/>
+    <line x1="0" y1="8" x2="0" y2="10" stroke="#D4A843" stroke-width="3"/>
+    <line x1="-20" y1="-10" x2="-18" y2="-10" stroke="#D4A843" stroke-width="3"/>
+    <line x1="18" y1="-10" x2="20" y2="-10" stroke="#D4A843" stroke-width="3"/>
+    <line x1="-14" y1="-24" x2="-12" y2="-22" stroke="#D4A843" stroke-width="3"/>
+    <line x1="12" y1="2" x2="14" y2="4" stroke="#D4A843" stroke-width="3"/>
+    <line x1="14" y1="-24" x2="12" y2="-22" stroke="#D4A843" stroke-width="3"/>
+    <line x1="-12" y1="2" x2="-14" y2="4" stroke="#D4A843" stroke-width="3"/>
+    <circle cx="0" cy="85" r="8" fill="#D4A843"/>
+    <circle cx="0" cy="85" r="4" fill="#060E1A"/>
+  </g>
+  <text x="400" y="365" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600">MEP / HVAC</text>
+  <text x="400" y="385" text-anchor="middle" fill="#D4A843" font-family="system-ui, sans-serif" font-size="12" font-weight="500">2015</text>
+  <text x="400" y="405" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">Revit MEP</text>
+  <text x="400" y="420" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">Multi-discipline</text>
+
+  <!-- Arrow 2 -->
+  <path d="M 480 315 L 535 315" stroke="#D4A843" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- Phase 3: Smart Home (2019) -->
+  <g transform="translate(625, 230)">
+    <rect x="-55" y="-55" width="110" height="110" rx="16" fill="#0F1B2E" stroke="#D4A843" stroke-width="1.5" opacity="0.9"/>
+    <!-- Home + WiFi icon -->
+    <path d="M -20 0 L 0 -20 L 20 0 L 20 15 L -20 15 Z" fill="none" stroke="#D4A843" stroke-width="2"/>
+    <rect x="-5" y="5" width="10" height="10" fill="#D4A843" opacity="0.3"/>
+    <path d="M -12 -30 Q 0 -42 12 -30" fill="none" stroke="#D4A843" stroke-width="1.5" opacity="0.6"/>
+    <path d="M -8 -27 Q 0 -35 8 -27" fill="none" stroke="#D4A843" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="0" cy="-24" r="2" fill="#D4A843"/>
+    <circle cx="0" cy="85" r="8" fill="#D4A843"/>
+    <circle cx="0" cy="85" r="4" fill="#060E1A"/>
+  </g>
+  <text x="625" y="365" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Smart Homes</text>
+  <text x="625" y="385" text-anchor="middle" fill="#D4A843" font-family="system-ui, sans-serif" font-size="12" font-weight="500">2019</text>
+  <text x="625" y="405" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">IoT / Control4</text>
+  <text x="625" y="420" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">300+ projects</text>
+
+  <!-- Arrow 3 (bigger, emphasized) -->
+  <path d="M 705 315 L 760 315" stroke="#3B82F6" stroke-width="2.5" stroke-dasharray="4 4" opacity="0.7"/>
+
+  <!-- Phase 4: Global Staffing (2024) — Blue accent -->
+  <g transform="translate(850, 230)">
+    <rect x="-55" y="-55" width="110" height="110" rx="16" fill="#0F1B2E" stroke="#3B82F6" stroke-width="2" opacity="0.9"/>
+    <!-- Globe icon -->
+    <circle cx="0" cy="-8" r="20" fill="none" stroke="#3B82F6" stroke-width="2"/>
+    <ellipse cx="0" cy="-8" rx="10" ry="20" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.6"/>
+    <line x1="-20" y1="-8" x2="20" y2="-8" stroke="#3B82F6" stroke-width="1" opacity="0.6"/>
+    <line x1="-18" y1="-18" x2="18" y2="-18" stroke="#3B82F6" stroke-width="1" opacity="0.4"/>
+    <line x1="-18" y1="2" x2="18" y2="2" stroke="#3B82F6" stroke-width="1" opacity="0.4"/>
+    <!-- People dots -->
+    <circle cx="-12" cy="-2" r="2" fill="#3B82F6" opacity="0.8"/>
+    <circle cx="8" cy="-15" r="2" fill="#3B82F6" opacity="0.8"/>
+    <circle cx="14" cy="0" r="2" fill="#D4A843" opacity="0.8"/>
+    <circle cx="0" cy="85" r="8" fill="#3B82F6"/>
+    <circle cx="0" cy="85" r="4" fill="#060E1A"/>
+  </g>
+  <text x="850" y="365" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Global Staffing</text>
+  <text x="850" y="385" text-anchor="middle" fill="#3B82F6" font-family="system-ui, sans-serif" font-size="12" font-weight="500">2024</text>
+  <text x="850" y="405" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">via Zedtreeo</text>
+  <text x="850" y="420" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">From $5/hour</text>
+
+  <!-- Bottom stats bar -->
+  <rect x="80" y="470" width="1040" height="80" rx="12" fill="#0F1B2E" stroke="#1A2744" stroke-width="1"/>
+
+  <g transform="translate(210, 510)">
+    <text x="0" y="0" text-anchor="middle" fill="#D4A843" font-family="system-ui, sans-serif" font-size="28" font-weight="700">17+</text>
+    <text x="0" y="22" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">Years Operations</text>
+  </g>
+  <line x1="340" y1="485" x2="340" y2="535" stroke="#1A2744" stroke-width="1"/>
+  <g transform="translate(470, 510)">
+    <text x="0" y="0" text-anchor="middle" fill="#D4A843" font-family="system-ui, sans-serif" font-size="28" font-weight="700">300+</text>
+    <text x="0" y="22" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">Projects Delivered</text>
+  </g>
+  <line x1="600" y1="485" x2="600" y2="535" stroke="#1A2744" stroke-width="1"/>
+  <g transform="translate(730, 510)">
+    <text x="0" y="0" text-anchor="middle" fill="#D4A843" font-family="system-ui, sans-serif" font-size="28" font-weight="700">50+</text>
+    <text x="0" y="22" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">Technical Professionals</text>
+  </g>
+  <line x1="860" y1="485" x2="860" y2="535" stroke="#1A2744" stroke-width="1"/>
+  <g transform="translate(990, 510)">
+    <text x="0" y="0" text-anchor="middle" fill="#3B82F6" font-family="system-ui, sans-serif" font-size="28" font-weight="700">$5/hr</text>
+    <text x="0" y="22" text-anchor="middle" fill="#8B9EC2" font-family="system-ui, sans-serif" font-size="11">Starting Rate</text>
+  </g>
+
+  <!-- Subtle branding -->
+  <text x="600" y="590" text-anchor="middle" fill="#1A2744" font-family="system-ui, sans-serif" font-size="11">growmoresolutions.com × zedtreeo.com</text>
+</svg>

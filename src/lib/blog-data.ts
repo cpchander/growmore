@@ -102,8 +102,8 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-05-05",
     readTime: "14 min",
     featured: true,
-    image: "/images/team/anupam-mahajan.webp",
-    imageAlt: "Grow More Solutions technical operations powering remote staffing delivery through Zedtreeo",
+    image: "/images/blog/technical-operations-remote-staffing.webp",
+    imageAlt: "Timeline showing Grow More Solutions journey from architecture (2009) to HVAC (2015) to smart homes (2019) to global staffing via Zedtreeo (2024)",
     content: technicalOpsStaffingContent,
   },
 ];
