@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { BLOG_POSTS, getPostBySlug } from "@/lib/blog-data";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import BlogTableOfContents, { type TocItem } from "@/components/blog/BlogTableOfContents";
 import {
   ArrowRight,
@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       title: post.title,
       description: post.excerpt,
+      url: `https://growmoresolutions.com/blog/${slug}`,
       publishedTime: post.publishedAt,
       authors: [post.author],
       images: [
@@ -49,6 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           alt: post.imageAlt,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [`https://growmoresolutions.com${post.image}`],
     },
   };
 }
@@ -83,6 +90,45 @@ function extractToc(content: string): TocItem[] {
     }
   }
   return items;
+}
+
+/** Extract FAQ pairs from content (### questions after ## Frequently Asked Questions) */
+function extractFaqs(content: string): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [];
+  const lines = content.split("\n");
+  let inFaqSection = false;
+  let currentQuestion = "";
+  let currentAnswer: string[] = [];
+
+  const flushFaq = () => {
+    if (currentQuestion && currentAnswer.length > 0) {
+      faqs.push({
+        question: stripMd(currentQuestion),
+        answer: stripMd(currentAnswer.join(" ").trim()),
+      });
+    }
+    currentQuestion = "";
+    currentAnswer = [];
+  };
+
+  for (const line of lines) {
+    if (line.startsWith("## Frequently Asked Questions")) {
+      inFaqSection = true;
+      continue;
+    }
+    if (inFaqSection && line.startsWith("## ")) {
+      flushFaq();
+      break; // Exit FAQ section when next H2 starts
+    }
+    if (inFaqSection && line.startsWith("### ")) {
+      flushFaq();
+      currentQuestion = line.replace("### ", "");
+    } else if (inFaqSection && line.trim() && currentQuestion) {
+      currentAnswer.push(line.trim());
+    }
+  }
+  flushFaq();
+  return faqs;
 }
 
 // ─── Inline formatter ────────────────────────────────────────────────────
@@ -251,6 +297,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const tocItems = extractToc(post.content);
+  const faqs = extractFaqs(post.content);
 
   // Related posts — same category, excluding current
   const related = BLOG_POSTS.filter(
@@ -313,6 +360,14 @@ export default async function BlogPostPage({ params }: Props) {
           ),
         }}
       />
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqJsonLd(faqs)),
+          }}
+        />
+      )}
 
       <article className="section-padding">
         {/* ── Full-width header area ── */}

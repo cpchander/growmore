@@ -36,9 +36,9 @@ export const BLOG_CATEGORIES = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "smart-home-security-systems-india",
-    title: "Smart Home Security Systems in India 2026: CCTV, Access Control & Intrusion Detection — Real Costs from 300+ Installations",
+    title: "Smart Home Security Systems India 2026: Costs & Brands | GMHS",
     excerpt:
-      "Complete guide to smart home security in India — CCTV cameras (post-STQC 2026 rules), smart locks, intrusion sensors, and KNX integration. Real pricing from ₹80K to ₹15 Lakh+ based on 300+ GMHS projects across 12 cities.",
+      "Smart home security costs in India: ₹80K–₹15L+. CCTV (post-STQC 2026), smart locks, intrusion sensors & KNX integration. Based on 300+ GMHS projects.",
     category: "Guides",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
