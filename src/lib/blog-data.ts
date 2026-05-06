@@ -6,6 +6,7 @@ import { content as buildersSmartHomesContent } from "./blog-content/builders-sm
 import { content as technicalOpsStaffingContent } from "./blog-content/technical-operations-remote-staffing";
 import { content as homeAutomationCost2026Content } from "./blog-content/home-automation-cost-2026";
 import { content as wiringNewConstructionContent } from "./blog-content/smart-home-wiring-new-construction";
+import { content as securitySystemsContent } from "./blog-content/smart-home-security-systems";
 
 export type BlogPost = {
   slug: string;
@@ -33,6 +34,21 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "smart-home-security-systems-india",
+    title: "Smart Home Security Systems in India 2026: CCTV, Access Control & Intrusion Detection — Real Costs from 300+ Installations",
+    excerpt:
+      "Complete guide to smart home security in India — CCTV cameras (post-STQC 2026 rules), smart locks, intrusion sensors, and KNX integration. Real pricing from ₹80K to ₹15 Lakh+ based on 300+ GMHS projects across 12 cities.",
+    category: "Guides",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-05-06",
+    readTime: "16 min",
+    featured: true,
+    image: "/images/blog/smart-home-security-systems.webp",
+    imageAlt: "Smart home security system cost breakdown showing CCTV, access control, and intrusion detection pricing from ₹80K to ₹15 Lakh+ for Indian homes",
+    content: securitySystemsContent,
+  },
   {
     slug: "home-automation-cost-india-complete-guide",
     title: "Home Automation Cost in India — Complete Pricing Guide (2026)",
