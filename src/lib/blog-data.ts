@@ -39,8 +39,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Detailed breakdown of smart home automation costs in India. From ₹2 Lakh basics to ₹50 Lakh+ luxury — understand what you'll pay and what you'll get.",
     category: "Guides",
-    author: "Grow More Solutions Team",
-    authorRole: "Smart Home Experts",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
     publishedAt: "2026-04-15",
     readTime: "15 min",
     featured: true,
@@ -54,8 +54,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Comprehensive comparison of KNX, Crestron, and Control4 for Indian homes. Pricing, features, reliability, and which one is right for you.",
     category: "Comparisons",
-    author: "Grow More Solutions Team",
-    authorRole: "Smart Home Experts",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
     publishedAt: "2026-04-10",
     readTime: "18 min",
     featured: true,
@@ -69,8 +69,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Complete guide to smart lighting automation in India. Scene control, dimming, scheduling, voice control, and the best brands for Indian homes.",
     category: "Room Automation",
-    author: "Grow More Solutions Team",
-    authorRole: "Smart Home Experts",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
     publishedAt: "2026-04-05",
     readTime: "16 min",
     featured: false,
@@ -84,8 +84,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "How smart-home-ready apartments help builders command premium pricing, close deals faster, and differentiate in a competitive real estate market.",
     category: "B2B",
-    author: "Grow More Solutions Team",
-    authorRole: "Smart Home Experts",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
     publishedAt: "2026-03-28",
     readTime: "17 min",
     featured: false,

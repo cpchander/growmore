@@ -14,6 +14,8 @@ import {
   Calculator,
   Phone,
   CheckCircle,
+  Linkedin,
+  Share2,
 } from "lucide-react";
 
 type Props = {
@@ -258,9 +260,7 @@ export default async function BlogPostPage({ params }: Props) {
   // Other posts for sidebar (different category or just other posts)
   const otherPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 4);
 
-  const isFounderAuthor = post.author === "Anupam Mahajan";
-
-  const founderPersonSchema = {
+  const authorPersonSchema = {
     "@type": "Person",
     name: "Anupam Mahajan",
     jobTitle: "Co-Founder & Managing Director",
@@ -282,9 +282,7 @@ export default async function BlogPostPage({ params }: Props) {
     image: `https://growmoresolutions.com${post.image}`,
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
-    author: isFounderAuthor
-      ? founderPersonSchema
-      : { "@type": "Organization", name: COMPANY.name },
+    author: authorPersonSchema,
     publisher: {
       "@type": "Organization",
       name: COMPANY.name,
@@ -352,7 +350,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           {/* Hero Image */}
-          <div className="relative aspect-video rounded-2xl overflow-hidden mb-10 bg-navy-800">
+          <div className="relative aspect-video rounded-2xl overflow-hidden mb-6 bg-navy-800">
             <Image
               src={post.image}
               alt={post.imageAlt}
@@ -361,6 +359,32 @@ export default async function BlogPostPage({ params }: Props) {
               priority
               sizes="(max-width: 768px) 100vw, 900px"
             />
+          </div>
+
+          {/* Share Buttons */}
+          <div className="flex items-center gap-3 mb-10">
+            <span className="text-xs text-navy-400 flex items-center gap-1">
+              <Share2 className="w-3.5 h-3.5" /> Share:
+            </span>
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://growmoresolutions.com/blog/${slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 bg-[#0A66C2]/10 hover:bg-[#0A66C2]/20 text-[#0A66C2] px-3 py-1.5 rounded-lg text-xs font-medium transition-colors"
+              aria-label="Share on LinkedIn"
+            >
+              <Linkedin className="w-3.5 h-3.5" /> LinkedIn
+            </a>
+            <a
+              href={`https://www.instagram.com/`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 bg-[#E1306C]/10 hover:bg-[#E1306C]/20 text-[#E1306C] px-3 py-1.5 rounded-lg text-xs font-medium transition-colors"
+              aria-label="Share on Instagram"
+            >
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              Instagram
+            </a>
           </div>
         </div>
 
@@ -427,45 +451,49 @@ export default async function BlogPostPage({ params }: Props) {
                 </Link>
               </div>
 
+              {/* Share After Reading */}
+              <div className="mt-8 flex items-center justify-center gap-3 py-4 border-t border-b border-navy-800">
+                <span className="text-sm text-navy-400">Found this useful? Share it:</span>
+                <a
+                  href={`https://www.linkedin.com/sharing/share-offsite/?url=https://growmoresolutions.com/blog/${slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 bg-[#0A66C2]/10 hover:bg-[#0A66C2]/20 text-[#0A66C2] px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" /> LinkedIn
+                </a>
+                <a
+                  href={`https://www.instagram.com/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 bg-[#E1306C]/10 hover:bg-[#E1306C]/20 text-[#E1306C] px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                  Instagram
+                </a>
+              </div>
+
               {/* Author Bio */}
               <div className="mt-10 flex items-center gap-4 glass-card rounded-xl p-6">
-                {isFounderAuthor ? (
-                  <>
-                    <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 ring-2 ring-gold-500/30">
-                      <Image
-                        src="/images/team/anupam-mahajan.webp"
-                        alt="Anupam Mahajan — Co-Founder & Managing Director, GMHS"
-                        width={64}
-                        height={64}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">Anupam Mahajan</p>
-                      <p className="text-xs text-gold-500 mb-1">Co-Founder & Managing Director</p>
-                      <p className="text-sm text-navy-400">
-                        25+ years in home automation. KNX-certified. Led 300+ residential automation projects across 12 Indian cities.
-                      </p>
-                      <Link href="/about/team" className="text-xs text-gold-500 hover:text-gold-400 mt-1 inline-block">
-                        View full profile →
-                      </Link>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="w-14 h-14 rounded-full bg-navy-700 flex items-center justify-center shrink-0">
-                      <span className="text-xl font-bold text-gold-500">G</span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-white">{post.author}</p>
-                      <p className="text-sm text-navy-400">
-                        {COMPANY.name} — {COMPANY.experience} years of home
-                        automation expertise across India. Certified KNX, Crestron &
-                        Control4 partners.
-                      </p>
-                    </div>
-                  </>
-                )}
+                <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 ring-2 ring-gold-500/30">
+                  <Image
+                    src="/images/team/anupam-mahajan.webp"
+                    alt="Anupam Mahajan — Co-Founder & Managing Director, GMHS"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Anupam Mahajan</p>
+                  <p className="text-xs text-gold-500 mb-1">Co-Founder & Managing Director</p>
+                  <p className="text-sm text-navy-400">
+                    25+ years in home automation. KNX-certified. Led 300+ residential automation projects across 12 Indian cities.
+                  </p>
+                  <Link href="/about/team" className="text-xs text-gold-500 hover:text-gold-400 mt-1 inline-block">
+                    View full profile →
+                  </Link>
+                </div>
               </div>
 
               {/* Related Posts */}
