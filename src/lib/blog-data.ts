@@ -5,6 +5,7 @@ import { content as smartLightingContent } from "./blog-content/smart-lighting";
 import { content as buildersSmartHomesContent } from "./blog-content/builders-smart-homes";
 import { content as technicalOpsStaffingContent } from "./blog-content/technical-operations-remote-staffing";
 import { content as homeAutomationCost2026Content } from "./blog-content/home-automation-cost-2026";
+import { content as wiringNewConstructionContent } from "./blog-content/smart-home-wiring-new-construction";
 
 export type BlogPost = {
   slug: string;
@@ -106,6 +107,21 @@ export const BLOG_POSTS: BlogPost[] = [
     image: "/images/blog/home-automation-cost-2026.webp",
     imageAlt: "Home automation cost breakdown in India 2026 showing pricing by home size, brand, and scope from ₹5 Lakh to ₹50 Lakh+ based on 300+ GMHS installations",
     content: homeAutomationCost2026Content,
+  },
+  {
+    slug: "smart-home-wiring-new-construction-india",
+    title: "Smart Home Wiring & Planning Guide for New Construction in India (2026): What Your Electrician Won't Tell You",
+    excerpt:
+      "Pre-wiring during construction saves ₹4–8 Lakh vs retrofit. Room-by-room checklist, cable specs (KNX, Cat6A, speaker wire), timeline, and what to tell your electrician — from 300+ GMHS installations.",
+    category: "Guides",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-05-06",
+    readTime: "14 min",
+    featured: true,
+    image: "/images/blog/smart-home-wiring-new-construction.webp",
+    imageAlt: "Smart home pre-wiring diagram showing KNX bus cable, Cat6A, speaker wire, and HDMI conduit routing in a villa under construction",
+    content: wiringNewConstructionContent,
   },
   {
     slug: "technical-operations-remote-staffing",
