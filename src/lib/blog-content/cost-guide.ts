@@ -321,8 +321,12 @@ Yes. Smart-home-ready properties in India's top 8 cities command a 5-15% premium
 
 ### Which is better — KNX or Crestron?
 
-Both are excellent but serve different needs. KNX is an open standard with 20+ year lifespan and no vendor lock-in. Crestron offers unmatched customization for ultra-luxury projects. Read our complete [KNX vs Crestron vs Control4 comparison](/blog/knx-vs-crestron-vs-control4-india) for a detailed analysis.
+Both are excellent but serve different needs. KNX is an open standard with 20+ year lifespan and no vendor lock-in. Crestron offers deep customization for ultra-luxury projects. Read our complete [KNX vs Crestron vs Control4 comparison](/blog/knx-vs-crestron-vs-control4-india) for a detailed analysis.
 
 ### Do you serve my city?
 
-We operate across 12+ cities including [Delhi](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow).`;
+We operate across 12+ cities including [Delhi](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow).
+
+---
+
+*Disclaimer: All prices are indicative based on GMHS project data as of 2026 and subject to change. Third-party brand prices are approximate. Brand names and trademarks are property of their respective owners.*`;

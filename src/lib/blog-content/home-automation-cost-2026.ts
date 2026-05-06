@@ -48,7 +48,7 @@ Crestron is the top tier. Custom programming, dedicated processors, enterprise-g
 
 - **Best for:** Ultra-luxury homes, dedicated home theaters, clients who want the absolute best
 - **4BHK villa (typical):** ₹18–28 Lakh
-- **Strength:** Unmatched AV integration, custom touch panels, rock-solid reliability
+- **Strength:** Industry-leading AV integration, custom touch panels, rock-solid reliability
 - **Limitation:** Highest cost, requires certified programmer for any changes
 
 ### Control4 (Best Balance of Features & Price)
@@ -198,4 +198,8 @@ Here is how to get a precise number:
 3. **Visit our [Experience Center](/experience)** in Delhi — see KNX, Crestron, Control4, and Lutron systems working live before you commit
 
 Every consultation is obligation-free. We recommend the right system based on your home and budget — not brand commissions.
+
+---
+
+*Disclaimer: All prices are indicative based on GMHS project data as of May 2026 and subject to change based on brand pricing updates, project scope, and market conditions. Third-party brand prices are approximate and may vary by dealer. Brand names and trademarks are property of their respective owners. For current pricing, [request a consultation](/contact).*
 `;

@@ -96,7 +96,7 @@ The processor communicates with devices through **Cresnet** (Crestron's propriet
 
 ### Crestron Strengths
 
-- **Unmatched customization** — every button press, scene, and automation sequence is custom-programmed
+- **Deep customization** — every button press, scene, and automation sequence is custom-programmed
 - **Best-in-class user interface** — Crestron touchpanels and TSW panels are the gold standard
 - **Professional-grade AV integration** — seamless control of home theaters, multi-room audio, and video distribution
 - **Enterprise-level networking** — Crestron NVX for video distribution over IP

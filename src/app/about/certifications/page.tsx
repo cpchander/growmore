@@ -30,7 +30,7 @@ const CERTIFICATIONS = [
     type: "Crestron Certified Dealer",
     since: "2012",
     description:
-      "Crestron is the world leader in enterprise-grade automation and AV control. Our certified programmers deliver custom Crestron solutions for ultra-luxury homes, boardrooms, and hospitality — with rock-solid reliability and unmatched integration depth.",
+      "Crestron is a global leader in enterprise-grade automation and AV control. Our certified programmers deliver custom Crestron solutions for ultra-luxury homes, boardrooms, and hospitality — with rock-solid reliability and deep system integration.",
     benefits: [
       "Enterprise-grade reliability",
       "Custom programming for any scenario",

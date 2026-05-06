@@ -66,13 +66,13 @@ Daylight harvesting uses **lux sensors** placed near windows to measure natural 
 - **App:** Full control from your phone — anywhere in the world
 - **Touchscreen:** Dedicated wall-mounted panels for instant scene access
 
-## Smart Lighting Brands for Indian Homes — Compared
+## Smart Lighting Brands for Indian Homes — Compared (Prices as of May 2026)
 
 ### Premium Tier
 
 | Brand | Type | Strength | Price per Room | Best For |
 |-------|------|----------|---------------|----------|
-| Lutron HomeWorks | Wired | Best dimming quality in the world | ₹75,000-1,50,000 | Ultra-luxury villas |
+| Lutron HomeWorks | Wired | Industry-leading dimming quality | ₹75,000-1,50,000 | Ultra-luxury villas |
 | Lutron RadioRA 3 | Wireless + wired | Premium wireless, excellent reliability | ₹40,000-80,000 | Premium homes, retrofits |
 | KNX (Gira/Jung/Basalte) | Wired (bus) | Open standard, 20+ year lifespan | ₹50,000-1,00,000 | New builds, future-proof |
 | Crestron Lighting | Wired | Best integration with Crestron AV | ₹60,000-1,20,000 | Crestron whole-home systems |
@@ -90,7 +90,7 @@ Daylight harvesting uses **lux sensors** placed near windows to measure natural 
 | Brand | Type | Strength | Price per Room | Best For |
 |-------|------|----------|---------------|----------|
 | Wipro Smart | Wi-Fi | Made in India, affordable | ₹8,000-15,000 | Budget-conscious buyers |
-| Sonoff | Wi-Fi/ZigBee | Cheapest smart switches | ₹5,000-12,000 | DIY enthusiasts |
+| Sonoff | Wi-Fi/ZigBee | Most affordable smart switches | ₹5,000-12,000 | DIY enthusiasts |
 | Tuya/Smart Life | Wi-Fi | Widest device selection | ₹5,000-10,000 | Entry-level automation |
 
 **Our recommendation:** For most Indian homes, **Lutron Caseta or Control4** offers the best balance of quality, reliability, and price. For new luxury builds, **KNX** with premium keypads is the gold standard. See our full [brand comparison page](/compare) for side-by-side evaluation.
@@ -366,4 +366,8 @@ Yes. All major smart lighting systems integrate with **Alexa**, **Google Home**,
 
 ### Do you install smart lighting across India?
 
-Yes. We install smart lighting in [Delhi](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow). [Contact us](/contact) for availability in your city.`;
+Yes. We install smart lighting in [Delhi](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow). [Contact us](/contact) for availability in your city.
+
+---
+
+*Disclaimer: All third-party product prices are indicative as of May 2026 and subject to change. Brand names and trademarks are property of their respective owners. Contact us for current pricing.*`;

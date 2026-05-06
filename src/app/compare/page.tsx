@@ -139,7 +139,7 @@ const RECOMMENDATIONS = [
     profile: "Ultra-Luxury / Celebrity Home",
     recommendation: "Crestron",
     reason:
-      "Unmatched customization, best AV distribution, custom touch-panel interfaces. For clients who want absolute perfection and premium brand appeal.",
+      "Deep customization, premium AV distribution, custom touch-panel interfaces. For clients who want the highest level of personalization and premium brand appeal.",
   },
   {
     profile: "Premium Apartment (Retrofit)",
@@ -165,7 +165,7 @@ const FAQS = [
   {
     question: "Which is the best home automation system in India?",
     answer:
-      "The best system depends on your property, budget, and priorities. KNX is best for new construction with a long-term view. Crestron is best for ultra-luxury with heavy AV needs. Control4 offers the best balance of features and price. Lutron is unbeatable for lighting. As certified partners for all four, we recommend based on your specific needs.",
+      "The best system depends on your property, budget, and priorities. KNX is best for new construction with a long-term view. Crestron is best for ultra-luxury with heavy AV needs. Control4 offers the best balance of features and price. Lutron is the industry benchmark for architectural lighting control. As certified partners for all four, we recommend based on your specific needs.",
   },
   {
     question: "Can I mix different brands in one home?",

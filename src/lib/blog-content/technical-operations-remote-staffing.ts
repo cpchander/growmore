@@ -185,7 +185,7 @@ This is not theoretical. Each row in that table represents years of hiring, trai
 - **Week 3:** 30-day onboarding began. Each drafter was briefed on the client's Revit template, sheet naming conventions, and project standards. They started on a low-complexity project under senior supervision.
 - **Day 90:** All 4 drafters passed the 90-day performance review. Client's project lead reported: "They produce work at the same quality as our in-house team. The cost difference is significant."
 
-**Cost impact:** The client's fully-loaded cost per drafter dropped from $75K/year (US hire) to approximately $15K/year (dedicated remote employee through Zedtreeo) — a 80% reduction with comparable output quality.
+**Cost impact (2025 data):** The client's fully-loaded cost per drafter dropped from approximately $75K/year (US hire) to approximately $15K/year (dedicated remote employee through Zedtreeo) — an approximately 80% reduction with comparable output quality. *(Actual costs vary by role, experience, and engagement terms.)*
 
 **Key takeaway:** Speed of placement (10 business days), quality of candidates (all 4 passed 90-day review), and infrastructure support (IT, HR, management) were all possible because the operational systems already existed. A staffing-only company would have taken 4-6 weeks and the quality variance would have been higher.
 

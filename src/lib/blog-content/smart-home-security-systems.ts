@@ -29,7 +29,7 @@ Most installers handle layers 1–3 independently. Layer 4 is what separates a �
 
 ## The 2026 STQC Regulation: What It Means for Your CCTV Choices
 
-Starting April 2026, India's government enforced mandatory STQC (Standardisation Testing and Quality Certification) compliance for all internet-connected surveillance cameras. This effectively bans brands that haven't received certification — most notably, several Chinese manufacturers.
+Starting April 2026, India's government enforced mandatory STQC (Standardisation Testing and Quality Certification) compliance for all internet-connected surveillance cameras. This effectively restricts brands that haven't received certification — most notably, several Chinese manufacturers. *(Regulatory status as of May 2026 — check [MeitY/STQC](https://stqc.gov.in) for latest updates.)*
 
 ### What Changed
 
@@ -93,15 +93,15 @@ For new installations, we now recommend a tiered approach:
 
 ### Top 5 Recommended Brands for 2026
 
-**1. CP Plus** — India's #1 CCTV brand. Full STQC compliance, widest service network (3,000+ service points), excellent mobile app. Best for: apartments and mid-budget villas. 4MP bullet cameras from ₹3,500.
+**1. CP Plus** — India's largest CCTV brand by market share. Full STQC compliance, widest service network (3,000+ service points), excellent mobile app. Best for: apartments and mid-budget villas. 4MP bullet cameras from ₹3,500 (as of May 2026).
 
-**2. Axis Communications (Sweden)** — Enterprise-grade analytics, exceptional build quality, 5-year warranty. Best for: villa perimeters, high-security residences. Vandal-resistant dome cameras from ₹22,000.
+**2. Axis Communications (Sweden)** — Enterprise-grade analytics, exceptional build quality, 5-year warranty. Best for: villa perimeters, high-security residences. Vandal-resistant dome cameras from ₹22,000 (as of May 2026).
 
-**3. Qubo by Hero Group** — Made in India, AI-powered, data stored on Indian servers. Best for: privacy-conscious homeowners, indoor monitoring. AI cameras from ₹2,500.
+**3. Qubo by Hero Group** — Made in India, AI-powered, data stored on Indian servers. Best for: privacy-conscious homeowners, indoor monitoring. AI cameras from ₹2,500 (as of May 2026).
 
-**4. Bosch Security** — German engineering, seamless KNX integration, commercial-grade reliability. Best for: KNX-based smart homes, multi-floor villas. Dome cameras from ₹18,000.
+**4. Bosch Security** — German engineering, seamless KNX integration, commercial-grade reliability. Best for: KNX-based smart homes, multi-floor villas. Dome cameras from ₹18,000 (as of May 2026).
 
-**5. Hanwha Vision (Korea)** — Excellent low-light performance, strong cybersecurity protocols, Wisenet AI. Best for: ultra-premium residences, large estates. AI cameras from ₹20,000.
+**5. Hanwha Vision (Korea)** — Excellent low-light performance, strong cybersecurity protocols, Wisenet AI. Best for: ultra-premium residences, large estates. AI cameras from ₹20,000 (as of May 2026).
 
 > "After the STQC enforcement, we migrated 23 villa projects from Hikvision to a CP Plus + Axis hybrid setup in Q1 2026 alone. The clients were initially concerned about costs, but Axis's analytics — particularly the vehicle license plate recognition at gate entry — actually replaced a separate ANPR system they were paying ₹2.5 Lakh for. Net cost was comparable, with significantly better integration."
 > — **Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation, KNX-certified**
@@ -112,7 +112,7 @@ For new installations, we now recommend a tiered approach:
 
 Indian homes face unique challenges that many international smart lock reviews ignore: voltage fluctuations, monsoon humidity (up to 95% RH), dust ingress, and frequent power cuts. Here's what actually survives.
 
-### Smart Lock Comparison for Indian Homes
+### Smart Lock Comparison for Indian Homes (Prices as of May 2026)
 
 | Brand/Model | Access Methods | Weather Rating | KNX Integration | Price Range | GMHS Verdict |
 |------------|---------------|---------------|-----------------|-------------|-------------|
@@ -335,4 +335,8 @@ For outdoor cameras, choose IP66 or IP67-rated models that survive 45°C+ summer
 **Comparing automation platforms?** Check our [KNX vs Crestron vs Control4 Guide](/blog/knx-vs-crestron-vs-control4-india) to choose the right backbone for your security + automation integration.
 
 **Ready for a consultation?** [Book a Free Security Assessment](/contact) — our team will survey your property and provide a detailed security design with component specifications and transparent pricing.
+
+---
+
+*Disclaimer: All third-party product prices and STQC regulatory information are accurate as of May 2026 and subject to change. Brand names and trademarks are property of their respective owners. GMHS is an authorized dealer/installer — recommendations are based on project experience, not manufacturer endorsements. Contact us for current pricing.*
 `;

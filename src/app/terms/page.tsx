@@ -109,11 +109,18 @@ export default function TermsPage() {
                 6. Third-Party Brands
               </h2>
               <p>
-                Brand names such as KNX, Crestron, Control4, Lutron, and Sonos
-                are trademarks of their respective owners. {COMPANY.name} is a
-                certified partner/dealer of these brands. Mention of these
-                brands on our website does not imply endorsement by those
-                companies of our website content.
+                All brand names, product names, logos, and trademarks mentioned
+                on this website — including but not limited to KNX, Crestron,
+                Control4, Lutron, Sonos, Schneider Electric, ABB, Philips Hue,
+                Axis Communications, Bosch, CP Plus, Godrej, Yale, Samsung,
+                Hikvision, Dahua, Wipro, and Sonoff — are the property of
+                their respective owners. {COMPANY.name} is a certified
+                partner/dealer of select brands as indicated on our{" "}
+                <a href="/about/certifications" className="text-gold-500 hover:text-gold-400">certifications page</a>.
+                Mention of any brand on our website is for informational
+                purposes and does not imply endorsement by those companies of
+                our website content. All product pricing referenced on this
+                website is indicative and subject to change without notice.
               </p>
             </div>
 
