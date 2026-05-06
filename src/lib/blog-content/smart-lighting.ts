@@ -1,4 +1,8 @@
-export const content = `## Why Smart Lighting Is the #1 Home Automation Feature in India
+export const content = `## Summary: Smart Lighting Automation for Indian Homes
+
+Smart lighting automation in India costs **₹1–7 Lakh** for a 3BHK apartment and **₹4–15 Lakh** for a 4–5 BHK villa, depending on brand selection (KNX, Lutron, Control4, or wireless). Based on 300+ GMHS installations across 12 cities, lighting accounts for **25–35% of total automation budgets** but delivers over 50% of daily-use value — making it the highest-ROI entry point into home automation. Professional scene control, circadian dimming, and energy monitoring are now standard in premium Indian homes.
+
+## Why Smart Lighting Is the #1 Home Automation Feature in India
 
 Smart lighting is the **most popular entry point** into home automation — and for good reason. It is visible every single day, dramatically transforms your living experience, and offers clear ROI through energy savings and convenience.
 
@@ -235,6 +239,9 @@ Based on our project data across Indian homes:
 - **Payback period:** Smart lighting typically pays for itself in **2-4 years** through energy savings alone
 
 Combined with [HVAC automation](/services/hvac-automation), total energy savings can reach **30-45%** of your electricity bill.
+
+> **"We tracked energy bills for a Vasant Vihar 5BHK villa for 12 months after installing KNX lighting with daylight harvesting and occupancy sensors. Their monthly electricity bill dropped from ₹28,000 to ₹17,000 — a 39% reduction. The ₹8 Lakh lighting system paid for itself in under 2 years. That is before counting the lifestyle improvement."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation, KNX-certified
 
 ## Wired vs. Wireless Smart Lighting
 

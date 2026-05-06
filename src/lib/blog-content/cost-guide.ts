@@ -1,4 +1,8 @@
-export const content = `## What Does Home Automation Cost in India?
+export const content = `## Summary: Home Automation Cost in India — Complete Guide
+
+Home automation in India costs **₹2–5 Lakh** for basic 2–3 BHK wireless packages (Wipro, Sonoff), **₹5–15 Lakh** for mid-premium 3–4 BHK systems (Control4, Lutron), and **₹15–50 Lakh+** for luxury villa automation with KNX or Crestron. Based on 300+ GMHS installations across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune over 15+ years, the average 4BHK automation project costs ₹12–18 Lakh with professional installation, programming, and commissioning included.
+
+## What Does Home Automation Cost in India?
 
 Home automation costs in India range from **₹2-5 Lakh** for basic packages to **₹50 Lakh or more** for luxury whole-home automation with premium brands like KNX or Crestron. The exact cost depends on your property size, number of rooms, automation features, brand selection, and whether you are building new or retrofitting an existing home.
 

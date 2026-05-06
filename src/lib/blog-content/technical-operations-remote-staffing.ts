@@ -213,6 +213,47 @@ There are three ways to engage with Grow More's operational capabilities:
 
 **Hybrid** — Operations consulting combined with staffing. For companies building their own India operations who need guidance on recruitment processes, training systems, quality management, and infrastructure setup.
 
+## Operations-Backed Staffing vs Alternatives
+
+| Factor | GMHS/Zedtreeo (Operations-Backed) | Freelancer Platforms (Upwork, Fiverr) | Traditional Staffing Agencies |
+|--------|-----------------------------------|--------------------------------------|------------------------------|
+| Time to first candidate | 48 hours | 1–2 weeks | 3–6 weeks |
+| Vetting process | Multi-stage practical test + 70% rejection rate | Self-reported skills + ratings | Resume screening + interview |
+| Infrastructure provided | Dedicated workstation, VPN, enterprise IT | None (freelancer's own) | Varies (often none) |
+| Onboarding | 30-day structured program | Client's responsibility | Basic orientation only |
+| Quality management | Three-checkpoint review system | None | Periodic check-ins |
+| Retention support | Full HR, career development, compensation benchmarking | None (project-based) | Limited |
+| Cost (full-time equivalent) | $5–15/hour | $10–40/hour (variable quality) | $15–30/hour + placement fee |
+| Scalability | Add 5+ people in 1 week | Unpredictable availability | 4–8 weeks per hire |
+| Industry expertise | Pre-trained on Western standards (IBC, ASHRAE, ADA) | Generalist skills | No domain training |
+| Replacement guarantee | Immediate backup from talent pool | Start search again | 30–60 day guarantee typical |
+
+## Frequently Asked Questions
+
+### How quickly can you provide remote staff?
+
+First shortlisted candidates within 48 hours for most technical roles. For specialized positions (KNX programmers, Revit MEP engineers), 3–5 business days. This speed comes from maintaining active talent pools across 12+ disciplines — we are not starting recruitment from zero for each request.
+
+### What is the minimum engagement period?
+
+Through Zedtreeo, the minimum engagement is 1 month with no long-term contracts required. Most clients start with a 1-month trial and convert to ongoing engagements — our retention rate above 90% at 6 months reflects this. [Start with a free trial](https://zedtreeo.com/get-started).
+
+### Do remote employees work in my time zone?
+
+Yes. All placements are configured for client time zone overlap. For US clients, Indian professionals work US business hours (evening/night shift India time). For European clients, the overlap is more natural (afternoon India time). We handle shift scheduling as part of operations management.
+
+### What happens if a remote employee does not perform?
+
+Our three-checkpoint quality system catches performance issues at 30, 60, and 90 days. If a replacement is needed, we provide one from our existing talent pool within 48–72 hours — no additional recruitment fees. The operations infrastructure means you are never left without coverage.
+
+### What industries do you staff for?
+
+Architecture (CAD/BIM drafting), MEP/HVAC engineering, home automation programming (Control4, Crestron, KNX), software development, accounting, digital marketing, customer support, and general virtual assistance. Our deepest expertise is in architecture and engineering — 17 years of active project delivery in these disciplines.
+
+### How is data security handled?
+
+Enterprise VPN with dedicated client tunnels, DLP (data loss prevention) controls on all workstations, no personal USB access, automated backup systems, and 24/7 IT monitoring. We have served US architecture firms with sensitive government projects since 2010 — security infrastructure is mature and audited.
+
 ## Related: Our Smart Home Automation Expertise
 
 The home automation division that built this operational capability continues to deliver premium residential projects. Learn more about the technology and investment involved:

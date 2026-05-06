@@ -161,6 +161,32 @@ Based on our client feedback and real estate market observations across Delhi NC
 > **"One of our clients in Chattarpur sold their 6BHK farmhouse within 3 weeks of listing. The broker told us the buyer specifically mentioned the KNX automation, Dolby Atmos theater, and centralized iPad control as deciding factors. The property sold at 12% above the asking price of comparable non-automated farmhouses in the area."**
 > — Anupam Mahajan, GMHS
 
+## Frequently Asked Questions
+
+### What is the minimum budget for home automation in India?
+
+For a meaningful automation experience in a 3BHK apartment — smart lighting (10–15 points), 4 motorized curtains, basic security (4 cameras + smart lock), and app control — budget **₹5–7 Lakh** with Control4 or KNX basics. Below ₹3 Lakh, you are limited to Wi-Fi devices (Wipro, Sonoff) with significant reliability tradeoffs.
+
+### Does home automation increase property value?
+
+Yes. Our data from 300+ installations shows automated homes sell at **8–15% premium** over comparable non-automated properties. KNX and Crestron systems add the most value because buyers recognize them as permanent infrastructure, not removable gadgets. A ₹15 Lakh automation investment in a ₹2 Cr property typically adds ₹20–30 Lakh to resale value.
+
+### How long does a full automation installation take?
+
+For a new construction 4–5 BHK villa with pre-wiring: **6–10 weeks** total (2–3 weeks wiring during first-fix, 2–4 weeks device installation after interiors, 1–2 weeks programming and commissioning). For wireless retrofit in a completed home: **2–4 weeks**. Timeline depends on scope and brand — Crestron custom programming adds 2–4 extra weeks over KNX.
+
+### Is home automation worth it for a 2BHK apartment?
+
+It depends on your budget and expectations. A ₹2–3 Lakh wireless package (smart lighting, AC control, security camera, smart lock) delivers genuine convenience in a 2BHK. However, premium wired systems (KNX, Crestron) are generally overkill for small apartments — the per-point cost doesn't justify the investment below 3BHK. Start with [smart lighting](/blog/smart-lighting-guide-indian-homes) for the best ROI in compact spaces.
+
+### Can I automate my home in phases?
+
+Absolutely — this is our recommended approach for budget-conscious buyers. Phase 1: Pre-wire during construction (₹80K–2L). Phase 2: Smart lighting + security (₹5–8L). Phase 3: AV, curtains, HVAC integration (₹5–12L). Each phase adds independently. For detailed phasing guidance, see our [pre-construction wiring guide](/blog/smart-home-wiring-new-construction-india).
+
+### Which brand should I choose — KNX, Crestron, or Control4?
+
+**KNX** for new construction, long-term value, no vendor lock-in (₹6–12K per point). **Crestron** for ultra-luxury, dedicated home theater, best-in-class AV (₹15–25K per point). **Control4** for mid-premium, retrofit-friendly, excellent app (₹8–15K per point). See our full [brand comparison guide](/blog/knx-vs-crestron-vs-control4-india) for detailed feature-by-feature analysis.
+
 ## Next Steps: Get an Accurate Quote
 
 Generic cost ranges can only take you so far. Your actual cost depends on your specific property, lifestyle requirements, brand preference, and whether you are building new or retrofitting.

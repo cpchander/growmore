@@ -246,6 +246,9 @@ A fully functional smart show flat typically costs ₹5-10 Lakh to set up — a 
 - **Show flat engagement time** increased from 25 minutes to 55 minutes
 - **Total additional revenue from automation premiums:** ₹7.2 Cr on 112 smart units
 
+> **"The Noida project was a turning point for how we work with builders. Pre-wiring 180 units cost the builder ₹36 Lakh total — approximately ₹20,000 per unit. The revenue uplift from 112 buyers choosing smart packages was ₹7.2 Cr. That is a 200x return on pre-wiring investment. Now every builder we partner with pre-wires as standard — it is the highest-ROI decision they make during construction."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation, KNX-certified
+
 ## Working With Architects and Interior Designers
 
 Smart home automation is most cost-effective when integrated during the design phase. We work with [architects](/solutions/for-architects) to ensure:
