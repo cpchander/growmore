@@ -1,4 +1,8 @@
-export const content = `## Introduction
+export const content = `## Summary: How Technical Operations Power Remote Staffing
+
+Grow More Solutions' 17 years of technical operations — serving 300+ home automation projects, 50+ architecture/MEP clients, and managing 50+ professionals across 12 Indian cities — directly powers Zedtreeo's global remote staffing platform. The same recruitment pipelines (70%+ rejection rate), 30-day structured onboarding, three-checkpoint QA systems, and enterprise IT infrastructure that delivered architecture and smart home projects since 2009 now enable remote talent placement within 48 hours at $5/hour starting rates.
+
+## Introduction
 
 Grow More Hitech Solutions started in 2009 as a technical services company serving architecture and engineering firms from New Delhi. What began as a small team of 5 providing CAD drafting support to US-based firms has grown into a 50+ professional operation spanning architecture, MEP engineering, HVAC design, and smart home automation.
 
@@ -205,6 +209,13 @@ There are three ways to engage with Grow More's operational capabilities:
 **Via Zedtreeo** — For dedicated remote employee placements across all industries and geographies. Zedtreeo handles client management, contracts, and billing. Grow More provides the operations. Best for companies wanting a turnkey remote staffing solution. [Explore Zedtreeo's services](https://zedtreeo.com/services) or [get started with a free trial](https://zedtreeo.com/get-started).
 
 **Hybrid** — Operations consulting combined with staffing. For companies building their own India operations who need guidance on recruitment processes, training systems, quality management, and infrastructure setup.
+
+## Related: Our Smart Home Automation Expertise
+
+The home automation division that built this operational capability continues to deliver premium residential projects. Learn more about the technology and investment involved:
+
+- [Home Automation Cost in India 2026](/blog/home-automation-cost-2026) — Real pricing from 300+ premium installations, broken down by home size, brand, and scope
+- [KNX vs Crestron vs Control4](/blog/knx-vs-crestron-vs-control4-india) — Comprehensive brand comparison for Indian homes with per-point pricing
 
 ## Conclusion
 

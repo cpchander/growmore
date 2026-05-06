@@ -239,6 +239,25 @@ export default async function CityPage({ params }: Props) {
             ))}
           </div>
 
+          {/* Helpful Resources */}
+          <div className="mb-12">
+            <h3 className="text-xl font-bold text-white mb-4">Helpful Resources</h3>
+            <div className="grid sm:grid-cols-3 gap-3">
+              <Link href="/blog/home-automation-cost-2026" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Cost Guide 2026</p>
+                <p className="text-xs text-navy-400">Real pricing from 300+ installations</p>
+              </Link>
+              <Link href="/blog/knx-vs-crestron-vs-control4-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Brand Comparison</p>
+                <p className="text-xs text-navy-400">KNX vs Crestron vs Control4</p>
+              </Link>
+              <Link href="/smart-home-planner" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Plan Your Smart Home</p>
+                <p className="text-xs text-navy-400">Room-by-room configurator</p>
+              </Link>
+            </div>
+          </div>
+
           {/* CTA */}
           <div className="glass-card rounded-2xl p-8 sm:p-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">

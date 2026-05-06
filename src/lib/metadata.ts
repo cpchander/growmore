@@ -16,7 +16,7 @@ export function createMetadata({
   image?: string;
   noIndex?: boolean;
 }): Metadata {
-  const fullTitle = `${title} | ${COMPANY.name} — ${COMPANY.experience} Years Experience`;
+  const fullTitle = `${title} | ${COMPANY.name}`;
   const url = `${BASE_URL}${path}`;
   const ogImage = image || `${BASE_URL}/og-default.jpg`;
 

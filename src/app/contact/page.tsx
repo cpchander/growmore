@@ -9,8 +9,50 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://growmoresolutions.com/contact" },
 };
 
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact Grow More Solutions",
+  description: `Book a free home automation consultation with ${COMPANY.name}. ${COMPANY.experience} years of smart home expertise.`,
+  url: "https://growmoresolutions.com/contact",
+  mainEntity: {
+    "@type": "LocalBusiness",
+    name: COMPANY.name,
+    image: "https://growmoresolutions.com/images/company/gmhs.png",
+    telephone: COMPANY.phone,
+    email: COMPANY.email,
+    url: "https://growmoresolutions.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Plot No. 4, Sector 12A, Dwarka",
+      addressLocality: "New Delhi",
+      addressRegion: "Delhi",
+      postalCode: "110078",
+      addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 28.5921,
+      longitude: 77.0460,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    priceRange: "₹₹₹",
+    areaServed: { "@type": "Country", name: "India" },
+  },
+};
+
 export default function ContactPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
     <section className="py-12 sm:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-8">
@@ -104,5 +146,6 @@ export default function ContactPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

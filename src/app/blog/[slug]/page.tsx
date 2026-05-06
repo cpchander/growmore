@@ -258,6 +258,22 @@ export default async function BlogPostPage({ params }: Props) {
   // Other posts for sidebar (different category or just other posts)
   const otherPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 4);
 
+  const isFounderAuthor = post.author === "Anupam Mahajan";
+
+  const founderPersonSchema = {
+    "@type": "Person",
+    name: "Anupam Mahajan",
+    jobTitle: "Co-Founder & Managing Director",
+    worksFor: {
+      "@type": "Organization",
+      name: COMPANY.name,
+      url: "https://growmoresolutions.com",
+    },
+    knowsAbout: ["home automation", "KNX", "Crestron", "Control4", "smart home design", "building automation", "HVAC"],
+    description: "25+ years in home automation and building technology. KNX-certified. Led 300+ residential automation projects across 12 Indian cities.",
+    image: "https://growmoresolutions.com/images/team/anupam-mahajan.webp",
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -265,14 +281,18 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt,
     image: `https://growmoresolutions.com${post.image}`,
     datePublished: post.publishedAt,
-    author: {
-      "@type": "Organization",
-      name: COMPANY.name,
-    },
+    dateModified: post.publishedAt,
+    author: isFounderAuthor
+      ? founderPersonSchema
+      : { "@type": "Organization", name: COMPANY.name },
     publisher: {
       "@type": "Organization",
       name: COMPANY.name,
       url: "https://growmoresolutions.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://growmoresolutions.com/images/company/gmhs.png",
+      },
     },
     mainEntityOfPage: `https://growmoresolutions.com/blog/${slug}`,
   };
@@ -407,19 +427,45 @@ export default async function BlogPostPage({ params }: Props) {
                 </Link>
               </div>
 
-              {/* Author */}
+              {/* Author Bio */}
               <div className="mt-10 flex items-center gap-4 glass-card rounded-xl p-6">
-                <div className="w-14 h-14 rounded-full bg-navy-700 flex items-center justify-center shrink-0">
-                  <span className="text-xl font-bold text-gold-500">H</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">{post.author}</p>
-                  <p className="text-sm text-navy-400">
-                    {COMPANY.name} — {COMPANY.experience} years of home
-                    automation expertise across India. Certified KNX, Crestron &
-                    Control4 partners.
-                  </p>
-                </div>
+                {isFounderAuthor ? (
+                  <>
+                    <div className="w-16 h-16 rounded-full overflow-hidden shrink-0 ring-2 ring-gold-500/30">
+                      <Image
+                        src="/images/team/anupam-mahajan.webp"
+                        alt="Anupam Mahajan — Co-Founder & Managing Director, GMHS"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white">Anupam Mahajan</p>
+                      <p className="text-xs text-gold-500 mb-1">Co-Founder & Managing Director</p>
+                      <p className="text-sm text-navy-400">
+                        25+ years in home automation. KNX-certified. Led 300+ residential automation projects across 12 Indian cities.
+                      </p>
+                      <Link href="/about/team" className="text-xs text-gold-500 hover:text-gold-400 mt-1 inline-block">
+                        View full profile →
+                      </Link>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="w-14 h-14 rounded-full bg-navy-700 flex items-center justify-center shrink-0">
+                      <span className="text-xl font-bold text-gold-500">G</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white">{post.author}</p>
+                      <p className="text-sm text-navy-400">
+                        {COMPANY.name} — {COMPANY.experience} years of home
+                        automation expertise across India. Certified KNX, Crestron &
+                        Control4 partners.
+                      </p>
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* Related Posts */}

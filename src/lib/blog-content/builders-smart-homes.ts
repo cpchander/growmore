@@ -1,4 +1,8 @@
-export const content = `## Why Builders Should Offer Smart Home Packages in 2026
+export const content = `## Summary: Why Smart Home Packages Are Essential for Builders in 2026
+
+Indian builders offering smart home automation packages report 8–15% higher per-square-foot realization, 2x faster sales velocity for premium units, and stronger brand differentiation. Based on GMHS data from 15+ years and 300+ projects across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune, the automation cost to builders is ₹1.5–3 Lakh per unit (3–4 BHK) while the premium realized is ₹5–12 Lakh — a 3–4x ROI on every smart-home-ready apartment delivered.
+
+## Why Builders Should Offer Smart Home Packages in 2026
 
 The Indian real estate market is more competitive than ever. In every micro-market — [Delhi NCR](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune) — buyers compare projects feature-by-feature. In this environment, **smart home automation has moved from "luxury add-on" to competitive necessity.**
 

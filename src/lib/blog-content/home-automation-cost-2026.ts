@@ -85,7 +85,7 @@ Not every homeowner wants or needs full automation on day one. Here is how costs
 
 Smart lighting control for 20–30 points including dimming, scene presets (movie, dinner, reading, party), scheduling, and app/voice control. Add ₹2–4 Lakh for motorized curtains and blinds.
 
-This is where 60% of our clients start. Of those, 70% come back within 18 months to expand into AV or security — which is why we always recommend wiring for future expansion during initial installation.
+This is where 60% of our clients start. Of those, 70% come back within 18 months to expand into AV or security — which is why we always recommend wiring for future expansion during initial installation. For a detailed breakdown of what smart lighting includes, see our [Smart Lighting Guide for Indian Homes](/blog/smart-lighting-guide-indian-homes).
 
 ### Lighting + Audio-Visual
 

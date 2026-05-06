@@ -88,6 +88,25 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd()) }}
         />
 
+        {/* WebSite Schema with SearchAction — enables sitelinks searchbox */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: COMPANY.name,
+            url: "https://growmoresolutions.com",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://growmoresolutions.com/blog?q={search_term_string}",
+              },
+              "query-input": "required name=search_term_string",
+            },
+          }) }}
+        />
+
         <Header />
         <main className="flex-1 pt-20">{children}</main>
         <Footer />

@@ -253,6 +253,25 @@ export default async function ServicePage({ params }: Props) {
             </>
           )}
 
+          {/* Related Resources */}
+          <div className="mb-12">
+            <h3 className="text-xl font-bold text-white mb-4">Related Resources</h3>
+            <div className="grid sm:grid-cols-3 gap-3">
+              <Link href="/blog/home-automation-cost-2026" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Cost Guide 2026</p>
+                <p className="text-xs text-navy-400">Real pricing from 300+ installations</p>
+              </Link>
+              <Link href="/smart-home-planner" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Smart Home Planner</p>
+                <p className="text-xs text-navy-400">Design your setup room by room</p>
+              </Link>
+              <Link href="/get-quote" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Get Instant Quote</p>
+                <p className="text-xs text-navy-400">Calculate cost in 2 minutes</p>
+              </Link>
+            </div>
+          </div>
+
           {/* CTA */}
           <div className="glass-card rounded-2xl p-8 sm:p-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">
