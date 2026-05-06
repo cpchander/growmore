@@ -107,6 +107,9 @@ The luxury package is for **ultra-premium villas, celebrity homes, 5-star hotel 
 
 This is the level we deliver in our [luxury villa projects](/projects) and for [hotel and hospitality clients](/solutions/for-hotels).
 
+> **"The biggest mistake homeowners make is comparing automation quotes without understanding what is included. A ₹12 Lakh quote from one integrator might include programming, networking, and commissioning — while a ₹8 Lakh quote from another covers only hardware and basic installation. We have seen clients spend ₹3-4 Lakh extra fixing incomplete installations from budget integrators."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation, KNX-certified
+
 {{CTA:Get Your Free Custom Quote:/get-quote}}
 
 ## Cost Breakdown by Automation Category
@@ -269,6 +272,9 @@ Online calculators give estimates. A site visit gives accuracy. Our team assesse
 Budget ₹15,000-30,000 per year for an Annual Maintenance Contract (AMC). This covers firmware updates, remote support, and on-site visits. Skipping AMC is the biggest mistake homeowners make — systems without maintenance degrade within 2-3 years.
 
 ## Common Mistakes When Budgeting for Home Automation
+
+> **"In 15 years of delivering automation projects, the single most expensive mistake I have seen is clients not planning wiring during construction. We had a client in Greater Kailash who spent ₹4.2 Lakh retrofitting KNX wiring into finished walls — the same wiring would have cost ₹80,000 during the construction phase. That is a 5x cost difference for the same result."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS
 
 1. **Choosing the cheapest option without after-sales support** — the system fails within 2 years and you pay more to replace it
 2. **Over-automating on day one** — start with 3-4 core features and expand later

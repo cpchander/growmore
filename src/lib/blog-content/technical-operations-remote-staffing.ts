@@ -72,6 +72,9 @@ The leap from MEP engineering to home automation was shorter than it appears. HV
 
 ## Why Operations Experience Matters for Remote Staffing
 
+> **"Most staffing companies treat placement as the finish line. For us, placement is where the real work begins. The same quality systems that keep our architecture deliverable error rates below 2% and our home automation commissioning success rate above 98% — those systems now wrap around every remote employee we place. That is the difference between a freelancer and a managed professional."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in technical operations
+
 This is the critical section. Remote staffing companies are everywhere. What most of them offer is a matching service — they find people, introduce them to clients, and step back. What happens after placement is the client's problem.
 
 Grow More's 17 years of operations experience changes that equation fundamentally. Here is why:

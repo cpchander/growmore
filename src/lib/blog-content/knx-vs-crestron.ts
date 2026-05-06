@@ -67,6 +67,9 @@ The key architectural advantage: **KNX is decentralized.** There is no central p
 
 **KNX brands we install:** Schneider Electric, ABB, Gira, Jung, Basalte, Zennio. Visit our [brands page](/brands) for details on each.
 
+> **"We installed KNX in a Chattarpur farmhouse 12 years ago. The system is still running perfectly with zero hardware failures. The client has added 30+ new devices over the years — different manufacturers each time — and everything works because KNX is an open standard. Try doing that with a proprietary system."**
+> — Anupam Mahajan, GMHS
+
 ### Who Should Choose KNX?
 
 - Homeowners building a **new home or doing major renovation** where wiring can be planned
@@ -268,6 +271,9 @@ Use our [smart home planner](/smart-home-planner) to explore different configura
 For detailed cost analysis across all packages, read our [home automation cost guide](/blog/home-automation-cost-india-complete-guide).
 
 ## Our Recommendation
+
+> **"After installing 120+ KNX systems, 80+ Control4 systems, and 40+ Crestron systems over 15 years, I can tell you there is no single 'best' system — only the best system for YOUR home. We had a client in Vasant Vihar who insisted on Crestron for a 3BHK apartment. We advised Control4 instead — it saved them ₹8 Lakh with virtually identical functionality at that scale. Crestron shines in 6BHK farmhouses with dedicated theaters, not in standard apartments."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation, KNX-certified
 
 After installing all three systems across hundreds of projects:
 

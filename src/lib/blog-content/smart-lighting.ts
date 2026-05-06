@@ -97,6 +97,9 @@ For a deeper comparison of KNX, Crestron, and Control4, read our [detailed compa
 
 ## Smart Lighting Cost in India — Detailed Breakdown
 
+> **"Lighting is where we start 60% of our projects because it delivers the highest daily-use impact. A well-designed lighting scene system in a 4BHK — costing ₹4-6 Lakh with Lutron or KNX — transforms how you experience every room, every evening. Clients consistently tell us it is the single feature they use most and notice most."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation
+
 ### Cost Per Room
 
 | Room Type | Basic (Wi-Fi) | Mid-Range (Control4/Lutron) | Premium (KNX/Crestron) |

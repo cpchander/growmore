@@ -120,6 +120,9 @@ Based on our experience with 300+ projects and buyer feedback from builder partn
 
 ## Implementation Models for Builders
 
+> **"We work with 8 builders across Delhi NCR currently. The most successful model is pre-wired infrastructure — the builder invests ₹25,000-40,000 per unit in KNX bus wiring and conduits during construction, then markets the entire project as 'smart-home-ready.' One Gurgaon builder sold out 120 units 3 months faster than their previous non-automated tower, with 11% higher per-sq-ft realization."**
+> — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation
+
 ### Model 1: Pre-Wired Infrastructure (Recommended)
 
 **What you provide:** Automation-ready wiring in every unit during construction.
