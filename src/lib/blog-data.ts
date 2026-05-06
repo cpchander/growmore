@@ -4,6 +4,7 @@ import { content as knxVsCrestronContent } from "./blog-content/knx-vs-crestron"
 import { content as smartLightingContent } from "./blog-content/smart-lighting";
 import { content as buildersSmartHomesContent } from "./blog-content/builders-smart-homes";
 import { content as technicalOpsStaffingContent } from "./blog-content/technical-operations-remote-staffing";
+import { content as homeAutomationCost2026Content } from "./blog-content/home-automation-cost-2026";
 
 export type BlogPost = {
   slug: string;
@@ -90,6 +91,21 @@ export const BLOG_POSTS: BlogPost[] = [
     image: "/images/blog/builders-smart-homes.webp",
     imageAlt: "Smart home vs standard building comparison showing builder advantages including 8-15% premium pricing and 2x faster sales",
     content: buildersSmartHomesContent,
+  },
+  {
+    slug: "home-automation-cost-2026",
+    title: "Home Automation Cost in India 2026: Real Pricing from 300+ Premium Installations",
+    excerpt:
+      "Real pricing data from 300+ GMHS installations. Cost breakdown by home size (₹5–50 Lakh+), brand (KNX, Crestron, Control4, Lutron), and automation scope for premium Indian homes.",
+    category: "Guides",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-05-04",
+    readTime: "12 min",
+    featured: true,
+    image: "/images/blog/home-automation-cost-2026.webp",
+    imageAlt: "Home automation cost breakdown in India 2026 showing pricing by home size, brand, and scope from ₹5 Lakh to ₹50 Lakh+ based on 300+ GMHS installations",
+    content: homeAutomationCost2026Content,
   },
   {
     slug: "technical-operations-remote-staffing",
