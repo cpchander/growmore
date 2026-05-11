@@ -101,7 +101,7 @@ Based on our experience with 300+ projects and buyer feedback from builder partn
 
 | Feature | Buyer Priority | Cost Impact | Details |
 |---------|---------------|------------|---------|
-| Motorized curtains | #6 | Medium | [Motorized curtain solutions](/services/motorized-curtains) |
+| Motorized curtains | #6 | Medium | Part of [whole-home automation](/services/home-automation) — KNX/Lutron integration |
 | Climate control (AC automation) | #7 | Low-medium | [HVAC automation](/services/hvac-automation) |
 | Multi-room audio (2-3 zones) | #8 | Medium | [Home theater options](/services/home-theater) |
 | Energy monitoring dashboard | #9 | Low | Real-time electricity usage |

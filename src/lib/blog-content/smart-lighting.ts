@@ -18,7 +18,7 @@ Most people think smart lighting means "controlling lights from your phone." Tha
 
 Create pre-programmed lighting moods for different activities:
 
-- **Movie mode** — dims living room to 10%, turns off kitchen lights, closes [motorized curtains](/services/motorized-curtains)
+- **Movie mode** — dims living room to 10%, turns off kitchen lights, closes motorized curtains (part of [whole-home automation](/services/home-automation))
 - **Dinner mode** — warm 2700K dining light at 40%, accent lighting on, chandelier dimmed
 - **Reading mode** — focused task light at 80%, ambient lights at 20%
 - **Party mode** — colorful accent lighting, dynamic color cycling
@@ -294,7 +294,7 @@ Visit our [conceptual lighting page](/services/conceptual-lighting) to learn abo
 
 ### 5. Not Planning for Expansion
 
-Choose a platform that scales. If you start with smart lighting and later want [motorized curtains](/services/motorized-curtains), [home theater](/services/home-theater), or [HVAC automation](/services/hvac-automation), your lighting system should integrate seamlessly. This is why we recommend established platforms like KNX, Lutron, or Control4 over DIY Wi-Fi solutions.
+Choose a platform that scales. If you start with smart lighting and later want motorized curtains, [home theater](/services/home-theater), or [HVAC automation](/services/hvac-automation), your lighting system should integrate seamlessly. This is why we recommend established platforms like KNX, Lutron, or Control4 over DIY Wi-Fi solutions. See our [whole-home automation service](/services/home-automation) for integrated multi-system builds.
 
 ## Smart Lighting Installation Process
 
