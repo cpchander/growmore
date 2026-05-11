@@ -68,6 +68,7 @@ GMHS's operational infrastructure (recruitment, training, quality systems) also 
 
 ## Content and Resources
 
+- [Home Theater & AV Automation Cost Guide](https://growmoresolutions.com/blog/home-theater-av-automation-india)
 - [Home Automation Cost Guide](https://growmoresolutions.com/blog/home-automation-cost-2026)
 - [KNX vs Crestron vs Control4 Comparison](https://growmoresolutions.com/blog/knx-vs-crestron-vs-control4-india)
 - [Smart Home Wiring Guide for New Construction](https://growmoresolutions.com/blog/smart-home-wiring-new-construction-india)

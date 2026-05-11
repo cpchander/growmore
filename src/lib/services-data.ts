@@ -116,9 +116,10 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       { title: "Outdoor Entertainment", description: "Weather-rated speakers, an outdoor-rated TV or projector, and landscape lighting scenes for poolside or terrace entertainment." },
     ],
     pricing: [
-      { tier: "Premium Living Room", range: "₹3–8 Lakh", includes: "75–85\" 4K TV or short-throw projector, 5.1 surround system, basic acoustic treatment, automation integration with existing smart home." },
-      { tier: "Dedicated Theater", range: "₹10–30 Lakh", includes: "4K laser projector, acoustically transparent screen, 7.1.4 Dolby Atmos speakers, full acoustic treatment, tiered seating platform, one-touch automation." },
-      { tier: "Reference Cinema", range: "₹30–75 Lakh+", includes: "8K/4K JVC or Sony projector, Dolby Atmos 9.1.6, premium audiophile speakers (B&W, KEF Reference), studio-grade acoustics, MicroLED display options, Crestron AV distribution." },
+      { tier: "Entry Media Room (5.1 / 5.1.2)", range: "₹3–8 Lakh", includes: "75–85\" 4K TV or short-throw projector, 5.1 surround system, basic acoustic foam, automation integration with existing smart home." },
+      { tier: "Premium Media Room (5.1.4 / 7.1.2)", range: "₹8–18 Lakh", includes: "Mid-tier 4K HDR projector (JVC NX5/Sony VW325ES), 110–120\" screen, KEF/B&W speakers, in-ceiling Atmos height channels, fabric-wrapped panels, Lutron lighting scenes." },
+      { tier: "Dedicated Cinema (7.1.4 / 9.1.6)", range: "₹18–60 Lakh", includes: "JVC NZ800/NZ900 laser projector, Stewart screen with motorized masking, full acoustic treatment (Vicoustic/GIK/RPG), Trinnov/Dirac Live ART calibration, Procella/JBL Synthesis speakers, 9–12 cinema seats." },
+      { tier: "Reference / THX-Grade (9.1.6 / 13.1.6)", range: "₹60 Lakh–2 Cr+", includes: "Decoupled floating room, JBL Synthesis Project Everest or baffle-wall LCR, Trinnov Altitude processor, 4-sub DBA configuration, ISF/THX calibration, direct-view LED option (Samsung The Wall, LG MAGNIT)." },
     ],
     whyChooseUs: [
       "Acoustic design + AV engineering + automation — all under one roof",

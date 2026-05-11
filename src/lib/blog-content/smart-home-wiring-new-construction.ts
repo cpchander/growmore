@@ -188,7 +188,7 @@ Contact your automation consultant when architectural drawings are 80% complete 
 
 ### Can I pre-wire now and add devices 2–3 years later?
 
-Yes — this is exactly what pre-wiring is designed for. The cables and conduits installed today will work with any KNX, Crestron, or Control4 devices available in 2, 5, or even 10 years. KNX is an open standard with guaranteed backward compatibility. We have clients who pre-wired in 2015 and are only now adding devices in 2026 — the infrastructure works perfectly.
+Yes — this is exactly what pre-wiring is designed for. The cables and conduits installed today are designed to work with KNX, Crestron, or Control4 devices for many years to come. KNX is an open international standard with strong documented backward compatibility — the protocol has been stable since 1991. We have clients who pre-wired in 2015 and only added devices in 2026, with the infrastructure performing as designed.
 
 ### What if I am not sure which brand I want yet?
 
@@ -223,4 +223,6 @@ If you are building a new home or planning a major renovation, now is the time t
 3. **Visit our [Experience Center](/experience)** in Delhi — see KNX, Crestron, and Control4 systems working live before committing to a brand
 
 Every pre-construction consultation is free and obligation-free. We recommend the right infrastructure based on your future automation goals — so you wire once and never look back.
+
+*Prices indicative as of May 2026, subject to change based on cable spec, material costs, project scope, and site conditions. All recommendations are based on GMHS installation data across 300+ projects.*
 `;

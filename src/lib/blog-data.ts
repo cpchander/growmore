@@ -7,6 +7,7 @@ import { content as technicalOpsStaffingContent } from "./blog-content/technical
 import { content as homeAutomationCost2026Content } from "./blog-content/home-automation-cost-2026";
 import { content as wiringNewConstructionContent } from "./blog-content/smart-home-wiring-new-construction";
 import { content as securitySystemsContent } from "./blog-content/smart-home-security-systems";
+import { content as homeTheaterAvContent } from "./blog-content/home-theater-av-automation-india";
 
 export type BlogPost = {
   slug: string;
@@ -34,6 +35,21 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "home-theater-av-automation-india",
+    title: "Home Theater & AV Automation Cost in India 2026: ₹3 Lakh–2 Cr+ Real Pricing | GMHS",
+    excerpt:
+      "Home theater costs in India: ₹3 Lakh entry to ₹2 Cr+ reference. Dolby Atmos channel configs, acoustic treatment, projectors, AV control (Crestron/Control4) and pre-wiring. Based on 300+ GMHS installations.",
+    category: "Room Automation",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-05-11",
+    readTime: "17 min",
+    featured: true,
+    image: "/images/blog/home-theater-av-automation.webp",
+    imageAlt: "Home theater and AV automation cost breakdown for India 2026 showing tiers from ₹3 Lakh entry media room to ₹2 Crore+ reference Dolby Atmos cinema, based on 300+ GMHS installations",
+    content: homeTheaterAvContent,
+  },
   {
     slug: "smart-home-security-systems-india",
     title: "Smart Home Security Systems India 2026: Costs & Brands | GMHS",

@@ -356,7 +356,7 @@ We advise builders on proper documentation and RERA-compliant pricing structures
 
 ## Why Partner With Grow More Solutions?
 
-We are India's most experienced home automation company for builder partnerships:
+We are among India's most experienced home automation specialists for builder partnerships:
 
 - **15+ years** in home automation — since before it was mainstream
 - **300+ projects** delivered, including multi-tower residential and luxury villas
@@ -413,4 +413,6 @@ Yes. As part of our builder partnership, we provide:
 
 ### What cities do you operate in?
 
-We deliver builder projects across [Delhi NCR](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow).`;
+We deliver builder projects across [Delhi NCR](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow).
+
+*Prices indicative as of May 2026, subject to change based on scope, brand, and project size. All figures are based on GMHS installation data across 300+ projects in 12 Indian cities.*`;

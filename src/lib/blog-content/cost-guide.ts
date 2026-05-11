@@ -288,7 +288,7 @@ Budget ₹15,000-30,000 per year for an Annual Maintenance Contract (AMC). This 
 
 ## Why Choose Grow More Solutions for Home Automation?
 
-With [15+ years of experience](/about/our-story) and [300+ completed projects](/projects), we are India's most experienced home automation company. Here is what sets us apart:
+With [15+ years of experience](/about/our-story) and [300+ completed projects](/projects), we are among India's most experienced home automation specialists. Here is what sets us apart:
 
 - **Multi-brand expertise** — certified KNX, Crestron, Control4, and Lutron partners
 - **End-to-end delivery** — consultation, design, wiring, installation, programming, and support

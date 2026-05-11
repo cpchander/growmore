@@ -261,6 +261,24 @@ export default async function ServicePage({ params }: Props) {
                 <p className="text-sm font-medium text-white mb-1">Cost Guide 2026</p>
                 <p className="text-xs text-navy-400">Real pricing from 300+ installations</p>
               </Link>
+              {slug === "home-theater" && (
+                <Link href="/blog/home-theater-av-automation-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                  <p className="text-sm font-medium text-white mb-1">Home Theater Deep-Dive</p>
+                  <p className="text-xs text-navy-400">₹3 L–2 Cr Atmos &amp; AV cost breakdown</p>
+                </Link>
+              )}
+              {slug === "home-security" && (
+                <Link href="/blog/smart-home-security-systems-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                  <p className="text-sm font-medium text-white mb-1">Security Cost Guide</p>
+                  <p className="text-xs text-navy-400">STQC 2026 + brand recommendations</p>
+                </Link>
+              )}
+              {slug === "conceptual-lighting" && (
+                <Link href="/blog/smart-lighting-guide-indian-homes" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                  <p className="text-sm font-medium text-white mb-1">Smart Lighting Guide</p>
+                  <p className="text-xs text-navy-400">Scenes, dimming &amp; brand recommendations</p>
+                </Link>
+              )}
               <Link href="/smart-home-planner" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
                 <p className="text-sm font-medium text-white mb-1">Smart Home Planner</p>
                 <p className="text-xs text-navy-400">Design your setup room by room</p>

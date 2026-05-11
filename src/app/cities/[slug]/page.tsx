@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CITIES, SERVICES, COMPANY, BRANDS } from "@/lib/constants";
+import { getCityDetail } from "@/lib/city-details";
 import { localBusinessJsonLd, faqJsonLd, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, MapPin, Phone, CheckCircle2 } from "lucide-react";
 
@@ -30,7 +31,9 @@ export default async function CityPage({ params }: Props) {
   const city = CITIES.find((c) => c.slug === slug);
   if (!city) notFound();
 
-  const cityFaqs = [
+  const detail = getCityDetail(slug);
+
+  const baseFaqs = [
     {
       question: `What is the cost of home automation in ${city.name}?`,
       answer: `Home automation costs in ${city.name} range from ₹2–5 Lakh for basic smart lighting and security in a 2–3BHK apartment, ₹5–15 Lakh for comprehensive automation in a premium 3–5BHK or villa, and ₹15–50 Lakh+ for luxury whole-home systems with KNX or Crestron. ${COMPANY.name} offers free on-site consultation in ${city.name} to provide an accurate estimate based on your property and requirements.`,
@@ -56,6 +59,8 @@ export default async function CityPage({ params }: Props) {
       answer: `Yes. ${COMPANY.name} provides comprehensive after-sales support in ${city.name} including ${COMPANY.afterSales.warranty}, Annual Maintenance Contracts (AMC), remote diagnostics, firmware updates, and on-site repair. AMC clients get 24/7 emergency support and priority scheduling.`,
     },
   ];
+
+  const cityFaqs = detail ? [...baseFaqs, ...detail.extraFaqs] : baseFaqs;
 
   return (
     <>
@@ -110,13 +115,64 @@ export default async function CityPage({ params }: Props) {
             integration — using certified brands like KNX, Crestron, Control4,
             and Lutron.
           </p>
-          <p className="text-base text-navy-300 leading-relaxed mb-12">
-            Whether you&apos;re building a new villa in {city.areas[0]}, renovating an
-            apartment in {city.areas[1]}, or upgrading security at your {city.areas[2]}{" "}
-            home — our {city.name} team delivers end-to-end automation from
-            consultation to lifetime support. We serve all major localities
-            including {city.areas.join(", ")}.
-          </p>
+          {detail ? (
+            <p className="text-base text-navy-300 leading-relaxed mb-12">
+              {detail.intro}
+            </p>
+          ) : (
+            <p className="text-base text-navy-300 leading-relaxed mb-12">
+              Whether you&apos;re building a new villa in {city.areas[0]}, renovating an
+              apartment in {city.areas[1]}, or upgrading security at your {city.areas[2]}{" "}
+              home — our {city.name} team delivers end-to-end automation from
+              consultation to lifetime support. We serve all major localities
+              including {city.areas.join(", ")}.
+            </p>
+          )}
+
+          {/* City-specific market notes & project examples */}
+          {detail && (
+            <>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+                {city.name} Market Notes — What Makes Local Projects Different
+              </h2>
+              <div className="glass-card rounded-xl p-6 mb-10">
+                <ul className="space-y-3">
+                  {detail.marketNotes.map((note) => (
+                    <li key={note} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
+                      <span className="text-navy-200 text-sm leading-relaxed">{note}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+                Recent GMHS Projects in {city.name}
+              </h2>
+              <div className="overflow-x-auto mb-10">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-navy-700">
+                      <th className="text-left py-2 px-3 text-navy-400 font-medium">Locality</th>
+                      <th className="text-left py-2 px-3 text-navy-400 font-medium">Property</th>
+                      <th className="text-left py-2 px-3 text-navy-400 font-medium">Budget</th>
+                      <th className="text-left py-2 px-3 text-navy-400 font-medium">Scope</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {detail.projectExamples.map((p) => (
+                      <tr key={p.area} className="border-b border-navy-800">
+                        <td className="py-2 px-3 text-white font-medium">{p.area}</td>
+                        <td className="py-2 px-3 text-navy-300">{p.type}</td>
+                        <td className="py-2 px-3 text-gold-500 font-semibold">{p.budget}</td>
+                        <td className="py-2 px-3 text-navy-300 text-xs">{p.scope}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
 
           {/* Services available */}
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
@@ -247,10 +303,20 @@ export default async function CityPage({ params }: Props) {
                 <p className="text-sm font-medium text-white mb-1">Cost Guide 2026</p>
                 <p className="text-xs text-navy-400">Real pricing from 300+ installations</p>
               </Link>
+              <Link href="/blog/home-theater-av-automation-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Home Theater Cost Guide</p>
+                <p className="text-xs text-navy-400">₹3 L–2 Cr Atmos configs</p>
+              </Link>
               <Link href="/blog/knx-vs-crestron-vs-control4-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
                 <p className="text-sm font-medium text-white mb-1">Brand Comparison</p>
                 <p className="text-xs text-navy-400">KNX vs Crestron vs Control4</p>
               </Link>
+              {detail?.recommendedReading.map((r) => (
+                <Link key={r.href} href={r.href} className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                  <p className="text-sm font-medium text-white mb-1">{r.title}</p>
+                  <p className="text-xs text-navy-400">{r.description}</p>
+                </Link>
+              ))}
               <Link href="/smart-home-planner" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
                 <p className="text-sm font-medium text-white mb-1">Plan Your Smart Home</p>
                 <p className="text-xs text-navy-400">Room-by-room configurator</p>
