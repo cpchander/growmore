@@ -8,7 +8,7 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { COMPANY } from "@/lib/constants";
 import { organizationJsonLd } from "@/lib/metadata";
 
-const GA_ID = "G-RV11C3QEJP";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-RV11C3QEJP";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

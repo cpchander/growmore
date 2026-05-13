@@ -13,6 +13,7 @@ type FormData = {
   phone: string;
   email: string;
   message: string;
+  website: string; // honeypot field — hidden from real users, bots fill it
 };
 
 const PROPERTY_TYPES = ["Villa / Bungalow", "Apartment", "Penthouse", "Commercial / Office", "Hotel / Resort"];
@@ -40,6 +41,7 @@ export default function ContactForm() {
     phone: "",
     email: "",
     message: "",
+    website: "",
   });
 
   const toggleFeature = (f: string) => {
@@ -265,6 +267,17 @@ export default function ContactForm() {
               onChange={(e) => setData((p) => ({ ...p, message: e.target.value }))}
               rows={3}
               className="w-full bg-navy-800 border border-navy-700 text-white rounded-lg px-4 py-3 focus:border-gold-500 focus:outline-none placeholder:text-navy-500 resize-none"
+            />
+            {/* SECURITY: Honeypot field — hidden from real users, bots auto-fill it */}
+            <input
+              type="text"
+              name="website"
+              value={data.website}
+              onChange={(e) => setData((p) => ({ ...p, website: e.target.value }))}
+              autoComplete="off"
+              tabIndex={-1}
+              aria-hidden="true"
+              style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, width: 0 }}
             />
           </div>
           <div className="flex justify-between mt-8">
