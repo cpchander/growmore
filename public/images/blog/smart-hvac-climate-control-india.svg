@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Smart HVAC and Climate Control cost breakdown for Indian premium homes 2026">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060E1A"/>
+      <stop offset="100%" stop-color="#0B1628"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4D078"/>
+      <stop offset="100%" stop-color="#D4A843"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#1A2744" stroke-width="0.6"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Top brand bar -->
+  <rect x="60" y="40" width="6" height="32" fill="#D4A843"/>
+  <text x="80" y="64" fill="#FFFFFF" font-family="Inter, Geist, system-ui, sans-serif" font-size="20" font-weight="700">GMHS • Grow More Solutions</text>
+  <text x="80" y="86" fill="#9AB0CC" font-family="Inter, Geist, system-ui, sans-serif" font-size="13" letter-spacing="2">SMART HVAC &amp; CLIMATE CONTROL • INDIA • 2026</text>
+
+  <!-- Main title -->
+  <text x="60" y="158" fill="#FFFFFF" font-family="Inter, Geist, system-ui, sans-serif" font-size="44" font-weight="800">Smart HVAC Cost in India</text>
+  <text x="60" y="200" fill="#D4A843" font-family="Inter, Geist, system-ui, sans-serif" font-size="32" font-weight="700">₹2 Lakh — ₹35 Lakh+</text>
+  <text x="60" y="232" fill="#9AB0CC" font-family="Inter, Geist, system-ui, sans-serif" font-size="16">Based on 300+ GMHS installations across 12 Indian cities</text>
+
+  <!-- Tier bar chart -->
+  <g transform="translate(60, 280)">
+    <text x="0" y="-12" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">TYPICAL SPEND BY TIER (₹ Lakh)</text>
+
+    <!-- Tier 1: Basic IoT -->
+    <text x="0" y="22" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="12">Basic IoT</text>
+    <rect x="100" y="8" width="50" height="18" rx="3" fill="url(#bar)" opacity="0.55"/>
+    <text x="160" y="22" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">2–4</text>
+
+    <!-- Tier 2: Multi-zone -->
+    <text x="0" y="56" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="12">Multi-zone KNX</text>
+    <rect x="100" y="42" width="160" height="18" rx="3" fill="url(#bar)" opacity="0.75"/>
+    <text x="270" y="56" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">6–14</text>
+
+    <!-- Tier 3: VRV + Zone -->
+    <text x="0" y="90" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="12">VRV + Zoning</text>
+    <rect x="100" y="76" width="280" height="18" rx="3" fill="url(#bar)" opacity="0.9"/>
+    <text x="390" y="90" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">16–28</text>
+
+    <!-- Tier 4: Premium IAQ -->
+    <text x="0" y="124" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="12">Premium IAQ</text>
+    <rect x="100" y="110" width="380" height="18" rx="3" fill="url(#bar)"/>
+    <text x="490" y="124" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">28–35+</text>
+  </g>
+
+  <!-- Energy savings ring stat -->
+  <g transform="translate(820, 320)" filter="url(#glow)">
+    <circle r="118" fill="none" stroke="#1A2744" stroke-width="14"/>
+    <circle r="118" fill="none" stroke="#D4A843" stroke-width="14" stroke-dasharray="540 740" stroke-linecap="round" transform="rotate(-90)"/>
+    <text x="0" y="-8" text-anchor="middle" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800">28–42%</text>
+    <text x="0" y="22" text-anchor="middle" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="14">HVAC energy saved</text>
+    <text x="0" y="42" text-anchor="middle" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="13">with integrated KNX</text>
+    <text x="0" y="60" text-anchor="middle" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="13">+ zone control</text>
+  </g>
+
+  <!-- Bottom strip with 3 stats -->
+  <g transform="translate(60, 510)">
+    <rect width="340" height="68" rx="6" fill="#0F1B2F" stroke="#1A2744"/>
+    <text x="20" y="30" fill="#D4A843" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">110+</text>
+    <text x="20" y="52" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="12">Villa HVAC integrations completed</text>
+
+    <rect x="370" width="340" height="68" rx="6" fill="#0F1B2F" stroke="#1A2744"/>
+    <text x="390" y="30" fill="#D4A843" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">6 brands</text>
+    <text x="390" y="52" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="12">Daikin / Mitsubishi / Hitachi / LG / Toshiba / Samsung</text>
+
+    <rect x="740" width="340" height="68" rx="6" fill="#0F1B2F" stroke="#1A2744"/>
+    <text x="760" y="30" fill="#D4A843" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">KNX + BACnet</text>
+    <text x="760" y="52" fill="#9AB0CC" font-family="Inter, system-ui, sans-serif" font-size="12">Vendor-neutral control architecture</text>
+  </g>
+
+  <!-- Brand footer -->
+  <line x1="60" y1="600" x2="1140" y2="600" stroke="#1A2744"/>
+  <text x="60" y="622" fill="#7A8FA8" font-family="Inter, system-ui, sans-serif" font-size="12">growmoresolutions.com — 300+ installations | 12 cities | 15+ years</text>
+  <text x="1140" y="622" text-anchor="end" fill="#7A8FA8" font-family="Inter, system-ui, sans-serif" font-size="12">May 2026</text>
+</svg>

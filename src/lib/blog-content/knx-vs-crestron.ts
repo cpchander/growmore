@@ -334,4 +334,8 @@ For a new 3BHK, **KNX** with Schneider or ABB devices offers the best long-term 
 
 ### Do you service all three brands?
 
-Yes. We are **certified partners** of KNX (via Schneider, ABB, Gira), Crestron, and Control4. Our team includes certified programmers for all three platforms. Visit our [certifications page](/about/certifications) to see our partnership credentials.`;
+Yes. We are **certified partners** of KNX (via Schneider, ABB, Gira), Crestron, and Control4. Our team includes certified programmers for all three platforms. Visit our [certifications page](/about/certifications) to see our partnership credentials.
+
+---
+
+*Prices indicative as of May 2026, subject to change based on FX rates, import duties, brand pricing updates, and project-specific scope. Request a [consultation](/contact) for accurate quoting.*`;

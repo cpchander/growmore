@@ -8,6 +8,7 @@ import { content as homeAutomationCost2026Content } from "./blog-content/home-au
 import { content as wiringNewConstructionContent } from "./blog-content/smart-home-wiring-new-construction";
 import { content as securitySystemsContent } from "./blog-content/smart-home-security-systems";
 import { content as homeTheaterAvContent } from "./blog-content/home-theater-av-automation-india";
+import { content as smartHvacClimateControlContent } from "./blog-content/smart-hvac-climate-control-india";
 
 export type BlogPost = {
   slug: string;
@@ -35,6 +36,21 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "smart-hvac-climate-control-india",
+    title: "Smart HVAC & Climate Control in India 2026: ₹2 Lakh–35 Lakh+ Real Costs | GMHS",
+    excerpt:
+      "Smart HVAC & climate control costs in India: ₹2 Lakh–₹35 Lakh+. VRV vs split economics, KNX/BACnet integration, IAQ sensors, motorized dampers, and 28–42% energy savings. Based on 300+ GMHS installations.",
+    category: "Room Automation",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-05-18",
+    readTime: "18 min",
+    featured: true,
+    image: "/images/blog/smart-hvac-climate-control-india.webp",
+    imageAlt: "Smart HVAC and climate control cost breakdown for Indian premium homes 2026 — tiers from ₹2 Lakh IoT integration to ₹35 Lakh+ VRV with IAQ and zone control, based on 300+ GMHS installations",
+    content: smartHvacClimateControlContent,
+  },
   {
     slug: "home-theater-av-automation-india",
     title: "Home Theater & AV Automation Cost in India 2026: ₹3 Lakh–2 Cr+ Real Pricing | GMHS",

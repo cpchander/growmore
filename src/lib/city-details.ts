@@ -54,6 +54,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     recommendedReading: [
       { title: "Home Theater Cost Guide", href: "/blog/home-theater-av-automation-india", description: "Atmos configs for Mumbai high-rise ceilings" },
       { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Marine-grade CCTV for coastal projects" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "VRV + BACnet integration for Mumbai high-rises" },
     ],
   },
 
@@ -136,6 +137,7 @@ CITY_DETAILS.delhi = {
   recommendedReading: [
     { title: "Smart Home Wiring Guide", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring for Delhi farmhouses and villas" },
     { title: "Home Theater Cost Guide", href: "/blog/home-theater-av-automation-india", description: "Cinema configs for Delhi/Gurgaon luxury homes" },
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "IAQ + VRV zoning for high-AQI Delhi homes" },
   ],
 };
 
