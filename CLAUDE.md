@@ -8,14 +8,20 @@ Modern, 3D-interactive website for India's most experienced home automation comp
 ---
 
 ## Tech Stack
-- **Framework:** Next.js 16, App Router, TypeScript, React 19
+- **Framework:** Next.js 16.2.6, App Router, TypeScript, React 19.2.6
 - **Styling:** Tailwind CSS v4 (dark luxury theme — navy + gold)
 - **3D:** React Three Fiber + Three.js + @react-three/drei + postprocessing
 - **Animation:** GSAP + Framer Motion
 - **Forms:** React Hook Form + Zod validation
+- **Email:** Nodemailer + ZeptoMail SMTP (`smtp.zeptomail.in:587`)
 - **Icons:** Lucide React
-- **Hosting:** Vercel (deploy via `vercel` CLI or GitHub integration)
+- **Hosting:** Vercel (auto-deploy from GitHub `cpchander/growmore` → main)
 - **Package Manager:** pnpm
+- **Repo:** https://github.com/cpchander/growmore
+- **Git Auth:** GitHub PAT `$GMHS_GITHUB_TOKEN (env var in deploy MCP config)` (cpchander account, expires ~Aug 2026)
+- **Deploy MCP:** `~/Desktop/gmhs-deploy-mcp/server.py` — tools: `gmhs_commit_and_deploy`, `gmhs_git_status`, `gmhs_push`, `gmhs_commit`, `gmhs_git_log`, `gmhs_diff`
+- **Vercel Token:** `$VERCEL_TOKEN (env var in deploy MCP config)` (for API access)
+- **Vercel Project:** `prj_42X0RFckZNpHnBY017b1DyF3mqnk` | Team: `team_SaNjFoxePeJoLIn97qDmOBS3`
 
 ---
 
@@ -192,6 +198,93 @@ Step 1: Property type → Step 2: City + Budget → Step 3: Features → Step 4:
 - Brand partnership logos
 - Phone number in header
 - Physical address in footer
+
+---
+
+## Security Architecture (Hardened 2026-05-13)
+
+Full pen-test completed — 14 findings identified and ALL resolved. Notion tracker: `35fdb61b-a034-813c-8cbc-d472097f3ba7`
+
+### Security Headers (`next.config.ts` → `headers()`)
+7 headers applied globally via Next.js config:
+- Content-Security-Policy (self + unsafe-inline/eval for Next.js, googletagmanager, google-analytics, cdnjs.cloudflare.com, youtube, blob: for Three.js)
+- X-Frame-Options: DENY
+- X-Content-Type-Options: nosniff
+- Referrer-Policy: strict-origin-when-cross-origin
+- Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+- Permissions-Policy: camera=(), microphone=(), geolocation=()
+- Cross-Origin-Opener-Policy: same-origin
+
+### Contact API Protections (`src/app/api/contact/route.ts`)
+6-layer defense:
+1. `escapeHtml()` — prevents HTML injection in email templates
+2. Zod `contactSchema` — validates all input (name, phone, email, message, features)
+3. IP-based rate limiter — 5 requests per IP per 15 minutes, auto-cleanup every 30 min
+4. Honeypot field (`website`) — hidden from users, bots auto-fill it → silently rejected
+5. Origin/Referer CSRF check — only accepts requests from `growmoresolutions.com`
+6. Double email validation — Zod validates email format before sending acknowledgment
+
+### Secrets Management
+- **ZeptoMail API key:** Vercel Dashboard env var (`ZEPTOMAIL_API_KEY`), NOT in codebase
+- **Google Analytics:** `NEXT_PUBLIC_GA_ID` env var with fallback to `G-RV11C3QEJP`
+- **Git auth:** GitHub PAT (cpchander) — stored in deploy MCP env + CLAUDE.md
+- **`.env.local`:** in `.gitignore`, never committed
+- **Vercel token:** stored in deploy MCP env for API-based deployment checks
+
+### Dependency Versions (as of 2026-05-13)
+- Next.js: 16.2.6 (patched 14 CVEs from 16.2.4)
+- React/React-DOM: 19.2.6
+- eslint-config-next: 16.2.6
+- ⚠️ three.js, lucide-react, zod: major bumps available but need manual testing
+
+### Weekly Security Audit
+Automated via `gmhs-weekly-content-engine` scheduled task (JOB 7). Checks:
+deps CVEs, 7 security headers, 6 API protections, secrets exposure, SSL/TLS, attack surface paths, robots.txt
+
+---
+
+## Cross-Linking Rules
+
+- **Internal:** Every page must link to 2+ blog posts + 1 tool/page (/smart-home-planner, /get-quote, /contact)
+- **External sister sites (Zedtreeo, RemoteStaffingWiki):** ONLY link when content specifically discusses hiring drafters, architects, or remote staffing for home automation. NO blanket cross-links for SEO.
+
+---
+
+## Deployment Rules
+
+### Git Push Workflow (preferred)
+1. Edit files → `git add` → `git commit` → `git push origin main`
+2. Vercel auto-deploys from GitHub push (~60s build)
+3. Use deploy MCP tools when available: `gmhs_commit_and_deploy` does all in one call
+4. **CRITICAL:** After updating `package.json` deps, ALWAYS run `pnpm install` locally and commit `pnpm-lock.yaml` — Vercel uses `--frozen-lockfile` and will fail if lockfile is stale
+
+### Git Remote Auth (sandbox)
+```bash
+git remote set-url origin https://cpchander:$GMHS_GITHUB_TOKEN (env var in deploy MCP config)@github.com/cpchander/growmore.git
+```
+
+### Verify Deployment
+```bash
+curl -s -H "Authorization: Bearer $VERCEL_TOKEN (env var in deploy MCP config)" \
+  "https://api.vercel.com/v6/deployments?projectId=prj_42X0RFckZNpHnBY017b1DyF3mqnk&limit=1&teamId=team_SaNjFoxePeJoLIn97qDmOBS3"
+```
+
+---
+
+## 3D Scene Rules (IMPORTANT)
+
+- **DO NOT use `<Environment preset="..." />`** from @react-three/drei — it fetches HDR files from `dl.polyhaven.org` which is blocked by CSP, causing WebGL context loss and page crash
+- Use local directional/ambient lights instead: `<ambientLight intensity={0.3} />` + `<directionalLight position={[5,8,5]} intensity={0.6} color="#D4A843" />`
+- All 3 scene components fixed (2026-05-21): SmartHomeScene, VillaWalkthrough, RoomWalkthrough
+
+---
+
+## Team Page
+
+- `/about/team` — Leadership section shows only 2 people:
+  1. **Anupam Mahajan** — Co-Founder & Managing Director | photo: `/images/team/anupam-mahajan.webp` | LinkedIn: `linkedin.com/in/anupam-mahajan-3882ba14`
+  2. **Aakanksha Mahajan** — Senior Architect & Head of Design | photo: `/images/team/aakanksha-mahajan.webp` | LinkedIn: `linkedin.com/in/aakanksha-mahajan-gmhs/`
+- Do NOT add placeholder team members
 
 ---
 
