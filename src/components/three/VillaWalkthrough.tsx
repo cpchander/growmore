@@ -2,7 +2,7 @@
 
 import { Suspense, useRef, useState, useCallback, useEffect, useMemo } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Environment, ContactShadows } from "@react-three/drei";
+import { ContactShadows } from "@react-three/drei";
 import * as THREE from "three";
 import type { LucideIcon } from "lucide-react";
 import {
@@ -1004,7 +1004,8 @@ export default function VillaWalkthrough() {
             <CameraController zone={zone} />
             <ZoneScene zoneId={zone.id} progress={progress} />
             <ContactShadows position={[0, -0.01, 0]} opacity={0.4} blur={2} far={10} />
-            <Environment preset="night" />
+            <directionalLight position={[5, 8, 5]} intensity={0.5} color="#D4A843" />
+            <directionalLight position={[-3, 4, -2]} intensity={0.3} color="#3B82F6" />
           </Suspense>
         </Canvas>
 

@@ -4,7 +4,6 @@ import { Suspense, useRef, useState, useMemo, useEffect, useCallback } from "rea
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
   Float,
-  Environment,
   ContactShadows,
   OrbitControls,
   Html,
@@ -852,7 +851,8 @@ export default function RoomWalkthrough() {
             <Particles color={meta.accent} />
             <ContactShadows position={[0, 0.01, 0]} opacity={0.2} scale={6} blur={2} />
             <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI/6} maxPolarAngle={Math.PI/2.1} autoRotate autoRotateSpeed={0.3} target={[0,0.8,0]} />
-            <Environment preset="night" />
+            <directionalLight position={[5, 8, 5]} intensity={0.5} color="#D4A843" />
+            <directionalLight position={[-3, 4, -2]} intensity={0.3} color="#3B82F6" />
           </Canvas>
         </Suspense>
 

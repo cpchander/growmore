@@ -4,7 +4,6 @@ import { Suspense, useRef, useState, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
   Float,
-  Environment,
   ContactShadows,
   OrbitControls,
   Html,
@@ -378,8 +377,10 @@ export default function SmartHomeScene({
             autoRotateSpeed={0.5}
           />
 
-          {/* Environment for reflections */}
-          <Environment preset="night" />
+          {/* Lighting (no external HDR to avoid CSP/fetch failures) */}
+          <ambientLight intensity={0.3} />
+          <directionalLight position={[5, 8, 5]} intensity={0.6} color="#D4A843" />
+          <directionalLight position={[-3, 4, -2]} intensity={0.3} color="#3B82F6" />
         </Canvas>
       </Suspense>
 
