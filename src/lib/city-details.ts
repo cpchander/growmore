@@ -55,6 +55,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       { title: "Home Theater Cost Guide", href: "/blog/home-theater-av-automation-india", description: "Atmos configs for Mumbai high-rise ceilings" },
       { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Marine-grade CCTV for coastal projects" },
       { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "VRV + BACnet integration for Mumbai high-rises" },
+      { title: "Motorized Curtains & Blinds Guide", href: "/blog/motorized-curtains-blinds-india", description: "Marine-grade shading for Mumbai coastal high-rises" },
     ],
   },
 
@@ -95,6 +96,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     recommendedReading: [
       { title: "KNX vs Crestron vs Control4", href: "/blog/knx-vs-crestron-vs-control4-india", description: "Why KNX dominates Bangalore HNI installs" },
       { title: "Home Theater Cost Guide", href: "/blog/home-theater-av-automation-india", description: "Atmos and AV automation in Bangalore villas" },
+      { title: "Motorized Curtains & Blinds Guide", href: "/blog/motorized-curtains-blinds-india", description: "KNX-integrated shading for Bangalore tech-HNI homes" },
     ],
   },
 };
@@ -138,6 +140,7 @@ CITY_DETAILS.delhi = {
     { title: "Smart Home Wiring Guide", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring for Delhi farmhouses and villas" },
     { title: "Home Theater Cost Guide", href: "/blog/home-theater-av-automation-india", description: "Cinema configs for Delhi/Gurgaon luxury homes" },
     { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "IAQ + VRV zoning for high-AQI Delhi homes" },
+    { title: "Motorized Curtains & Blinds Guide", href: "/blog/motorized-curtains-blinds-india", description: "Solar-tracking shading for Delhi villas & farmhouses" },
   ],
 };
 

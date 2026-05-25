@@ -9,6 +9,7 @@ import { content as wiringNewConstructionContent } from "./blog-content/smart-ho
 import { content as securitySystemsContent } from "./blog-content/smart-home-security-systems";
 import { content as homeTheaterAvContent } from "./blog-content/home-theater-av-automation-india";
 import { content as smartHvacClimateControlContent } from "./blog-content/smart-hvac-climate-control-india";
+import { content as motorizedCurtainsBlindsContent } from "./blog-content/motorized-curtains-blinds-india";
 
 export type BlogPost = {
   slug: string;
@@ -36,6 +37,21 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "motorized-curtains-blinds-india",
+    title: "Motorized Curtains & Blinds in India 2026: ₹8K–₹2.4 Lakh+ Per Window | GMHS",
+    excerpt:
+      "Motorized curtains & blinds cost in India: ₹8K–₹2.4 Lakh+ per window. Somfy vs Lutron vs Hunter Douglas, KNX/Modbus integration, dual-layer sheer + blackout architecture, and 14–22% HVAC savings. Based on 300+ GMHS installations.",
+    category: "Room Automation",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-05-25",
+    readTime: "17 min",
+    featured: true,
+    image: "/images/blog/motorized-curtains-blinds-india.webp",
+    imageAlt: "Motorized curtains and blinds cost breakdown for Indian premium homes 2026 — tiers from ₹8K Wi-Fi roller to ₹2.4 Lakh+ Lutron Sivoia QS per window, based on 300+ GMHS installations",
+    content: motorizedCurtainsBlindsContent,
+  },
   {
     slug: "smart-hvac-climate-control-india",
     title: "Smart HVAC & Climate Control in India 2026: ₹2 Lakh–35 Lakh+ Real Costs | GMHS",
