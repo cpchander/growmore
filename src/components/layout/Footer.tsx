@@ -1,63 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { COMPANY, SERVICES, CITIES } from "@/lib/constants";
-
-const SOCIAL_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
-  instagram: Instagram,
-  facebook: Facebook,
-  linkedin: Linkedin,
-  youtube: Youtube,
-};
 
 export default function Footer() {
   return (
     <footer className="bg-navy-950 border-t border-navy-700/50">
-      {/* Main Footer */}
+      {/* Main Footer — 4 columns */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12">
+          {/* Column 1: Services */}
           <div>
-            <Link href="/" className="inline-flex flex-col items-center mb-4">
-              <Image
-                src="/images/company/gmhs.png"
-                alt="GMHS - Grow More Hitech Solutions"
-                width={200}
-                height={52}
-                className="h-11 w-auto"
-              />
-              <span className="text-[10px] font-semibold text-gold-500 mt-1" style={{ letterSpacing: "0.45em" }}>
-                SINCE {COMPANY.foundedYear}
-              </span>
-            </Link>
-            <p className="text-navy-300 text-sm leading-relaxed mb-4">
-              {COMPANY.tagline}. Transforming Indian homes with intelligent
-              automation since {COMPANY.foundedYear}.
-            </p>
-            <div className="flex gap-3">
-              {Object.entries(COMPANY.socialLinks)
-                .filter(([, url]) => url && url.length > 0)
-                .map(([platform, url]) => {
-                  const Icon = SOCIAL_ICONS[platform];
-                  return (
-                    <a
-                      key={platform}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-9 h-9 rounded-lg bg-navy-800 hover:bg-gold-500 hover:text-navy-900 text-navy-400 flex items-center justify-center transition-colors"
-                      aria-label={`Follow us on ${platform}`}
-                    >
-                      {Icon ? <Icon className="w-4 h-4" /> : platform[0].toUpperCase()}
-                    </a>
-                  );
-                })}
-            </div>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Services
+            </h3>
             <ul className="space-y-2">
               {SERVICES.map((service) => (
                 <li key={service.slug}>
@@ -72,11 +28,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Cities */}
+          {/* Column 2: Cities — all 12 */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Cities We Serve</h3>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Cities We Serve
+            </h3>
             <ul className="space-y-2">
-              {CITIES.slice(0, 9).map((city) => (
+              {CITIES.map((city) => (
                 <li key={city.slug}>
                   <Link
                     href={`/cities/${city.slug}`}
@@ -86,60 +44,266 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Column 3: Resources */}
+          <div>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Resources
+            </h3>
+            <ul className="space-y-2">
               <li>
-                <Link href="/cities" className="text-sm text-gold-500 hover:text-gold-400">
-                  All Cities →
+                <Link
+                  href="/blog"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog/home-automation-cost-2026"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Cost Guide 2026
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/smart-home-planner"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Smart Home Planner
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/compare"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Compare Brands
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Project Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/get-quote"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Get Instant Quote
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/experience"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  3D Experience
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Column 4: Company */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact Us</h3>
-            <div className="space-y-3 text-sm text-navy-300">
-              <p>{COMPANY.address}</p>
-              <a
-                href={`tel:${COMPANY.phone}`}
-                className="block hover:text-gold-500 transition-colors"
-              >
-                {COMPANY.phone}
-              </a>
-              <a
-                href={`mailto:${COMPANY.email}`}
-                className="block hover:text-gold-500 transition-colors"
-              >
-                {COMPANY.email}
-              </a>
-              <Link
-                href="/ventures"
-                className="block text-gold-500 hover:text-gold-400 transition-colors mt-4 font-medium"
-              >
-                Ventures & Partnerships →
-              </Link>
-            </div>
-            <Link
-              href="/contact"
-              className="inline-block mt-4 bg-gold-500 hover:bg-gold-600 text-navy-900 px-5 py-2 rounded-lg text-sm font-semibold transition-colors"
-            >
-              Book Consultation
-            </Link>
+            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+              Company
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/about/our-story"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Our Story
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about/team"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about/certifications"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Certifications
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ventures"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Ventures & Partnerships
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* NAP Strip — address, hours, social, CTA */}
       <div className="border-t border-navy-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-navy-400">
-            &copy; {new Date().getFullYear()} {COMPANY.name}. All rights reserved.{" "}
-            {COMPANY.experience} years of home automation excellence.
-          </p>
-          <div className="flex gap-6 text-xs text-navy-400">
-            <Link href="/privacy" className="hover:text-navy-200">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-navy-200">Terms of Service</Link>
-            <Link href="/sitemap.xml" className="hover:text-navy-200">Sitemap</Link>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
+            {/* Logo + tagline */}
+            <div>
+              <Link href="/" className="inline-flex flex-col items-start mb-3">
+                <Image
+                  src="/images/company/gmhs.png"
+                  alt="Grow More Solutions — India's Leading Home Automation Company"
+                  width={200}
+                  height={52}
+                  className="h-10 w-auto"
+                />
+                <span
+                  className="text-[10px] font-semibold text-gold-500 mt-1"
+                  style={{ letterSpacing: "0.45em" }}
+                >
+                  SINCE {COMPANY.foundedYear}
+                </span>
+              </Link>
+              <p className="text-navy-400 text-xs leading-relaxed">
+                {COMPANY.tagline}
+              </p>
+            </div>
+
+            {/* NAP block */}
+            <div className="space-y-2 text-sm text-navy-300">
+              <div className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-gold-500 mt-0.5 shrink-0" />
+                <span>{COMPANY.address}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-gold-500 shrink-0" />
+                <a
+                  href={`tel:${COMPANY.phone}`}
+                  className="hover:text-gold-500 transition-colors"
+                >
+                  {COMPANY.phone}
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-gold-500 shrink-0" />
+                <a
+                  href={`mailto:${COMPANY.email}`}
+                  className="hover:text-gold-500 transition-colors"
+                >
+                  {COMPANY.email}
+                </a>
+              </div>
+            </div>
+
+            {/* Hours + social */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 text-sm text-navy-300">
+                <Clock className="w-4 h-4 text-gold-500 shrink-0" />
+                <span>{COMPANY.demoCenter.hours}</span>
+              </div>
+              <div className="flex gap-2">
+                {COMPANY.socialLinks.instagram && (
+                  <a
+                    href={COMPANY.socialLinks.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-lg bg-navy-800 hover:bg-gold-500 hover:text-navy-900 text-navy-400 flex items-center justify-center transition-colors"
+                    aria-label="Follow us on Instagram"
+                  >
+                    <Instagram className="w-4 h-4" />
+                  </a>
+                )}
+                {COMPANY.socialLinks.facebook && (
+                  <a
+                    href={COMPANY.socialLinks.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-lg bg-navy-800 hover:bg-gold-500 hover:text-navy-900 text-navy-400 flex items-center justify-center transition-colors"
+                    aria-label="Follow us on Facebook"
+                  >
+                    <Facebook className="w-4 h-4" />
+                  </a>
+                )}
+                {COMPANY.socialLinks.linkedin && (
+                  <a
+                    href={COMPANY.socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-lg bg-navy-800 hover:bg-gold-500 hover:text-navy-900 text-navy-400 flex items-center justify-center transition-colors"
+                    aria-label="Follow us on LinkedIn"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                )}
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="flex flex-col gap-3">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center bg-gold-500 hover:bg-gold-600 text-navy-900 px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors text-center"
+              >
+                Book a Free Demo
+              </Link>
+              <Link
+                href="/get-quote"
+                className="inline-flex items-center justify-center border border-gold-500/30 hover:border-gold-500 text-gold-500 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors text-center"
+              >
+                Get Instant Quote
+              </Link>
+            </div>
           </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar — copyright */}
+      <div className="border-t border-navy-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-navy-500">
+            &copy; {new Date().getFullYear()} {COMPANY.legalName}. CIN:{" "}
+            {COMPANY.cin}. All rights reserved.
+          </p>
+          <p className="text-xs text-navy-500">
+            {COMPANY.experience} years of smart home automation excellence
+            across India.
+          </p>
         </div>
       </div>
     </footer>
