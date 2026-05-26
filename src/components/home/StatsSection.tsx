@@ -12,7 +12,8 @@ function AnimatedCounter({
   suffix: string;
   label: string;
 }) {
-  const [count, setCount] = useState(0);
+  // Initialize to `end` so SSR/no-JS always renders the real value in HTML
+  const [count, setCount] = useState(end);
   const [started, setStarted] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -24,13 +25,14 @@ function AnimatedCounter({
       ([entry]) => {
         if (entry.isIntersecting && !started) {
           setStarted(true);
+          // Reset to 0, then animate up — only when visible
+          setCount(0);
           const duration = 2000;
           const startTime = Date.now();
 
           const animate = () => {
             const elapsed = Date.now() - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            // Ease out cubic
             const eased = 1 - Math.pow(1 - progress, 3);
             setCount(Math.floor(eased * end));
             if (progress < 1) requestAnimationFrame(animate);
