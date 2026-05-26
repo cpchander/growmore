@@ -301,15 +301,27 @@ export default async function CityPage({ params }: Props) {
             <div className="grid sm:grid-cols-3 gap-3">
               <Link href="/blog/home-automation-cost-2026" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
                 <p className="text-sm font-medium text-white mb-1">Cost Guide 2026</p>
-                <p className="text-xs text-navy-400">Real pricing from 300+ installations</p>
+                <p className="text-xs text-navy-400">Real pricing from {COMPANY.projectsCompleted} installations</p>
+              </Link>
+              <Link href="/blog/smart-home-wiring-new-construction-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Smart Home Wiring Guide</p>
+                <p className="text-xs text-navy-400">Pre-wiring for new construction & renovations</p>
+              </Link>
+              <Link href="/compare" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Compare Brands</p>
+                <p className="text-xs text-navy-400">KNX vs Crestron vs Control4 vs Lutron</p>
               </Link>
               <Link href="/blog/home-theater-av-automation-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
                 <p className="text-sm font-medium text-white mb-1">Home Theater Cost Guide</p>
-                <p className="text-xs text-navy-400">₹3 L–2 Cr Atmos configs</p>
+                <p className="text-xs text-navy-400">₹3 L–2 Cr Dolby Atmos configs</p>
               </Link>
-              <Link href="/blog/knx-vs-crestron-vs-control4-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
-                <p className="text-sm font-medium text-white mb-1">Brand Comparison</p>
-                <p className="text-xs text-navy-400">KNX vs Crestron vs Control4</p>
+              <Link href="/projects" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Project Gallery</p>
+                <p className="text-xs text-navy-400">{COMPANY.projectsCompleted} completed projects across India</p>
+              </Link>
+              <Link href="/get-quote" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
+                <p className="text-sm font-medium text-white mb-1">Get Instant Quote</p>
+                <p className="text-xs text-navy-400">Calculate your automation budget online</p>
               </Link>
               {detail?.recommendedReading.map((r) => (
                 <Link key={r.href} href={r.href} className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
