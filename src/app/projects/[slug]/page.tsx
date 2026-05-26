@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 import { PROJECTS } from "@/lib/projects-data";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { breadcrumbJsonLd, projectJsonLd } from "@/lib/metadata";
 import {
   ArrowRight,
   ArrowLeft,
@@ -54,28 +54,21 @@ export default async function ProjectPage({ params }: Props) {
       ? related
       : PROJECTS.filter((p) => p.slug !== slug).slice(0, 3);
 
-  const caseStudySchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: project.title,
-    description: project.description,
-    author: {
-      "@type": "Organization",
-      name: COMPANY.name,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: COMPANY.name,
-      url: "https://growmoresolutions.com",
-    },
-    mainEntityOfPage: `https://growmoresolutions.com/projects/${slug}`,
-  };
-
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudySchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            projectJsonLd({
+              name: project.title,
+              description: project.description,
+              slug,
+              city: project.city,
+              brands: project.brand.split(/\s*\+\s*|\s*,\s*/),
+            })
+          ),
+        }}
       />
       <script
         type="application/ld+json"

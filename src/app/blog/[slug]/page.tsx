@@ -323,7 +323,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
     image: `https://growmoresolutions.com${post.image}`,
@@ -332,14 +332,21 @@ export default async function BlogPostPage({ params }: Props) {
     author: authorPersonSchema,
     publisher: {
       "@type": "Organization",
+      "@id": "https://growmoresolutions.com/#organization",
       name: COMPANY.name,
       url: "https://growmoresolutions.com",
       logo: {
         "@type": "ImageObject",
         url: "https://growmoresolutions.com/images/company/gmhs.png",
+        width: 512,
+        height: 512,
       },
     },
-    mainEntityOfPage: `https://growmoresolutions.com/blog/${slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://growmoresolutions.com/blog/${slug}`,
+    },
+    inLanguage: "en-IN",
   };
 
   return (
