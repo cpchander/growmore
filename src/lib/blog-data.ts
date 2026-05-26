@@ -10,6 +10,7 @@ import { content as securitySystemsContent } from "./blog-content/smart-home-sec
 import { content as homeTheaterAvContent } from "./blog-content/home-theater-av-automation-india";
 import { content as smartHvacClimateControlContent } from "./blog-content/smart-hvac-climate-control-india";
 import { content as motorizedCurtainsBlindsContent } from "./blog-content/motorized-curtains-blinds-india";
+import { content as wiredVsWirelessContent } from "./blog-content/wired-vs-wireless-home-automation-india";
 
 export type BlogPost = {
   slug: string;
@@ -37,6 +38,21 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "wired-vs-wireless-home-automation-india",
+    title: "Wired vs Wireless Home Automation in India 2026: Real Costs, Protocols & Decision Framework | GMHS",
+    excerpt:
+      "Wired vs wireless home automation cost in India: ₹5–40 Lakh (KNX/Crestron wired) vs ₹1–5 Lakh (Zigbee/Wi-Fi wireless). Protocol comparison, hybrid approach, BIS QCO 2026 impact, and the decision framework GMHS uses across 300+ installations.",
+    category: "Comparisons",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-05-26",
+    readTime: "19 min",
+    featured: true,
+    image: "/images/blog/wired-vs-wireless-home-automation-india.webp",
+    imageAlt: "Wired vs wireless home automation comparison for Indian homes 2026 — KNX bus cable and Zigbee mesh diagram showing cost, reliability, and lifespan differences based on 300+ GMHS installations",
+    content: wiredVsWirelessContent,
+  },
   {
     slug: "motorized-curtains-blinds-india",
     title: "Motorized Curtains & Blinds in India 2026: ₹8K–₹2.4 Lakh+ Per Window | GMHS",
