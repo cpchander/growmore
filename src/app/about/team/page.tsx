@@ -114,17 +114,17 @@ export default function TeamPage() {
                 <div className="flex items-start gap-4">
                   {/* Avatar */}
                   {person.image ? (
-                    <div className="w-16 h-16 rounded-full overflow-hidden shrink-0">
+                    <div className="w-24 h-24 rounded-full overflow-hidden shrink-0 ring-2 ring-gold-500/30">
                       <Image
                         src={person.image}
                         alt={person.name}
-                        width={64}
-                        height={64}
-                        className="w-full h-full object-cover"
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-cover object-top"
                       />
                     </div>
                   ) : (
-                    <div className="w-16 h-16 rounded-full bg-navy-700 flex items-center justify-center shrink-0">
+                    <div className="w-24 h-24 rounded-full bg-navy-700 flex items-center justify-center shrink-0 ring-2 ring-gold-500/30">
                       <span className="text-2xl font-bold text-gold-500">
                         {person.name.charAt(0)}
                       </span>
