@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060E1A"/>
+      <stop offset="100%" stop-color="#0B1626"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B8862F"/>
+      <stop offset="50%" stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#F5D478"/>
+    </linearGradient>
+    <linearGradient id="wiredPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16243E"/>
+      <stop offset="100%" stop-color="#0E1A2E"/>
+    </linearGradient>
+    <linearGradient id="bluePanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#13243C"/>
+      <stop offset="100%" stop-color="#0C1726"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D4A843" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Header -->
+  <text x="60" y="78" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="600" fill="#D4A843" letter-spacing="3">GMHS · 2026 DECISION GUIDE</text>
+  <text x="60" y="134" font-family="Inter, system-ui, sans-serif" font-size="46" font-weight="700" fill="#FFFFFF">Wired vs Wireless Home Automation</text>
+  <text x="60" y="172" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="400" fill="#94A3B8">Real cost, reliability &amp; protocol data from 300+ installations in India</text>
+
+  <!-- Divider -->
+  <rect x="60" y="196" width="1080" height="2" fill="url(#gold)" opacity="0.5"/>
+
+  <!-- WIRED panel -->
+  <g transform="translate(60, 222)">
+    <rect x="0" y="0" width="520" height="300" rx="10" fill="url(#wiredPanel)" stroke="#D4A843" stroke-width="2"/>
+    <text x="28" y="46" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#D4A843">WIRED</text>
+    <text x="28" y="72" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#94A3B8">KNX · Crestron · Lutron HomeWorks</text>
+
+    <!-- bus line illustration -->
+    <line x1="28" y1="100" x2="492" y2="100" stroke="#D4A843" stroke-width="3"/>
+    <circle cx="92" cy="100" r="7" fill="#0B1626" stroke="#D4A843" stroke-width="2.5"/>
+    <circle cx="220" cy="100" r="7" fill="#0B1626" stroke="#D4A843" stroke-width="2.5"/>
+    <circle cx="348" cy="100" r="7" fill="#0B1626" stroke="#D4A843" stroke-width="2.5"/>
+    <circle cx="450" cy="100" r="7" fill="#0B1626" stroke="#D4A843" stroke-width="2.5"/>
+
+    <text x="28" y="150" font-family="monospace" font-size="30" font-weight="700" fill="#FFFFFF">₹5 – 40 Lakh+</text>
+    <text x="28" y="174" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#94A3B8">3–5 BHK villa · installed</text>
+
+    <g font-family="Inter, system-ui, sans-serif" font-size="15" fill="#E2E8F0">
+      <text x="28" y="214">▸ 25–30+ year lifespan</text>
+      <text x="28" y="242">▸ &lt;50 ms latency, zero RF dropouts</text>
+      <text x="28" y="270">▸ Best for new construction</text>
+    </g>
+  </g>
+
+  <!-- WIRELESS panel -->
+  <g transform="translate(620, 222)">
+    <rect x="0" y="0" width="520" height="300" rx="10" fill="url(#bluePanel)" stroke="#3B82F6" stroke-width="2" stroke-opacity="0.7"/>
+    <text x="28" y="46" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#3B82F6">WIRELESS</text>
+    <text x="28" y="72" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#94A3B8">Zigbee · Z-Wave · Wi-Fi · Matter/Thread</text>
+
+    <!-- mesh / signal illustration -->
+    <g stroke="#3B82F6" stroke-width="2" fill="none" opacity="0.8">
+      <circle cx="92" cy="100" r="6" fill="#3B82F6"/>
+      <path d="M 104 100 A 18 18 0 0 1 104 100 M 110 90 A 26 26 0 0 1 110 110"/>
+      <path d="M 122 84 A 38 38 0 0 1 122 116"/>
+      <path d="M 134 78 A 50 50 0 0 1 134 122"/>
+    </g>
+    <line x1="92" y1="100" x2="450" y2="100" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="5 7" opacity="0.6"/>
+    <circle cx="280" cy="100" r="6" fill="#0B1626" stroke="#3B82F6" stroke-width="2"/>
+    <circle cx="450" cy="100" r="6" fill="#0B1626" stroke="#3B82F6" stroke-width="2"/>
+
+    <text x="28" y="150" font-family="monospace" font-size="30" font-weight="700" fill="#FFFFFF">₹1 – 5 Lakh</text>
+    <text x="28" y="174" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#94A3B8">comparable room coverage</text>
+
+    <g font-family="Inter, system-ui, sans-serif" font-size="15" fill="#E2E8F0">
+      <text x="28" y="214">▸ 8–12 year practical lifespan</text>
+      <text x="28" y="242">▸ Installs in 2–5 days, no civil work</text>
+      <text x="28" y="270">▸ Best for retrofit &amp; apartments</text>
+    </g>
+  </g>
+
+  <!-- Hybrid callout strip -->
+  <g transform="translate(60, 548)">
+    <rect x="0" y="0" width="1080" height="44" rx="8" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-opacity="0.6"/>
+    <text x="24" y="29" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#D4A843" font-weight="700">HYBRID =</text>
+    <text x="118" y="29" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#E2E8F0">wired backbone + wireless edge — the right answer for 60%+ of premium Indian homes</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="60" y="616" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#94A3B8">growmoresolutions.com — 300+ installations | 12 cities | 15+ years</text>
+  <text x="1140" y="616" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#D4A843" font-weight="600">KNX-certified · Anupam Mahajan, MD</text>
+</svg>
