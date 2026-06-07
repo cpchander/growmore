@@ -135,6 +135,14 @@ export const CITIES = [
   { slug: "jaipur", name: "Jaipur", areas: ["C-Scheme", "Vaishali Nagar", "Malviya Nagar", "Mansarovar", "Tonk Road"] },
   { slug: "chandigarh", name: "Chandigarh", areas: ["Sector 17", "Sector 35", "Mohali", "Panchkula", "Zirakpur"] },
   { slug: "lucknow", name: "Lucknow", areas: ["Gomti Nagar", "Hazratganj", "Aliganj", "Indira Nagar", "Mahanagar"] },
+  { slug: "udaipur", name: "Udaipur", areas: ["Shobhagpura", "Fateh Sagar", "Rani Road (Lake Pichola)", "Bhuwana", "Ambamata", "Badi"] },
+  { slug: "jodhpur", name: "Jodhpur", areas: ["Ratanada", "Sardarpura", "Shastri Nagar", "Paota", "Pal Road", "Shikargarh"] },
+  { slug: "dehradun", name: "Dehradun", areas: ["Rajpur Road", "Mussoorie Road", "Dalanwala", "Vasant Vihar", "Sahastradhara Road", "Canal Road"] },
+  { slug: "indore", name: "Indore", areas: ["Vijay Nagar", "Super Corridor", "Nipania", "AB Road", "Old Palasia", "Bicholi Mardana"] },
+  { slug: "agra", name: "Agra", areas: ["Civil Lines", "Dayal Bagh", "Kamla Nagar", "Fatehabad Road", "Sikandra", "Vibhav Nagar"] },
+  { slug: "meerut", name: "Meerut", areas: ["Shastri Nagar", "Ganga Nagar", "Pallavpuram", "Modipuram", "Civil Lines", "Defence Colony"] },
+  { slug: "panipat", name: "Panipat", areas: ["Model Town", "HUDA Sector 11-12", "GT Road", "Sector 25", "Assandh Road", "Eldeco Estate One"] },
+  { slug: "gwalior", name: "Gwalior", areas: ["City Centre", "Sirol Road", "Maharajpura (Airport Road)", "Thatipur", "Lashkar", "Morar"] },
 ] as const;
 
 export const BRANDS = [

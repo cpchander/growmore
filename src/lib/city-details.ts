@@ -682,6 +682,342 @@ CITY_DETAILS.ghaziabad = {
   ],
 };
 
+// ─── Udaipur ─────────────────────────────────────────────────────────────
+CITY_DETAILS.udaipur = {
+  slug: "udaipur",
+  intro:
+    "Udaipur is India's most distinctive luxury home automation market — defined by lake-view villas around Fateh Sagar and Lake Pichola, heritage havelis in the old City Palace quarter, fast-growing premium enclaves in Shobhagpura and Bhuwana, and a hospitality crossover unmatched anywhere in the country. Grow More Solutions designs for three Udaipur realities at once: HNI second-home owners from Mumbai and Delhi who occupy their lake homes part-time, heritage and boutique-hotel families who need automation hidden inside protected architecture, and the luxury-wedding economy in which private homes double as event venues. Desert heat, pre-monsoon dust storms, and a storm-fragile grid make heat-rated, surge-protected, remotely-monitored systems the local baseline.",
+  marketNotes: [
+    "Lake-view villas and bungalows (Fateh Sagar, Rani Road/Lake Pichola, Ambamata, Badi) drive the highest budgets; Shobhagpura and Bhuwana lead the ₹70 Lakh–1.6 Cr premium-apartment growth tier",
+    "Heritage havelis around the City Palace and old Blue-City quarter require concealed wireless retrofit (KNX RF) that respects sandstone, jharokhas, and protected interiors — many of these homes also operate as boutique hotels",
+    "Second-home ownership by Mumbai and Delhi HNIs makes remote monitoring, occupancy simulation, and pre-arrival climate conditioning default scope rather than upsells — a large share of lake homes sit empty for weeks",
+    "Udaipur is India's #1 luxury-wedding destination — premium private homes and havelis double as event spaces, driving demand for scene-based façade/landscape lighting, multi-zone AV, and 200-guest event-mode automation",
+    "Summer highs near 45°C, pre-monsoon dust storms (winds up to ~80 km/h), and storm-driven outages with voltage fluctuation make heat-rated enclosures, sealed outdoor gear, servo stabilizers, and UPS-backed controllers standard scope",
+  ],
+  projectExamples: [
+    { area: "Rani Road (Lake Pichola)", type: "5BHK lake-view bungalow", budget: "₹26 Lakh", scope: "KNX whole-home + Lutron HomeWorks + 7.1.4 cinema + façade/landscape lighting scenes + remote monitoring + DG/UPS handover" },
+    { area: "Old City (City Palace quarter)", type: "Heritage haveli (boutique-hotel use)", budget: "₹19 Lakh", scope: "Concealed KNX RF retrofit + restored switchgear + guest-room scene control + energy management + perimeter security" },
+    { area: "Shobhagpura", type: "4BHK luxury villa", budget: "₹13 Lakh", scope: "Control4 + Lutron blinds + 5.1.4 Atmos + AQI/clean air + smart locks + occupancy simulation for part-time owners" },
+    { area: "Bhuwana", type: "4BHK premium apartment", budget: "₹6.5 Lakh", scope: "Wireless retrofit + Lutron Caseta + 5.1.2 Atmos + smart locks + remote app control + voice" },
+  ],
+  extraFaqs: [
+    {
+      question: "Can you manage my Udaipur lake home remotely while I'm in Mumbai or Delhi?",
+      answer:
+        "Yes — this is the default architecture for our Udaipur second-home installations, since most lake-view homes here are occupied only part of the year. Standard remote scope includes 24/7 monitoring of perimeter sensors, smoke and leak detectors, and HVAC fault alarms; mobile push notifications for any breach; remote camera viewing with talk-down; weekly automated health and occupancy reports; occupancy simulation that cycles lights and music to deter break-ins; and pre-arrival activation triggered a few hours before you reach the city, so the home is cooled, secured, and verified before you walk in. Many of our Fateh Sagar and Rani Road clients run their Udaipur homes entirely from Mumbai or Delhi between visits.",
+    },
+    {
+      question: "Can automation work for a Udaipur haveli or boutique hotel without damaging heritage architecture?",
+      answer:
+        "Yes — heritage-sensitive retrofit is a core part of our Udaipur practice. We use KNX RF wireless (no wall-cutting), conduits concealed behind existing panelling and stone latticework, restored period switchgear fitted with modern dimmers behind original plates, and sensors hidden in cornices and air-grills. For havelis operating as boutique hotels, we add guest-room scene control, central energy management across rooms, and a back-of-house dashboard — all without disturbing sandstone facades, frescoes, or jharokhas. We coordinate with heritage architects and conservation requirements where the property is protected.",
+    },
+    {
+      question: "Can the system handle a 200-guest destination wedding at my Udaipur home?",
+      answer:
+        "Yes — event-mode automation is a signature Udaipur capability given the city's luxury-wedding economy. Typical scope: pre-programmed Welcome / Arrival / Dinner / Performance / Late-night scenes that coordinate façade lighting, landscape and poolside lighting, multi-zone audio, and HVAC in smooth transitions; expanded sound coverage (6–10 zones across lawn, mandap, dining, and waterfront); valet/staff access modes that unlock specific gates and ground-floor zones while private areas stay locked; and an event-coordinator tablet that controls core systems without compromising household security. Event-mode programming typically adds ₹3–8 Lakh and turns a private home into a revenue-earning venue.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for Udaipur lake-view second homes" },
+    { title: "Smart Lighting Guide", href: "/blog/smart-lighting-guide-indian-homes", description: "Façade & event-scene lighting for Udaipur venues" },
+    { title: "Home Theater Cost Guide", href: "/blog/home-theater-av-automation-india", description: "AV and multi-zone audio for villas & havelis" },
+  ],
+};
+
+// ─── Jodhpur ─────────────────────────────────────────────────────────────
+CITY_DETAILS.jodhpur = {
+  slug: "jodhpur",
+  intro:
+    "Jodhpur is a bungalow-and-kothi city, not an apartment city — and its home automation market reflects that. Grow More Solutions designs full-home systems for the large independent bungalows of Ratanada, Sardarpura, Shastri Nagar, and Paota, gated villa townships along Pal Road, Jhalamand, and Shikargarh, and the sandstone heritage havelis of the old Blue City around Mehrangarh. The dominant buyer is the Marwari business family — discreet, traditional wealth that values reliability and long relationships over flashy gadgetry — alongside defence and Air Force officers and a strong heritage-hotel segment. The Thar-edge climate is the harshest design constraint in any of our markets: 45–48°C summers, 140–150 km/h sand storms, and chronic water scarcity all shape every Jodhpur build.",
+  marketNotes: [
+    "Large independent bungalows and kothis dominate the high-value tier (Ratanada, Sardarpura, Shastri Nagar, Paota); gated villa townships on Pal Road, Jhalamand, and Shikargarh (Ashapurna, Umaid Heritage) are the growth segment",
+    "Extreme desert heat (45–48°C, peak days near 50°C) makes automated climate zoning, occupancy-based cooling, and energy management a hard-ROI requirement, not a comfort luxury",
+    "Severe sand storms (aandhi) in May–June with winds of 140–150 km/h demand sealed IP-rated outdoor gear, dust-tolerant sensors, and automated wind-triggered closure of windows, curtains, and pergolas",
+    "Water scarcity (no rivers/lakes — supply from the Indira Gandhi Canal plus tankers and borewells) makes automated tank-level monitoring, pump control, and leak detection genuinely valued; high solar insolation makes solar + battery + smart energy management a natural fit",
+    "Marwari business families and defence officers favour discreet, durable, reliability-first systems — premium KNX/Crestron-grade automation is essentially absent from the local market, leaving a clear gap for experienced multi-brand engineering",
+  ],
+  projectExamples: [
+    { area: "Ratanada", type: "5BHK independent bungalow", budget: "₹17 Lakh", scope: "KNX whole-home + Lutron + 5.1.4 Atmos + integrated VRV + servo-stabilized panels + water-tank & pump automation" },
+    { area: "Old Blue City (Mehrangarh quarter)", type: "Sandstone heritage haveli", budget: "₹21 Lakh", scope: "Concealed KNX RF retrofit + restored switchgear + dust-sealed outdoor + heritage-matched touch panels + perimeter security" },
+    { area: "Pal Road (gated township)", type: "4BHK villa", budget: "₹11 Lakh", scope: "Control4 + Lutron blinds + 5.1.2 Atmos + smart locks + solar/UPS handover + sand-storm wind automation" },
+    { area: "Shikargarh", type: "4BHK new-build villa", budget: "₹8 Lakh", scope: "KNX pre-wired lighting + 5.1.2 Atmos + clean air + access control + water automation" },
+  ],
+  extraFaqs: [
+    {
+      question: "How do you protect automation hardware from Jodhpur's sand storms and 48°C heat?",
+      answer:
+        "Jodhpur sits on the edge of the Thar, and its May–June sand storms (winds of 140–150 km/h with fine desert dust) plus 45–48°C heat are the harshest conditions we design for. Our Jodhpur spec uses IP65+ sealed outdoor enclosures, dust-tolerant cameras and sensors, heat-rated control panels with ventilation/cooling where needed, and automated wind triggers that close windows, motorized curtains, and pergola louvres when a storm front is detected. Indoor gear is unaffected if the home maintains conditioned air, but we still favour sealed switch modules in dusty zones. This hardened approach is why we treat preventive maintenance as part of the AMC rather than an afterthought in Jodhpur.",
+    },
+    {
+      question: "Can automation help with Jodhpur's water scarcity?",
+      answer:
+        "Yes — water management is one of the most practical automation wins in Jodhpur, where supply depends on the Indira Gandhi Canal plus tankers and borewells. We integrate tank-level sensors (overhead and underground), automated pump control with dry-run protection, leak detection on incoming lines with auto-shutoff valves, and scheduled drip/garden irrigation that runs in cool hours to minimise evaporation. For homes with solar, we tie pump scheduling to solar generation so water is moved when power is cheapest. These aren't gimmicks here — they save real money and prevent the tank-overflow and dry-pump problems Jodhpur households know well.",
+    },
+    {
+      question: "Why choose an experienced multi-brand integrator over a local installer in Jodhpur?",
+      answer:
+        "Jodhpur's wealth is largely discreet Marwari business and defence money that values reliability, vendor trust, and long relationships over flashy demos — and premium KNX/Crestron-grade automation is essentially absent from the local market, which is mostly generic switch-and-CCTV dealers. Grow More Solutions brings 15+ years and 300+ projects of multi-brand engineering (certified KNX, Crestron, Control4, Lutron) to a market that hasn't had access to it. We recommend the right technology for your bungalow and budget rather than a single product line, build for the desert climate, and back it with AMC and a real service team — the durability and after-sales credibility that traditional Jodhpur families actually buy on.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate zoning for Jodhpur's 48°C desert summers" },
+    { title: "KNX vs Crestron vs Control4", href: "/blog/knx-vs-crestron-vs-control4-india", description: "Premium brand selection for Jodhpur bungalows" },
+    { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Dust-sealed security for bungalows & havelis" },
+  ],
+};
+
+// ─── Dehradun ────────────────────────────────────────────────────────────
+CITY_DETAILS.dehradun = {
+  slug: "dehradun",
+  intro:
+    "Dehradun's home automation market is driven by two forces — Doon's established kothi-owning elite along Rajpur Road, Dalanwala, and Vasant Vihar, and a large and growing wave of second-home buyers from Delhi NCR drawn by the climate and the Delhi–Dehradun Expressway. Grow More Solutions designs for both: full-home systems for Rajpur Road and Mussoorie Road villas, and remote-monitored, security-first packages for the many premium homes that sit empty for weeks while their NCR and NRI owners are away. Dehradun's hill climate flips the usual Indian automation brief — cold winters, one of the heaviest monsoons of any state capital, and seismic Zone IV all shape the design in ways no plains city does.",
+  marketNotes: [
+    "Independent kothis and villas dominate the luxury tier (Rajpur Road, Dalanwala, Vasant Vihar, Canal Road, Malsi); Sahastradhara Road and Haridwar Road lead the gated-apartment growth (Pacific Golf Estate, Eldeco, Windlass), some already marketing built-in smart-home features",
+    "A large share of premium homes are NCR/NRI second homes occupied part-time — remote monitoring (cameras, intrusion, leak, frost, power-status alerts) is the single most valuable feature for this market, and often the easiest first sale",
+    "Cold winters (down to 1–2°C in cold spells) flip the brief toward automated heating, smart geysers, heated towel-rail/floor control, and comfort scenes — unusual for Indian automation and poorly served locally",
+    "One of India's rainiest capitals with monsoon cloudbursts — leak/moisture sensors, automated sump/drain pumps, humidity-aware ventilation, and surge protection are high-value local scope",
+    "Seismic Zone IV plus frequent UPCL outages mean automated gas shut-off and safety alerts, structurally non-invasive wireless retrofits for old kothis, and UPS/generator-aware design are standard considerations",
+  ],
+  projectExamples: [
+    { area: "Rajpur Road", type: "5BHK hill-view villa", budget: "₹22 Lakh", scope: "KNX whole-home + Lutron + 7.1.2 cinema + automated heating + smart geysers + leak/frost sensors + UPS/DG handover" },
+    { area: "Mussoorie Road", type: "4BHK weekend/second home", budget: "₹14 Lakh", scope: "Control4 + remote monitoring + occupancy simulation + perimeter cameras + freeze protection + pre-arrival activation" },
+    { area: "Dalanwala", type: "4BHK heritage kothi", budget: "₹11 Lakh", scope: "Wireless KNX RF retrofit (non-invasive) + Lutron + 5.1.4 Atmos + gas shut-off + smart locks + clean air" },
+    { area: "Sahastradhara Road", type: "3BHK gated apartment", budget: "₹6 Lakh", scope: "Wireless retrofit + Lutron Caseta + 5.1.2 Atmos + smart locks + remote app control + voice" },
+  ],
+  extraFaqs: [
+    {
+      question: "I live in Delhi NCR and my Dehradun home stays empty for weeks — can you monitor it remotely?",
+      answer:
+        "Yes — this is the most common Dehradun brief we handle, given how many premium Doon homes are NCR and NRI second homes. The Delhi–Dehradun Expressway has turned the 'summer home' into a 'weekend home,' but it still sits empty most of the month. Our remote package covers 24/7 monitoring of intrusion, cameras, smoke, water-leak, and temperature/frost sensors; instant mobile alerts for any event including power failure; occupancy simulation that cycles lights to deter break-ins; and pre-arrival activation that warms the home, checks systems, and unlocks access a few hours before you arrive. It's a lower-entry-cost first project than full luxury automation and the one that gives absentee owners genuine peace of mind.",
+    },
+    {
+      question: "Does home automation handle Dehradun's cold winters and heavy monsoon?",
+      answer:
+        "Yes, and this is where Dehradun differs from every plains city we serve. For winter (temperatures dropping to 1–2°C in cold spells) we automate heating schedules, smart geysers, heated floors and towel rails, and comfort scenes that warm occupied rooms before you wake or arrive. For the monsoon — Dehradun is one of India's rainiest capitals with cloudburst risk — we install leak and moisture sensors, automated sump and drain pumps, humidity-aware ventilation, and surge protection against lightning-driven spikes. These are core scope in our Doon builds, not add-ons, because they address the two things that actually damage hill homes: cold and water.",
+    },
+    {
+      question: "Is automation safe for old Dehradun kothis given the area's earthquake zone?",
+      answer:
+        "Yes — and we design for it. Dehradun sits in seismic Zone IV, so for older Rajpur Road and Dalanwala kothis we use structurally non-invasive wireless retrofits (KNX RF, no wall-cutting or load-bearing disturbance), add automated gas shut-off valves and seismic/safety alerts that can cut gas and non-essential power on a shock event, and route cabling without compromising original structure. This lets a 40–60 year-old kothi gain full modern automation without civil work that could weaken it — important in a hill region where both heritage value and structural safety matter.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for Dehradun second homes" },
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Winter heating automation for Doon hill homes" },
+    { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Non-invasive retrofit for old kothis in seismic zones" },
+  ],
+};
+
+// ─── Indore ──────────────────────────────────────────────────────────────
+CITY_DETAILS.indore = {
+  slug: "indore",
+  intro:
+    "Indore — Madhya Pradesh's commercial capital and India's cleanest city — is a value-conscious but genuinely aspirational luxury market. Grow More Solutions designs for high-rise luxury condos on AB Road, Nipania, and the futuristic Super Corridor (Apollo DB City, Shalimar Towers), gated villa enclaves in Bicholi Mardana and Scheme 140, and the old-money bungalows of Old and New Palasia. The dominant buyer is the self-made business or industrial family — pharma, FMCG/namkeen, textiles, real estate — who weighs value-for-money carefully but also buys on brand prestige, alongside a strong NRI investment segment. Unlike most tier-2 cities, Indore already has credible local AV competitors, so depth, climate-awareness, and engineering credibility are what differentiate here.",
+  marketNotes: [
+    "High-rise luxury condos dominate the new-build premium tier (AB Road, Nipania, Super Corridor — Apollo DB City, Shalimar Premium Towers); gated villa enclaves (Bicholi Mardana, Scheme 140, Omaxe City) and old-money bungalows (Old/New Palasia, Mahalaxmi Nagar) round out the market",
+    "The Super Corridor IT-SEZ (Infosys, TCS, Wipro) is bringing younger, app-first tech professionals into the buyer mix alongside traditional trader and industrial families",
+    "Malwa-plateau climate gives hot dry summers (42–45°C) but notably cool nights — favouring smart climate scheduling and night-purge ventilation logic over 24/7 AC, a real energy-saving angle for value-conscious buyers",
+    "Strong NRI investment segment wants remotely manageable, low-maintenance, secure second homes — remote monitoring and security lead their priorities",
+    "Indore has credible local AV/automation incumbents (Control4 and KNX dealers), so the winning position is locality-specific depth, climate-aware engineering, and multi-brand experience rather than generic 'best company' claims",
+  ],
+  projectExamples: [
+    { area: "Nipania (Apollo DB City)", type: "4BHK luxury condo", budget: "₹12 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.4 Atmos + integrated VRV + smart locks + night-purge ventilation logic" },
+    { area: "Bicholi Mardana", type: "5BHK gated villa", budget: "₹18 Lakh", scope: "Full Control4 + 7.1.2 cinema + outdoor/garden automation + perimeter security + UPS/DG handover + Sonos multi-room" },
+    { area: "Old Palasia", type: "4BHK old-money bungalow", budget: "₹10 Lakh", scope: "KNX retrofit + Lutron + 5.1.4 Atmos + clean air + smart locks + energy monitoring" },
+    { area: "Super Corridor", type: "3BHK premium apartment", budget: "₹6 Lakh", scope: "Wireless retrofit + Lutron Caseta + 5.1.2 Atmos + smart locks + remote app control + Alexa/Google voice" },
+  ],
+  extraFaqs: [
+    {
+      question: "What's the realistic cost of home automation in Indore?",
+      answer:
+        "Indore is a value-conscious market, so we scope honestly to the home. Based on local property tiers: a basic 2–3BHK apartment retrofit (smart lighting, security, voice) runs roughly ₹1.5–4 Lakh; a mid-tier premium apartment or condo (full lighting + climate + security + scenes) runs ₹4–8 Lakh; and a full villa-level wired KNX, Crestron, or Control4 system for Bicholi Mardana, Scheme 140, or a Palasia bungalow runs ₹8 Lakh and up. NRIs and large-villa owners are the realistic premium-ticket segment; trader-family condos are the value sweet spot where we typically lead with security and lighting and let owners expand later. Every quote starts with a free on-site assessment.",
+    },
+    {
+      question: "Can automation actually cut my electricity bill in Indore?",
+      answer:
+        "Yes — and Indore's Malwa-plateau climate makes the case stronger than in most cities. Summers are hot and dry (42–45°C) but nights cool down significantly, so we program night-purge ventilation and smart climate scheduling that uses the cool night air and avoids running AC around the clock. Combined with occupancy-based cooling, automated motorized blinds to cut afternoon solar heat gain, and per-circuit energy monitoring, a well-designed Indore system meaningfully reduces cooling cost — the dominant electricity expense here. For value-conscious Indore buyers, this energy ROI is often what justifies the automation spend.",
+    },
+    {
+      question: "How is Grow More Solutions different from Indore's existing automation companies?",
+      answer:
+        "Indore does have credible local AV and automation players, which we respect — so our difference is depth and breadth. We are certified multi-brand integrators (KNX, Crestron, Control4, Lutron) with 15+ years and 300+ projects across India, so we recommend the right platform for your home rather than the single brand we happen to deal. We bring locality-specific design (a Super Corridor condo, a Bicholi Mardana villa, and a Palasia bungalow are three different problems), climate-aware engineering for the Malwa summer, and a live Experience Center where you can see automation working before you commit. For buyers comparing options in Indore, that engineering credibility and brand independence is the differentiator.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-india-complete-guide", description: "Transparent pricing for value-conscious Indore buyers" },
+    { title: "KNX vs Crestron vs Control4", href: "/blog/knx-vs-crestron-vs-control4-india", description: "Multi-brand selection for Indore condos & villas" },
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Energy-saving climate logic for the Malwa plateau" },
+  ],
+};
+
+// ─── Agra ────────────────────────────────────────────────────────────────
+CITY_DETAILS.agra = {
+  slug: "agra",
+  intro:
+    "Agra's affluent home automation market is built around independent kothis and self-built homes — the wealthy Agra buyer builds a custom house on a plot rather than buying a branded apartment. Grow More Solutions designs for the old-money kothis of Civil Lines and Dayal Bagh, the premium belts of Kamla Nagar and Vibhav Nagar, the Taj-view hospitality corridor along Fatehabad Road, and the merchant havelis of the old city. The dominant wealth pool is Agra's footwear and leather export industry — discreet, ROI-minded money that buys on reliability and durability, not show. Extreme heat, severe NCR-adjacent air pollution, a weak UP grid, and the Taj Trapezium Zone's clean-energy mandate all shape the local brief, and Agra is comfortably serviceable from our Delhi base via the Yamuna Expressway.",
+  marketNotes: [
+    "Independent kothis and self-built homes dominate the affluent segment (Civil Lines, Dayal Bagh, Kamla Nagar, Vibhav Nagar) — ideal for whole-home wired automation where we control the full wiring; Agra has no Crestron/KNX-tier luxury condo towers",
+    "Footwear and leather export wealth (Agra makes ~65% of India's shoe output) is the dominant, deliberately understated money pool — buyers favour discreet, robust, status-without-flash systems and reliable after-sales over showy gadgetry",
+    "Extreme heat (44–45°C+ with 'Loo' winds) plus severe dust and air pollution (PM2.5 around 7× the WHO guideline) make automated HVAC scheduling, AQI-linked air purification, and motorized solar-heat shading high-value scope",
+    "A weak UP grid (frequent tripping and low voltage in peak summer, longer cuts in peripheral areas) makes voltage stabilization, surge protection, UPS/inverter integration, and graceful power-loss recovery a core differentiator, not an add-on",
+    "Agra sits inside the Taj Trapezium Zone (TTZ) clean-energy mandate — aligning automation with solar integration and energy efficiency is a genuine regulatory tailwind, especially near the monument zone (Tajganj, Vibhav Nagar, Fatehabad Road)",
+  ],
+  projectExamples: [
+    { area: "Civil Lines", type: "5BHK old-money kothi", budget: "₹15 Lakh", scope: "KNX whole-home + Lutron + 5.1.4 Atmos + integrated VRV + servo-stabilized panels + AQI clean air + smart locks" },
+    { area: "Fatehabad Road (Taj Nagari)", type: "4BHK luxury villa", budget: "₹11 Lakh", scope: "Control4 + solar integration + 5.1.4 Atmos + perimeter security + clean air + UPS-backed control" },
+    { area: "Dayal Bagh", type: "4BHK professional's bungalow", budget: "₹8 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.2 Atmos + AQI-triggered purification + smart locks + energy monitoring" },
+    { area: "Shahganj (old city)", type: "Merchant-family haveli", budget: "₹9 Lakh", scope: "Wireless KNX RF retrofit + concealed wiring + 5.1.2 Atmos + voltage protection + perimeter cameras" },
+  ],
+  extraFaqs: [
+    {
+      question: "Will home automation survive Agra's power cuts and voltage fluctuation?",
+      answer:
+        "This is the make-or-break design question in Agra, where the UP grid sees frequent tripping and low voltage in peak summer (and longer cuts in peripheral areas). Dirty power is what kills unprotected automation gear, so every GMHS Agra build is engineered for it: servo voltage stabilizers on automation and dimmer panels, an online UPS for the control server, network, and security systems, surge protection on every sensitive device, and automated DG changeover for homes with generators. The system keeps core lighting, CCTV, and locks working locally through an outage and re-syncs cleanly on restoration. For ROI-minded Agra buyers, this reliability engineering — protecting expensive equipment from voltage damage — is often the clearest justification for choosing a serious integrator.",
+    },
+    {
+      question: "How does automation help with Agra's heat, dust, and air pollution?",
+      answer:
+        "Agra combines 44–45°C summers with severe dust and some of the worst air quality in the country (PM2.5 around 7× the WHO guideline). We address all three: automated HVAC scheduling and occupancy-based cooling to manage the heavy AC load, motorized blinds and curtains to cut afternoon solar heat gain, and AQI-linked air purification that monitors indoor PM2.5 and ramps purifiers automatically — with HEPA + carbon fresh-air ventilation on premium builds so you don't open windows to the dust. Because dust also stresses electronics, we use sealed, IP-rated outdoor gear and concealed switch modules. These aren't luxury features in Agra; they're how a home stays cool, clean, and reliable.",
+    },
+    {
+      question: "Does the Taj Trapezium Zone affect what automation I can install?",
+      answer:
+        "The TTZ restricts polluting industry and pushes the whole region toward clean energy — and that actually works in automation's favour. We align Agra builds with the TTZ's clean-energy direction through solar integration with smart energy management, efficient automated climate control that cuts grid load, and load-monitoring that helps you run on solar and battery where possible. For properties in or near the monument zone (Tajganj, Vibhav Nagar, Fatehabad Road), positioning automation around energy efficiency and low-emission living is both compliant and cost-saving. It's a regulatory tailwind for a green smart home rather than a constraint on what you can install indoors.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-india-complete-guide", description: "Value-tier pricing for Agra's independent homes" },
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Heat, AQI & solar-shading automation for Agra" },
+    { title: "Smart Home Wiring Guide", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring custom kothis for whole-home automation" },
+  ],
+};
+
+// ─── Meerut ──────────────────────────────────────────────────────────────
+CITY_DETAILS.meerut = {
+  slug: "meerut",
+  intro:
+    "Meerut is being repositioned from a standalone tier-2 city into a commutable NCR luxury-housing satellite — the Delhi–Meerut RRTS 'Namo Bharat' (fully operational since February 2026) now connects it to Delhi in under an hour, and land near its stations has jumped 30–60%. Grow More Solutions designs for Meerut's large independent kothis (Shastri Nagar, Ganga Nagar, Mangal Pandey Nagar, Civil Lines), its rising gated-apartment clusters in Modipuram and Pallavpuram, and the Cantonment's defence families. The signature wealth is Meerut's sports-goods manufacturing industry — discreet industrialist money that buys on reliability and service. With Meerut now ~70 km and under an hour from Delhi, we offer Delhi-grade engineering with genuinely local service.",
+  marketNotes: [
+    "The Delhi–Meerut RRTS 'Namo Bharat' (operational Feb 2026, <1 hour to Delhi) plus the Delhi–Meerut Expressway have triggered a premium new-build wave — land within 2 km of RRTS stations is up 30–60%, repositioning Meerut as an NCR commuter-luxury market",
+    "Independent kothis and bungalows dominate the affluent fabric (Shastri Nagar, Ganga Nagar, Mangal Pandey Nagar, Civil Lines); new gated apartments (Modipuram, Pallavpuram, Ansal townships) are the fastest-growing segment",
+    "Sports-goods manufacturing wealth (Meerut makes ~60% of India's sports goods across 1,500+ units) plus agricultural HNIs and Cantonment defence families form a discreet, reliability-first buyer base",
+    "Extreme heat (45°C+) and the NCR dust/smog airshed make automated climate control, AQI-linked air purification, and motorized dust-managing shading high-value local scope",
+    "The UP/PVVNL grid sees recurring summer cuts and documented voltage fluctuation — inverter/UPS- and generator-aware design with surge protection is core, sold as reliability and load-management rather than luxury",
+  ],
+  projectExamples: [
+    { area: "Shastri Nagar", type: "5BHK independent kothi", budget: "₹14 Lakh", scope: "KNX whole-home + Lutron + 5.1.4 Atmos + integrated VRV + servo-stabilized panels + AQI clean air" },
+    { area: "Modipuram (gated apartments)", type: "4BHK luxury apartment", budget: "₹7 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.2 Atmos + smart locks + UPS-backed control + voice" },
+    { area: "Defence Colony (Cantonment)", type: "4BHK officer's bungalow", budget: "₹9 Lakh", scope: "Control4 + perimeter security + 5.1.4 Atmos + clean air + smart locks + DG/UPS handover" },
+    { area: "Ganga Nagar", type: "4BHK builder floor (new build)", budget: "₹6 Lakh", scope: "KNX pre-wired lighting + 5.1.2 Atmos + AQI purification + access control + energy monitoring" },
+  ],
+  extraFaqs: [
+    {
+      question: "Is now a good time to build automation into a Meerut home?",
+      answer:
+        "Yes — Meerut is at an inflection point. The Delhi–Meerut RRTS 'Namo Bharat' went fully operational in February 2026, putting Delhi under an hour away, and combined with the Delhi–Meerut Expressway it's driving a premium new-build wave (land near RRTS stations is up 30–60%). If you're building or buying a new kothi or gated apartment in Modipuram, Pallavpuram, or near a station, this is the ideal moment to pre-wire for automation during construction — far cheaper and cleaner than retrofitting later. For existing homes, wireless retrofit lets you add full automation without civil work. Either way, the rising value of Meerut property makes a well-integrated smart home a sound upgrade.",
+    },
+    {
+      question: "Can you service Meerut properly from Delhi, or will support be slow?",
+      answer:
+        "Service speed is exactly why Meerut works well for us. At ~70 km and now under an hour from Delhi via the RRTS and the Expressway, Meerut is firmly within our service radius — we offer Delhi-grade engineering (certified KNX, Crestron, Control4, Lutron) with genuinely responsive local service, not a one-time install and disappear. Site visits are quick to schedule, AMC service calls are handled promptly, and our project managers attend Meerut sites during build. For a market where most options are thin local dealers, getting NCR-grade brands and engineering with fast support is the core advantage.",
+    },
+    {
+      question: "What kind of automation suits Meerut's industrialist and Cantonment families?",
+      answer:
+        "Meerut's signature wealth — sports-goods manufacturers, traders, agricultural HNIs, and Cantonment defence families — values discreet, durable, reliable systems over flashy gadgetry. We design accordingly: hidden technology, premium warranty-backed hardware, power-resilient engineering for the PVVNL grid, and clean low-maintenance operation. For large kothis we deliver whole-home wired KNX with proper climate, security, and energy management; for apartments and builder floors we offer tiered packages starting with lighting and security. The pitch is reliability, build quality, a 15+ year / 300+ project track record, and fast service — the things this buyer actually decides on.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart Home Wiring Guide", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring for Meerut's RRTS-driven new builds" },
+    { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-india-complete-guide", description: "Tiered pricing for Meerut kothis & apartments" },
+    { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Security for Cantonment & industrialist homes" },
+  ],
+};
+
+// ─── Panipat ─────────────────────────────────────────────────────────────
+CITY_DETAILS.panipat = {
+  slug: "panipat",
+  intro:
+    "Panipat — India's 'City of Weavers' and its largest home-textiles export hub — is a low-rise, land-owning market where wealth is concentrated in textile-industrialist families who build large kothis and farmhouses. Grow More Solutions designs for the old-money kothis of Model Town and Assandh Road, the planned HUDA sectors (11, 12, 25), and the gated villas of Eldeco Estate One, TDI City, and Ansal townships along the GT Road / NH-44 spine. The defining local challenge is air: Panipat's textile dyeing, thermal power station, and IndianOil refinery load the air with fly ash and chemical particulates that physically enter homes. At ~90 km on NH-44, Panipat is squarely within our Delhi service radius — a real advantage over thin local dealers for an industrialist buyer who values reliability.",
+  marketNotes: [
+    "Independent kothis and self-built homes on plotted land dominate decisively (Model Town, Assandh Road, HUDA Sectors 11/12/25) alongside builder villas in Eldeco Estate One, TDI City, and Ansal townships — a low-rise market ideal for whole-home custom automation",
+    "Textile-industrialist wealth is deep and concentrated (Panipat exports ~$1 billion of home textiles a year) — factory-owning families build ₹3 Cr+ kothis and farmhouses that comfortably support ₹10–50 Lakh+ whole-home KNX/Crestron systems",
+    "Severe industrial air pollution is the signature local issue — textile dyeing plus the Panipat thermal power station and IndianOil refinery load the air with fly ash and chemical particulates (AQI peaks ~355) that enter homes on summer winds, making sealed gear and robust air-quality automation genuine necessities",
+    "Extreme heat (44–46°C+) and DHBVN industrial-grid voltage fluctuation make automated climate control, surge protection, UPS/inverter integration, and stable-power design core scope",
+    "Discreet industrialist buyers value reliability, durability, and fast after-sales over show — and at ~90 km on NH-44, a Delhi-based integrator can credibly promise quick service, a clear edge over thin local directory listings",
+  ],
+  projectExamples: [
+    { area: "Model Town", type: "Industrialist 6BHK kothi", budget: "₹24 Lakh", scope: "KNX whole-home + Lutron HomeWorks + 7.1.4 cinema + fly-ash-sealed clean air + servo stabilizers + perimeter security" },
+    { area: "GT Road (farmhouse belt)", type: "Textile-family farmhouse estate", budget: "₹34 Lakh", scope: "Full Crestron + outdoor/gate automation + pool/garden + multi-zone clean air + DG/solar handover + thermal cameras" },
+    { area: "HUDA Sector 12", type: "5BHK self-built kothi", budget: "₹13 Lakh", scope: "KNX + Lutron + 5.1.4 Atmos + integrated VRV + AQI-linked purification + UPS-backed control" },
+    { area: "Eldeco Estate One", type: "4BHK gated villa", budget: "₹9 Lakh", scope: "Control4 + Lutron blinds + 5.1.2 Atmos + smart locks + sealed outdoor gear + access management" },
+  ],
+  extraFaqs: [
+    {
+      question: "How do you deal with Panipat's fly ash and industrial air pollution in a smart home?",
+      answer:
+        "Panipat's air is loaded with fly ash and chemical particulates from textile dyeing, the thermal power station, and the IndianOil refinery — during summer winds, fly ash physically enters homes, and AQI peaks around 355. This makes air-quality automation a genuine necessity here, not a luxury. We integrate HEPA + activated-carbon fresh-air systems tied to indoor AQI sensors that ramp purification automatically and switch to recirculation during heavy-particulate spells, sealed IP-rated outdoor enclosures for cameras and gear that fly ash would otherwise clog, dust-tolerant sensors, and automated window/curtain closure on high-particulate triggers. Keeping fly ash out of both your lungs and your electronics is one of the most valuable things automation does in Panipat.",
+    },
+    {
+      question: "What does premium home automation cost for a Panipat industrialist kothi or farmhouse?",
+      answer:
+        "Panipat's textile-industrialist families build large custom homes — Model Town kothis and GT Road farmhouses commonly run ₹3 Cr and up, on 300–500+ sq yd plots — and these comfortably support full whole-home systems. Typical premium scope (KNX or Crestron whole-home lighting, multi-room AV, climate, sealed air-quality automation, security, and power management) runs ₹10–50 Lakh+ depending on size and ambition. For the broader HUDA-sector and builder-floor market, we offer entry smart-home retrofits (lighting, security, voice) from a few lakh. We scope to the home and budget, starting with a free on-site assessment — and being a serious multi-brand integrator, we build to last in Panipat's harsh dust-and-heat environment.",
+    },
+    {
+      question: "Can a Delhi-based company really service Panipat reliably?",
+      answer:
+        "Yes — and serviceability is a deliberate part of why Panipat works for us. At ~90 km on NH-44 (with Karnal and Sonipat on the same corridor), Panipat is well within our Delhi service radius, so we can promise the quick service calls that thin local directory listings can't. For an industrialist buyer who values durability and after-sales support above everything, getting NCR-grade brands (certified KNX, Crestron, Control4, Lutron), proper engineering for the local climate, and responsive AMC service is the core advantage. We attend Panipat sites during build, handle commissioning in-house, and back every system with maintenance plans and a real service team.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Fly-ash air-quality automation for Panipat homes" },
+    { title: "KNX vs Crestron vs Control4", href: "/blog/knx-vs-crestron-vs-control4-india", description: "Premium brand selection for industrialist kothis" },
+    { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Perimeter security for Panipat farmhouses & kothis" },
+  ],
+};
+
+// ─── Gwalior ─────────────────────────────────────────────────────────────
+CITY_DETAILS.gwalior = {
+  slug: "gwalior",
+  intro:
+    "Gwalior blends royal heritage with new business wealth, and its home automation market reflects both. Grow More Solutions designs for the new gated villas rising along Sirol Road, Jhansi Link Road, and Maharajpura (Airport Road), the premium apartments and bungalows of City Centre and DD Nagar, and the grand old kothis of Lashkar and Morar near the Scindia palaces. The aesthetic here leans opulent — gold, marble, and ornate interiors shaped by the Scindia royal legacy — so automation must complement maximalist luxury rather than minimalism. Trader and aristocratic families, professionals, and a large defence-and-education community make up the buyer base, while 45–47°C summers, dust, and scheduled MP-grid power cuts define the technical brief.",
+  marketNotes: [
+    "Independent bungalows/kothis and new gated villas dominate the premium market (Lashkar, Morar, Thatipur legacy kothis; Sirol Road, Jhansi Link Road, Maharajpura new villas) — far more than apartments, favouring whole-home high-ticket automation",
+    "Strong royal/heritage aesthetic from the Scindia legacy (Jai Vilas Palace) means buyers want elegant, opulent integration — concealed wiring behind ornate finishes, gold/marble-compatible touch panels — not austere minimalism",
+    "Trader and business families (carpet and sandstone industries, Maharaj Bada/Sarafa markets) are the dominant value-conscious-but-status-driven wealth pool, alongside old aristocratic families, professionals, and a large defence-coaching/military community",
+    "Extreme heat (45–47°C) and a dusty semi-arid environment make automated climate control, motorized solar shading, and sealed/concealed switch modules and outdoor sensors high-value local scope",
+    "The MP grid (MPMKVVCL) runs scheduled summer power cuts (e.g. fixed 9am–1pm maintenance slots) with voltage fluctuation — inverter/UPS-integrated, surge-protected, generator-aware design plus solar energy monitoring is core scope",
+  ],
+  projectExamples: [
+    { area: "Lashkar (Scindia quarter)", type: "Heritage royal-aesthetic kothi", budget: "₹22 Lakh", scope: "Concealed KNX + gold/marble-matched touch panels + traditional chandelier dimming + 7.1.2 cinema + perimeter security" },
+    { area: "Sirol Road", type: "4BHK new-build gated villa", budget: "₹13 Lakh", scope: "KNX pre-wired + Lutron HomeWorks + 5.1.4 Atmos + integrated VRV + solar/UPS handover + outdoor automation" },
+    { area: "City Centre", type: "4BHK premium apartment", budget: "₹7 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.2 Atmos + smart locks + clean air + voice" },
+    { area: "Morar (Cantonment area)", type: "4BHK colonial bungalow", budget: "₹9 Lakh", scope: "Wireless KNX RF retrofit + Lutron + 5.1.2 Atmos + servo stabilizers + perimeter cameras + access control" },
+  ],
+  extraFaqs: [
+    {
+      question: "Can automation suit Gwalior's royal, ornate interior style rather than a minimalist look?",
+      answer:
+        "Yes — and in Gwalior this matters more than almost anywhere. The Scindia royal legacy shapes a maximalist aesthetic of gold, marble, carved wood, and traditional chandeliers, especially in Lashkar and Morar kothis. Our heritage-aware approach conceals all technology behind these finishes: touch panels custom-mounted into carved wood or marble surrounds, dimmer programming tuned for traditional crystal and brass chandeliers (with careful current-rating to protect filaments), warm-tone scene lighting that flatters opulent interiors, and sensors hidden in cornices and decorative grills. Automation should elevate the grandeur of a Gwalior home invisibly — never impose a minimalist tech look on a royal aesthetic.",
+    },
+    {
+      question: "How does automation handle Gwalior's scheduled power cuts and 47°C heat?",
+      answer:
+        "Gwalior's MP grid (MPMKVVCL) runs scheduled summer power cuts — often fixed slots like 9am–1pm during pre-monsoon maintenance — alongside voltage fluctuation, all in 45–47°C heat. Every GMHS Gwalior build is engineered for this: inverter/UPS integration for the control server, network, and security; automated generator changeover for homes with backup; servo voltage stabilizers and surge protection on automation panels; and load-shedding logic that drops non-essential loads gracefully during backup operation while keeping core lighting, climate, and security live. We also integrate solar with smart energy monitoring (important since solar efficiency dips in extreme heat). The result is automation that rides through Gwalior's predictable outages instead of failing with them.",
+    },
+    {
+      question: "What does home automation cost for a Gwalior villa or kothi?",
+      answer:
+        "Based on local property tiers: a premium City Centre or DD Nagar apartment runs roughly ₹4–8 Lakh for full lighting, climate, and security automation; a new gated villa on Sirol Road, Jhansi Link Road, or Maharajpura runs ₹8–18 Lakh for a whole-home KNX or Control4 system; and a heritage royal-aesthetic kothi in Lashkar or Morar — where concealed, finish-matched work is involved — typically runs ₹15–25 Lakh+. Gwalior buyers are status-driven but value-conscious, so we scope honestly and offer tiered options (lighting/security starter, full villa integration, or luxury heritage bespoke). Every project begins with a free on-site assessment.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart Lighting Guide", href: "/blog/smart-lighting-guide-indian-homes", description: "Warm-tone & chandelier scene design for royal interiors" },
+    { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-india-complete-guide", description: "Tiered pricing for Gwalior villas & heritage kothis" },
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate & solar automation for Gwalior's 47°C summers" },
+  ],
+};
+
 export function getCityDetail(slug: string): CityDetail | undefined {
   return CITY_DETAILS[slug];
 }
