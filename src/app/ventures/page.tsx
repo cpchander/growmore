@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, ExternalLink, Globe, Users, BookOpen } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: `Our Ventures & Partnerships — Global Expansion Beyond Home Automation | ${COMPANY.name}`,
-  description: `${COMPANY.name} expands into global remote staffing through Zedtreeo and knowledge publishing via Remote Staffing Wiki. Leveraging ${COMPANY.experience} years of operational expertise.`,
-  alternates: { canonical: "https://growmoresolutions.com/ventures" },
-};
+export const metadata: Metadata = createMetadata({
+  title: "Our Ventures & Partnerships — Beyond Home Automation",
+  description: `${COMPANY.name} expands into global remote staffing (Zedtreeo) and knowledge publishing (Remote Staffing Wiki), built on ${COMPANY.experience} years of operations.`,
+  path: "/ventures",
+});
 
 const VENTURES = [
   {

@@ -44,7 +44,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title:
       "Matter vs KNX in India 2026: Which Smart Home Standard Wins (And Why They're Better Together)",
     excerpt:
-      "Matter vs KNX for Indian homes: KNX is the wired backbone (₹3.5–25 Lakh+), Matter the consumer/voice layer (a few thousand–₹4 Lakh+). The two aren't rivals — a KNX↔Matter gateway gives you both. Decision framework by home type, INR costs, and the installer verdict from 300+ GMHS projects.",
+      "Matter vs KNX for Indian homes — KNX the wired backbone, Matter the consumer/voice layer, bridged by a gateway. INR costs, decision framework & installer verdict.",
     category: "Comparisons",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -60,7 +60,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "wired-vs-wireless-home-automation-india",
     title: "Wired vs Wireless Home Automation in India 2026: Real Costs, Protocols & Decision Framework",
     excerpt:
-      "Wired vs wireless home automation cost in India: ₹5–40 Lakh (KNX/Crestron wired) vs ₹1–5 Lakh (Zigbee/Wi-Fi wireless). Protocol comparison, hybrid approach, BIS QCO 2026 impact, and the decision framework GMHS uses across 300+ installations.",
+      "Wired vs wireless home automation in India: KNX/Crestron (₹5–40L) vs Zigbee/Wi-Fi (₹1–5L) — protocol comparison, hybrid approach & decision framework.",
     category: "Comparisons",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -75,7 +75,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "motorized-curtains-blinds-india",
     title: "Motorized Curtains & Blinds in India 2026: ₹8K–₹2.4 Lakh+ Per Window",
     excerpt:
-      "Motorized curtains & blinds cost in India: ₹8K–₹2.4 Lakh+ per window. Somfy vs Lutron vs Hunter Douglas, KNX/Modbus integration, dual-layer sheer + blackout architecture, and 14–22% HVAC savings. Based on 300+ GMHS installations.",
+      "Motorized curtains & blinds in India: ₹8K–₹2.4 Lakh+ per window. Somfy vs Lutron vs Hunter Douglas, KNX integration and 14–22% HVAC savings.",
     category: "Room Automation",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -90,7 +90,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "smart-hvac-climate-control-india",
     title: "Smart HVAC & Climate Control in India 2026: ₹2 Lakh–35 Lakh+ Real Costs",
     excerpt:
-      "Smart HVAC & climate control costs in India: ₹2 Lakh–₹35 Lakh+. VRV vs split economics, KNX/BACnet integration, IAQ sensors, motorized dampers, and 28–42% energy savings. Based on 300+ GMHS installations.",
+      "Smart HVAC & climate control in India: ₹2–35 Lakh+. VRV vs split economics, KNX/BACnet integration, IAQ sensors and 28–42% energy savings.",
     category: "Room Automation",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -105,7 +105,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "home-theater-av-automation-india",
     title: "Home Theater & AV Automation Cost in India 2026: ₹3 Lakh–2 Cr+ Real Pricing",
     excerpt:
-      "Home theater costs in India: ₹3 Lakh entry to ₹2 Cr+ reference. Dolby Atmos channel configs, acoustic treatment, projectors, AV control (Crestron/Control4) and pre-wiring. Based on 300+ GMHS installations.",
+      "Home theater & AV automation cost in India: ₹3 Lakh to ₹2 Cr+. Dolby Atmos configs, acoustic treatment, projectors and AV control (Crestron/Control4).",
     category: "Room Automation",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -195,7 +195,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "home-automation-cost-2026",
     title: "Home Automation Cost in India 2026: Real Pricing from 300+ Premium Installations",
     excerpt:
-      "Real pricing data from 300+ GMHS installations. Cost breakdown by home size (₹5–50 Lakh+), brand (KNX, Crestron, Control4, Lutron), and automation scope for premium Indian homes.",
+      "Home automation cost in India 2026 — real pricing from 300+ premium installations across budget, mid-range and luxury smart home tiers.",
     category: "Guides",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -210,7 +210,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "smart-home-wiring-new-construction-india",
     title: "Smart Home Wiring & Planning Guide for New Construction in India (2026): What Your Electrician Won't Tell You",
     excerpt:
-      "Pre-wiring during construction saves ₹4–8 Lakh vs retrofit. Room-by-room checklist, cable specs (KNX, Cat6A, speaker wire), timeline, and what to tell your electrician — from 300+ GMHS installations.",
+      "Smart home wiring & planning for new construction in India — what to pre-wire, cable types, conduit and timing. The guide your electrician won't give you.",
     category: "Guides",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",

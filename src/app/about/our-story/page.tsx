@@ -3,17 +3,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight } from "lucide-react";
 import Timeline from "./Timeline";
 import MilestoneStats from "./MilestoneStats";
 import { SocialLinks, VideoGallery } from "@/components/ui/SocialProof";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Our Story — ${COMPANY.experience} Years of Home Automation Excellence`,
-  description: `Discover the ${COMPANY.experience}-year journey of ${COMPANY.name} — from pioneering home automation in India in ${COMPANY.foundedYear} to becoming the nation's most trusted smart home company. ${COMPANY.projectsCompleted} projects across ${COMPANY.citiesServed} cities.`,
-  alternates: { canonical: "https://growmoresolutions.com/about/our-story" },
-};
+  description: `The ${COMPANY.experience}-year journey of ${COMPANY.name} — from pioneering home automation in India in ${COMPANY.foundedYear} to ${COMPANY.projectsCompleted} projects nationwide.`,
+  path: "/about/our-story",
+});
 
 const MILESTONES = [
   {

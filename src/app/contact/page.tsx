@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
+import { createMetadata } from "@/lib/metadata";
 import { Phone, Mail, MapPin, Clock, Shield, Instagram, Facebook } from "lucide-react";
 import ContactForm from "./ContactForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Contact Us — Book Free Smart Home Consultation`,
-  description: `Get in touch with ${COMPANY.name} for a free home automation consultation. Call ${COMPANY.phone} or fill the form. ${COMPANY.experience} years of smart home expertise across India.`,
-  alternates: { canonical: "https://growmoresolutions.com/contact" },
-};
+  description: `Book a free home automation consultation with ${COMPANY.name}. Call ${COMPANY.phone} or fill the form — ${COMPANY.experience} years of expertise.`,
+  path: "/contact",
+});
 
 const contactPageSchema = {
   "@context": "https://schema.org",

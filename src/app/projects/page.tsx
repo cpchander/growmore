@@ -4,15 +4,15 @@ import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 import { PROJECTS, PROJECT_TYPES } from "@/lib/projects-data";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, MapPin, Ruler, Tag } from "lucide-react";
 import InstagramFeed from "@/components/ui/InstagramFeed";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Smart Home Projects — ${COMPANY.projectsCompleted}+ Completed Across India`,
-  description: `Browse ${COMPANY.projectsCompleted}+ completed home automation projects across India. Luxury villas, apartments, penthouses, hotels & commercial spaces. KNX, Crestron, Control4 installations by ${COMPANY.name}.`,
-  alternates: { canonical: "https://growmoresolutions.com/projects" },
-};
+  description: `Browse ${COMPANY.projectsCompleted} home automation projects across India — luxury villas, apartments, penthouses, hotels & commercial, by ${COMPANY.name}.`,
+  path: "/projects",
+});
 
 export default function ProjectsPage() {
   // Group projects by city for structured display

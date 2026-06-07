@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, Linkedin, Mail } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Our Team — Meet the Home Automation Experts`,
-  description: `Meet the leadership and engineering team at ${COMPANY.name}. ${COMPANY.experience} years of combined home automation expertise. Certified KNX, Crestron, and Control4 professionals delivering smart homes across India.`,
-  alternates: { canonical: "https://growmoresolutions.com/about/team" },
-};
+  description: `Meet the leadership & engineering team at ${COMPANY.name} — certified KNX, Crestron & Control4 professionals delivering smart homes across India.`,
+  path: "/about/team",
+});
 
 const LEADERSHIP = [
   {

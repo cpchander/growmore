@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import ExperienceClient from "./ExperienceClient";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `3D Smart Home Experience — Interactive Room Walkthrough`,
-  description: `Explore a smart home in 3D. Click lights, open curtains, adjust temperature — experience home automation before you buy. Interactive walkthrough by ${COMPANY.name}.`,
-  alternates: { canonical: "https://growmoresolutions.com/experience" },
-};
+  description: `Explore a smart home in 3D — click lights, open curtains, adjust temperature. Experience home automation before you buy, by ${COMPANY.name}.`,
+  path: "/experience",
+});
 
 export default function ExperiencePage() {
   return (

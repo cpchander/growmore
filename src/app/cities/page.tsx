@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CITIES, COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { MapPin, ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Home Automation Across India — ${COMPANY.citiesServed} Cities Served`,
   description: `${COMPANY.name} provides smart home automation services across ${COMPANY.citiesServed} cities in India. Find your city for local consultation, installation, and support.`,
-  alternates: { canonical: "https://growmoresolutions.com/cities" },
-};
+  path: "/cities",
+});
 
 export default function CitiesPage() {
   return (

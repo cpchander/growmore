@@ -3,14 +3,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "@/lib/blog-data";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, Clock } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Smart Home Blog — Guides, Tips & Comparisons`,
-  description: `Expert guides on home automation in India. Costs, comparisons (KNX vs Crestron), room automation tips, and smart home trends from ${COMPANY.name} — ${COMPANY.experience} years of expertise.`,
-  alternates: { canonical: "https://growmoresolutions.com/blog" },
-};
+  description: `Expert home automation guides for India — costs, KNX vs Crestron comparisons, room automation tips and smart home trends from ${COMPANY.name}.`,
+  path: "/blog",
+});
 
 export default function BlogPage() {
   const featuredPosts = BLOG_POSTS.filter((p) => p.featured);

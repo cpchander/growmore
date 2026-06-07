@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import PlannerClient from "./PlannerClient";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Smart Home Planner — Build & Price Your Automation System`,
-  description: `Design your smart home online. Pick lighting, security, climate, theater & audio products from top brands like KNX, Crestron, Control4, Lutron. Compare prices and get an instant estimate. ${COMPANY.experience} years expertise.`,
-  alternates: { canonical: "https://growmoresolutions.com/smart-home-planner" },
-};
+  description: `Design your smart home online — pick lighting, security, climate, theater & audio from KNX, Crestron, Control4 & Lutron, with an instant price estimate.`,
+  path: "/smart-home-planner",
+});
 
 const FAQS = [
   {

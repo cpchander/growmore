@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 import { BRAND_DETAILS } from "@/lib/brands-data";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import {
   ArrowRight,
   Shield,
@@ -12,11 +12,11 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Our Automation Brands — KNX, Crestron, Control4, Lutron & Sonos`,
-  description: `Certified partner of the world's top home automation brands. Compare KNX, Crestron, Control4, Lutron & Sonos — installed by ${COMPANY.name} with ${COMPANY.experience} years of expertise across India.`,
-  alternates: { canonical: "https://growmoresolutions.com/brands" },
-};
+  description: `Certified partner of KNX, Crestron, Control4, Lutron & Sonos. Compare the top home automation brands, installed across India by ${COMPANY.name}.`,
+  path: "/brands",
+});
 
 export default function BrandsPage() {
   return (

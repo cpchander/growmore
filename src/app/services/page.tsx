@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY, SERVICES } from "@/lib/constants";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Smart Home Automation Services — ${SERVICES.length} Solutions`,
-  description: `Explore ${COMPANY.name}'s ${SERVICES.length} smart home automation services: lighting, security, home theater, HVAC, and whole-home integration. ${COMPANY.experience} years experience across India.`,
-  alternates: { canonical: "https://growmoresolutions.com/services" },
-};
+  description: `Explore ${COMPANY.name}'s smart home services — lighting, security, home theater, HVAC & whole-home integration, ${COMPANY.experience} years across India.`,
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (

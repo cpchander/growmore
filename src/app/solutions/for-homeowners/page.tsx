@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import { IMAGES } from "@/lib/images";
 import {
   ArrowRight, Lightbulb, Shield, Thermometer,
   Tv, PanelTop, Mic, CheckCircle, Zap, Home, IndianRupee,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Smart Home Automation for Homeowners — Complete Guide`,
-  description: `Transform your home with intelligent automation. Smart lighting, security, climate control & more. Packages from ₹2 Lakh. ${COMPANY.experience} years experience. Free consultation.`,
-  alternates: { canonical: "https://growmoresolutions.com/solutions/for-homeowners" },
-};
+  description: `Transform your home with smart lighting, security & climate control. Packages from ₹2 Lakh, ${COMPANY.experience} years' experience. Free consultation.`,
+  path: "/solutions/for-homeowners",
+});
 
 const PACKAGES = [
   {

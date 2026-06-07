@@ -9,7 +9,7 @@ import {
 
 export const metadata: Metadata = createMetadata({
   title: "Smart Home Automation Solutions — By Audience",
-  description: `Home automation solutions tailored to homeowners, builders, architects & hotels. ${COMPANY.experience} years, 300+ installations across India. KNX, Crestron, Control4 & Lutron certified. Book a free consultation.`,
+  description: `Home automation solutions for homeowners, builders, architects & hotels — ${COMPANY.experience} years, 300+ installations across India. Free consultation.`,
   path: "/solutions",
 });
 

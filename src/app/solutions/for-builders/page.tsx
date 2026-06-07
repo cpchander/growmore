@@ -3,17 +3,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import {
   ArrowRight, Building2, TrendingUp, Users,
   CheckCircle, Handshake, Layers, IndianRupee, Star,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Smart Home Automation for Builders & Developers`,
-  description: `Partner with India's most experienced home automation company for bulk smart home installations. Smart-home-ready apartments at scale. ${COMPANY.experience} years. 50-500+ units per project.`,
-  alternates: { canonical: "https://growmoresolutions.com/solutions/for-builders" },
-};
+  description: `Smart-home-ready apartments at scale for builders & developers — bulk installations, 50–500+ units per project, by ${COMPANY.name}.`,
+  path: "/solutions/for-builders",
+});
 
 const VALUE_PROPS = [
   { icon: TrendingUp, title: "Higher Selling Price", desc: "Smart-home-ready apartments command 8-15% premium pricing vs. standard units in the same location." },

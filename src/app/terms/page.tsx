@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Terms of Service`,
   description: `Terms of service for ${COMPANY.name} (growmoresolutions.com). Terms governing the use of our website and home automation services.`,
-  alternates: { canonical: "https://growmoresolutions.com/terms" },
-};
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

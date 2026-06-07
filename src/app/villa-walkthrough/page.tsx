@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
 import Link from "next/link";
 import { ArrowRight, Home, Shield, Lightbulb, Thermometer, Music } from "lucide-react";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import VillaClient from "./VillaClient";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `3D Villa Walkthrough — Smart Home Automation Experience`,
-  description: `Walk through a fully automated luxury villa in 3D. Experience gate entry, garage automation, smart lighting, home theater, climate control & security — all 8 zones by ${COMPANY.name}.`,
-  alternates: { canonical: "https://growmoresolutions.com/villa-walkthrough" },
-};
+  description: `Walk through a fully automated luxury villa in 3D — gate entry, garage, smart lighting, home theater, climate & security across 8 zones, by ${COMPANY.name}.`,
+  path: "/villa-walkthrough",
+});
 
 export default function VillaWalkthroughPage() {
   return (

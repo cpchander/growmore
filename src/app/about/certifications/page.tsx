@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, ExternalLink, Shield, Award, CheckCircle } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Certifications & Brand Partnerships`,
-  description: `${COMPANY.name} is a certified partner of KNX, Crestron, Control4, Lutron, and Sonos. ${COMPANY.experience} years as India's trusted home automation integrator with international certifications and brand partnerships.`,
-  alternates: { canonical: "https://growmoresolutions.com/about/certifications" },
-};
+  description: `${COMPANY.name} is a certified partner of KNX, Crestron, Control4, Lutron & Sonos — ${COMPANY.experience} years as India's trusted home automation integrator.`,
+  path: "/about/certifications",
+});
 
 const CERTIFICATIONS = [
   {

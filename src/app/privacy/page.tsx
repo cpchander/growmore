@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Privacy Policy`,
   description: `Privacy policy for ${COMPANY.name} (growmoresolutions.com). Learn how we collect, use, and protect your personal information.`,
-  alternates: { canonical: "https://growmoresolutions.com/privacy" },
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

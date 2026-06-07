@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import Link from "next/link";
 import QuoteCalculator from "./QuoteCalculator";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Home Automation Cost Calculator India — Get Instant Quote`,
-  description: `Calculate your home automation cost in India instantly. Select rooms, features, and budget to get a personalized smart home quote. Free consultation by ${COMPANY.name} — ${COMPANY.experience} years experience.`,
-  alternates: { canonical: "https://growmoresolutions.com/get-quote" },
-};
+  description: `Calculate your home automation cost in India instantly — pick rooms, features & budget for a personalized smart home quote, by ${COMPANY.name}.`,
+  path: "/get-quote",
+});
 
 const quoteFaqs = [
   {

@@ -3,17 +3,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import {
   ArrowRight, Hotel, DoorOpen, Thermometer,
   Lightbulb, Shield, Zap, CheckCircle, Users, BarChart3,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Hotel & Hospitality Automation Solutions`,
-  description: `Smart guest room automation, energy management, and building control for hotels and resorts. Enhance guest experience, cut energy costs 30-50%. ${COMPANY.experience} years expertise.`,
-  alternates: { canonical: "https://growmoresolutions.com/solutions/for-hotels" },
-};
+  description: `Smart guest-room automation, energy management & building control for hotels and resorts — cut energy costs 30–50%, by ${COMPANY.name}.`,
+  path: "/solutions/for-hotels",
+});
 
 const SOLUTIONS = [
   { icon: DoorOpen, title: "Guest Room Automation", desc: "Keycard-activated scenes, auto climate control, motorized curtains, bedside panels, and 'Do Not Disturb' automation." },

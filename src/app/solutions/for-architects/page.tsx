@@ -3,17 +3,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import {
   ArrowRight, Ruler, FileText, Palette,
   CheckCircle, Cpu, Lightbulb, MessageCircle,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `Home Automation for Architects & Interior Designers`,
-  description: `Seamlessly integrate smart home automation into your designs. We provide wiring specs, product selection, and full installation support. ${COMPANY.experience} years of collaboration with India's top architects.`,
-  alternates: { canonical: "https://growmoresolutions.com/solutions/for-architects" },
-};
+  description: `Integrate home automation into your designs — wiring specs, product selection & installation support for India's top architects, by ${COMPANY.name}.`,
+  path: "/solutions/for-architects",
+});
 
 const WHAT_WE_PROVIDE = [
   { icon: FileText, title: "Wiring Specifications", desc: "Complete conduit layouts, cable schedules, and point-to-point wiring diagrams that integrate with your electrical drawings." },

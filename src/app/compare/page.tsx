@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import { ArrowRight, CheckCircle2, XCircle, Minus } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: `KNX vs Crestron vs Control4 vs Lutron — Comparison Guide India (2026)`,
-  description: `Detailed comparison of KNX, Crestron, Control4 & Lutron for Indian homes. Pricing, reliability, features, pros & cons. Expert guide from ${COMPANY.name} — certified partner for all 4 brands.`,
-  alternates: { canonical: "https://growmoresolutions.com/compare" },
-};
+  description: `Compare KNX, Crestron, Control4 & Lutron for Indian homes — pricing, reliability, features, pros & cons, from certified partner ${COMPANY.name}.`,
+  path: "/compare",
+});
 
 const COMPARISON_DATA = [
   {
