@@ -12,6 +12,7 @@ import { content as smartHvacClimateControlContent } from "./blog-content/smart-
 import { content as motorizedCurtainsBlindsContent } from "./blog-content/motorized-curtains-blinds-india";
 import { content as wiredVsWirelessContent } from "./blog-content/wired-vs-wireless-home-automation-india";
 import { content as matterVsKnxContent } from "./blog-content/matter-vs-knx-india";
+import { content as whatIsHomeAutomationContent } from "./blog-content/what-is-home-automation";
 
 export type BlogPost = {
   slug: string;
@@ -39,6 +40,23 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "what-is-home-automation",
+    title:
+      "What Is Home Automation? The Complete Guide for India (2026)",
+    excerpt:
+      "What is home automation, how does it work, and is it worth it in India? A beginner's guide — components, protocols, ₹ costs, power-cut & AQI realities, and how to get started.",
+    category: "Guides",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-08",
+    readTime: "18 min",
+    featured: true,
+    image: "/images/services/home-automation-panel.webp",
+    imageAlt:
+      "What is home automation — a smart home control panel showing lighting, climate, security and scene control, explained for Indian homes 2026 by GMHS",
+    content: whatIsHomeAutomationContent,
+  },
   {
     slug: "matter-vs-knx-india",
     title:
