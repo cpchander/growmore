@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 import { PROJECTS } from "@/lib/projects-data";
-import { breadcrumbJsonLd, projectJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, projectJsonLd } from "@/lib/metadata";
 import {
   ArrowRight,
   ArrowLeft,
@@ -26,16 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = PROJECTS.find((p) => p.slug === slug);
   if (!project) return {};
 
-  return {
+  return createMetadata({
     title: `${project.title} — Smart Home Case Study`,
-    description: `${project.description.slice(0, 155)}…`,
-    alternates: { canonical: `https://growmoresolutions.com/projects/${slug}` },
-    openGraph: {
-      type: "article",
-      title: project.title,
-      description: project.description,
-    },
-  };
+    description: `${project.description.slice(0, 150)}…`,
+    path: `/projects/${slug}`,
+  });
 }
 
 export default async function ProjectPage({ params }: Props) {

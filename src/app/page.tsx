@@ -10,13 +10,13 @@ import CitiesSection from "@/components/home/CitiesSection";
 import CTASection from "@/components/home/CTASection";
 import InstagramFeed from "@/components/ui/InstagramFeed";
 import { COMPANY } from "@/lib/constants";
-import { localBusinessJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, localBusinessJsonLd, faqJsonLd } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: `Home Automation Company in India | ${COMPANY.name} — ${COMPANY.experience} Years Experience`,
+export const metadata: Metadata = createMetadata({
+  title: `Home Automation Company in India — ${COMPANY.experience} Years Experience`,
   description: `India's most experienced home automation company. ${COMPANY.experience} years, ${COMPANY.projectsCompleted} projects. Smart lighting, security, HVAC & home theater. Free consultation.`,
-  alternates: { canonical: "https://growmoresolutions.com" },
-};
+  path: "",
+});
 
 const homeFaqs = [
   {

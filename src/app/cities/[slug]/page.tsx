@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CITIES, SERVICES, COMPANY, BRANDS } from "@/lib/constants";
 import { getCityDetail } from "@/lib/city-details";
-import { localBusinessJsonLd, faqJsonLd, breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, localBusinessJsonLd, faqJsonLd, breadcrumbJsonLd } from "@/lib/metadata";
 import { ArrowRight, MapPin, Phone, CheckCircle2 } from "lucide-react";
 
 type Props = {
@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = CITIES.find((c) => c.slug === slug);
   if (!city) return {};
 
-  return {
-    title: `Home Automation in ${city.name} — ${COMPANY.experience} Years of Expertise`,
-    description: `Best home automation company in ${city.name}. Smart lighting, security, HVAC & home theater by ${COMPANY.name}. ${COMPANY.experience} years. Free consultation.`,
-    alternates: { canonical: `https://growmoresolutions.com/cities/${slug}` },
-  };
+  return createMetadata({
+    title: `Home Automation in ${city.name} — ${COMPANY.experience} Years`,
+    description: `Best home automation company in ${city.name} — smart lighting, security, HVAC & home theater. ${COMPANY.experience} years, free consultation.`,
+    path: `/cities/${slug}`,
+  });
 }
 
 export default async function CityPage({ params }: Props) {

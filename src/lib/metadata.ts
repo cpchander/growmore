@@ -16,9 +16,9 @@ export function createMetadata({
   image?: string;
   noIndex?: boolean;
 }): Metadata {
-  const fullTitle = `${title} | ${COMPANY.name}`;
+  const fullTitle = title;
   const url = `${BASE_URL}${path}`;
-  const ogImage = image || `${BASE_URL}/og-default.jpg`;
+  const ogImage = image || `${BASE_URL}/opengraph-image.png`;
 
   return {
     title: fullTitle,
@@ -148,11 +148,6 @@ export function organizationJsonLd() {
       postalCode: "110030",
       addressCountry: "IN",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 28.4946,
-      longitude: 77.1456,
-    },
     areaServed: AREA_SERVED,
     hasCredential: CREDENTIALS,
     contactPoint: {
@@ -162,7 +157,6 @@ export function organizationJsonLd() {
       availableLanguage: ["English", "Hindi"],
     },
     sameAs: Object.values(COMPANY.socialLinks).filter(Boolean),
-    openingHoursSpecification: OPENING_HOURS,
     knowsAbout: [
       "Home Automation",
       "Smart Home Systems",
@@ -284,7 +278,7 @@ export function blogPostingJsonLd({
     },
     datePublished,
     dateModified: dateModified || datePublished,
-    image: image || `${BASE_URL}/og-default.jpg`,
+    image: image || `${BASE_URL}/opengraph-image.png`,
     author: {
       "@type": "Person",
       name: authorName || "Anupam Mahajan",

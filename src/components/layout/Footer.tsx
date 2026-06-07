@@ -109,6 +109,14 @@ export default function Footer() {
                   3D Experience
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/villa-walkthrough"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  3D Villa Walkthrough
+                </Link>
+              </li>
             </ul>
           </div>
 

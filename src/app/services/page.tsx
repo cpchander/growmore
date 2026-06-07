@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `Smart Home Automation Services — ${SERVICES.length} Solutions`,
-  description: `Explore ${COMPANY.name}'s ${SERVICES.length} smart home automation services: lighting, security, home theater, HVAC, and whole-home integration. ${COMPANY.experience}+ years experience across India.`,
+  description: `Explore ${COMPANY.name}'s ${SERVICES.length} smart home automation services: lighting, security, home theater, HVAC, and whole-home integration. ${COMPANY.experience} years experience across India.`,
   alternates: { canonical: "https://growmoresolutions.com/services" },
 };
 
@@ -40,7 +40,7 @@ export default function ServicesPage() {
           </h1>
           <p className="mt-4 text-lg text-navy-300 max-w-2xl">
             {COMPANY.name} delivers end-to-end smart home solutions — from initial consultation
-            and design through installation, programming, and lifetime support. {COMPANY.experience}+ years,{" "}
+            and design through installation, programming, and lifetime support. {COMPANY.experience} years,{" "}
             {COMPANY.projectsCompleted} projects, {COMPANY.citiesServed} cities.
           </p>
         </div>

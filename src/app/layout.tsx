@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: `${COMPANY.name} — India's Most Experienced Smart Home Company | ${COMPANY.experience} Years`,
-    template: `%s | ${COMPANY.name}`,
+    template: `%s`,
   },
   description: `${COMPANY.tagline}. ${COMPANY.experience} years of smart home automation expertise. Smart lighting, security, climate control, home theater & whole home automation across India.`,
   metadataBase: new URL("https://growmoresolutions.com"),

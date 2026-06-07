@@ -4,7 +4,7 @@ import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 import { BRAND_DETAILS, getBrandBySlug } from "@/lib/brands-data";
 import { PROJECTS } from "@/lib/projects-data";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import {
   ArrowRight,
   CheckCircle2,
@@ -30,11 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const brand = getBrandBySlug(slug);
   if (!brand) return {};
 
-  return {
-    title: `${brand.name} Home Automation in India — Certified ${brand.name} Partner`,
-    description: `${brand.name} home automation by India's most experienced certified partner. ${brand.tagline}. ${brand.priceRange}. ${COMPANY.experience} years experience, ${COMPANY.projectsCompleted} projects delivered.`,
-    alternates: { canonical: `https://growmoresolutions.com/brands/${slug}` },
-  };
+  return createMetadata({
+    title: `${brand.name} Home Automation — Certified ${brand.name} Partner`,
+    description: `${brand.name} home automation by India's most experienced certified partner. ${brand.priceRange}. ${COMPANY.experience} years, ${COMPANY.projectsCompleted} projects.`,
+    path: `/brands/${slug}`,
+  });
 }
 
 export default async function BrandPage({ params }: Props) {

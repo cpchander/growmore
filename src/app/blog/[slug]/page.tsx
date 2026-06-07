@@ -632,7 +632,7 @@ export default async function BlogPostPage({ params }: Props) {
                   </h4>
                   <ul className="space-y-2.5">
                     {[
-                      `${COMPANY.experience}+ Years Experience`,
+                      `${COMPANY.experience} Years Experience`,
                       `${COMPANY.projectsCompleted} Projects Delivered`,
                       "Certified KNX & Crestron Partner",
                       "15+ Cities Across India",

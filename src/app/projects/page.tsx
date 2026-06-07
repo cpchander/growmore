@@ -155,7 +155,7 @@ export default function ProjectsPage() {
             </div>
             <div>
               <p className="text-3xl font-bold text-gold-500">
-                {COMPANY.experience}+
+                {COMPANY.experience}
               </p>
               <p className="text-sm text-navy-400 mt-1">Years Experience</p>
             </div>

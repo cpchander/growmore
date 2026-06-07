@@ -42,7 +42,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "matter-vs-knx-india",
     title:
-      "Matter vs KNX in India 2026: Which Smart Home Standard Wins (And Why They're Better Together) | GMHS",
+      "Matter vs KNX in India 2026: Which Smart Home Standard Wins (And Why They're Better Together)",
     excerpt:
       "Matter vs KNX for Indian homes: KNX is the wired backbone (₹3.5–25 Lakh+), Matter the consumer/voice layer (a few thousand–₹4 Lakh+). The two aren't rivals — a KNX↔Matter gateway gives you both. Decision framework by home type, INR costs, and the installer verdict from 300+ GMHS projects.",
     category: "Comparisons",
@@ -58,7 +58,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "wired-vs-wireless-home-automation-india",
-    title: "Wired vs Wireless Home Automation in India 2026: Real Costs, Protocols & Decision Framework | GMHS",
+    title: "Wired vs Wireless Home Automation in India 2026: Real Costs, Protocols & Decision Framework",
     excerpt:
       "Wired vs wireless home automation cost in India: ₹5–40 Lakh (KNX/Crestron wired) vs ₹1–5 Lakh (Zigbee/Wi-Fi wireless). Protocol comparison, hybrid approach, BIS QCO 2026 impact, and the decision framework GMHS uses across 300+ installations.",
     category: "Comparisons",
@@ -73,7 +73,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "motorized-curtains-blinds-india",
-    title: "Motorized Curtains & Blinds in India 2026: ₹8K–₹2.4 Lakh+ Per Window | GMHS",
+    title: "Motorized Curtains & Blinds in India 2026: ₹8K–₹2.4 Lakh+ Per Window",
     excerpt:
       "Motorized curtains & blinds cost in India: ₹8K–₹2.4 Lakh+ per window. Somfy vs Lutron vs Hunter Douglas, KNX/Modbus integration, dual-layer sheer + blackout architecture, and 14–22% HVAC savings. Based on 300+ GMHS installations.",
     category: "Room Automation",
@@ -88,7 +88,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "smart-hvac-climate-control-india",
-    title: "Smart HVAC & Climate Control in India 2026: ₹2 Lakh–35 Lakh+ Real Costs | GMHS",
+    title: "Smart HVAC & Climate Control in India 2026: ₹2 Lakh–35 Lakh+ Real Costs",
     excerpt:
       "Smart HVAC & climate control costs in India: ₹2 Lakh–₹35 Lakh+. VRV vs split economics, KNX/BACnet integration, IAQ sensors, motorized dampers, and 28–42% energy savings. Based on 300+ GMHS installations.",
     category: "Room Automation",
@@ -103,7 +103,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "home-theater-av-automation-india",
-    title: "Home Theater & AV Automation Cost in India 2026: ₹3 Lakh–2 Cr+ Real Pricing | GMHS",
+    title: "Home Theater & AV Automation Cost in India 2026: ₹3 Lakh–2 Cr+ Real Pricing",
     excerpt:
       "Home theater costs in India: ₹3 Lakh entry to ₹2 Cr+ reference. Dolby Atmos channel configs, acoustic treatment, projectors, AV control (Crestron/Control4) and pre-wiring. Based on 300+ GMHS installations.",
     category: "Room Automation",
@@ -118,7 +118,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "smart-home-security-systems-india",
-    title: "Smart Home Security Systems India 2026: Costs & Brands | GMHS",
+    title: "Smart Home Security Systems India 2026: Costs & Brands",
     excerpt:
       "Smart home security costs in India: ₹80K–₹15L+. CCTV (post-STQC 2026), smart locks, intrusion sensors & KNX integration. Based on 300+ GMHS projects.",
     category: "Guides",

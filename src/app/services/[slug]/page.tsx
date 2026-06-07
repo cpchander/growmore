@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SERVICES, COMPANY } from "@/lib/constants";
 import { getServiceContent } from "@/lib/services-data";
-import { serviceJsonLd, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import { createMetadata, serviceJsonLd, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import {
   ArrowRight,
   CheckCircle2,
@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return {};
 
-  return {
-    title: `${service.title} in India — ${COMPANY.experience} Years of Expertise`,
-    description: `${service.shortDesc} by ${COMPANY.name}. ${COMPANY.experience} years, ${COMPANY.projectsCompleted} projects. Free consultation.`,
-    alternates: { canonical: `https://growmoresolutions.com/services/${slug}` },
-  };
+  return createMetadata({
+    title: `${service.title} in India — ${COMPANY.experience} Years`,
+    description: `${service.title} by ${COMPANY.name} — ${COMPANY.experience} years, ${COMPANY.projectsCompleted} projects across India. Free consultation.`,
+    path: `/services/${slug}`,
+  });
 }
 
 const serviceImageMap: Record<string, string> = {
