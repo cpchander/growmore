@@ -3,6 +3,29 @@ import Image from "next/image";
 import { Instagram, Facebook, Linkedin, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { COMPANY, SERVICES, CITIES } from "@/lib/constants";
 
+// Curated subsets for the footer (full lists live at /services and /cities)
+const FOOTER_SERVICE_SLUGS = [
+  "home-automation",
+  "conceptual-lighting",
+  "home-theater",
+  "home-security",
+  "smart-switches",
+  "home-networking",
+  "curtain-gate-motors",
+  "hvac-automation",
+];
+
+const FOOTER_CITY_SLUGS = [
+  "delhi",
+  "gurgaon",
+  "noida",
+  "mumbai",
+  "bangalore",
+  "hyderabad",
+  "pune",
+  "chennai",
+];
+
 export default function Footer() {
   return (
     <footer className="bg-navy-950 border-t border-navy-700/50">
@@ -15,35 +38,59 @@ export default function Footer() {
               Services
             </h3>
             <ul className="space-y-2">
-              {SERVICES.map((service) => (
-                <li key={service.slug}>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
-                  >
-                    {service.title}
-                  </Link>
-                </li>
-              ))}
+              {FOOTER_SERVICE_SLUGS.map((slug) => {
+                const service = SERVICES.find((s) => s.slug === slug);
+                if (!service) return null;
+                return (
+                  <li key={slug}>
+                    <Link
+                      href={`/services/${slug}`}
+                      className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                    >
+                      {service.title}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li>
+                <Link
+                  href="/services"
+                  className="text-sm text-gold-500 hover:text-gold-400 font-medium transition-colors"
+                >
+                  View all services →
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Column 2: Cities — all 12 */}
+          {/* Column 2: Cities — curated subset + link to full list */}
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
               Cities We Serve
             </h3>
             <ul className="space-y-2">
-              {CITIES.map((city) => (
-                <li key={city.slug}>
-                  <Link
-                    href={`/cities/${city.slug}`}
-                    className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
-                  >
-                    {city.name}
-                  </Link>
-                </li>
-              ))}
+              {FOOTER_CITY_SLUGS.map((slug) => {
+                const city = CITIES.find((c) => c.slug === slug);
+                if (!city) return null;
+                return (
+                  <li key={slug}>
+                    <Link
+                      href={`/cities/${slug}`}
+                      className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                    >
+                      {city.name}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li>
+                <Link
+                  href="/cities"
+                  className="text-sm text-gold-500 hover:text-gold-400 font-medium transition-colors"
+                >
+                  View all cities →
+                </Link>
+              </li>
             </ul>
           </div>
 
