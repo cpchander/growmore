@@ -121,6 +121,10 @@ export const SERVICES = [
 export const CITIES = [
   { slug: "mumbai", name: "Mumbai", areas: ["Bandra", "Juhu", "Powai", "South Mumbai", "Thane", "Navi Mumbai"] },
   { slug: "delhi", name: "Delhi NCR", areas: ["South Delhi", "Gurgaon", "Noida", "Greater Noida", "Dwarka", "Faridabad"] },
+  { slug: "gurgaon", name: "Gurgaon", areas: ["Golf Course Road", "DLF Phase 1-5", "Golf Course Extension Road", "Sohna Road", "Nirvana Country", "Dwarka Expressway"] },
+  { slug: "noida", name: "Noida", areas: ["Sector 150", "Sector 128", "Noida Expressway", "Sector 44", "Jaypee Greens", "Greater Noida West"] },
+  { slug: "faridabad", name: "Faridabad", areas: ["Sector 14-15", "Charmwood Village", "Green Field Colony", "Surajkund", "Greater Faridabad (Neharpar)", "Ashoka Enclave"] },
+  { slug: "ghaziabad", name: "Ghaziabad", areas: ["Indirapuram", "Vaishali", "Raj Nagar Extension", "Kaushambi", "Crossings Republik", "Siddharth Vihar"] },
   { slug: "bangalore", name: "Bangalore", areas: ["Whitefield", "Koramangala", "Indiranagar", "HSR Layout", "Sarjapur", "Electronic City"] },
   { slug: "hyderabad", name: "Hyderabad", areas: ["Banjara Hills", "Jubilee Hills", "Gachibowli", "Hitech City", "Kondapur"] },
   { slug: "pune", name: "Pune", areas: ["Koregaon Park", "Kalyani Nagar", "Baner", "Hinjewadi", "Kharadi"] },

@@ -513,6 +513,175 @@ CITY_DETAILS.lucknow = {
   ],
 };
 
+// ─── Gurgaon / Gurugram ──────────────────────────────────────────────────
+CITY_DETAILS.gurgaon = {
+  slug: "gurgaon",
+  intro:
+    "Gurugram is the highest-value home automation market in India, and Grow More Solutions services it directly from our Ghitorni Experience Center, 15 minutes from Golf Course Road. Our Gurgaon work concentrates along the DLF Phase 5 ultra-luxury spine (Camellias, Magnolias, Aralias), the Golf Course Extension and Sohna Road (SPR) high-rises, the redevelopment builder-floor belt across DLF Phase 1–4 and Sushant Lok, gated villas in Nirvana Country and Sobha International City, and the new Dwarka Expressway luxury frontier (Smartworld, M3M, Trump). Because Gurgaon's air quality is among the worst in NCR and its grid suffers heavy summer voltage stress, every premium build we deliver here treats integrated air-quality automation and power-resilient design as core scope — not upsells.",
+  marketNotes: [
+    "Ultra-luxury condos drive the highest budgets — DLF Camellias/Magnolias/Aralias and The Crest on Golf Course Road, plus M3M, Smartworld and Trump towers on Golf Course Extension and Dwarka Expressway",
+    "Severe AQI (Gurgaon sectors hit AQI 650+ with PM2.5 above 250 µg/m³ in peak winter 2025) makes whole-home HEPA + fresh-air ventilation with automated AQI-triggered ramp-up a default scope item on every villa and large condo",
+    "DHBVN summer voltage fluctuation and load-shedding (DLF, South City, Sohna Road, Palam Vihar commonly affected) require servo stabilizers on automation panels and online UPS for control servers — standard inclusion on all GMHS Gurgaon builds",
+    "Heavy redevelopment of DLF Phase 1–4 and Sushant Lok produces a steady stream of brand-new 4-storey builder floors — ideal greenfield wired-KNX automation jobs with full pre-wiring",
+    "NRI demand surged on the Dwarka Expressway corridor (8–15 minutes to IGI airport) — remote monitoring, occupancy simulation, and managed AMC for owners abroad are requested on the majority of these projects",
+  ],
+  projectExamples: [
+    { area: "DLF Camellias (Sector 42)", type: "5BHK ultra-luxury condo", budget: "₹58 Lakh", scope: "Full Crestron whole-home + 7.1.4 cinema + Lutron HomeWorks + 4-zone clean air with AQI dashboard + integrated VRV" },
+    { area: "Golf Course Extension (M3M)", type: "4BHK luxury condo", budget: "₹19 Lakh", scope: "KNX backbone + Lutron blinds + 5.1.4 Atmos + AQI-triggered purification + smart locks + UPS-backed control" },
+    { area: "Nirvana Country (Sector 50)", type: "5BHK gated villa", budget: "₹34 Lakh", scope: "Control4 + perimeter security + outdoor/garden automation + water-tank & pump control + DG changeover + Sonos multi-room" },
+    { area: "DLF Phase 2", type: "4-floor builder floor (new build)", budget: "₹12 Lakh", scope: "KNX pre-wired lighting + Lutron + 5.1.2 Atmos + 2-zone clean air + video door access" },
+  ],
+  extraFaqs: [
+    {
+      question: "Why is air-quality automation essential for Gurgaon homes specifically?",
+      answer:
+        "Gurgaon records some of NCR's worst air — sector monitors crossed AQI 650 with PM2.5 above 250 µg/m³ during peak winter 2025, roughly 17 times the WHO guideline. A sealed, HEPA-purified home still accumulates CO2 to 1,400+ ppm within a few hours of family occupancy without fresh-air supply. Every GMHS Gurgaon villa and large condo build therefore integrates an ERV/HRV fresh-air system (Zehnder, Mitsubishi Lossnay, or Stadler Form) that pre-filters outdoor air through HEPA + activated carbon, recovers 70–80% of indoor temperature, and ties fan speed to CO2 and AQI sensors on the KNX or Control4 bus. The system auto-ramps purification when sectoral AQI spikes and switches to recirculation during severe-smog peaks — all without the homeowner touching a control.",
+    },
+    {
+      question: "How do you make Gurgaon automation resilient to power cuts and voltage fluctuation?",
+      answer:
+        "Gurgaon's DHBVN grid sees frequent outages and voltage swings during peak-summer AC demand, particularly across DLF, South City, Sohna Road, and Palam Vihar. Dirty power is the single biggest threat to sensitive automation gear, so every GMHS Gurgaon build includes: servo voltage stabilizers on all automation and dimmer panels, an online UPS sized for the control server, network rack, and security systems (4–8 hours), surge protection on AV processors and KNX power supplies, and automated DG changeover for villas with backup generators. During an outage the system gracefully sheds non-essential loads while security, core lighting, and the network stay live — so your automation never becomes the reason the house stops working.",
+    },
+    {
+      question: "Do you work in DLF 5 condos like Camellias and Magnolias, or only independent homes?",
+      answer:
+        "Both — and DLF Phase 5 condos are a core part of our Gurgaon practice. For ultra-luxury condos (Camellias, Magnolias, Aralias, The Crest) we deliver Crestron or KNX whole-home systems within the building's MEP constraints, coordinating with the RWA and facility management for any common-area or facade-visible work (external cameras, balcony lighting). For Dwarka Expressway and Golf Course Extension new condos (M3M, Smartworld, Trump), we can pre-wire during fit-out if engaged before handover. Independent builder floors in DLF Phase 1–4 and gated villas in Nirvana Country and Sobha International City are the other major segment, typically allowing fuller wired KNX backbones.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "IAQ + fresh-air automation for high-AQI Gurgaon homes" },
+    { title: "KNX vs Crestron vs Control4", href: "/blog/knx-vs-crestron-vs-control4-india", description: "Brand selection for DLF 5 and Golf Course Road luxury" },
+    { title: "Home Theater Cost Guide", href: "/blog/home-theater-av-automation-india", description: "Cinema design for Gurgaon condos and villas" },
+    { title: "Smart Home Wiring Guide", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring DLF builder floors and Dwarka Expressway condos" },
+  ],
+};
+
+// ─── Noida & Greater Noida ───────────────────────────────────────────────
+CITY_DETAILS.noida = {
+  slug: "noida",
+  intro:
+    "Noida's luxury home automation market is overwhelmingly high-rise — concentrated in the low-density Sector 150 sports-city belt, the golf-facing towers of Sector 128 (Jaypee Greens Wish Town), the riverfront ultra-luxury of Sector 124 (ATS Knightsbridge), Godrej Woods in Sector 43, and the premium Noida Expressway corridor (Sectors 94, 107, 108). Grow More Solutions services Noida, Greater Noida, and the Expressway from our Delhi Experience Center, with villa work concentrated in Jaypee Greens and the ATS Pristine pockets of Sector 150. Noida's defining design challenge is air quality — the city routinely ranks among India's two most polluted in winter — so AQI-linked fresh-air automation anchors nearly every premium build, alongside wired-KNX reliability for apartments where concrete high-rise construction creates Wi-Fi dead zones.",
+  marketNotes: [
+    "High-rise condos dominate — Sector 150 (Tata Eureka Park, ATS Pristine, Godrej Nest, Ace Parkway), Sector 128 Jaypee Greens, Sector 124 ATS Knightsbridge, and Sector 43 Godrej Woods are the luxury core; villas are a niche premium tier in Jaypee Greens and ATS Pristine",
+    "Winter air quality is the dominant local pain point — Noida averaged PM2.5 around 166 µg/m³ with AQI reaching ~349 (severe) in 2025-26, making automated air purification and sealed fresh-air systems a necessity rather than a luxury",
+    "Concrete high-rise construction creates Wi-Fi dead zones and signal loss — we deploy wired KNX backbones with mesh access points rather than relying on apartment Wi-Fi for mission-critical automation",
+    "Strong NRI and senior-corporate buyer base on the Expressway and Sector 150 — large 4BHK formats with international-grade integration, remote monitoring, and phased/expandable systems are the norm",
+    "Voltage fluctuation in newer Expressway and Greater Noida West sectors requires UPS-backed control servers and surge protection as standard scope",
+  ],
+  projectExamples: [
+    { area: "Sector 150 (ATS Pristine)", type: "4BHK low-density condo", budget: "₹15 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.4 Atmos + AQI-linked clean air + smart locks + Home Assistant bridge" },
+    { area: "Jaypee Greens (Sector 128)", type: "5BHK golf-facing villa", budget: "₹32 Lakh", scope: "Full Crestron whole-home + 7.1.2 cinema + outdoor/garden automation + perimeter security + DG/UPS handover" },
+    { area: "ATS Knightsbridge (Sector 124)", type: "4BHK ultra-luxury apartment", budget: "₹21 Lakh", scope: "KNX backbone + Lutron HomeWorks + 5.1.4 Atmos + 3-zone clean air + integrated VRV + access management" },
+    { area: "Greater Noida West (Mahagun Mywoods)", type: "3BHK apartment", budget: "₹7 Lakh", scope: "Wireless KNX RF retrofit + Lutron Caseta + 5.1.2 Atmos + smart locks + Alexa/Google voice" },
+  ],
+  extraFaqs: [
+    {
+      question: "How bad is Noida's air quality and what does automation do about it?",
+      answer:
+        "Noida ranked among India's two most polluted cities in winter 2025-26, averaging PM2.5 near 166 µg/m³ with AQI peaking around 349 (severe) — driven by stubble burning, Diwali, winter inversion, and year-round construction dust. GMHS premium Noida builds integrate a fresh-air system (ERV/HRV) that filters incoming air through HEPA H13 + activated carbon and ties fan speed to indoor CO2 and AQI sensors on the automation bus. The system automatically ramps purification when outdoor AQI spikes, switches to recirculation during severe-smog peaks, and maintains indoor PM2.5 below 30 µg/m³ even on the worst days. This is the single most valuable automation investment for a Noida family, and it runs entirely in the background.",
+    },
+    {
+      question: "Why do you recommend wired KNX for Noida high-rise apartments instead of Wi-Fi automation?",
+      answer:
+        "Noida's high-rise towers are concrete-and-rebar construction that creates Wi-Fi dead zones and dropouts — fine for browsing, but unacceptable for automation that controls your lighting, climate, and security. For premium Sector 150, 128, 124, and Expressway apartments we install a wired KNX backbone (an open international standard with no vendor lock-in and no dependence on internet or Wi-Fi for core functions), with mesh Wi-Fi access points layered on top for app and voice control. The result is automation that works reliably even when your broadband is down. For value-tier retrofits in Greater Noida West, we use KNX RF wireless where wired routing isn't feasible.",
+    },
+    {
+      question: "Can you handle automation for NRI buyers building in Noida remotely?",
+      answer:
+        "Yes — NRIs are a major segment of our Noida and Expressway practice. Standard NRI-friendly scope includes: weekly video site-walks during construction (our project manager walks the apartment with a phone camera while you watch from abroad), digital handover with full system documentation in a private client portal, remote-monitored AMC during your overseas absences, automated occupancy simulation while the home is empty, and pre-arrival activation that conditions the home a few hours before you land. Many of our Sector 150 and Jaypee Greens clients run their Noida homes entirely from the UAE, US, or UK between visits.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Fresh-air + AQI automation for Noida high-rises" },
+    { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Why wired KNX wins in concrete Noida towers" },
+    { title: "KNX vs Crestron vs Control4", href: "/blog/knx-vs-crestron-vs-control4-india", description: "Brand selection for Sector 150 and Jaypee Greens" },
+  ],
+};
+
+// ─── Faridabad ───────────────────────────────────────────────────────────
+CITY_DETAILS.faridabad = {
+  slug: "faridabad",
+  intro:
+    "Faridabad is a discreet-wealth market — industrialist and business families who value reliability, build quality, and long-term service over showy gadgetry. Grow More Solutions services Faridabad from our Ghitorni Experience Center across two distinct worlds: the established kothi-and-bungalow belt of old Faridabad (Sectors 14, 15, 17, 21, Charmwood Village, Green Field Colony, Ashoka Enclave), the sprawling Surajkund and Anangpur farmhouse estates on the Aravalli–Delhi border, and the new high-rise corridor of Greater Faridabad / Neharpar (Sectors 75–89, with BPTP, Omaxe, and Puri the dominant builders). Because Faridabad is an industrial city on the DHBVN grid with heavy summer power cuts and severe NCR air, our local builds lead with power-resilient, low-maintenance engineering rather than feature count.",
+  marketNotes: [
+    "Two distinct segments — independent kothis and bungalows in old Faridabad (Sectors 14/15/17/21, Charmwood, Green Field) ideal for whole-home retrofit, and new high-rise condos in Greater Faridabad / Neharpar (Sectors 75–89: BPTP Parklands, Omaxe Heights, Puri Pranayam)",
+    "Surajkund and Anangpur farmhouses are the true high end — multi-acre Aravalli estates supporting ₹15–50 Lakh+ whole-property automation across outdoor lighting, gates, pools, multi-zone climate, and perimeter surveillance",
+    "Faridabad's DHBVN grid runs a ~20% summer supply shortfall (roughly 6 hours of cuts/day at peak) with storm-driven multi-hour blackouts and industrial-area voltage surges — power-resilient design with UPS, surge protection, and DG changeover is the headline requirement, not an afterthought",
+    "Industrialist buyers favour understated, durable systems — discreet wealth aesthetics, hidden technology, warranty-backed hardware, and a vendor who understands electricals and offers real after-sales support over flashy touch panels",
+    "Severe NCR air quality (Faridabad industrial-town AQI regularly crosses into hazardous) plus heavy industrial and construction dust make sealed-home automation, smart air purification, and automated filtered ventilation high-value local scope",
+  ],
+  projectExamples: [
+    { area: "Surajkund (Anangpur)", type: "Aravalli farmhouse estate (multi-acre)", budget: "₹38 Lakh", scope: "KNX whole-property + perimeter thermal cameras + automated gates + pool/garden automation + 4-zone clean air + DG/solar handover" },
+    { area: "Sector 15 (Old Faridabad)", type: "4BHK independent kothi", budget: "₹14 Lakh", scope: "KNX retrofit + Lutron + 5.1.4 Atmos + integrated VRV + servo-stabilized panels + smart locks" },
+    { area: "Charmwood Village", type: "4BHK villa", budget: "₹11 Lakh", scope: "Control4 + Sonos multi-room + perimeter cameras + clean air + UPS-backed control + access management" },
+    { area: "Greater Faridabad (BPTP Parklands)", type: "3BHK high-rise apartment", budget: "₹6 Lakh", scope: "Wireless KNX RF retrofit + Lutron Caseta + 5.1.2 Atmos + smart locks + AQI-triggered purification" },
+  ],
+  extraFaqs: [
+    {
+      question: "Faridabad has heavy power cuts — will my automation still work reliably?",
+      answer:
+        "This is the most important design question in Faridabad, and it's where our engineering background matters. Faridabad's DHBVN grid runs roughly a 20% supply shortfall in summer — about 6 hours of cuts a day at peak, plus storm blackouts and industrial-area voltage surges that destroy unprotected electronics. Every GMHS Faridabad build is engineered for dirty power: servo voltage stabilizers on all automation and dimmer panels, an online UPS sized for the control server, network rack, and security systems, surge protection on every sensitive device, and automated DG changeover for homes with generators. We also favour protocols (KNX, Zigbee, Z-Wave) that keep core lighting and security functioning locally during an outage, without depending on internet or cloud. Your automation should be the most reliable system in the house — not the first thing that fails.",
+    },
+    {
+      question: "Do you offer understated, low-maintenance systems rather than flashy gadgets?",
+      answer:
+        "Yes — and this is exactly how we work with Faridabad's industrialist and business families. Discreet wealth prefers hidden technology: concealed speakers behind fabric or panelling, automation that disappears into the architecture, durable warranty-backed hardware (Schneider, Hager, Vimar, KNX-certified modules) rather than consumer plastic, and reliable engineering with genuine after-sales support. We lead with reliability, build quality, and a 15+ year track record across 300+ projects — not gimmicks. Our systems are designed to run for a decade with minimal intervention, backed by AMC plans and a real service team, which is what matters to buyers who value durability and ROI over novelty.",
+    },
+    {
+      question: "What does home automation cost in Faridabad compared to Gurgaon?",
+      answer:
+        "Faridabad is meaningfully more value-priced than Gurgaon or South Delhi, and automation scope reflects that. Typical GMHS Faridabad ranges: entry automation for a 2–3BHK apartment runs ₹2–5 Lakh; a premium 3–4BHK kothi or villa in the old sectors or Charmwood runs ₹7–15 Lakh; and Surajkund/Anangpur farmhouse estates run ₹15–50 Lakh+ for full-property automation. Unlike Gurgaon's status-driven ultra-luxury spends, Faridabad buyers expect clear value — so we build to the right specification for the home rather than upselling brand prestige. Every Faridabad project starts with a free on-site assessment to scope accurately.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-india-complete-guide", description: "Transparent, value-tier pricing for Faridabad buyers" },
+    { title: "Smart Home Security Guide", href: "/blog/smart-home-security-systems-india", description: "Perimeter security for Surajkund farmhouses & kothis" },
+    { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Retrofit vs new-build decisions for Faridabad homes" },
+  ],
+};
+
+// ─── Ghaziabad ───────────────────────────────────────────────────────────
+CITY_DETAILS.ghaziabad = {
+  slug: "ghaziabad",
+  intro:
+    "Ghaziabad is a mid-premium, value-conscious market — and one where home automation has a uniquely strong case, because the region carries the worst air quality on earth (Loni was ranked the world's most polluted city in 2025) alongside frequent power cuts. Grow More Solutions services Ghaziabad from our Delhi Experience Center, concentrated in the Trans-Hindon high-rise belt (Indirapuram, Vaishali, Vasundhara, Kaushambi), the fast-growing Raj Nagar Extension and Siddharth Vihar corridors, the value townships of Crossings Republik and Wave City, and the old-elite kothi colonies of Raj Nagar and Kavi Nagar. The market is overwhelmingly apartment-driven, price-sensitive, and security-first, so we lead with transparent tiered packages and the two automation benefits that matter most locally: clean air and power resilience.",
+  marketNotes: [
+    "High-rise gated condos overwhelmingly dominate — Indirapuram (ATS, Saya Gold Avenue), Raj Nagar Extension (VVIP Addresses, KW Srishti, Charms Castle), Siddharth Vihar (Prestige City), Crossings Republik and Wave City; villa/wired-KNX work is a niche in old Raj Nagar, Kavi Nagar, and Wave City plots",
+    "Air quality is the strongest automation argument in India — Loni (Ghaziabad) was ranked the world's most polluted city in 2025 with annual PM2.5 of 112.5 µg/m³, over 22× the WHO guideline — making smart air purification and AQI-linked ventilation the highest-value local scope",
+    "Documented frequent power cuts and low-voltage drops, especially across Trans-Hindon during summer peaks, make inverter/UPS-integrated, surge-protected automation essential for reliability",
+    "Value-conscious, security-first buyers — mid-to-upper salaried professionals and Delhi-east spillover prioritise CCTV, video door phones, and smart locks, with transparent BHK-based package pricing valued over bespoke luxury",
+    "A genuine ultra-premium tier exists in the new launches (Prestige City ₹1.6 Cr+, Gaur Wave City ₹1.98 Cr+) where wired KNX whole-home systems are viable, alongside the old-colony kothis of Raj Nagar and Kavi Nagar",
+  ],
+  projectExamples: [
+    { area: "Indirapuram (Saya Gold Avenue)", type: "3BHK premium apartment", budget: "₹5.5 Lakh", scope: "KNX RF retrofit + Lutron Caseta + 5.1.2 Atmos + AQI-triggered air purification + CCTV + smart locks" },
+    { area: "Raj Nagar (old colony)", type: "4BHK independent kothi", budget: "₹12 Lakh", scope: "KNX backbone + Lutron + 5.1.4 Atmos + integrated VRV + perimeter security + UPS-backed control + clean air" },
+    { area: "Siddharth Vihar (Prestige City)", type: "4BHK luxury apartment", budget: "₹8 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.4 Atmos + 2-zone clean air + video door access + Alexa/Google voice" },
+    { area: "Crossings Republik", type: "3BHK apartment", budget: "₹2.5 Lakh", scope: "Value retrofit — smart lighting + CCTV + smart locks + video door phone + voice control + AQI monitor" },
+  ],
+  extraFaqs: [
+    {
+      question: "Is air-quality automation really worth it in Ghaziabad?",
+      answer:
+        "Nowhere in the world makes a stronger case. Loni in Ghaziabad was ranked the most polluted city on earth in 2025, with annual PM2.5 of 112.5 µg/m³ — more than 22 times the WHO guideline — and the city proper routinely sits in the global top-15. For families here, smart air purification isn't a luxury, it's a health investment. Our Ghaziabad builds integrate automated air purification tied to indoor AQI sensors: the system continuously monitors PM2.5, ramps purifiers automatically when levels rise, and on premium projects adds HEPA + carbon fresh-air ventilation that keeps indoor air clean without opening windows to the smog. Even our entry-tier apartment packages include an AQI monitor and automated purifier control, because it's the single benefit Ghaziabad families value most.",
+    },
+    {
+      question: "What does home automation cost in Ghaziabad? Do you have package pricing?",
+      answer:
+        "Yes — Ghaziabad is a value-conscious market, so we offer transparent tiered packages. An entry package for a 2–3BHK apartment (smart lighting, CCTV, smart locks, video door phone, voice control, AQI monitor) runs ₹50,000–₹1.5 Lakh. A mid-tier whole-apartment system (3–4BHK, full lighting + climate + security + scenes) runs ₹2–5 Lakh. Premium wired KNX systems for villas, old-colony kothis in Raj Nagar/Kavi Nagar, and the ultra-luxury launches (Prestige City, Gaur Wave City) start around ₹5 Lakh and scale with scope. We scope every project to the home and budget honestly rather than overselling — and every quote starts with a free on-site assessment.",
+    },
+    {
+      question: "Will automation keep working during Ghaziabad's power cuts?",
+      answer:
+        "Yes — power resilience is built into every GMHS Ghaziabad system. The Trans-Hindon belt sees frequent cuts and low-voltage drops during summer peaks, so we integrate inverter/UPS backup for the automation controller, network, and security systems, add surge protection and voltage-stabilizer-friendly design to protect sensitive hubs and dimmers, and use protocols that keep core lighting, CCTV, and smart locks functioning locally during an outage. Your security and essential automation stay live even when the grid doesn't — which, in Ghaziabad, is exactly when you need them most.",
+    },
+  ],
+  recommendedReading: [
+    { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-india-complete-guide", description: "Transparent tiered pricing for value-conscious Ghaziabad buyers" },
+    { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Air purification automation for the world's most polluted region" },
+    { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Retrofit-friendly automation for Ghaziabad apartments" },
+  ],
+};
+
 export function getCityDetail(slug: string): CityDetail | undefined {
   return CITY_DETAILS[slug];
 }

@@ -49,6 +49,10 @@ export function createMetadata({
 const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   "New Delhi": { lat: 28.4946, lng: 77.1456 },
   "Delhi NCR": { lat: 28.4946, lng: 77.1456 },
+  Gurgaon: { lat: 28.4595, lng: 77.0266 },
+  Noida: { lat: 28.5355, lng: 77.391 },
+  Faridabad: { lat: 28.4089, lng: 77.3178 },
+  Ghaziabad: { lat: 28.6692, lng: 77.4538 },
   Mumbai: { lat: 19.076, lng: 72.8777 },
   Bangalore: { lat: 12.9716, lng: 77.5946 },
   Hyderabad: { lat: 17.385, lng: 78.4867 },
