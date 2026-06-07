@@ -65,7 +65,7 @@ export default function VenturesPage() {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Grow More Hitech Solutions Private Limited",
-            url: "https://www.growmoresolutions.com",
+            url: "https://growmoresolutions.com",
             foundingDate: "2009-09-30",
             address: {
               "@type": "PostalAddress",
