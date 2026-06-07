@@ -68,6 +68,7 @@ GMHS's operational infrastructure (recruitment, training, quality systems) also 
 
 ## Content and Resources
 
+- [Matter vs KNX in India 2026: Which Smart Home Standard Wins (And Why They're Better Together)](https://growmoresolutions.com/blog/matter-vs-knx-india)
 - [Wired vs Wireless Home Automation in India 2026: Real Costs, Protocols & Decision Framework](https://growmoresolutions.com/blog/wired-vs-wireless-home-automation-india)
 - [Motorized Curtains & Blinds Guide for India](https://growmoresolutions.com/blog/motorized-curtains-blinds-india)
 - [Smart HVAC & Climate Control in India](https://growmoresolutions.com/blog/smart-hvac-climate-control-india)

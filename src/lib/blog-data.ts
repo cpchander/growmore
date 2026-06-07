@@ -11,6 +11,7 @@ import { content as homeTheaterAvContent } from "./blog-content/home-theater-av-
 import { content as smartHvacClimateControlContent } from "./blog-content/smart-hvac-climate-control-india";
 import { content as motorizedCurtainsBlindsContent } from "./blog-content/motorized-curtains-blinds-india";
 import { content as wiredVsWirelessContent } from "./blog-content/wired-vs-wireless-home-automation-india";
+import { content as matterVsKnxContent } from "./blog-content/matter-vs-knx-india";
 
 export type BlogPost = {
   slug: string;
@@ -38,6 +39,23 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "matter-vs-knx-india",
+    title:
+      "Matter vs KNX in India 2026: Which Smart Home Standard Wins (And Why They're Better Together) | GMHS",
+    excerpt:
+      "Matter vs KNX for Indian homes: KNX is the wired backbone (₹3.5–25 Lakh+), Matter the consumer/voice layer (a few thousand–₹4 Lakh+). The two aren't rivals — a KNX↔Matter gateway gives you both. Decision framework by home type, INR costs, and the installer verdict from 300+ GMHS projects.",
+    category: "Comparisons",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-07",
+    readTime: "17 min",
+    featured: true,
+    image: "/images/blog/matter-vs-knx-india.webp",
+    imageAlt:
+      "Matter vs KNX comparison for Indian homes 2026 — KNX wired bus backbone vs Matter wireless Thread mesh, showing reliability, cost, and the KNX-to-Matter gateway architecture based on 300+ GMHS installations",
+    content: matterVsKnxContent,
+  },
   {
     slug: "wired-vs-wireless-home-automation-india",
     title: "Wired vs Wireless Home Automation in India 2026: Real Costs, Protocols & Decision Framework | GMHS",
