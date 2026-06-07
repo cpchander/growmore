@@ -22,6 +22,8 @@ export const IMAGES = {
       "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80",
     wholeHome: "/images/services/home-automation-panel.webp",
     voice: "/images/services/voice-control-tablet.webp",
+    gmhsHomeAutomation: "/images/services/gmhs-home-automation.webp",
+    gmhsLighting: "/images/services/gmhs-conceptual-lighting.webp",
     smartLock:
       "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
     networking:

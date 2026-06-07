@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const serviceImageMap: Record<string, string> = {
-  "home-automation": IMAGES.services.wholeHome,
-  "conceptual-lighting": IMAGES.services.lightingMoods,
+  "home-automation": IMAGES.services.gmhsHomeAutomation,
+  "conceptual-lighting": IMAGES.services.gmhsLighting,
   "home-theater": IMAGES.services.theater,
   "home-security": IMAGES.services.security,
   "central-vacuum": IMAGES.services.centralVacuum,
