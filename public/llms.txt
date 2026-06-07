@@ -69,6 +69,11 @@ GMHS's operational infrastructure (recruitment, training, quality systems) also 
 ## Content and Resources
 
 - [What Is Home Automation? The Complete Guide for India (2026)](https://growmoresolutions.com/blog/what-is-home-automation)
+- [Smart Home Hubs in 2026: Do You Really Need One?](https://growmoresolutions.com/blog/smart-home-hubs-2026)
+- [Smart Motion Sensors for Home Automation: PIR vs mmWave (India Guide)](https://growmoresolutions.com/blog/smart-motion-sensors-guide)
+- [Smart Bedroom Automation in India: Lighting, AC, Curtains & Sleep Mode](https://growmoresolutions.com/blog/smart-bedroom-automation-india)
+- [Home Office Automation in India: Lighting, Productivity & WFH Setup](https://growmoresolutions.com/blog/home-office-automation-india)
+- [Restaurant & Cafe Automation in India: Smart Lighting, Audio & Ambiance](https://growmoresolutions.com/blog/restaurant-automation-india)
 - [Matter vs KNX in India 2026: Which Smart Home Standard Wins (And Why They're Better Together)](https://growmoresolutions.com/blog/matter-vs-knx-india)
 - [Wired vs Wireless Home Automation in India 2026: Real Costs, Protocols & Decision Framework](https://growmoresolutions.com/blog/wired-vs-wireless-home-automation-india)
 - [Motorized Curtains & Blinds Guide for India](https://growmoresolutions.com/blog/motorized-curtains-blinds-india)

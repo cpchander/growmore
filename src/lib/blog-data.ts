@@ -13,6 +13,11 @@ import { content as motorizedCurtainsBlindsContent } from "./blog-content/motori
 import { content as wiredVsWirelessContent } from "./blog-content/wired-vs-wireless-home-automation-india";
 import { content as matterVsKnxContent } from "./blog-content/matter-vs-knx-india";
 import { content as whatIsHomeAutomationContent } from "./blog-content/what-is-home-automation";
+import { content as smartHomeHubsContent } from "./blog-content/smart-home-hubs-2026";
+import { content as smartMotionSensorsContent } from "./blog-content/smart-motion-sensors-guide";
+import { content as smartBedroomContent } from "./blog-content/smart-bedroom-automation-india";
+import { content as homeOfficeContent } from "./blog-content/home-office-automation-india";
+import { content as restaurantContent } from "./blog-content/restaurant-automation-india";
 
 export type BlogPost = {
   slug: string;
@@ -56,6 +61,86 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt:
       "What is home automation — a smart home control panel showing lighting, climate, security and scene control, explained for Indian homes 2026 by GMHS",
     content: whatIsHomeAutomationContent,
+  },
+  {
+    slug: "smart-home-hubs-2026",
+    title: "Smart Home Hubs in 2026: Do You Really Need One?",
+    excerpt:
+      "What a smart home hub does, the best options for India (SmartThings, Apple, Aqara, Home Assistant), local vs cloud, the Z-Wave 865 MHz gotcha, and consumer hub vs KNX/Control4 controller.",
+    category: "Technology",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-08",
+    readTime: "12 min",
+    featured: false,
+    image: "/images/services/home-automation-panel.webp",
+    imageAlt:
+      "Smart home hub guide 2026 — a central control panel bridging Zigbee, Z-Wave, Thread and Wi-Fi devices for Indian homes, by GMHS",
+    content: smartHomeHubsContent,
+  },
+  {
+    slug: "smart-motion-sensors-guide",
+    title: "Smart Motion Sensors for Home Automation: PIR vs mmWave (India Guide)",
+    excerpt:
+      "How smart motion sensors work, PIR vs mmWave presence sensors, why your lights turn off when you sit still, India brands & ₹ prices, and how to fix false triggers in Indian heat.",
+    category: "Technology",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-08",
+    readTime: "11 min",
+    featured: false,
+    image: "/images/services/security-cctv-monitor.webp",
+    imageAlt:
+      "Smart motion sensor guide for India — PIR vs mmWave presence sensors for automatic lighting, security and energy savings, by GMHS",
+    content: smartMotionSensorsContent,
+  },
+  {
+    slug: "smart-bedroom-automation-india",
+    title: "Smart Bedroom Automation in India: Lighting, AC, Curtains & Sleep Mode",
+    excerpt:
+      "Automate your bedroom for better sleep — layered lighting, sleep-temperature AC, dual-layer blackout curtains, a one-tap Goodnight scene, and the India realities (early sunrise, heat, power cuts) most guides miss.",
+    category: "Room Automation",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-08",
+    readTime: "12 min",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=80",
+    imageAlt:
+      "Smart bedroom automation in India — a luxury bedroom with automated lighting, motorized blackout curtains and smart AC for better sleep, by GMHS",
+    content: smartBedroomContent,
+  },
+  {
+    slug: "home-office-automation-india",
+    title: "Home Office Automation in India: Lighting, Productivity & WFH Setup",
+    excerpt:
+      "Build a WFH setup that performs — circadian lighting, smart AC, reliable networking and router-on-UPS for India's power cuts, plus Work/Meeting/End-of-Day scenes. Costs and product picks included.",
+    category: "Room Automation",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-08",
+    readTime: "12 min",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=1200&q=80",
+    imageAlt:
+      "Home office automation in India — a smart WFH desk setup with circadian lighting, smart AC and reliable networking, by GMHS",
+    content: homeOfficeContent,
+  },
+  {
+    slug: "restaurant-automation-india",
+    title: "Restaurant & Cafe Automation in India: Smart Lighting, Audio & Ambiance",
+    excerpt:
+      "How restaurants automate ambiance and cut energy — scene-based lighting, multi-zone audio, HVAC scheduling, and one-touch dayparts (Lunch, Dinner, Party). Energy ROI, costs, and the India context.",
+    category: "B2B",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-08",
+    readTime: "12 min",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80",
+    imageAlt:
+      "Restaurant and cafe automation in India — a stylish restaurant with scene-based smart lighting, multi-zone audio and ambiance control, by GMHS",
+    content: restaurantContent,
   },
   {
     slug: "matter-vs-knx-india",
