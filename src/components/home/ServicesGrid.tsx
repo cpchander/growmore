@@ -3,14 +3,14 @@ import { SERVICES } from "@/lib/constants";
 import {
   Lightbulb, Shield, Thermometer, PanelTop,
   Tv, Mic, Home, Building2,
-  Wind, Fan, Sun,
+  Wind, Fan, Sun, Lock, Wifi,
   type LucideIcon,
 } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
   Lightbulb, Shield, Thermometer, PanelTop,
   Tv, Mic, Home, Building2,
-  Wind, Fan, Sun,
+  Wind, Fan, Sun, Lock, Wifi,
 };
 
 export default function ServicesGrid() {

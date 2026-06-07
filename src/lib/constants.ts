@@ -116,6 +116,27 @@ export const SERVICES = [
     icon: "Building2",
     features: ["BMS integration", "Energy optimization", "Access control", "Meeting rooms"],
   },
+  {
+    slug: "smart-locks",
+    title: "Smart Locks & Access Control",
+    shortDesc: "Digital door locks with fingerprint, PIN, RFID, app & remote access — integrated into your automation.",
+    icon: "Lock",
+    features: ["Fingerprint, PIN, RFID & app", "Remote OTP for guests", "Crestron/Control4/Matter integration", "Access logs & alerts"],
+  },
+  {
+    slug: "home-networking",
+    title: "Home Networking & WiFi",
+    shortDesc: "Structured cabling, managed WiFi & network security — the reliable foundation every smart home needs.",
+    icon: "Wifi",
+    features: ["Structured Cat6A cabling", "UniFi/Aruba managed WiFi", "VLAN IoT segmentation", "Whole-home coverage"],
+  },
+  {
+    slug: "smart-switches",
+    title: "Smart Switches & Keypads",
+    shortDesc: "Retrofit modules, glass touch panels & KNX keypads — scene control that works even without internet.",
+    icon: "PanelTop",
+    features: ["Retrofit, glass panel or KNX keypad", "One-touch scene control", "Works without internet", "Voice & app control"],
+  },
 ] as const;
 
 export const CITIES = [

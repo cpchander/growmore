@@ -22,6 +22,10 @@ export const IMAGES = {
       "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80",
     wholeHome: "/images/services/home-automation-panel.webp",
     voice: "/images/services/voice-control-tablet.webp",
+    smartLock:
+      "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+    networking:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
     centralVacuum: "/images/services/central-vacuum-drainvac.webp",
     freshAir: "/images/services/fresh-air-renson.webp",
     villaExterior: "/images/services/luxury-villa-exterior.webp",

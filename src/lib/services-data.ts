@@ -374,6 +374,123 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       { question: "What protocols does your BMS support?", answer: "We work with all major building automation protocols: BACnet/IP and BACnet MS/TP (HVAC industry standard), KNX (lighting and room automation), Modbus (energy meters and VFDs), DALI (lighting control), and proprietary protocols for specific equipment brands. Our protocol-agnostic approach ensures we integrate with whatever equipment is already installed." },
     ],
   },
+
+  // ─── Smart Locks & Access Control ──────────────────────────────────────
+  {
+    slug: "smart-locks",
+    headline: "Smart Locks & Digital Door Locks in India",
+    introduction: `A smart lock opens via fingerprint, PIN, RFID card, smartphone, or remote command instead of a metal key — while keeping a mechanical key as backup. ${COMPANY.name} supplies, installs, and — crucially — integrates premium smart locks into your wider automation system, so your front door does far more than just unlock. ${COMPANY.experience} years and ${COMPANY.projectsCompleted} projects of doing it properly, not just bolting a Wi-Fi gadget onto your door.`,
+    whatItIs: `A digital door lock replaces or augments a key cylinder with electronic authentication and, on connected models, network control plus an audit log of every entry. Locks come in mortise (full lock body recessed into the door — strongest, for main doors), rim/surface-mount (the easy-retrofit Indian mass-market form), deadbolt, and glass-door patch variants. They unlock through "5-way" to "9-way" access — fingerprint, PIN keypad, RFID card, Bluetooth/app, Wi-Fi remote, face recognition, time-bound OTP for guests, and always a mechanical key override. The important distinction: a standalone Wi-Fi lock can only lock and unlock remotely, while an integrated lock becomes a node in your home's logic — triggering scenes, arming security, and logging access centrally.`,
+    whyItMatters: `For Indian families a smart lock solves real problems: no more hidden keys, time-bound codes for maids and deliveries (with a notification when used), remote OTP access for relatives at an NRI's second home, and a complete log of who entered and when. But it's also where cheap products fail — a flimsy electronic body on an otherwise heavy door, an optical fingerprint sensor that struggles in monsoon humidity, or Bluetooth proximity-unlock that is vulnerable to relay attacks. The lock on your main door is not the place to save ₹4,000. A premium integrator specifies the right body, the right sensor, proper fire-egress, and genuine integration — not just the flashiest spec sheet.`,
+    howWeDoIt: [
+      { step: "Door & Security Assessment", detail: "We check your door type and thickness (wooden 30–65mm, metal, UPVC, or frameless glass), existing hardware, fire-egress requirements, and how the lock should fit into your overall security plan." },
+      { step: "Brand & Lock Selection", detail: "We recommend the right lock for the door and use case — Yale, Godrej, Hafele, or Aqara/Schlage for Matter homes — balancing build quality, sensor type (capacitive for humidity), access methods, and whether it must integrate with your control system." },
+      { step: "Professional Installation", detail: "Precise routing and fitting for mortise locks, correct alignment, and configuration of all credentials — fingerprints, PINs, cards, app users, and the mechanical key backup — with fire-safe interior egress verified." },
+      { step: "Automation Integration & Handover", detail: "For control-system homes we integrate the lock into Crestron, Control4, KNX (via gateway), or Matter — so unlocking fires a Welcome scene, locking arms security, and access logs surface in one app. We then train your household and set up AMC." },
+    ],
+    useCases: [
+      { title: "Main Door Security", description: "Multi-credential mortise locks with tamper and intrusion alerts, biometric + PIN + RFID + key backup, integrated with your CCTV and alarm." },
+      { title: "NRI & Second Homes", description: "Wi-Fi locks with remote OTP let you admit caretakers or relatives from abroad and review access logs — with PIN/key backup for villas on patchy rural internet." },
+      { title: "Rentals & Guest Access", description: "Time-bound guest codes auto-issued and revoked per stay, with a full audit trail — no key handovers, ideal for Airbnb and serviced apartments." },
+      { title: "Staff & Delivery Access", description: "Separate time-restricted codes (e.g. maid 9–11am) that notify you when used, plus scheduled access for cooks, drivers, and deliveries." },
+    ],
+    pricing: [
+      { tier: "Entry — Secondary Doors", range: "₹3,000–10,000", includes: "Rim-mount fingerprint + PIN + RFID + key, Bluetooth (phone-near) control, basic app. Best for bedrooms, back doors, and offices." },
+      { tier: "Mid — Connected Main Door", range: "₹10,000–30,000", includes: "Fingerprint + PIN + RFID + app + key (5–7 way), Wi-Fi remote, remote OTP, access logs, some with camera/doorbell. The volume sweet spot for most homes." },
+      { tier: "Premium — Integrated & Biometric", range: "₹30,000–70,000+", includes: "Auto-deadbolt or push-pull mortise, face recognition, 8–9 way access, voice, and full integration into Crestron/Control4/KNX/Matter with central scenes and logging." },
+    ],
+    whyChooseUs: [
+      "We integrate locks into Crestron, Control4, KNX, and Matter — not just bolt on a Wi-Fi gadget",
+      "Honest security engineering: capacitive sensors for humidity, no risky auto-unlock, verified fire-egress",
+      "Right-sized recommendations across Yale, Godrej, Hafele, Aqara & Schlage — not commission-driven",
+      `${COMPANY.experience} years and ${COMPANY.projectsCompleted} projects, with installation, training & AMC`,
+    ],
+    faqs: [
+      { question: "Which smart locks actually integrate with home automation systems?", answer: "For true integration (not just an Alexa voice command), the credible options are Yale — which has native Crestron Home and Control4 modules — August for Control4, and Aqara or Schlage for Matter-over-Thread homes (working across Apple Home, Google, and Alexa). Most mass-market Indian locks (Lavna, Qubo, Godrej Catus) are standalone Wi-Fi locks that, at best, respond to voice. We specify locks that feed their state into your whole-home logic so unlocking can trigger scenes and arm or disarm security." },
+      { question: "Are smart locks safe? What about hacking?", answer: "A well-chosen lock from a reputable brand is very safe, but two honest caveats matter. First, Bluetooth proximity 'auto-unlock' is theoretically vulnerable to relay attacks — we disable it and require a second factor (PIN or biometric). Second, build quality varies wildly; we fit heavy mortise bodies on main doors, not flimsy electronic shells. We also recommend brands with regular firmware updates and, for privacy-conscious clients, India-server data residency." },
+      { question: "Do fingerprint locks work reliably in Indian heat and humidity?", answer: "Capacitive fingerprint sensors handle monsoon humidity, sweat, and dust far better than cheaper optical sensors — which is why we specify capacitive readers for Indian conditions. Even so, every lock we install keeps PIN, RFID, and a mechanical key as backups, so a wet thumb never locks you out." },
+      { question: "What happens if the battery dies?", answer: "Smart locks warn you well in advance via app alerts (typically weeks of runtime left), and every lock retains a mechanical key override. Better models also have an external 9V jump-start tab or USB-C emergency port so you can power the keypad momentarily even if the battery is fully dead. Wi-Fi locks drain faster (6–12 months) than Bluetooth-only models." },
+      { question: "Are smart locks safe in a fire?", answer: "Yes, when specified correctly. The interior side must allow single-action egress — a thumb-turn or handle that opens the door instantly without a code. We verify panic-override on every lock we install, which is a non-negotiable safety requirement and something cheap locks sometimes get wrong." },
+    ],
+  },
+
+  // ─── Home Networking & WiFi ────────────────────────────────────────────
+  {
+    slug: "home-networking",
+    headline: "Home Networking, Structured Cabling & Whole-Home WiFi in India",
+    introduction: `Home networking is the structured cabling, managed switching, and whole-home WiFi that form the nervous system of an automated home — the layer everything else depends on. ${COMPANY.name} designs and installs professional networks that go in before the automation, security, and AV, so your smart home actually responds instantly and never says "device offline." ${COMPANY.experience} years of building the foundation that cheap ISP routers can't.`,
+    whatItIs: `A professional home network is far more than the box your ISP supplies. It combines structured cabling (Cat6 or future-proof Cat6A home-runs from every room, with a fibre backbone across floors), a central network rack with a patch panel, PoE switches that power access points and cameras over the data cable, managed switches that enable security segmentation, ceiling-mounted WiFi access points with wired backhaul (far more reliable than wireless mesh hops), and a UPS to keep the whole thing alive through power cuts. The result is a network sized for the 50–150+ connected devices a modern villa runs — not the dozen a consumer router is built for.`,
+    whyItMatters: `In a smart home, every scene, command, and camera feed rides the network — and it's the single most common failure point because builders and ISPs cut corners there. Cheap routers choke on device count (not bandwidth), thick RCC walls and multi-floor villas create dead zones, and 4K streaming, cameras, and video calls starve each other without proper switching and QoS. A ₹20 Lakh–₹1.5 Crore automation project is judged on whether the lights respond instantly — and they won't if the network is an afterthought. Critically, structured cabling must be planned during construction: retrofitting it into a finished home costs 10–15× more. Get the network right and everything above it just works.`,
+    howWeDoIt: [
+      { step: "Site & Coverage Survey", detail: "We map your floor plan, wall construction, device count, and usage (streaming, cameras, work-from-home) to plan access-point placement — roughly one AP per 1,000–1,500 sq ft — and every cable drop." },
+      { step: "Structured Cabling Design", detail: "We specify Cat6 or Cat6A home-runs to every room and device, a fibre backbone where needed, and a central rack location — ideally before plaster, since retrofit costs 10–15× more. For finished homes we use MoCA-over-coax and mesh where cabling isn't possible." },
+      { step: "Rack, Switching & WiFi Install", detail: "We install the rack, patch panel, PoE and managed switches, wired ceiling access points (UniFi, Aruba Instant On, or Omada), and a rack UPS — a clean, labelled, serviceable backbone built to enterprise standards." },
+      { step: "VLAN Security & Integration", detail: "We segment the network with VLANs (trusted devices, IoT/automation, cameras, guest), configure the firewall, set up secure remote access via VPN, and verify that KNX/Control4, cameras, AV, and voice all run reliably on top." },
+    ],
+    useCases: [
+      { title: "Large & Multi-Floor Villas", description: "Cat6A throughout with a fibre backbone and 4–6 wired access points deliver seamless coverage across thick walls and multiple floors where a single router fails." },
+      { title: "IoT-Heavy Smart Homes", description: "Homes with 50–150+ devices need the client capacity and VLAN segmentation that only managed, professional networking provides — keeping automation responsive and secure." },
+      { title: "Work-From-Home & Streaming", description: "QoS and wired backhaul let multiple 4K streams, video calls, and 24/7 cameras run simultaneously without one activity starving another." },
+      { title: "Builders & Under-Construction Homes", description: "Planning structured cabling at the construction stage avoids the 10–15× retrofit cost and delivers a smart-home-ready shell at handover." },
+    ],
+    pricing: [
+      { tier: "Apartment — Cabling + Prosumer Mesh", range: "₹60,000–1,50,000", includes: "8–12 structured drops, wall rack and patch panel, a gateway plus 2 access points, and a managed switch — solid coverage for a 2–3BHK." },
+      { tier: "Apartment Managed / Villa Mid", range: "₹1,50,000–5,00,000", includes: "Full structured cabling, UniFi or Aruba gateway, PoE switching, 3–5 wired access points, VLAN segmentation, and a rack UPS." },
+      { tier: "Villa — Full Rack-Based", range: "₹5,00,000–15,00,000+", includes: "Cat6A throughout with fibre backbone, 12–24U rack, enterprise gateway and 24-port+ PoE switching, 4–6 wired APs, complete VLAN security, NVR integration, and UPS." },
+    ],
+    whyChooseUs: [
+      "We design the network as the foundation of your automation — before KNX, security, and AV",
+      "Enterprise-grade structured cabling, managed switching, and wired access points (UniFi, Aruba, Omada)",
+      "VLAN segmentation and secure VPN remote access — security most residential installers ignore",
+      `${COMPANY.experience} years building reliable networks for villas, apartments, and builders across India`,
+    ],
+    faqs: [
+      { question: "Do I really need professional networking for a smart home?", answer: "If you have more than a handful of connected devices, yes. Consumer routers and ISP boxes fail on device count, not bandwidth — they drop associations, which shows up as laggy or 'offline' automations. A managed network with wired access points and proper switching is what makes KNX, Control4, cameras, and voice respond instantly and reliably. It's the foundation that de-risks your entire automation spend." },
+      { question: "Cat6 or Cat6A — which should I use?", answer: "Cat6 carries 1 Gbps comfortably (10 Gbps over short runs) and is fine for most apartments. Cat6A carries a full 10 Gbps to 100 metres and is the future-proof premium spec for villas — and since cabling is the one layer you cannot upgrade later without breaking walls, we recommend Cat6A for any home you plan to keep. The cable is a small part of the cost; the labour to re-pull it later is not." },
+      { question: "Is mesh WiFi good enough, or do I need wired access points?", answer: "Wireless mesh is a fine retrofit when you genuinely cannot run cable, but it relies on wireless 'hops' that halve throughput and add latency. Wired access points — ceiling units backhauled over Ethernet — are dramatically more reliable and the premium standard. In a planned home we always run cable to each AP location." },
+      { question: "Why does VLAN segmentation matter for security?", answer: "A compromised cheap IoT device or camera can be a foothold into your personal devices and data. VLANs isolate device classes — your phones and laptops on one network, IoT and automation on another, cameras on a third, guests on a fourth — so a hacked smart plug can't reach your work laptop and cameras can't 'phone home.' This requires managed switches and pro access points, which is why consumer gear can't do it." },
+      { question: "Should I get Wi-Fi 6, 6E, or Wi-Fi 7?", answer: "India delicensed the lower 6 GHz band in January 2026, which finally makes Wi-Fi 6E and Wi-Fi 7's best features legally usable here. Wi-Fi 6E is excellent for most homes; we recommend Wi-Fi 7 — with its 320 MHz channels and Multi-Link Operation for lower latency in congested homes — for multi-gig fibre connections, device-dense smart homes, and anyone future-proofing for 5+ years." },
+    ],
+  },
+
+  // ─── Smart Switches & Keypads ──────────────────────────────────────────
+  {
+    slug: "smart-switches",
+    headline: "Smart Switches & Automation Keypads in India",
+    introduction: `A smart switch lets you control lights and fans by app, voice, schedule, sensor, or scene — not just by physical toggle. But there are three very different ways to do it, and choosing wrong is the most common smart-switch mistake. ${COMPANY.name} helps you pick between retrofit modules, glass touch panels, and professional KNX keypads — and installs them so they work reliably, even when your internet doesn't. ${COMPANY.experience} years of wired-system experience behind every recommendation.`,
+    whatItIs: `There are three approaches. (1) Retrofit modules — a small relay wired behind your existing switch, so the wall plate and look stay unchanged; cheapest and ideal for finished, occupied homes. (2) Glass touch panels — the whole switch plate is replaced with a capacitive glass or modular touch panel; a premium aesthetic upgrade that fits standard Indian gang boxes. (3) Professional keypads on a wired bus (KNX, Crestron, Lutron) — engraved scene buttons that talk to a central controller driving relays and dimmers in the panel; the gold standard for large and luxury homes. The crucial distinction: a smart switch makes a single light smart, while an automation keypad makes the whole home smart — each button is a programmable scene decoupled from any one load.`,
+    whyItMatters: `The switch is the most-touched device in your home — it must respond instantly and keep working when the internet is down. That's where cheap Wi-Fi switches disappoint: each one holds a router slot and depends on a vendor cloud, adding latency and outage risk. There's also a very Indian catch — most homes built before about 2010 have no neutral wire at the switch box, which most smart switches require; we identify this up front and choose no-neutral models or the right wiring approach. And fan speed control needs dedicated regulator hardware (many smart regulators don't work with BLDC fans). Getting these details right is the difference between a smart home that delights and one that frustrates daily.`,
+    howWeDoIt: [
+      { step: "Wiring & Neutral Assessment", detail: "We check for a neutral wire at your switch boxes (a 10-minute test), back-box depth, fan types (induction vs BLDC), and load types — the practical details that determine which smart switches will actually work in your home." },
+      { step: "Approach & Brand Selection", detail: "We map the right approach to your situation: retrofit modules for finished homes, glass touch panels for renovations, or KNX/Crestron/Lutron keypads for new builds and luxury homes — selecting brands from Wipro and Schneider Wiser to Basalte and Lutron." },
+      { step: "Professional Installation", detail: "Clean, safe installation by trained electricians — modules seated in the back-box, panels aligned to your switchboards, or keypads wired to the bus — with the physical switch retained as a fail-safe wherever possible." },
+      { step: "Scene Programming & Integration", detail: "We program scenes (All Off, Movie, Goodnight, Welcome), integrate with voice and app, and — for keypad systems — tie lighting, curtains, HVAC, and audio onto single engraved buttons across the home." },
+    ],
+    useCases: [
+      { title: "Finished / Occupied Homes", description: "Retrofit modules add app, voice, and scheduling behind your existing switches with zero change to the wall or aesthetics — installed in minutes per point." },
+      { title: "Renovations", description: "Glass touch panels replace tired switchboards with a cohesive modern look — backlit capacitive buttons with app and voice in one unit." },
+      { title: "New Builds & Luxury Homes", description: "KNX, Crestron, or Lutron keypads deliver engraved scene buttons, designer finishes, deterministic reliability, and zero cloud dependence — the right answer when wiring at construction stage." },
+      { title: "Whole-Home Scenes", description: "A single keypad button can dim every light, close the curtains, set the AC, and start the music across rooms — the difference between a smart switch and true automation." },
+    ],
+    pricing: [
+      { tier: "Retrofit Modules", range: "₹500–2,500 / point", includes: "Wi-Fi or Zigbee relay modules behind existing switches — app, voice, and scheduling with no aesthetic change. Best for finished homes and rentals." },
+      { tier: "Glass Touch Panels", range: "₹3,000–6,000 / board", includes: "Capacitive glass or modular touch panels (Wozart, Schneider Wiser, AZIOT) replacing your switchboards — premium look, app and voice, with no-neutral options where needed." },
+      { tier: "KNX / Crestron / Lutron Keypads", range: "₹10,000–1,20,000 / keypad", includes: "Engraved scene keypads on a wired bus, fully local control, designer finishes (Basalte, Lutron, Gira), integrated with whole-home lighting, curtains, HVAC, and audio." },
+    ],
+    whyChooseUs: [
+      "We match the right approach — retrofit, glass panel, or KNX keypad — to your home and budget",
+      "We catch the India-specific catches: neutral wire, back-box depth, and BLDC fan compatibility",
+      "Local-control systems that keep working when the internet is down — not cloud-dependent gadgets",
+      `${COMPANY.experience} years of wired-system expertise, from Wipro and Schneider Wiser to Basalte and Lutron`,
+    ],
+    faqs: [
+      { question: "My home has no neutral wire — can I still get smart switches?", answer: "Yes. Most Indian homes built before about 2010 have only a live wire at the switch box, and most smart switches need a neutral — but specific no-neutral models (such as Smartify TAC or Aqara with a hub) work without one. Alternatively, for a renovation we can pull a neutral, or for a premium home use a KNX or centralised approach where the switching happens in the panel. We check this first so there are no surprises." },
+      { question: "Can I get smart switches without rewiring or breaking walls?", answer: "Yes — retrofit modules sit behind your existing switches and need no wall changes, and same-cut-out glass panels swap onto your existing gang boxes. Only KNX keypad systems require bus cabling, which is why we reserve those for new builds and major renovations. For a finished, occupied home, retrofit modules or touch panels give you most of the functionality with no mess." },
+      { question: "Will smart switches control my fan speed?", answer: "On/off, yes — but variable speed needs a dedicated smart fan regulator built for Indian induction-motor fans, not a generic smart switch. Importantly, many smart fan regulators are not compatible with newer BLDC fans, so we check your fan type and specify the correct regulator. This is a detail cheap solutions routinely get wrong." },
+      { question: "What's the difference between a smart switch and an automation keypad?", answer: "A smart switch controls its own load — the lights or fan on that board — and adds app and voice on top; it's a one-to-one upgrade. An automation keypad controls the whole house: each button is a programmable scene that simultaneously dims lights, closes curtains, sets the AC, and triggers audio across rooms, talking to a central controller rather than switching a single circuit. Keypads (KNX, Crestron, Lutron) are the premium, future-proof choice." },
+      { question: "Do smart switches work when the internet is down?", answer: "It depends on the type — which is exactly why it matters. Cheap Wi-Fi switches often stop responding without the vendor cloud. Retrofit modules keep their physical toggle working regardless. Zigbee switches run locally through a hub with no internet needed. KNX keypads are fully local and deterministic — they always work. For reliability we steer premium clients toward local-control systems, not cloud-dependent gadgets." },
+    ],
+  },
 ];
 
 export function getServiceContent(slug: string): ServiceContent | undefined {
