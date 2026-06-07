@@ -187,6 +187,7 @@ export const BRANDS = [
   { slug: "lutron", name: "Lutron", logo: "/brands/lutron.svg", url: "https://www.lutron.com" },
   { slug: "sonos", name: "Sonos", logo: "/brands/sonos.svg", url: "https://www.sonos.com" },
   { slug: "schneider-electric", name: "Schneider Electric", logo: "/images/brands/schneider-electric.webp", url: "https://www.se.com" },
+  { slug: "digilux", name: "Digilux AI", logo: "/images/brands/digilux-ai.webp", url: "https://www.digilux.co.in" },
   { slug: "ajax", name: "Ajax Systems", logo: "/images/brands/ajax.webp", url: "https://ajax.systems" },
   { slug: "vimar", name: "Vimar", logo: "/images/brands/vimar.webp", url: "https://www.vimar.com" },
   { slug: "elan", name: "ELAN", logo: "/images/brands/elan.webp", url: "https://www.elancontrolsystems.com" },
