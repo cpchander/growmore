@@ -181,7 +181,7 @@ export const CITIES = [
 ] as const;
 
 export const BRANDS = [
-  { slug: "knx", name: "KNX", logo: "/brands/knx.svg", url: "https://www.knx.org" },
+  { slug: "knx", name: "KNX", logo: "/images/brands/knx.webp", url: "https://www.knx.org" },
   { slug: "crestron", name: "Crestron", logo: "/brands/crestron.svg", url: "https://www.crestron.com" },
   { slug: "control4", name: "Control4", logo: "/brands/control4.svg", url: "https://www.control4.com" },
   { slug: "lutron", name: "Lutron", logo: "/brands/lutron.svg", url: "https://www.lutron.com" },
