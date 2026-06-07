@@ -491,6 +491,84 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       { question: "Do smart switches work when the internet is down?", answer: "It depends on the type — which is exactly why it matters. Cheap Wi-Fi switches often stop responding without the vendor cloud. Retrofit modules keep their physical toggle working regardless. Zigbee switches run locally through a hub with no internet needed. KNX keypads are fully local and deterministic — they always work. For reliability we steer premium clients toward local-control systems, not cloud-dependent gadgets." },
     ],
   },
+
+  // ─── Curtain & Gate Motors ─────────────────────────────────────────────
+  {
+    slug: "curtain-gate-motors",
+    headline: "Motorized Curtains, Blinds & Automatic Gate Motors in India",
+    introduction: `Motorized curtains and automatic gates are two of the most-loved automation upgrades — and ${COMPANY.name} delivers both as part of one integrated system, not as disconnected gadgets in separate apps. Your curtains glide open with the morning scene, your gate opens as you arrive home, and both respond to a single app, keypad, or voice command. ${COMPANY.experience} years and ${COMPANY.projectsCompleted} projects of doing motorization properly — with the right motors, real safety, and genuine integration.`,
+    whatItIs: `On the window side, we motorize drapery and curtain tracks (ripple-fold, S-fold, pinch-pleat), roller and sunscreen blinds, roman, sheer/zebra, blackout, venetian, honeycomb, and outdoor pergola/zip shades — including dual-layer setups with a sheer for daytime and a blackout behind it for night. On the entry side, we automate swing gates, sliding gates, bi-fold gates, and boom barriers for homes, villas, farmhouses, and gated communities. Both connect into your KNX, Crestron, or Control4 system so they participate in scenes and respond to the same app, keypad, and voice control — a curtain motor in a separate Wi-Fi app and a gate motor on a basic remote are two silos; we make them one system.`,
+    whyItMatters: `Beyond the obvious convenience — no reaching behind sofas, no getting out of the car in the rain — motorization delivers real value. Automated solar shading cuts whole-home cooling by 15–25% and overall HVAC energy by up to 30% by rejecting peak-hour heat and glare, which matters in Indian summers. On gates, the difference between a cheap motor and a properly installed one is safety and reliability: photocell safety beams that stop the gate if a child, pet, or car is in the way, obstacle detection, auto-close timers, battery backup that keeps the gate working through power cuts, and a manual release for emergencies — features budget installs routinely skip. Done right, motorized curtains and gates are daily quality-of-life upgrades that also save energy and improve security.`,
+    howWeDoIt: [
+      { step: "Measurement & Site Survey", detail: "We measure every window and track type, assess your gate (weight, swing room vs sliding, driveway length), and plan power, control wiring, and how it all ties into your automation and intercom." },
+      { step: "Product & Motor Selection", detail: "We match the right motor and hardware to the job — Somfy or Lutron for premium quiet curtain tracks, FAAC/Nice/BFT for gates — balancing noise, load, finish, and integration rather than fitting the cheapest motor." },
+      { step: "Professional Installation", detail: "Precise track and motor fitting, correctly aligned gate operators with photocell safety sensors and battery backup, manual release, and clean concealed wiring — installed to last, by trained technicians." },
+      { step: "Scene Programming & Integration", detail: "We program scenes (Good Morning opens sheers, Movie drops blackouts, Arrive Home opens the gate and porch lights), integrate with your video door phone, app, and voice, and hand over with training and AMC." },
+    ],
+    useCases: [
+      { title: "Living & Bedroom Curtains", description: "Quiet motorized drapery and dual-layer sheer + blackout tracks that open to the morning scene and close for movies or sleep — at a tap or by voice." },
+      { title: "Tall & Hard-to-Reach Windows", description: "Floor-to-ceiling glass, skylights, and high atrium windows where manual operation is impractical — motorization is the only sensible option." },
+      { title: "Villa & Farmhouse Gates", description: "Automatic swing or sliding gates with photocell safety, battery backup for power cuts, video-intercom screening, and one-tap or number-plate entry." },
+      { title: "Outdoor & Pergola Shades", description: "Wind- and sun-rated motorized zip and pergola screens for balconies, terraces, and facades — controlled on schedule or by sun sensor." },
+    ],
+    pricing: [
+      { tier: "Motorized Blinds — Entry to Mid", range: "₹8,000–35,000 / window", includes: "Smart roller, zebra, or sunscreen blinds with app and remote (Dooya, Aqara, Vista, Hunter Douglas) — clean, quiet, scene-ready." },
+      { tier: "Premium Curtains & Drapery", range: "₹35,000–2,00,000 / window", includes: "Somfy Sonesse roller and Glydea curtain track to Lutron Sivoia QS / Palladiom drapery, with dual-layer sheer + blackout and full integration." },
+      { tier: "Automatic Gate Motors", range: "₹65,000–2,50,000+ installed", includes: "Residential swing or sliding operators (FAAC, Nice, BFT) with photocell safety, auto-close, battery backup, manual release, and intercom/app entry — heavier villa/commercial gates at the top of the range." },
+    ],
+    whyChooseUs: [
+      "Curtains and gates delivered as one integrated system — same app, scenes, and voice, not separate gadgets",
+      "Premium motors specified for quiet, reliable operation — Somfy, Lutron, FAAC, Nice — matched to the job",
+      "Real gate safety as standard: photocell beams, battery backup for power cuts, manual release",
+      `${COMPANY.experience} years, ${COMPANY.projectsCompleted} projects, with site survey, installation & AMC`,
+    ],
+    faqs: [
+      { question: "Can I add motorized curtains to my existing home without major work?", answer: "Yes. Most motorized blinds and many curtain tracks retrofit cleanly — we run a discreet power feed to the track and use RF or Wi-Fi/Zigbee control so no wall-chasing is needed. For premium integrated curtains on a KNX or Crestron system, a little control wiring is ideal, which we plan around your interiors. We'll tell you up front what each window needs after a site survey." },
+      { question: "Do motorized curtains really save on air-conditioning?", answer: "Yes, meaningfully. Automated solar shading rejects peak-hour heat and glare before it enters the room, cutting whole-home cooling by roughly 15–25% and overall HVAC energy by up to 30% in studies. With a sun sensor, shades position themselves by the sun's angle — blocking the harsh afternoon sun and admitting gentle morning light — which is especially valuable in Indian summers." },
+      { question: "Are automatic gates safe for children and pets?", answer: "When installed correctly, yes — and this is where cheap installs cut corners. Every gate we install includes photocell safety beams that instantly stop and reverse the gate if anything breaks the beam, plus obstacle detection via motor sensing. We add auto-close timers so the gate is never left open, and a manual release for emergencies. Safety sensors are standard on our installs, not an optional extra." },
+      { question: "What happens to my automatic gate during a power cut?", answer: "We specify gate operators with battery backup that keep the gate working for several open/close cycles during an outage — essential given India's power cuts. If the battery is also depleted, a manual release key lets you open the gate by hand. You're never locked in or out because of a power failure." },
+      { question: "Can the gate and curtains work together in one scene?", answer: "Yes — that's the advantage of an integrated system. An 'Arrive Home' scene can open the gate (triggered by your phone or number-plate recognition), turn on the driveway and porch lights, and open the entry curtains, all automatically. A 'Goodnight' scene confirms the gate is closed, drops the blackout curtains, and turns off the lights. Point products in separate apps can't do this; an integrated KNX/Crestron/Control4 home can." },
+    ],
+  },
+
+  // ─── Building Automation & BMS ─────────────────────────────────────────
+  {
+    slug: "building-automation-bms",
+    headline: "Building Automation & BMS (Building Management Systems) in India",
+    introduction: `A Building Management System (BMS) is the centralized platform that monitors and controls a building's core engineering — HVAC, lighting, energy, security, and life-safety — from a single interface, typically cutting energy use by 20–40%. ${COMPANY.name} designs, integrates, and maintains protocol-agnostic BMS for commercial buildings, hotels, residential towers, and luxury villas — independent of any single OEM, so you get the right mix of equipment, not vendor lock-in. ${COMPANY.experience} years of building automation expertise across India.`,
+    whatItIs: `A BMS (also called a BAS or IBMS) is a computer-based supervisory system that ties a building's services into one dashboard: HVAC plant (chillers, AHUs, FCUs, VRV/VRF), lighting (occupancy and daylight control, DALI dimming), energy and sub-metering, access control, CCTV and intrusion, fire and life-safety, elevators, water and pumps, and DG/UPS power. The difference from home automation is purpose: home automation is experience-led (scenes, AV, comfort, convenience in a single home), while a BMS is operations-led — engineered around energy efficiency, equipment uptime, safety compliance, and facility-manager control at scale. The overlap, and our specialty, is residential-grade BMS that brings facility-grade energy and security logic to luxury villas and the common areas of residential towers.`,
+    whyItMatters: `HVAC alone accounts for 40–60% of a commercial building's electricity in India, so the savings lever is enormous: a well-designed BMS cuts operational energy by 15–20% (CII–IGBC) and often 20–40% overall through scheduling, idle-load reduction, and occupancy/daylight logic — typically paying for itself in 2–4 years. Beyond energy, a BMS delivers single-pane facility control, predictive maintenance that flags failing equipment before it breaks down, stable comfort and air quality for occupants, and the energy monitoring and controls effectively required for IGBC, LEED, and GRIHA green ratings. For a developer, hotelier, or facility owner, it's the difference between a building that's managed and one that quietly bleeds energy and breaks down unpredictably.`,
+    howWeDoIt: [
+      { step: "Assessment & Energy Audit", detail: "We survey your building's HVAC, electrical, lighting, and safety systems, identify the biggest energy and operational losses, and define the scope, control points, and green-rating goals." },
+      { step: "Design & Protocol Architecture", detail: "We design a protocol-agnostic architecture — BACnet/IP backbone with KNX, Modbus, DALI, and IoT field devices unified into one supervisory layer with consistent point naming, so you're never locked to a single OEM." },
+      { step: "Integration & Installation", detail: "We install controllers, sensors, meters, and gateways and integrate multi-vendor equipment (Honeywell, Siemens, Schneider, Johnson Controls, KNX) into the head-end — for new builds and retrofits alike." },
+      { step: "Commissioning, Dashboards & AMC", detail: "We commission every point, build the operator dashboards and trends, train your facility team, and provide AMC with remote monitoring, alarms, and energy reporting for ongoing optimization." },
+    ],
+    useCases: [
+      { title: "Commercial Offices & IT Parks", description: "HVAC optimization, energy sub-metering for tenant billing, occupancy and daylight lighting, and integrated access and CCTV — driven by opex and green-rating targets." },
+      { title: "Hotels & Resorts", description: "BMS plus Guest Room Management (GRMS): occupancy-based climate and lighting, drapes, do-not-disturb, and PMS integration — cutting energy on unoccupied rooms." },
+      { title: "Residential Towers", description: "Common-area BMS for lifts, water pumps and tanks, STP, basement ventilation, DG/UPS, common lighting, fire pumps, CCTV, and access — the building's services, managed centrally." },
+      { title: "Luxury Villas", description: "Residential-grade BMS layering facility logic — energy monitoring, pumps, security, gate, and HVAC plant — over a KNX home-automation core." },
+    ],
+    pricing: [
+      { tier: "Commercial BMS — Standard", range: "₹80–250 / sq ft", includes: "HVAC, lighting, and energy metering on a BACnet backbone with operator dashboards — the core efficiency package for offices and mid-size buildings." },
+      { tier: "Premium IBMS — Full Integration", range: "₹250–600+ / sq ft", includes: "Fully integrated HVAC, lighting, access, CCTV, fire, lifts, and power on BACnet/IP with green-rating compliance, analytics, and remote monitoring." },
+      { tier: "Hospitality & Residential", range: "Scoped per project", includes: "Hotel BMS + per-room GRMS, residential-tower common-area BMS, or villa residential-grade BMS — priced after a site assessment, since scope varies widely." },
+    ],
+    whyChooseUs: [
+      "Vendor-neutral, protocol-agnostic integration — Honeywell, Siemens, Schneider, JCI & KNX, not OEM lock-in",
+      "Specialists in the under-served niches: hospitality GRMS, residential-tower, and luxury-villa BMS",
+      "Real energy ROI: 15–40% savings, 2–4 year payback, and IGBC/LEED/GRIHA compliance",
+      `${COMPANY.experience} years of building automation with design, integration, commissioning & AMC under one roof`,
+    ],
+    faqs: [
+      { question: "What's the difference between a BMS and home automation?", answer: "Home automation is experience-led — lighting scenes, AV, comfort, and convenience in a single home, usually on KNX or Crestron/Lutron. A BMS (Building Management System) is operations-led — it manages a building's infrastructure at scale for energy efficiency, equipment uptime, and safety compliance, engineered around HVAC plant, metering, and life-safety. They overlap in residential-grade BMS, where we bring facility-grade energy and security logic to luxury villas and the common areas of residential towers." },
+      { question: "How much energy can a BMS actually save?", answer: "Because HVAC is 40–60% of a commercial building's electricity in India, the savings are substantial: CII–IGBC puts a well-optimized BMS at 15–20% of operational energy cost, and broader industry data shows 20–40% overall through scheduling, idle-load reduction, and occupancy/daylight control. Payback is typically 2–4 years from energy savings alone, before counting reduced maintenance and longer equipment life." },
+      { question: "Which protocols and brands do you work with?", answer: "We're protocol-agnostic: BACnet/IP and MS/TP (the HVAC industry standard) as the backbone, with KNX for room-level control, Modbus for meters and drives, DALI for lighting, and MQTT/IoT for cloud analytics — unified into one supervisory layer. We integrate multi-vendor equipment from Honeywell, Siemens, Schneider Electric, Johnson Controls, ABB, and KNX-based systems, so you get the best mix for your building rather than being locked to one OEM." },
+      { question: "Can a BMS be added to an existing building?", answer: "Yes — retrofit BMS is common, especially for energy-efficiency upgrades and green re-certification. We install controllers, sensors, and meters that integrate with your existing MEP equipment via gateways, starting with the highest-impact systems (usually HVAC and energy metering) and expanding from there. Most commercial buildings already have the control points we need to tie into." },
+      { question: "Do luxury villas and housing societies need a BMS?", answer: "Increasingly, yes. A luxury villa benefits from residential-grade BMS that monitors energy, pumps, security, the gate, and HVAC plant alongside its KNX home automation. A residential tower or housing society needs a common-area BMS to manage lifts, water pumps and tanks, STP, DG/UPS, basement ventilation, fire pumps, and common lighting — reducing running costs and breakdowns across shared infrastructure. We design both, scoped to the property." },
+    ],
+  },
 ];
 
 export function getServiceContent(slug: string): ServiceContent | undefined {

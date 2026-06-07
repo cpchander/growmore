@@ -137,6 +137,20 @@ export const SERVICES = [
     icon: "PanelTop",
     features: ["Retrofit, glass panel or KNX keypad", "One-touch scene control", "Works without internet", "Voice & app control"],
   },
+  {
+    slug: "curtain-gate-motors",
+    title: "Curtain & Gate Motors",
+    shortDesc: "Motorized curtains, blinds & automatic swing/sliding gates — integrated into your automation scenes.",
+    icon: "Blinds",
+    features: ["Motorized curtains & blinds", "Automatic swing/sliding gates", "Somfy, Lutron, FAAC & Nice", "Scene & voice control"],
+  },
+  {
+    slug: "building-automation-bms",
+    title: "Building Automation & BMS",
+    shortDesc: "Building management systems that cut energy use 20–40% across HVAC, lighting, security & power.",
+    icon: "Building",
+    features: ["BACnet, KNX, Modbus & DALI", "HVAC, lighting, energy & security", "20–40% energy savings", "Hotels, towers & villas"],
+  },
 ] as const;
 
 export const CITIES = [

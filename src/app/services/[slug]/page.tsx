@@ -47,6 +47,8 @@ const serviceImageMap: Record<string, string> = {
   "smart-locks": IMAGES.services.smartLock,
   "home-networking": IMAGES.services.networking,
   "smart-switches": IMAGES.services.lighting,
+  "curtain-gate-motors": IMAGES.services.curtains,
+  "building-automation-bms": IMAGES.services.commercialBuilding,
 };
 
 export default async function ServicePage({ params }: Props) {
