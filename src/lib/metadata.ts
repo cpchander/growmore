@@ -72,6 +72,11 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   Jaipur: { lat: 26.9124, lng: 75.7873 },
   Chandigarh: { lat: 30.7333, lng: 76.7794 },
   Lucknow: { lat: 26.8467, lng: 80.9462 },
+  Sonipat: { lat: 28.9931, lng: 77.0151 },
+  Karnal: { lat: 29.6857, lng: 76.9905 },
+  Moradabad: { lat: 28.8386, lng: 78.7733 },
+  Rewari: { lat: 28.197, lng: 76.617 },
+  Rohtak: { lat: 28.8955, lng: 76.6066 },
 };
 
 // ─── Shared certification credentials ────────────────────────────────

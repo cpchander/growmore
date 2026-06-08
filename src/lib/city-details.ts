@@ -59,6 +59,216 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     ],
   },
 
+  sonipat: {
+    slug: "sonipat",
+    intro:
+      "Sonipat is the closest of our NCR-satellite markets — barely 45 km up NH-44 from our Ghitorni base, so we install and service Sonipat homes on the same operating footprint as South Delhi, without an NCR price premium. The local buyer is distinctive: Kundli–Rai industrial-estate factory owners, faculty and alumni families around the Rajiv Gandhi Education City (Ashoka, O.P. Jindal Global, NIIT universities), and gated-villa buyers at Eldeco County and TDI City where premium plots cross ₹7,500/sqft. Most projects are large independent kothis and gated villas rather than apartments, which suits whole-home wired KNX. NCR-grade summer heat, Yamuna-belt dust and grid fluctuation make backup-aware automation and sealed-home climate control standard on every Sonipat build.",
+    marketNotes: [
+      "Dominant stock is independent kothis and gated villas (Eldeco County, TDI City, HUDA sectors) — ideal for whole-home wired KNX rather than retrofit",
+      "Kundli–Rai industrial-belt factory-owner families are the core HNI buyer, alongside Education City (Ashoka/Jindal) faculty and NRI households",
+      "Summer highs near 45°C plus Yamuna-belt dust make sealed climate control, automated blinds and fresh-air/AQI integration high-value",
+      "Frequent voltage fluctuation and load-shedding — we specify surge-protected smart wiring and inverter/generator-aware scene control as standard",
+      "45 km from our Ghitorni (South Delhi) base via NH-44 — same-day service and supervised installation without NCR price premiums",
+    ],
+    projectExamples: [
+      { area: "Eldeco County (Sector 19)", type: "5BHK gated villa", budget: "₹16 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.4 home theater + inverter-aware backup scenes" },
+      { area: "Kundli", type: "Industrialist's 6BHK kothi", budget: "₹24 Lakh", scope: "Crestron whole-home + perimeter CCTV + biometric access + VRV climate integration" },
+      { area: "TDI City", type: "4BHK independent floor", budget: "₹8 Lakh", scope: "Wireless retrofit — smart lighting + locks + Sonos multi-room + AQI-linked fresh air" },
+      { area: "Sector 14", type: "Faculty 3BHK residence", budget: "₹5 Lakh", scope: "Smart switches + motion-sensor lighting + video doorbell + voice control" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Sonipat from Delhi, and does it cost more than an in-Delhi project?",
+        answer:
+          "Yes — Sonipat is only about 45 km from our Ghitorni (South Delhi) base via NH-44, so it sits inside our core service zone. The same design and installation team that handles South Delhi and Gurgaon projects works Sonipat, with supervised installation and annual maintenance (AMC) included. There is no NCR-style premium: pricing is on our standard rate card, and because Kundli and the Education City corridor are a short drive, we can offer same-day service visits for warranty and AMC calls.",
+      },
+      {
+        question: "Which automation matters most for Sonipat's power and dust conditions?",
+        answer:
+          "Three things lead every Sonipat build. First, electrical resilience — surge-protected smart wiring, plus inverter/generator-aware scenes so essential lighting, fans and the network ride through outages, and a UPS on the automation hub and router. Second, climate and air — automated blinds and KNX/BACnet HVAC control to fight 45°C summers, with AQI sensors that auto-trigger the fresh-air system against Yamuna-belt dust. Third, for large kothis, zoned lighting and occupancy sensing so unused wings switch off automatically. These three deliver the clearest day-one value here.",
+      },
+      {
+        question: "Is wired KNX worth it for a Sonipat kothi versus cheaper wireless?",
+        answer:
+          "For a large independent kothi or gated villa that is under construction or being renovated, wired KNX (or Crestron/Control4) is the better long-term choice — it is far more reliable across many switch points, scales cleanly to security, HVAC and access control, and is not dependent on Wi-Fi. Most Sonipat villas in Eldeco County and TDI City are big enough to justify it. For an already-finished home where we cannot run cable, we use Lutron RA3 or KNX RF wireless retrofit to reach 85–90% of the same functionality without civil work.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring Sonipat kothis & gated villas for KNX" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Which suits an independent Sonipat house" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Real pricing tiers for NCR villa projects" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Beating 45°C heat & dust in the NCR belt" },
+    ],
+  },
+
+  karnal: {
+    slug: "karnal",
+    intro:
+      "Karnal sits 125 km up GT Karnal Road — the same NH-44 corridor as our Panipat work — so it folds naturally into our Haryana operating route. Karnal's wealth is agricultural and agri-industrial: basmati rice-mill owners, large farming families, and a strong NRI-Punjabi base, many in expansive kothis and farmhouses across Sector 12-13, Model Town and the prestige Sector 32 pocket anchored by the Noormahal heritage five-star. As a funded Smart City, the town's premium buyers increasingly expect automation in new builds. Extreme summer heat, harvest-season dust and rural-feeder power cuts make climate control, automated shading and backup-aware scenes the practical core of every Karnal project — plus remote monitoring for NRI-owned, part-occupied homes.",
+    marketNotes: [
+      "Core buyers are basmati rice-mill owners, large agricultural-landlord families and NRI-Punjabi households — mostly big independent kothis and farmhouses",
+      "Sector 32 (Noormahal anchor), Sector 12-13 and Model Town are the prestige residential pockets; farmhouses line Kunjpura and Meerut Roads",
+      "47°C summers and post-harvest dust make sealed climate control, automated blinds and fresh-air systems high-value; winters need integrated geyser/heating scheduling",
+      "Agricultural feeders bring frequent outages — inverter/genset-aware automation and surge-safe wiring are specified on every build",
+      "NRI-owned and part-occupied homes drive demand for remote app monitoring, occupancy-simulation security and leak/fire alerts",
+    ],
+    projectExamples: [
+      { area: "Sector 32", type: "6BHK kothi", budget: "₹18 Lakh", scope: "KNX whole-home + Lutron shading + CCTV + remote NRI monitoring + heating scheduling" },
+      { area: "Kunjpura Road", type: "Farmhouse estate", budget: "₹22 Lakh", scope: "Control4 backbone + perimeter security + irrigation + gate automation + away-mode scenes" },
+      { area: "Model Town", type: "4BHK independent house", budget: "₹7 Lakh", scope: "Smart lighting + locks + 5.1.2 media room + inverter-aware backup" },
+      { area: "Sector 13", type: "Rice-mill owner's 5BHK", budget: "₹12 Lakh", scope: "Lighting + climate + Sonos multi-room + biometric access" },
+    ],
+    extraFaqs: [
+      {
+        question: "Can you set up remote monitoring for an NRI-owned home in Karnal?",
+        answer:
+          "Yes — this is one of the most common Karnal briefs. For families based abroad with a kothi or farmhouse here, we build a remote-monitoring package: app-based live CCTV, door/window and motion alerts, water-leak and smoke/gas sensors, and occupancy simulation that runs lights and curtains on realistic schedules so the home looks lived-in. A local caretaker can be given limited app access, while the owner abroad keeps full control and receives instant push alerts. The automation hub runs on a UPS so monitoring survives the frequent local outages.",
+      },
+      {
+        question: "What automation is most useful for Karnal's heat, dust and power cuts?",
+        answer:
+          "Climate and resilience lead. Automated blinds plus KNX/BACnet AC control hold comfortable temperatures through 47°C summers while cutting energy, and AQI/fresh-air integration keeps post-harvest dust out. Because agricultural feeders cut out often, we specify surge-safe wiring and inverter/genset-aware scenes so the home transitions cleanly to backup power, with the hub and router on UPS. In winter we add geyser and heating schedules. For farmhouses we also automate gate, perimeter lighting and irrigation.",
+      },
+      {
+        question: "Do you cover Karnal, and how is it serviced?",
+        answer:
+          "Yes — Karnal is on our established GT Karnal Road / NH-44 route, 125 km from Delhi and just beyond Panipat, which we already serve. The same team handles design, installation and AMC, with scheduled service visits along the Panipat–Karnal corridor. Site survey and quotation are free, and we manage the project end-to-end so farmhouse and kothi clients deal with a single point of contact.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for NRI-owned Karnal homes" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Cooling kothis & farmhouses through 47°C summers" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Karnal kothis & farmhouses" },
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring new Karnal builds for automation" },
+    ],
+  },
+
+  moradabad: {
+    slug: "moradabad",
+    intro:
+      "Moradabad — \"Peetal Nagri,\" the Brass City — generates exceptional export wealth: its brass and metal-handicraft cluster accounts for roughly 40% of India's handicraft exports, creating a deep bench of dollar-earning exporter families and NRIs whose discretionary spend fits premium whole-home automation. We serve Moradabad 165 km down NH-9 from Delhi-NCR. Demand concentrates in Civil Lines bungalows and the newer gated stock of New Moradabad, Buddhi Vihar and Ram Ganga Vihar, where premium rates run ₹3,350–5,200/sqft and villa projects bring private-pool living. The dominant local challenge is electrical: severe heat and chronic voltage fluctuation make surge-safe smart wiring and inverter-integrated automation non-negotiable.",
+    marketNotes: [
+      "Brass/handicraft exporter families and NRIs are the core HNI buyers — Moradabad supplies roughly 40% of India's handicraft exports",
+      "Premium pockets are Civil Lines bungalows plus gated New Moradabad, Buddhi Vihar and Ram Ganga Vihar (₹3,350–5,200/sqft); villa projects lead new luxury",
+      "Chronic voltage fluctuation and outages make surge-protected wiring, stabiliser/inverter integration and genset-aware scenes essential",
+      "45°C+ summers drive demand for automated shading, sealed climate control and AQI-linked fresh-air systems",
+      "Exporter clients value showroom/office-and-home integration — unified CCTV, access control and lighting across factory, showroom and residence",
+    ],
+    projectExamples: [
+      { area: "Civil Lines", type: "Exporter's 5BHK bungalow", budget: "₹15 Lakh", scope: "KNX lighting + CCTV + biometric access + surge-safe inverter integration" },
+      { area: "New Moradabad", type: "4BHK gated villa", budget: "₹9 Lakh", scope: "Smart lighting + climate + Sonos + automated blinds + voice control" },
+      { area: "Buddhi Vihar", type: "3BHK family home", budget: "₹5 Lakh", scope: "Wireless retrofit — smart switches + locks + video doorbell + backup scenes" },
+      { area: "Ram Ganga Vihar", type: "Exporter home + showroom", budget: "₹19 Lakh", scope: "Crestron residence + linked showroom CCTV/access + multi-site app control" },
+    ],
+    extraFaqs: [
+      {
+        question: "How does home automation cope with Moradabad's voltage fluctuation and power cuts?",
+        answer:
+          "This is the first thing we design for in Moradabad. Every build gets surge-protected smart wiring and clean integration with the home's stabiliser and inverter/genset, so the automation transitions to backup power without dropping essential lighting, fans and the network. The automation hub, router and CCTV NVR sit on a UPS so security and app access never go down during an outage. We also use scenes that automatically shed non-essential loads when the home flips to inverter, extending backup runtime — practical reliability that cheap Wi-Fi-only kits cannot match here.",
+      },
+      {
+        question: "Can you integrate my brass factory or showroom with my home automation?",
+        answer:
+          "Yes — many of our Moradabad clients are exporters who want one app across residence, showroom and unit. We unify CCTV, access control and lighting so you can view factory and showroom cameras, lock/unlock doors, and control lighting and AC from the same interface as your home. Access logs and alerts help with staff and inventory security, and lighting/AC schedules cut running costs across all three sites. This multi-site setup is one of the clearest advantages of going with a proper integrator rather than a single-room smart-plug kit.",
+      },
+      {
+        question: "Do you serve Moradabad, and how far is it from your base?",
+        answer:
+          "Yes — Moradabad is about 165 km from Delhi-NCR on NH-9 (the Delhi–Lucknow corridor), well within our project service range. We handle design, supervised installation and AMC, scheduling site visits and service along the corridor. Survey and quotation are free, and we manage the build end-to-end, which matters for the multi-site (home + showroom + factory) projects that are common here.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Surge-safe wiring for Moradabad's grid conditions" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Unified home + showroom + factory CCTV/access" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for exporter bungalows & villas" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Sealed climate control for 45°C+ summers" },
+    ],
+  },
+
+  rewari: {
+    slug: "rewari",
+    intro:
+      "Rewari and the adjoining Dharuhera–Bawal industrial belt sit roughly 80 km from our Gurgaon-side NCR catchment, on the KMP Expressway and DMIC corridor. The wealth here is Ahirwal auto-industrial — Hero MotoCorp, Sona BLW/JTEKT and a dense auto-component ecosystem create factory-owner and senior-management households — layered over a strong Ahir NRI diaspora with a dedicated NRI-property market. Buyers favour large independent kothis and new gated floors in Model Town, Sector 4-5 and along Circular Road. As across the rest of the belt, Aravalli-edge heat and dust plus grid fluctuation make sealed climate control, automated shading and backup-aware automation the practical core, while NRI ownership drives remote-monitoring demand.",
+    marketNotes: [
+      "Core buyers are Dharuhera–Bawal auto-industry owners/management (Hero, Sona/JTEKT) and the Ahir NRI diaspora — large kothis and gated floors",
+      "Prestige pockets: Model Town, Sector 4-5, Circular Road and Rao Tula Ram Nagar; industrial-owner villas around Dharuhera and Bawal",
+      "Aravalli-edge heat and dust storms make sealed-home climate control, automated blinds and fresh-air/AQI integration high-value",
+      "Grid fluctuation on industrial feeders — surge-safe wiring and inverter/genset-aware scenes specified as standard",
+      "Active NRI-property market drives remote app monitoring, occupancy simulation and leak/intrusion alerts for part-occupied homes",
+    ],
+    projectExamples: [
+      { area: "Dharuhera", type: "Industrialist's 5BHK kothi", budget: "₹17 Lakh", scope: "KNX whole-home + CCTV + access control + inverter-aware backup + VRV climate" },
+      { area: "Model Town", type: "4BHK independent house", budget: "₹8 Lakh", scope: "Smart lighting + locks + 5.1.2 media room + automated blinds" },
+      { area: "Sector 4", type: "NRI-owned 4BHK", budget: "₹10 Lakh", scope: "Remote monitoring + occupancy-simulation security + Sonos + climate" },
+      { area: "Bawal", type: "Senior-management 3BHK", budget: "₹5 Lakh", scope: "Wireless retrofit — switches + video doorbell + voice + backup scenes" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Rewari and the Dharuhera–Bawal belt, and from where?",
+        answer:
+          "Yes — Rewari, Dharuhera and Bawal are about 80 km from our Gurgaon-side NCR catchment via NH-48 and the KMP Expressway, well within our service range. The same team that handles Gurgaon projects covers this belt, with supervised installation and AMC. We work both finished homes (wireless retrofit) and under-construction kothis and industrial-owner villas (wired KNX/Crestron), and survey plus quotation are free.",
+      },
+      {
+        question: "I'm an NRI with a home in Rewari — what can be monitored remotely?",
+        answer:
+          "Quite a lot. We set up app-based live CCTV, motion and door/window alerts, water-leak and smoke/gas detection, and occupancy simulation that cycles lights and curtains so the home appears occupied. You get instant push alerts abroad, a local caretaker can be given limited access, and the hub runs on UPS so monitoring survives outages. This absentee-owner package is one of the most popular briefs across the Ahir NRI community here.",
+      },
+      {
+        question: "Can you connect my factory or industrial unit with my home automation?",
+        answer:
+          "Yes — for Dharuhera and Bawal industrial owners we unify CCTV, access control and lighting across the plant and the residence into one app, with access logs and alerts for security. Lighting and HVAC schedules cut running costs at both sites, and you get a single interface to monitor everything. This multi-site capability is a core advantage of working with a full integrator rather than buying standalone smart devices.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for NRI-owned Rewari homes" },
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring kothis & industrial-owner villas" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Real pricing tiers for NCR-belt projects" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate control for Aravalli-edge heat & dust" },
+    ],
+  },
+
+  rohtak: {
+    slug: "rohtak",
+    intro:
+      "Rohtak is roughly 70 km from Delhi on NH-9, a well-connected Haryana hub where genuine crore-plus residential demand has emerged — luxury villas and bungalows in Arjun Nagar, Sector 1-6 and Model Town list up to ₹2.8 crore. The buyer base blends old administrative and political wealth with a newer professional class around MDU, IIM Rohtak and AIIMS. Most projects are independent houses and gated villas rather than apartments, which suits whole-home wired automation. Standard NCR-belt conditions — peak summer heat, dust and load-shedding — make automated shading, sealed climate control and backup-aware scenes the practical baseline on every Rohtak build.",
+    marketNotes: [
+      "Crore-plus villa/bungalow demand in Arjun Nagar, Sector 1-6 and Model Town (listings to ₹2.8 Cr) — independent houses suit whole-home wired KNX",
+      "Buyers blend administrative/political old money with MDU, IIM Rohtak and AIIMS professional households",
+      "45°C summers and dust make automated blinds, sealed climate control and fresh-air/AQI integration high-value",
+      "Load-shedding on local feeders — surge-safe wiring and inverter/genset-aware scene control are specified as standard",
+      "70 km from our Ghitorni base via NH-9 — supervised installation and AMC without NCR price premiums",
+    ],
+    projectExamples: [
+      { area: "Arjun Nagar", type: "5BHK luxury villa", budget: "₹16 Lakh", scope: "KNX lighting + Lutron blinds + 5.1.4 theater + CCTV + inverter-aware backup" },
+      { area: "Sector 4", type: "4BHK bungalow", budget: "₹9 Lakh", scope: "Smart lighting + climate + Sonos multi-room + biometric access" },
+      { area: "Model Town", type: "Professional 3BHK", budget: "₹5 Lakh", scope: "Wireless retrofit — switches + locks + video doorbell + voice control" },
+      { area: "Delhi Road", type: "6BHK kothi", budget: "₹21 Lakh", scope: "Crestron whole-home + perimeter security + VRV integration + access management" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Rohtak from Delhi, and is there a premium for it?",
+        answer:
+          "Yes — Rohtak is about 70 km from our Ghitorni (South Delhi) base via NH-9, inside our core service zone. The same design and installation team handles it with supervised installation and AMC, and there is no NCR premium — pricing follows our standard rate card. The short distance means responsive service visits for warranty and maintenance, which matters for the larger villa and kothi projects common here.",
+      },
+      {
+        question: "Is wired automation worth it for a crore-plus Rohtak villa?",
+        answer:
+          "For a large villa or bungalow under construction or renovation in Arjun Nagar, Sector 4 or Model Town, yes — wired KNX or Crestron is the right long-term backbone. It is far more reliable across dozens of switch points, integrates lighting, security, HVAC and access cleanly, and is not dependent on Wi-Fi. For an already-finished home we deliver 85–90% of the same experience with Lutron RA3 or KNX RF wireless retrofit, avoiding civil work. We advise wired only where it genuinely pays back, never by default.",
+      },
+      {
+        question: "What should a Rohtak homeowner automate first?",
+        answer:
+          "Start with the things that deliver daily value against local conditions: zoned smart lighting with scenes, automated blinds plus AC/climate control to manage 45°C heat and dust, and security (CCTV, smart locks, motion alerts). Layer in inverter/genset-aware backup scenes so the home stays comfortable through load-shedding, with the hub and router on UPS. From there, multi-room audio, a home theater and voice control are natural additions. We sequence the build so the highest-impact systems go in first within your budget.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Real pricing tiers for Rohtak villas & kothis" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Choosing the right backbone for a Rohtak villa" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Cooling independent houses through 45°C summers" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "CCTV, locks & alerts for Rohtak bungalows" },
+    ],
+  },
+
   bangalore: {
     slug: "bangalore",
     intro:

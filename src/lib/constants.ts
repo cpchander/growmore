@@ -178,6 +178,11 @@ export const CITIES = [
   { slug: "meerut", name: "Meerut", areas: ["Shastri Nagar", "Ganga Nagar", "Pallavpuram", "Modipuram", "Civil Lines", "Defence Colony"] },
   { slug: "panipat", name: "Panipat", areas: ["Model Town", "HUDA Sector 11-12", "GT Road", "Sector 25", "Assandh Road", "Eldeco Estate One"] },
   { slug: "gwalior", name: "Gwalior", areas: ["City Centre", "Sirol Road", "Maharajpura (Airport Road)", "Thatipur", "Lashkar", "Morar"] },
+  { slug: "sonipat", name: "Sonipat", areas: ["Kundli", "Sector 14-15", "TDI City", "Eldeco County (Sector 19)", "Model Town", "Sonipat-Gohana Road"] },
+  { slug: "karnal", name: "Karnal", areas: ["Sector 32", "Sector 12-13", "Model Town", "Mughal Canal", "Kunjpura Road", "Karnal-Meerut Road"] },
+  { slug: "moradabad", name: "Moradabad", areas: ["Civil Lines", "New Moradabad", "Buddhi Vihar", "Ram Ganga Vihar", "Deen Dayal Nagar", "Kanth Road"] },
+  { slug: "rewari", name: "Rewari", areas: ["Model Town", "Dharuhera", "Bawal", "Sector 4-5", "Rao Tula Ram Nagar", "Circular Road"] },
+  { slug: "rohtak", name: "Rohtak", areas: ["Model Town", "Arjun Nagar", "Sector 1-6", "Subhash Nagar", "Delhi Road", "Sukhpura Chowk"] },
 ] as const;
 
 export const BRANDS = [
