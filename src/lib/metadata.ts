@@ -100,6 +100,14 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   "Bhiwadi & Neemrana": { lat: 28.2104, lng: 76.8425 },
   "Mathura & Vrindavan": { lat: 27.4924, lng: 77.6737 },
   "Haridwar & Roorkee": { lat: 29.9457, lng: 78.1642 },
+  Varanasi: { lat: 25.3176, lng: 82.9739 },
+  Tirupati: { lat: 13.6288, lng: 79.4192 },
+  Patna: { lat: 25.5941, lng: 85.1376 },
+  Ranchi: { lat: 23.3441, lng: 85.3096 },
+  Madurai: { lat: 9.9252, lng: 78.1198 },
+  Patiala: { lat: 30.3398, lng: 76.3869 },
+  Siliguri: { lat: 26.7271, lng: 88.3953 },
+  Jammu: { lat: 32.7266, lng: 74.857 },
 };
 
 // ─── Shared certification credentials ────────────────────────────────

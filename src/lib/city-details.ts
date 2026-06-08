@@ -1235,6 +1235,342 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     ],
   },
 
+  varanasi: {
+    slug: "varanasi",
+    intro:
+      "Varanasi pairs deep trading and temple-economy wealth with a growing luxury-villa market — premium homes across the Cantonment, Sigra, Mahmoorganj and the BHU/Lanka belt, plus a strong national brand name that draws search. The buyer is the established business and trading family, often in large independent houses suited to whole-home wired automation, alongside NRI and out-of-town owners of riverfront and heritage properties. Extreme heat, dust and frequent power cuts make sealed climate control, automated shading and backup-aware automation the practical core, with remote monitoring for part-occupied homes.",
+    marketNotes: [
+      "Trading and temple-economy wealth plus a growing luxury-villa market — premium homes in Cantonment, Sigra, Mahmoorganj and the BHU/Lanka belt",
+      "Established business/trading families in large independent houses — suited to whole-home wired KNX/Crestron",
+      "NRI and out-of-town owners of riverfront/heritage properties drive remote monitoring and away-mode security",
+      "Extreme heat and dust make sealed climate control, automated blinds and AQI/fresh-air integration high-value",
+      "Frequent power cuts make surge-safe wiring and inverter/genset-aware scenes standard",
+    ],
+    projectExamples: [
+      { area: "Cantonment", type: "5BHK bungalow", budget: "₹16 Lakh", scope: "KNX lighting + climate + CCTV + home theater + inverter-aware backup" },
+      { area: "Sigra", type: "4BHK independent house", budget: "₹10 Lakh", scope: "Lighting + climate + Sonos + biometric access + automated blinds" },
+      { area: "Mahmoorganj", type: "Trading family's 6BHK", budget: "₹22 Lakh", scope: "Crestron whole-home + perimeter security + access control + linked showroom CCTV" },
+      { area: "Lanka (BHU)", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — switches + locks + video doorbell + voice control" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Varanasi for a full home build?",
+        answer:
+          "Yes — we deliver end-to-end across India: survey, system design, supervised installation and AMC. Varanasi's premium stock is largely independent houses and bungalows in the Cantonment, Sigra and Mahmoorganj, which suit a wired KNX or Crestron backbone planned at construction or renovation stage. For finished homes we use wireless retrofit. Survey and quotation are free, with one accountable project team throughout.",
+      },
+      {
+        question: "How does home automation handle Varanasi's heat and power cuts?",
+        answer:
+          "We design for both. On climate: automated blinds, KNX/BACnet AC control and AQI/fresh-air integration to hold comfort through extreme heat and dust. On power: surge-safe wiring, inverter/genset-aware scenes and load-shedding logic that keeps essential lighting, fans, network and security live while non-essential loads drop, with the hub and router on UPS. This delivers reliability that budget Wi-Fi-only kits cannot match here.",
+      },
+      {
+        question: "Can a riverfront or heritage second home be monitored remotely?",
+        answer:
+          "Yes — for NRI and out-of-town owners we build a remote package: app-based live CCTV, motion and entry alerts, water-leak detection and occupancy simulation so the home looks lived-in. A one-tap away-mode secures the property, a caretaker can be given limited access, and the hub runs on UPS so monitoring survives outages.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Beating Varanasi's heat & dust with smart climate" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Varanasi bungalows & villas" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for part-occupied heritage homes" },
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring Varanasi independent houses for KNX" },
+    ],
+  },
+
+  tirupati: {
+    slug: "tirupati",
+    intro:
+      "Tirupati blends temple-tourism wealth with a fast-emerging IT and industrial base — the Sri City SEZ nearby and steady IT growth are expanding the professional buyer pool, while luxury villa communities are active and land values have risen 15–20%. Affluent demand sits in Tirupati West, along the AIR Bypass Road and toward Renigunta. Most premium stock is independent houses and gated villas suited to whole-home automation, and the IT-professional and trustee/temple-linked buyer favours clean app-driven systems. Hot summers and grid fluctuation make climate control and backup-aware automation the practical baseline.",
+    marketNotes: [
+      "Temple-tourism wealth + emerging IT/industrial base (Sri City SEZ nearby) — active luxury villa communities, land values +15–20%",
+      "Affluent pockets: Tirupati West, AIR Bypass Road, Korlagunta, Renigunta Road, Tiruchanoor Road",
+      "Premium stock is independent houses and gated villas — suited to whole-home wired KNX/Crestron",
+      "IT-professional and trustee buyers favour clean app-driven lighting, climate, security and convenience",
+      "Hot summers and grid fluctuation make sealed climate control and inverter/genset-aware scenes standard",
+    ],
+    projectExamples: [
+      { area: "Tirupati West", type: "4BHK villa", budget: "₹13 Lakh", scope: "KNX lighting + climate + CCTV + automated blinds + backup scenes" },
+      { area: "AIR Bypass Road", type: "5BHK independent house", budget: "₹18 Lakh", scope: "Crestron whole-home + perimeter security + home theater + access control" },
+      { area: "Korlagunta", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + Sonos + voice + climate" },
+      { area: "Renigunta Road", type: "Gated 4BHK villa", budget: "₹10 Lakh", scope: "Smart lighting + climate + biometric access + backup" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Tirupati for a full villa build?",
+        answer:
+          "Yes — end-to-end across survey, design, supervised installation and AMC. For independent houses and gated villas in Tirupati West or along the AIR Bypass Road we plan a wired KNX/Crestron backbone at construction stage where possible, and use wireless retrofit for finished homes. Survey and quotation are free, with one accountable team from design to handover.",
+      },
+      {
+        question: "What is worth automating first in Tirupati?",
+        answer:
+          "The IT-professional and trustee buyer here tends to start with clean, app-driven essentials: zoned smart lighting with scenes, climate/AC control, and security (CCTV, smart locks, motion alerts), all controllable by app and voice. We add inverter/UPS-backed scenes so lighting, network and security ride through outages, then layer in multi-room audio and a media room as the build allows.",
+      },
+      {
+        question: "Is wired or wireless better for a Tirupati home?",
+        answer:
+          "For a villa or under-construction home, wired KNX/Crestron is the stronger long-term backbone — reliable across many control points and scalable to climate, security and AV. For an already-finished home we use Lutron RA3 or KNX RF wireless retrofit to reach most functionality without civil work. We recommend wired only where the build stage makes it pay back.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Tirupati villas & homes" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate control for Tirupati's hot summers" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "CCTV, locks & alerts for Tirupati homes" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Choosing the backbone for a Tirupati villa" },
+    ],
+  },
+
+  patna: {
+    slug: "patna",
+    intro:
+      "Patna is a large, fast-growing market where premium developers (Surya Signature, Diarch and others) increasingly market \"smart\" apartments and the affluent base concentrates in Boring Road, Patliputra Colony and along Bailey Road. The local SERP is busy but skews to entry-level Zigbee installers, so positioning firmly at the certified KNX/Crestron premium tier is the priority. Most high-end stock is large apartments and independent houses suited to whole-home integration. Extreme summer heat, dust and load-shedding make sealed climate control, automated shading and backup-aware automation the practical core.",
+    marketNotes: [
+      "Large, fast-growing market — premium developers (Surya Signature, Diarch) marketing smart apartments; affluence in Boring Road, Patliputra Colony, Bailey Road",
+      "SERP is busy but skews to entry-level Zigbee — positioning at the certified KNX/Crestron premium tier is the priority",
+      "High-end stock is large apartments and independent houses — suited to whole-home integration",
+      "Extreme heat and dust make sealed climate control, automated blinds and AQI/fresh-air integration high-value",
+      "Load-shedding makes surge-safe wiring and inverter/genset-aware scenes essential",
+    ],
+    projectExamples: [
+      { area: "Boring Road", type: "4BHK premium apartment", budget: "₹11 Lakh", scope: "KNX lighting + climate + Sonos + biometric access + backup" },
+      { area: "Patliputra Colony", type: "5BHK independent house", budget: "₹17 Lakh", scope: "Crestron whole-home + perimeter security + home theater + automated blinds" },
+      { area: "Bailey Road", type: "4BHK apartment", budget: "₹9 Lakh", scope: "Lighting + climate + CCTV + voice + surge protection" },
+      { area: "Rajendra Nagar", type: "3BHK home", budget: "₹6 Lakh", scope: "Wireless retrofit — switches + locks + video doorbell + backup scenes" },
+    ],
+    extraFaqs: [
+      {
+        question: "There are many smart-home installers in Patna — what makes Grow More Solutions premium?",
+        answer:
+          "Most local presence is entry-level Zigbee/Wi-Fi, fine for a few smart switches but not whole-home integration. Grow More Solutions is certified across KNX, Crestron and Lutron and designs vendor-neutral systems that integrate lighting, climate, security and AV reliably across a large apartment or house. With 15+ years, 300+ projects and structured AMC, we bring system-design depth and honest tiered scoping rather than the lowest per-switch price.",
+      },
+      {
+        question: "How does home automation handle Patna's heat and load-shedding?",
+        answer:
+          "We design for both: automated blinds and KNX/BACnet AC control with AQI/fresh-air integration for the heat and dust, and surge-safe wiring with inverter/genset-aware scenes so essential lighting, network and security ride through load-shedding, with the hub and router on UPS. Load-shedding logic drops non-essential loads to extend backup runtime — reliability the budget kits do not provide.",
+      },
+      {
+        question: "Do you serve Patna for a full build?",
+        answer:
+          "Yes — end-to-end: survey, design, supervised installation and AMC. For large apartments and houses under construction or renovation we plan a wired KNX/Crestron backbone; for finished homes we use wireless retrofit. Survey and quotation are free, with one accountable project team throughout.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Beating Patna's heat & dust with smart climate" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Patna apartments & houses" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "CCTV, locks & alerts for Patna homes" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Choosing the backbone for a Patna home" },
+    ],
+  },
+
+  ranchi: {
+    slug: "ranchi",
+    intro:
+      "Ranchi's state-capital status supports a steady premium market, with luxury developers (Pushpanjali, Assotech and others) and \"smart home\" branded projects seeding demand among affluent buyers in Harmu, Ashok Nagar and along Kanke Road. Local automation presence is mostly directory-level, leaving the premium KNX/Crestron slot open. Most premium stock is independent houses and gated apartments suited to whole-home integration. Ranchi's relatively temperate plateau climate shifts value toward lighting scenes, security and convenience, with backup-aware automation for grid fluctuation.",
+    marketNotes: [
+      "State-capital demand — luxury developers (Pushpanjali, Assotech) and 'smart home' branded projects; affluence in Harmu, Ashok Nagar, Kanke Road",
+      "Local automation presence is mostly directory-level — the premium KNX/Crestron/Lutron slot is open",
+      "Premium stock is independent houses and gated apartments — suited to whole-home integration",
+      "Temperate plateau climate shifts value to lighting scenes, security and convenience over thermal survival",
+      "Grid fluctuation makes surge-safe wiring and inverter/genset-aware scenes standard",
+    ],
+    projectExamples: [
+      { area: "Harmu", type: "4BHK apartment", budget: "₹10 Lakh", scope: "KNX lighting + climate + Sonos + biometric access + backup" },
+      { area: "Kanke Road", type: "5BHK independent house", budget: "₹17 Lakh", scope: "Crestron whole-home + perimeter security + home theater + access control" },
+      { area: "Ashok Nagar", type: "4BHK house", budget: "₹9 Lakh", scope: "Lighting + climate + CCTV + voice + automated blinds" },
+      { area: "Lalpur", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — switches + locks + video doorbell + backup scenes" },
+    ],
+    extraFaqs: [
+      {
+        question: "Is there a premium home automation specialist in Ranchi?",
+        answer:
+          "Local presence is mostly directory-level Zigbee work. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Harmu, Ashok Nagar and the Kanke Road belt — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 300+ projects and structured AMC. Every project begins with a free on-site survey and a tiered proposal.",
+      },
+      {
+        question: "Do you serve Ranchi for a full home build?",
+        answer:
+          "Yes — end-to-end: survey, design, supervised installation and AMC. For independent houses and gated apartments under construction we plan a wired KNX/Crestron backbone; for finished homes we use wireless retrofit. One accountable team manages the project from design to handover, and survey plus quotation are free.",
+      },
+      {
+        question: "What is worth automating in Ranchi's climate?",
+        answer:
+          "Because Ranchi's plateau weather is relatively mild, the highest-value systems are lifestyle rather than thermal-survival: zoned lighting with scenes, security (CCTV, smart locks, motion alerts), multi-room audio and convenience automation. We still integrate AC and fan control for comfort, plus inverter/UPS-backed scenes so lighting, network and security ride through grid fluctuation.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Ranchi houses & apartments" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "CCTV, locks & alerts for Ranchi homes" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Choosing the backbone for a Ranchi home" },
+      { title: "Smart Lighting Guide", href: "/blog/smart-lighting-guide-indian-homes", description: "Scene-based lighting for Ranchi homes" },
+    ],
+  },
+
+  madurai: {
+    slug: "madurai",
+    intro:
+      "Madurai's affluence comes from its temple-city trade and merchant wealth, concentrated in Anna Nagar, K.K. Nagar and along the Bypass Road. The premium villa segment is smaller than the metros and the SERP is light — mostly directories and small dealers — which makes this an easy premium-positioning win for a certified integrator. Most demand is independent houses and gated apartments suited to lighting, climate and security automation. Hot summers make automated shading and climate control valuable, with inverter integration for grid fluctuation.",
+    marketNotes: [
+      "Temple-city trade and merchant wealth — affluence in Anna Nagar, K.K. Nagar, Gomathipuram and along the Bypass Road",
+      "Light SERP (directories + small dealers) makes premium positioning an easy win for a certified integrator",
+      "Demand is largely independent houses and gated apartments — lighting, climate and security automation",
+      "Hot summers make automated blinds, sealed climate control and fresh-air integration valuable",
+      "Grid fluctuation makes surge-safe wiring and inverter/genset-aware scenes standard",
+    ],
+    projectExamples: [
+      { area: "Anna Nagar", type: "4BHK independent house", budget: "₹11 Lakh", scope: "KNX lighting + climate + CCTV + automated blinds + backup" },
+      { area: "K.K. Nagar", type: "Merchant family's 5BHK", budget: "₹16 Lakh", scope: "Crestron whole-home + perimeter security + access control + linked showroom CCTV" },
+      { area: "Gomathipuram", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + Sonos + voice control" },
+      { area: "Bypass Road", type: "Gated 4BHK", budget: "₹9 Lakh", scope: "Lighting + climate + biometric access + backup scenes" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Madurai for a full home build?",
+        answer:
+          "Yes — end-to-end: survey, design, supervised installation and AMC. For independent houses and gated apartments in Anna Nagar, K.K. Nagar or along the Bypass Road we plan a wired KNX/Crestron backbone at construction stage where possible, and use wireless retrofit for finished homes. Survey and quotation are free.",
+      },
+      {
+        question: "Can you link my shop or showroom with my home automation?",
+        answer:
+          "Yes — many Madurai clients are merchant and trading families who want unified security across the business and the residence. We integrate CCTV, access control and lighting across both into one app, with access logs and alerts, so you can monitor the shop from home and vice versa. Lighting and AC schedules also cut running costs at the business — a core advantage of a full integrator over standalone devices.",
+      },
+      {
+        question: "What is worth automating first in Madurai?",
+        answer:
+          "Start with the highest daily value against the local climate: zoned smart lighting with scenes, automated blinds plus AC/climate control for the heat, and security (CCTV, smart locks, motion alerts). Add inverter/UPS-backed scenes so essentials ride through grid fluctuation, then multi-room audio and voice control. We sequence the build so the highest-impact systems go in first within budget.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Madurai houses & apartments" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate control for Madurai's hot summers" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Linked home + shop/showroom security" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Choosing the backbone for a Madurai home" },
+    ],
+  },
+
+  patiala: {
+    slug: "patiala",
+    intro:
+      "Patiala blends royal and old-money heritage with a steady professional class, with prestige homes in the Urban Estate, Tripuri and along Nabha Road and Rajbaha Road. The HNI base is smaller and pricing more moderate than Ludhiana, but demand is real — large independent kothis suited to whole-home wired automation, plus an NRI-Punjabi component. Local premium automation presence is thin, leaving the KNX/Crestron slot open. Cold Punjab winters and grid fluctuation add heating-scheduling and backup-aware automation to the core brief alongside summer cooling.",
+    marketNotes: [
+      "Royal/old-money heritage plus a professional class — prestige homes in Urban Estate, Tripuri, Nabha Road, Rajbaha Road",
+      "Large independent kothis suited to whole-home wired KNX/Crestron; NRI-Punjabi component adds remote-monitoring demand",
+      "Local premium automation presence is thin — the KNX/Crestron/Lutron slot is open",
+      "Cold winters make geyser/heating scheduling useful; 45°C summers need shading + AC automation",
+      "Grid fluctuation makes surge-safe wiring and inverter/genset-aware scenes standard",
+    ],
+    projectExamples: [
+      { area: "Urban Estate", type: "5BHK kothi", budget: "₹15 Lakh", scope: "KNX whole-home + Lutron shading + heating scheduling + CCTV + backup" },
+      { area: "Tripuri", type: "4BHK independent house", budget: "₹10 Lakh", scope: "Lighting + climate + Sonos + biometric access + automated blinds" },
+      { area: "Nabha Road", type: "6BHK heritage kothi", budget: "₹20 Lakh", scope: "Crestron whole-home + perimeter security + concealed lighting + winter heating" },
+      { area: "Model Town", type: "3BHK home", budget: "₹6 Lakh", scope: "Wireless retrofit — switches + locks + video doorbell + voice control" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Patiala, and how is it delivered?",
+        answer:
+          "Yes — Patiala is on our established Punjab route, and we deliver end-to-end: survey, design, supervised installation and AMC. The market's large independent kothis in the Urban Estate, Tripuri and along Nabha Road suit a wired KNX or Crestron backbone for new or renovated homes, with wireless retrofit for finished ones. Survey and quotation are free.",
+      },
+      {
+        question: "Can home automation handle Patiala's cold winters?",
+        answer:
+          "Yes — we integrate geyser, room-heater and underfloor heating into schedules and scenes so bathrooms and bedrooms are warm at wake-up and heating switches off when rooms are empty. Warm-tone lighting and temperature-triggered automation round it out, and the same system manages summer AC and shading for year-round comfort.",
+      },
+      {
+        question: "I'm an NRI with a home in Patiala — can it be monitored remotely?",
+        answer:
+          "Yes — for the NRI-Punjabi segment we build a remote package: app-based live CCTV, motion and entry alerts, water-leak detection and occupancy simulation so the kothi looks lived-in. A one-tap away-mode secures the property, a caretaker can be given limited access, and the hub runs on UPS so monitoring survives outages.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Why detached kothis suit a wired backbone" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Heating & cooling for Punjab's dual-season climate" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for NRI-owned Patiala homes" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Patiala kothis & homes" },
+    ],
+  },
+
+  siliguri: {
+    slug: "siliguri",
+    intro:
+      "Siliguri — the \"crown jewel of North Bengal\" and gateway to Sikkim, Bhutan and the Darjeeling tea belt — has a fast-rising, under-served premium market, with booming gated townships like Uttorayon and projects along Sevoke Road and Matigara fed by tea-trade and border-commerce wealth. Local automation presence is minimal, leaving the premium slot wide open. Most premium stock is gated villas and apartments suited to whole-home integration. A humid sub-Himalayan climate and grid fluctuation make wired reliability, climate control and backup-aware automation the practical core.",
+    marketNotes: [
+      "'Crown jewel of North Bengal' — tea-trade and border-commerce wealth; fast-rising gated townships (Uttorayon) on Sevoke Road and Matigara",
+      "Local automation presence is minimal — the premium KNX/Crestron/Lutron slot is wide open",
+      "Premium stock is gated villas and apartments — suited to whole-home integration",
+      "Humid sub-Himalayan climate favours wired reliability, dehumidification and corrosion-aware hardware",
+      "Grid fluctuation makes surge-safe wiring and inverter/genset-aware scenes standard",
+    ],
+    projectExamples: [
+      { area: "Uttorayon", type: "4BHK gated villa", budget: "₹13 Lakh", scope: "KNX lighting + climate + CCTV + automated blinds + backup scenes" },
+      { area: "Sevoke Road", type: "5BHK independent house", budget: "₹17 Lakh", scope: "Crestron whole-home + perimeter security + home theater + dehumidification" },
+      { area: "Matigara", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + Sonos + voice control" },
+      { area: "Pradhan Nagar", type: "4BHK house", budget: "₹9 Lakh", scope: "Lighting + climate + biometric access + backup" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Siliguri and North Bengal?",
+        answer:
+          "Yes — Siliguri is the premium hub for North Bengal and the Sikkim/Darjeeling catchment, and we deliver end-to-end: survey, design, supervised installation and AMC. For gated villas in Uttorayon or along Sevoke Road we plan a wired KNX/Crestron backbone at construction stage; for finished homes we use wireless retrofit. Survey and quotation are free.",
+      },
+      {
+        question: "How does home automation cope with Siliguri's humidity?",
+        answer:
+          "We engineer for the sub-Himalayan climate: a wired KNX backbone for reliability, weather-rated outdoor cameras, corrosion-aware hardware, and dehumidification tied to a moisture sensor with AQI/fresh-air integration. In a humid, high-rainfall belt this wired approach clearly outlasts cheap wireless kits that degrade quickly.",
+      },
+      {
+        question: "Is there a premium automation specialist in Siliguri?",
+        answer:
+          "Local premium presence is minimal. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Siliguri's gated villas and premium apartments — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 300+ projects and structured AMC, starting with a free survey and tiered proposal.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Why humid Siliguri favours wired KNX reliability" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "CCTV, locks & alerts for Siliguri homes" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Dehumidification & climate for sub-Himalayan Siliguri" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Siliguri villas & apartments" },
+    ],
+  },
+
+  jammu: {
+    slug: "jammu",
+    intro:
+      "Jammu's home automation demand is unusually need-driven. Households are often split between Jammu and the Valley, so remote monitoring of a part-occupied home is a genuine requirement, not a luxury — and frequent grid fluctuation makes smart power and UPS integration practical necessities. The market spans old kothis in Gandhi Nagar and Bakshi Nagar and newer mid-rise stock in Trikuta Nagar and along Canal Road. Local premium competition is weak. Cold winters make integrated heating central, while summer heat and dust add climate and shading automation to the brief.",
+    marketNotes: [
+      "Need-driven demand — households split between Jammu and the Valley make remote monitoring of part-occupied homes a genuine requirement",
+      "Market spans old kothis (Gandhi Nagar, Bakshi Nagar) and new mid-rise (Trikuta Nagar, Canal Road, Channi Himmat)",
+      "Frequent grid fluctuation makes smart power, surge-safe wiring and inverter/UPS integration practical necessities",
+      "Cold winters make integrated geyser/heating scheduling central; summer heat and dust add climate and shading automation",
+      "Local premium automation competition is weak — the KNX/Crestron/Lutron slot is open",
+    ],
+    projectExamples: [
+      { area: "Trikuta Nagar", type: "4BHK independent house", budget: "₹13 Lakh", scope: "KNX lighting + heating scheduling + CCTV + remote monitoring + backup" },
+      { area: "Gandhi Nagar", type: "5BHK kothi", budget: "₹18 Lakh", scope: "Crestron whole-home + perimeter security + concealed lighting + winter heating" },
+      { area: "Canal Road", type: "3BHK apartment", budget: "₹7 Lakh", scope: "Lighting + climate + Sonos + smart power/UPS + voice control" },
+      { area: "Bakshi Nagar", type: "4BHK house", budget: "₹9 Lakh", scope: "Wireless retrofit — switches + locks + video doorbell + away-mode" },
+    ],
+    extraFaqs: [
+      {
+        question: "My family splits time between Jammu and the Valley — can the home be monitored remotely?",
+        answer:
+          "Yes — this is the defining Jammu brief. We build a remote package so a part-occupied home is fully manageable: app-based live CCTV, motion and entry alerts, water-leak and freeze detection, and occupancy simulation so the home looks lived-in. A one-tap away-mode secures the property, a caretaker can be given limited access, and the hub and NVR run on UPS so monitoring survives the frequent outages.",
+      },
+      {
+        question: "How does home automation handle Jammu's power fluctuation and cold winters?",
+        answer:
+          "On power: smart-power and surge-safe wiring with inverter/UPS integration so essential lighting, network and security ride through fluctuation and cuts — a practical necessity here, not a luxury. On winters: integrated geyser, room-heater and underfloor heating schedules so the home is warm at wake-up and heating switches off when rooms are empty, with warm-tone lighting scenes. Summer heat is handled with AC and shading automation.",
+      },
+      {
+        question: "Do you serve Jammu for a full home build?",
+        answer:
+          "Yes — end-to-end: survey, design, supervised installation and AMC. For old kothis and new Trikuta Nagar/Canal Road stock under construction or renovation we plan a wired KNX/Crestron backbone; for finished homes we use wireless retrofit. Survey and quotation are free, with one accountable team throughout.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for split Jammu/Valley households" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Integrated heating for Jammu's cold winters" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Choosing the backbone for a Jammu home" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Jammu kothis & homes" },
+    ],
+  },
+
   bangalore: {
     slug: "bangalore",
     intro:

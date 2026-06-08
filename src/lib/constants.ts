@@ -206,6 +206,14 @@ export const CITIES = [
   { slug: "bhiwadi-neemrana", name: "Bhiwadi & Neemrana", areas: ["Bhiwadi (RIICO)", "Neemrana (Japanese Zone)", "Tapukara", "Khushkhera", "Behror", "Eldeco Eden Park"] },
   { slug: "mathura-vrindavan", name: "Mathura & Vrindavan", areas: ["Vrindavan", "Mathura", "Raman Reti", "Govardhan", "Krishna Nagar", "Shri Radha NRI Greens"] },
   { slug: "haridwar-roorkee", name: "Haridwar & Roorkee", areas: ["Haridwar (SIDCUL)", "Roorkee (IIT)", "Palm City", "Jwalapur", "Kankhal", "BHEL Ranipur"] },
+  { slug: "varanasi", name: "Varanasi", areas: ["Cantonment", "Sigra", "Mahmoorganj", "Bhelupur", "Lanka (BHU)", "Sarnath Road"] },
+  { slug: "tirupati", name: "Tirupati", areas: ["Tirupati West", "Korlagunta", "AIR Bypass Road", "Renigunta Road", "Tiruchanoor Road", "MR Palli"] },
+  { slug: "patna", name: "Patna", areas: ["Boring Road", "Patliputra Colony", "Rajendra Nagar", "Kankarbagh", "Bailey Road", "Gardanibagh"] },
+  { slug: "ranchi", name: "Ranchi", areas: ["Harmu", "Ashok Nagar", "Kanke Road", "Lalpur", "Morabadi", "Doranda"] },
+  { slug: "madurai", name: "Madurai", areas: ["Anna Nagar", "K. K. Nagar", "Gomathipuram", "Bypass Road", "Alagar Kovil Road", "Tallakulam"] },
+  { slug: "patiala", name: "Patiala", areas: ["Urban Estate", "Tripuri", "Nabha Road", "Model Town", "Rajbaha Road", "Bhupindra Road"] },
+  { slug: "siliguri", name: "Siliguri", areas: ["Sevoke Road", "Matigara", "Uttorayon", "Pradhan Nagar", "Hakimpara", "Champasari"] },
+  { slug: "jammu", name: "Jammu", areas: ["Gandhi Nagar", "Trikuta Nagar", "Bakshi Nagar", "Canal Road", "Channi Himmat", "Sainik Colony"] },
 ] as const;
 
 export const BRANDS = [
