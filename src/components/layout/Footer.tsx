@@ -110,6 +110,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/resources"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  Free Resources
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blog/home-automation-cost-2026"
                   className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
                 >

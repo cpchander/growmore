@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Bundle the gated (non-public) resource files into the protected download route
+  outputFileTracingIncludes: {
+    "/api/download": ["./private-assets/**"],
+  },
+
   images: {
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
