@@ -90,8 +90,8 @@ export default function QuoteCalculator() {
     (sum, f) => (selectedFeatures.includes(f.id) ? sum + featureCost(f) : sum),
     0
   );
-  const estimatedLow = Math.round(rawTotal * 0.9);
-  const estimatedHigh = Math.round(rawTotal * 1.15);
+  const estimatedLow = Math.round(rawTotal * 0.85);
+  const estimatedHigh = Math.round(rawTotal * 1.4);
 
   // Example real products from the catalog for a selected feature at the chosen tier
   const exampleProducts = (f: Feature): AutomationProduct[] =>

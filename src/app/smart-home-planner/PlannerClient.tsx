@@ -102,8 +102,8 @@ export default function PlannerClient() {
   // ─── Totals ───────────────────────────────────────────────
   const totals = useMemo(() => {
     const hardware = cart.reduce((sum, c) => sum + c.product.priceINR * c.qty, 0);
-    const installLow = Math.round(hardware * 0.3);
-    const installHigh = Math.round(hardware * 0.5);
+    const installLow = Math.round(hardware * 0.25);
+    const installHigh = Math.round(hardware * 0.6);
     return { hardware, installLow, installHigh, items: cart.reduce((s, c) => s + c.qty, 0) };
   }, [cart]);
 
