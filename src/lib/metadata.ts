@@ -77,6 +77,12 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   Moradabad: { lat: 28.8386, lng: 78.7733 },
   Rewari: { lat: 28.197, lng: 76.617 },
   Rohtak: { lat: 28.8955, lng: 76.6066 },
+  Surat: { lat: 21.1702, lng: 72.8311 },
+  Coimbatore: { lat: 11.0168, lng: 76.9558 },
+  Kochi: { lat: 9.9312, lng: 76.2673 },
+  Ludhiana: { lat: 30.901, lng: 75.8573 },
+  Nagpur: { lat: 21.1458, lng: 79.0882 },
+  Visakhapatnam: { lat: 17.6868, lng: 83.2185 },
 };
 
 // ─── Shared certification credentials ────────────────────────────────

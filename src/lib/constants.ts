@@ -183,6 +183,12 @@ export const CITIES = [
   { slug: "moradabad", name: "Moradabad", areas: ["Civil Lines", "New Moradabad", "Buddhi Vihar", "Ram Ganga Vihar", "Deen Dayal Nagar", "Kanth Road"] },
   { slug: "rewari", name: "Rewari", areas: ["Model Town", "Dharuhera", "Bawal", "Sector 4-5", "Rao Tula Ram Nagar", "Circular Road"] },
   { slug: "rohtak", name: "Rohtak", areas: ["Model Town", "Arjun Nagar", "Sector 1-6", "Subhash Nagar", "Delhi Road", "Sukhpura Chowk"] },
+  { slug: "surat", name: "Surat", areas: ["Vesu", "Piplod", "Adajan", "Dumas Road", "City Light", "Pal"] },
+  { slug: "coimbatore", name: "Coimbatore", areas: ["Saravanampatti", "Vadavalli", "RS Puram", "Kovaipudur", "Kalapatti", "Race Course"] },
+  { slug: "kochi", name: "Kochi", areas: ["Marine Drive", "Kakkanad", "Maradu", "Panampilly Nagar", "Edappally", "Vyttila"] },
+  { slug: "ludhiana", name: "Ludhiana", areas: ["Sarabha Nagar", "BRS Nagar", "Aggar Nagar", "Pakhowal Road", "Civil Lines", "Model Town"] },
+  { slug: "nagpur", name: "Nagpur", areas: ["Dharampeth", "Civil Lines", "Shankar Nagar", "Ramdaspeth", "Wardha Road", "Manish Nagar"] },
+  { slug: "visakhapatnam", name: "Visakhapatnam", areas: ["MVP Colony", "Madhurawada", "Rushikonda", "Lawsons Bay Colony", "Yendada", "Seethammadhara"] },
 ] as const;
 
 export const BRANDS = [
