@@ -244,22 +244,32 @@ export const STATS = [
 export const PROCESS_STEPS = [
   {
     step: 1,
-    title: "Consult",
-    description: "Free consultation to understand your lifestyle, budget, and automation goals.",
+    title: "Understand",
+    description: "We learn your lifestyle, priorities and budget — not just a device list.",
+    deliverable: "A needs & lifestyle brief + indicative budget.",
   },
   {
     step: 2,
-    title: "Design",
-    description: "Custom smart home design with 3D visualization and detailed specifications.",
+    title: "Design — With Your Architect",
+    description: "We work hand-in-hand with your architect or designer so automation disappears into the design.",
+    deliverable: "Project drawings, device layouts, single-line diagrams & BOQ.",
   },
   {
     step: 3,
-    title: "Install",
-    description: "Professional installation by certified engineers with minimal disruption.",
+    title: "Seamless Execution",
+    description: "Certified in-house engineers install and program — no subcontracting, minimal disruption.",
+    deliverable: "Supervised installation, commissioning & as-built documentation.",
   },
   {
     step: 4,
-    title: "Support",
-    description: "Lifetime support with remote diagnostics and on-site maintenance.",
+    title: "Effortless to Live With",
+    description: "Your whole home on one intuitive app and keypad — simple to operate, easy to maintain.",
+    deliverable: "Hands-on handover & family training.",
+  },
+  {
+    step: 5,
+    title: "Future-Ready Support",
+    description: "Post-delivery, your system can always be upgraded and expanded.",
+    deliverable: "Remote diagnostics, scalable upgrades & optional AMC.",
   },
 ] as const;

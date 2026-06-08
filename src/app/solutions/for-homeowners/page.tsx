@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import HowWeWorkSection from "@/components/home/HowWeWorkSection";
 import { IMAGES } from "@/lib/images";
 import {
   ArrowRight, Lightbulb, Shield, Thermometer,
@@ -257,6 +258,8 @@ export default function ForHomeownersPage() {
           </div>
         </div>
       </section>
+
+      <HowWeWorkSection />
 
       {/* FAQ */}
       <section className="section-padding bg-navy-950">

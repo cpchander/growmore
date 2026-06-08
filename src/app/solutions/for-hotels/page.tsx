@@ -4,6 +4,7 @@ import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import HowWeWorkSection from "@/components/home/HowWeWorkSection";
 import {
   ArrowRight, Hotel, DoorOpen, Thermometer,
   Lightbulb, Shield, Zap, CheckCircle, Users, BarChart3,
@@ -167,6 +168,8 @@ export default function ForHotelsPage() {
           </div>
         </div>
       </section>
+
+      <HowWeWorkSection />
 
       {/* FAQ */}
       <section className="section-padding bg-navy-950">

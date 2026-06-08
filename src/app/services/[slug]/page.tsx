@@ -182,6 +182,12 @@ export default async function ServicePage({ params }: Props) {
                     </div>
                   ))}
                 </div>
+                <Link
+                  href="/how-we-work"
+                  className="mt-5 inline-flex items-center gap-2 text-sm text-gold-500 font-semibold hover:gap-3 transition-all"
+                >
+                  See our full 5-step company process →
+                </Link>
               </div>
 
               {/* Use Cases */}

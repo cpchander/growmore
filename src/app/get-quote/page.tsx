@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { COMPANY } from "@/lib/constants";
 import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import HowWeWorkSection from "@/components/home/HowWeWorkSection";
 import Link from "next/link";
 import QuoteCalculator from "./QuoteCalculator";
 
@@ -86,6 +87,8 @@ export default function GetQuotePage() {
           </div>
         </div>
       </section>
+
+      <HowWeWorkSection />
     </>
   );
 }

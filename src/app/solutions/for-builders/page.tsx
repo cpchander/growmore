@@ -4,6 +4,7 @@ import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
+import HowWeWorkSection from "@/components/home/HowWeWorkSection";
 import {
   ArrowRight, Building2, TrendingUp, Users,
   CheckCircle, Handshake, Layers, IndianRupee, Star,
@@ -223,6 +224,8 @@ export default function ForBuildersPage() {
           </p>
         </div>
       </section>
+
+      <HowWeWorkSection />
 
       {/* FAQ */}
       <section className="section-padding bg-navy-900/50">
