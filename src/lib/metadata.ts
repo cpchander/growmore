@@ -97,6 +97,9 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   Thrissur: { lat: 10.5276, lng: 76.2144 },
   Mysuru: { lat: 12.2958, lng: 76.6394 },
   Jamshedpur: { lat: 22.8046, lng: 86.2029 },
+  "Bhiwadi & Neemrana": { lat: 28.2104, lng: 76.8425 },
+  "Mathura & Vrindavan": { lat: 27.4924, lng: 77.6737 },
+  "Haridwar & Roorkee": { lat: 29.9457, lng: 78.1642 },
 };
 
 // ─── Shared certification credentials ────────────────────────────────

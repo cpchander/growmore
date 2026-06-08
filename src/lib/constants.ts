@@ -203,6 +203,9 @@ export const CITIES = [
   { slug: "thrissur", name: "Thrissur", areas: ["Ayyanthole", "Punkunnam", "Patturaikkal", "Kuriachira", "East Fort", "Poothole"] },
   { slug: "mysuru", name: "Mysuru", areas: ["Jayalakshmipuram", "Gokulam", "Vijayanagar", "Yadavagiri", "Kuvempunagar", "Hebbal"] },
   { slug: "jamshedpur", name: "Jamshedpur", areas: ["Bistupur", "Sonari", "Kadma", "Circuit House Area", "Telco Colony", "Sakchi"] },
+  { slug: "bhiwadi-neemrana", name: "Bhiwadi & Neemrana", areas: ["Bhiwadi (RIICO)", "Neemrana (Japanese Zone)", "Tapukara", "Khushkhera", "Behror", "Eldeco Eden Park"] },
+  { slug: "mathura-vrindavan", name: "Mathura & Vrindavan", areas: ["Vrindavan", "Mathura", "Raman Reti", "Govardhan", "Krishna Nagar", "Shri Radha NRI Greens"] },
+  { slug: "haridwar-roorkee", name: "Haridwar & Roorkee", areas: ["Haridwar (SIDCUL)", "Roorkee (IIT)", "Palm City", "Jwalapur", "Kankhal", "BHEL Ranipur"] },
 ] as const;
 
 export const BRANDS = [

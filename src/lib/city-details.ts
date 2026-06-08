@@ -1109,6 +1109,132 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     ],
   },
 
+  "bhiwadi-neemrana": {
+    slug: "bhiwadi-neemrana",
+    intro:
+      "Bhiwadi and Neemrana anchor the Delhi-Mumbai Industrial Corridor's Rajasthan node, roughly 70–120 km from our Gurgaon-side NCR base on NH-48 and the KMP Expressway. Bhiwadi is the region's largest industrial town, and Neemrana's \"Japanese Zone\" hosts Daikin and dozens of Japanese manufacturers, so the buyer here is the factory owner, senior plant manager and Japanese-corporate expat, plus weekend-farmhouse owners from Delhi. Premium stock spans RIICO-belt villas, gated projects like Eldeco Eden Park and farmhouse plots. Aravalli-edge heat, dust storms and grid fluctuation make sealed climate control, automated shading and backup-aware automation the practical core, with remote monitoring for part-occupied weekend properties.",
+    marketNotes: [
+      "Bhiwadi and Neemrana anchor the DMIC Rajasthan node — factory owners, senior plant managers and Japanese-corporate expats are the core buyers",
+      "Neemrana's \"Japanese Zone\" (Daikin and many Japanese units) plus the university belt (NIIT, Raffles) drive expat and professional housing demand",
+      "Premium stock: RIICO-belt villas, gated projects (Eldeco Eden Park, Shubhashray, Mangalam) and weekend-farmhouse plots",
+      "Aravalli-edge heat and dust storms make sealed climate control, automated blinds and fresh-air/AQI integration high-value",
+      "Grid fluctuation and part-occupied weekend homes make surge-safe wiring, backup-aware scenes and remote monitoring standard",
+    ],
+    projectExamples: [
+      { area: "Neemrana", type: "Japanese-corporate 4BHK villa", budget: "₹14 Lakh", scope: "KNX lighting + climate + CCTV + biometric access + backup scenes" },
+      { area: "Bhiwadi (RIICO belt)", type: "Industrialist's 5BHK kothi", budget: "₹19 Lakh", scope: "Crestron whole-home + perimeter security + linked factory CCTV + VRV climate" },
+      { area: "Neemrana", type: "Weekend farmhouse", budget: "₹22 Lakh", scope: "Remote monitoring + gate/irrigation + occupancy simulation + away-mode" },
+      { area: "Bhiwadi", type: "Gated 3BHK", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + video doorbell + voice control" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Bhiwadi and Neemrana, and from where?",
+        answer:
+          "Yes — Bhiwadi and Neemrana sit about 70–120 km from our Gurgaon-side NCR catchment via NH-48 and the KMP Expressway, well within our service range. The same team that handles Gurgaon projects covers the DMIC belt, with supervised installation and AMC. We work finished homes (wireless retrofit) and under-construction RIICO-belt villas and farmhouses (wired KNX/Crestron), and survey plus quotation are free.",
+      },
+      {
+        question: "Can you connect a factory or industrial unit with the owner's home?",
+        answer:
+          "Yes — this is a core brief across the Bhiwadi–Neemrana industrial corridor. We unify CCTV, access control and lighting across the plant and the residence into one app, with access logs and alerts for security. You can monitor the unit from home and vice versa, and lighting/HVAC schedules cut running costs at the factory. For the many Japanese-corporate and expat-managed homes here, we also set up clean, app-driven control with English/multi-language interfaces.",
+      },
+      {
+        question: "Can a weekend farmhouse near Neemrana be managed remotely?",
+        answer:
+          "Yes — many Neemrana and Bhiwadi properties are weekend or part-time homes. We set up remote app monitoring with live CCTV, motion alerts and water-leak detection, occupancy simulation so the home looks lived-in, and automated gate, perimeter lighting and landscape irrigation. A one-tap away-mode secures the property, an arrive-ready scene pre-cools and unlocks before you reach for the weekend, and the hub runs on UPS so monitoring survives outages.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring & linked factory CCTV for the DMIC belt" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate control for Aravalli-edge heat & dust storms" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Bhiwadi & Neemrana villas" },
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring RIICO-belt villas & farmhouses for KNX" },
+    ],
+  },
+
+  "mathura-vrindavan": {
+    slug: "mathura-vrindavan",
+    intro:
+      "Mathura and Vrindavan form a single temple-economy market with a distinctive automation driver — NRI and out-of-town devotee second-homes. Developers build NRI-targeted luxury townships (like Shri Radha NRI Greens near Banke Bihari and ISKCON), and affluent pilgrims own villas they occupy only part of the year, which makes remote monitoring, occupancy simulation and away-mode security the headline use-case. Roughly 150 km from Delhi on the Yamuna Expressway, the twin cities also host dharamshalas and boutique stays where hospitality automation applies. Extreme heat, dust and power cuts make climate control and backup-aware automation the practical baseline.",
+    marketNotes: [
+      "Temple-economy twin cities — NRI and out-of-town devotee second-homes are the distinctive automation driver",
+      "NRI-targeted luxury townships (Shri Radha NRI Greens near Banke Bihari/ISKCON) and villa stock in Raman Reti, Govardhan and Krishna Nagar",
+      "Part-occupied devotee homes make remote monitoring, occupancy simulation and away-mode security the headline use-case",
+      "Dharamshalas and boutique stays add a hospitality-automation angle — zoned lighting, access control and energy scheduling",
+      "Extreme heat, dust and power cuts make sealed climate control and backup-aware scenes standard; ~150 km via the Yamuna Expressway",
+    ],
+    projectExamples: [
+      { area: "Vrindavan (Raman Reti)", type: "NRI-owned 4BHK villa", budget: "₹15 Lakh", scope: "Remote monitoring + occupancy simulation + KNX lighting + CCTV + away-mode" },
+      { area: "Mathura", type: "4BHK independent house", budget: "₹9 Lakh", scope: "Lighting + climate + Sonos + biometric access + backup scenes" },
+      { area: "Vrindavan", type: "Boutique guest-stay", budget: "₹13 Lakh", scope: "Keycard/access automation + zoned lighting + CCTV + energy scheduling" },
+      { area: "Govardhan", type: "3BHK home", budget: "₹5 Lakh", scope: "Wireless retrofit — lighting + locks + video doorbell + voice control" },
+    ],
+    extraFaqs: [
+      {
+        question: "I own a second home in Vrindavan but live elsewhere — can it be managed remotely?",
+        answer:
+          "Yes — this is the defining Mathura–Vrindavan brief. For devotee and NRI owners who visit periodically, we set up app-based live CCTV, motion and entry alerts, water-leak detection and occupancy simulation so the villa looks lived-in year-round. A one-tap away-mode secures the property, a caretaker can be given limited access, and an arrive-ready scene prepares the home before each visit. The hub and NVR run on a UPS so monitoring survives the area's frequent outages.",
+      },
+      {
+        question: "Do you automate dharamshalas or boutique stays in Mathura-Vrindavan?",
+        answer:
+          "Yes — the pilgrimage economy makes hospitality automation relevant here. For guest-houses, dharamshalas and boutique stays we set up keycard or app-based room access, occupancy-linked lighting and AC (which cut energy when rooms are vacant), zoned common-area lighting scenes, and centralized CCTV and monitoring. It improves guest experience while reducing running costs — see our hospitality solutions for the full approach.",
+      },
+      {
+        question: "Do you serve Mathura and Vrindavan?",
+        answer:
+          "Yes — the twin cities are about 150 km from Delhi on the Yamuna Expressway, an easy run for our team, and we deliver end-to-end: survey, design, supervised installation and AMC. For under-construction villas in the NRI townships we plan a wired KNX/Crestron backbone; for finished homes we use wireless retrofit. Survey and quotation are free.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for NRI & devotee second-homes" },
+      { title: "Restaurant & Hospitality Automation", href: "/blog/restaurant-automation-india", description: "Lighting, access & energy automation for guest stays" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Mathura-Vrindavan villas" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate control for the Braj region's heat & dust" },
+    ],
+  },
+
+  "haridwar-roorkee": {
+    slug: "haridwar-roorkee",
+    intro:
+      "Haridwar and Roorkee cluster on the Delhi–Dehradun corridor (~180–210 km from Delhi, adjacent to our covered Dehradun market) and blend three wealth streams: the SIDCUL Integrated Industrial Estate's corporate and industrialist base, IIT Roorkee's academic-professional community, and pilgrim and second-home owners along the Ganga. New RERA gated villa communities like Palm City near SIDCUL anchor premium demand. The buyer mix favours whole-home automation for industrialist villas and clean app-driven systems for IIT professionals, with a hospitality angle for Ganga-front stays. Hot-season heat, dust and grid fluctuation make climate control and backup-aware automation the practical core.",
+    marketNotes: [
+      "SIDCUL industrial estate (~2,038 acres) corporate/industrialist base + IIT Roorkee professionals + Ganga-front pilgrim second-homes",
+      "Premium stock: RERA gated villa communities (Palm City / Palm Paradise near SIDCUL/Denso Chowk) and established Haridwar/Roorkee colonies",
+      "Clusters with covered Dehradun on the Delhi–Dehradun axis (~180–210 km) — an efficient shared service route",
+      "Hot-season heat and dust make automated shading, sealed climate control and fresh-air integration valuable",
+      "Grid fluctuation and Ganga-front hospitality stays make backup-aware automation and remote monitoring standard",
+    ],
+    projectExamples: [
+      { area: "Haridwar (Palm City)", type: "4BHK gated villa", budget: "₹13 Lakh", scope: "KNX lighting + climate + CCTV + automated blinds + backup scenes" },
+      { area: "SIDCUL belt", type: "Industrialist's 5BHK", budget: "₹18 Lakh", scope: "Crestron whole-home + perimeter security + linked plant CCTV + access control" },
+      { area: "Roorkee (IIT belt)", type: "Academic 3BHK", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + Sonos + voice + climate" },
+      { area: "Haridwar (Ganga-front)", type: "Boutique stay / second home", budget: "₹12 Lakh", scope: "Remote monitoring + zoned lighting + access automation + away-mode" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve Haridwar and Roorkee, and how does it relate to your Dehradun coverage?",
+        answer:
+          "Yes — Haridwar and Roorkee sit on the same Delhi–Dehradun corridor we already work, about 180–210 km from Delhi, so they share our Dehradun-belt service route. We deliver end-to-end: survey, design, supervised installation and AMC. For gated villas near SIDCUL we plan a wired KNX/Crestron backbone at construction stage; for finished homes and the IIT Roorkee academic belt we use wireless retrofit. Survey and quotation are free.",
+      },
+      {
+        question: "Can you link a SIDCUL factory or plant with the owner's home?",
+        answer:
+          "Yes — for SIDCUL-belt industrialists we unify CCTV, access control and lighting across the plant and the residence into one app, with access logs and alerts. You can monitor the unit from home and vice versa, and lighting/HVAC schedules cut running costs at the facility. This multi-site capability is a core advantage of working with a full integrator rather than buying standalone devices.",
+      },
+      {
+        question: "Can you automate a Ganga-front second home or boutique stay?",
+        answer:
+          "Yes — the pilgrim economy gives Haridwar a real hospitality angle. For second homes and boutique stays we set up remote app monitoring, occupancy-linked lighting and AC, keycard/app room access, zoned common-area lighting and centralized CCTV. Owners who visit periodically get away-mode security and occupancy simulation, while guest stays get lower running costs and a better experience.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring & linked plant CCTV for the SIDCUL belt" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Climate & shading for Haridwar-Roorkee summers" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Haridwar & Roorkee homes" },
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring SIDCUL-belt gated villas for KNX" },
+    ],
+  },
+
   bangalore: {
     slug: "bangalore",
     intro:
