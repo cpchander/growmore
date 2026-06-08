@@ -5,6 +5,7 @@ import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import HowWeWorkSection from "@/components/home/HowWeWorkSection";
+import ArchitectForm from "./ArchitectForm";
 import {
   ArrowRight, Ruler, FileText, Palette,
   CheckCircle, Cpu, Lightbulb, MessageCircle,
@@ -100,10 +101,10 @@ export default function ForArchitectsPage() {
                 and installation while you focus on creating beautiful spaces.
               </p>
               <Link
-                href="/contact"
+                href="#request-drawings"
                 className="inline-flex items-center gap-2 mt-8 bg-gold-500 hover:bg-gold-600 text-navy-900 px-8 py-4 rounded-xl font-semibold transition-colors"
               >
-                Start a Collaboration <ArrowRight className="w-5 h-5" />
+                Request Project Drawings <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -173,6 +174,50 @@ export default function ForArchitectsPage() {
 
       <HowWeWorkSection />
 
+      {/* Request Project Drawings */}
+      <section id="request-drawings" className="section-padding bg-navy-950 scroll-mt-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
+              Request <span className="text-gradient-gold">Project Drawings</span>
+            </h2>
+            <p className="mt-4 text-navy-300">
+              Be free from the coordination workload of home automation. Send your
+              project and we&apos;ll return the technical drawings your build needs —
+              and we never approach your client directly.
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-5 gap-8 items-start">
+            <div className="lg:col-span-2 space-y-4">
+              <div className="glass-card rounded-xl p-5 flex gap-4">
+                <CheckCircle className="w-6 h-6 text-gold-500 shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-white">We protect your client</h3>
+                  <p className="text-sm text-navy-300 mt-1">You stay the single point of contact — your name goes on the drawings.</p>
+                </div>
+              </div>
+              <div className="glass-card rounded-xl p-5 flex gap-4">
+                <FileText className="w-6 h-6 text-gold-500 shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-white">Drawings for your set</h3>
+                  <p className="text-sm text-navy-300 mt-1">Device-placement layouts, single-line wiring diagrams, conduit &amp; back-box schedules.</p>
+                </div>
+              </div>
+              <div className="glass-card rounded-xl p-5 flex gap-4">
+                <Cpu className="w-6 h-6 text-gold-500 shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-white">Free Specifier Pack</h3>
+                  <p className="text-sm text-navy-300 mt-1">KNX / Crestron / Control4 / Lutron CAD blocks &amp; cut-sheets in one bundle.</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-3">
+              <ArchitectForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="section-padding bg-navy-950">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -201,10 +246,10 @@ export default function ForArchitectsPage() {
             specs within 5 working days — free of charge.
           </p>
           <Link
-            href="/contact"
+            href="#request-drawings"
             className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-navy-900 px-8 py-4 rounded-xl font-semibold transition-colors"
           >
-            Discuss a Project <ArrowRight className="w-5 h-5" />
+            Request Project Drawings <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>

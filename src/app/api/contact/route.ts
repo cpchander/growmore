@@ -282,7 +282,7 @@ export async function POST(req: NextRequest) {
               Grow More Solutions — India's Most Experienced Home Automation Company
             </p>
             <p style="color: #445566; font-size: 10px; margin: 0;">
-              15+ Years · 600+ Projects · 12+ Cities
+              15+ Years · 600+ Projects · 25+ Cities
             </p>
           </div>
         </div>
