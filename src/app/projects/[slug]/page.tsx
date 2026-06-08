@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 import { PROJECTS } from "@/lib/projects-data";
-import { createMetadata, breadcrumbJsonLd, projectJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, projectJsonLd, faqJsonLd } from "@/lib/metadata";
 import {
   ArrowRight,
   ArrowLeft,
@@ -49,6 +49,25 @@ export default async function ProjectPage({ params }: Props) {
       ? related
       : PROJECTS.filter((p) => p.slug !== slug).slice(0, 3);
 
+  const kind = project.type.toLowerCase();
+  const faqs = [
+    {
+      question: `How much would a project like "${project.title}" cost?`,
+      answer:
+        `Every project is scoped individually, but as a guide from 300+ installations, a ${kind} of this scale typically runs from ₹10–30 Lakh+ depending on the systems included and whether it's wired (KNX/Crestron) or wireless retrofit. We provide an exact, tiered quote after a free assessment of your property.`,
+    },
+    {
+      question: `What home automation was used in this ${kind} in ${project.city}?`,
+      answer:
+        `This ${kind} (${project.area}) was delivered on a ${project.brand} platform — ${project.features.join(", ")}. ${project.description}`,
+    },
+    {
+      question: `Can Grow More Solutions deliver a similar ${kind} project for me?`,
+      answer:
+        `Yes — we design, install, program and support similar ${kind} automation across India, end-to-end and in-house. Book a free consultation and we'll plan a comparable system for your space, budget and build stage.`,
+    },
+  ];
+
   return (
     <>
       <script
@@ -76,6 +95,10 @@ export default async function ProjectPage({ params }: Props) {
             ])
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <article className="section-padding">
@@ -193,6 +216,21 @@ export default async function ProjectPage({ params }: Props) {
           </div>
 
           {/* CTA */}
+          {/* FAQ */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-white mb-6">
+              Project <span className="text-gradient-gold">FAQs</span>
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq) => (
+                <div key={faq.question} className="glass-card rounded-xl p-6">
+                  <h3 className="font-semibold text-white mb-2">{faq.question}</h3>
+                  <p className="text-sm text-navy-300 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="glass-card rounded-xl p-8 text-center mb-12">
             <h3 className="text-xl font-bold text-white mb-2">
               Want a Similar Setup for Your{" "}

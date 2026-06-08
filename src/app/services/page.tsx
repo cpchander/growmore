@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY, SERVICES } from "@/lib/constants";
-import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = createMetadata({
@@ -9,6 +9,29 @@ export const metadata: Metadata = createMetadata({
   description: `Explore ${COMPANY.name}'s smart home services — lighting, security, home theater, HVAC & whole-home integration, ${COMPANY.experience} years across India.`,
   path: "/services",
 });
+
+const faqs = [
+  {
+    question: "What home automation services does Grow More Solutions offer?",
+    answer:
+      `${COMPANY.name} provides end-to-end smart home services: complete home automation, conceptual lighting, home theater & AV, smart security & CCTV, HVAC automation, motorized curtains & gate motors, smart locks & access, home networking, smart switches, central vacuum, clean-air systems, solar power, and commercial/building automation (BMS) — all designed, installed, programmed and supported in-house.`,
+  },
+  {
+    question: "How much does home automation cost in India?",
+    answer:
+      "It depends on scope and property size. As a guide from 300+ installations: a 3BHK apartment runs roughly ₹5–10 Lakh, a 4BHK villa ₹10–20 Lakh, a 5BHK villa ₹18–30 Lakh, and a 6BHK+ farmhouse ₹28–50 Lakh+. Pre-wiring during construction is far cheaper than retrofit. We always provide an honest, tiered quote after a free assessment.",
+  },
+  {
+    question: "Which automation brands do you work with?",
+    answer:
+      "We're certified across KNX, Crestron, Control4 and Lutron, plus Sonos for audio — and we're vendor-neutral, so we recommend the right platform for your home rather than pushing one product line. For a large villa that often means a KNX wired backbone with Lutron lighting and a dedicated AV platform.",
+  },
+  {
+    question: "Can you automate an existing, already-built home?",
+    answer:
+      "Yes. For finished homes we use wireless retrofit (Lutron RA3, KNX RF, Control4 wireless) to reach 85–90% of full functionality without breaking walls. For homes under construction or renovation we plan a wired KNX/Crestron backbone, which is more reliable and scalable. We assess your build stage and recommend the right approach.",
+  },
+];
 
 export default function ServicesPage() {
   return (
@@ -23,6 +46,10 @@ export default function ServicesPage() {
             ])
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       {/* Hero */}
@@ -98,6 +125,23 @@ export default function ServicesPage() {
               <p className="text-sm font-medium text-white mb-1">Smart Home Planner</p>
               <p className="text-xs text-navy-400">Design your setup room by room</p>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-navy-900/50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-10">
+            Services <span className="text-gradient-gold">FAQs</span>
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <div key={faq.question} className="glass-card rounded-xl p-6">
+                <h3 className="font-semibold text-white mb-2">{faq.question}</h3>
+                <p className="text-sm text-navy-300 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

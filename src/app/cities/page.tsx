@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CITIES, COMPANY } from "@/lib/constants";
-import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import { MapPin, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = createMetadata({
@@ -9,6 +9,29 @@ export const metadata: Metadata = createMetadata({
   description: `${COMPANY.name} provides smart home automation services across ${COMPANY.citiesServed} cities in India. Find your city for local consultation, installation, and support.`,
   path: "/cities",
 });
+
+const faqs = [
+  {
+    question: "Which cities does Grow More Solutions serve?",
+    answer:
+      `${COMPANY.name} delivers home automation projects across 60 cities in India — from metros like Delhi NCR, Mumbai, Bangalore, Hyderabad, Pune and Chennai to tier-2 and tier-3 markets such as Surat, Coimbatore, Kochi, Ludhiana, Nagpur and Visakhapatnam. Each city has a dedicated page with local market notes, pricing and project examples.`,
+  },
+  {
+    question: "Do you charge more for projects outside Delhi NCR?",
+    answer:
+      "No — pricing follows our standard rate card regardless of city. We're based in Ghitorni, New Delhi, and serve nearby NCR-belt towns on the same operating footprint, while pan-India projects are delivered end-to-end (survey, design, supervised installation and AMC) with transparent, tiered proposals.",
+  },
+  {
+    question: "What if my city isn't listed?",
+    answer:
+      "We serve premium projects pan-India, so contact us even if your city doesn't have a dedicated page yet. We routinely deliver villa and apartment automation in cities beyond our listed markets, planning a wired KNX/Crestron backbone for new builds or wireless retrofit for finished homes.",
+  },
+  {
+    question: "Do you provide local installation and after-sales support?",
+    answer:
+      "Yes. Every project includes supervised on-site installation and structured AMC (annual maintenance) plans. For our core NCR markets we offer same-day service visits, and for other cities we schedule installation and service along regional routes, with remote diagnostics for app- and network-connected systems.",
+  },
+];
 
 export default function CitiesPage() {
   return (
@@ -23,6 +46,10 @@ export default function CitiesPage() {
             ])
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       {/* Hero */}
@@ -70,6 +97,23 @@ export default function CitiesPage() {
                   View services <ArrowRight className="w-3 h-3" />
                 </span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-10">
+            Cities <span className="text-gradient-gold">FAQs</span>
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <div key={faq.question} className="glass-card rounded-xl p-6">
+                <h3 className="font-semibold text-white mb-2">{faq.question}</h3>
+                <p className="text-sm text-navy-300 leading-relaxed">{faq.answer}</p>
+              </div>
             ))}
           </div>
         </div>

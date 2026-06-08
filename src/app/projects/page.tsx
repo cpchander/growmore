@@ -4,7 +4,7 @@ import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 import { PROJECTS, PROJECT_TYPES } from "@/lib/projects-data";
-import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import { ArrowRight, MapPin, Ruler, Tag } from "lucide-react";
 import InstagramFeed from "@/components/ui/InstagramFeed";
 
@@ -13,6 +13,29 @@ export const metadata: Metadata = createMetadata({
   description: `Browse ${COMPANY.projectsCompleted} home automation projects across India — luxury villas, apartments, penthouses, hotels & commercial, by ${COMPANY.name}.`,
   path: "/projects",
 });
+
+const faqs = [
+  {
+    question: "How many home automation projects has Grow More Solutions completed?",
+    answer:
+      `${COMPANY.name} has completed ${COMPANY.projectsCompleted} home automation projects across India over ${COMPANY.experience} years — spanning luxury villas, apartments, penthouses, farmhouses, hotels and commercial spaces in 60 cities.`,
+  },
+  {
+    question: "What types of properties do you automate?",
+    answer:
+      "Everything from a 2BHK apartment to a 6,500 sq ft sea-facing villa, a 200-unit apartment complex, and 50-room hotels. Our case studies include KNX wired villas, Control4 penthouses, bulk developer deployments, and hospitality guest-room automation — each scoped to the property and budget.",
+  },
+  {
+    question: "Can I see real photos of your completed work?",
+    answer:
+      "Yes — our project gallery and Instagram feed show real installations, and you can book a visit to our Experience Center in Ghitorni, New Delhi to see KNX, Crestron, Control4 and Lutron systems working live before you invest.",
+  },
+  {
+    question: "Will you share references or arrange a site visit?",
+    answer:
+      "For serious enquiries we can share relevant references and, where clients permit, arrange to view a comparable completed project. The fastest first step is a free consultation — we'll assess your property and show you what a similar setup would involve.",
+  },
+];
 
 export default function ProjectsPage() {
   // Group projects by city for structured display
@@ -30,6 +53,10 @@ export default function ProjectsPage() {
             ])
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <section className="section-padding">
@@ -191,6 +218,21 @@ export default function ProjectsPage() {
           {/* Instagram Gallery — Real Project Photos */}
           <div className="mb-16">
             <InstagramFeed count={3} />
+          </div>
+
+          {/* FAQ */}
+          <div className="mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-8">
+              Projects <span className="text-gradient-gold">FAQs</span>
+            </h2>
+            <div className="max-w-3xl mx-auto space-y-4">
+              {faqs.map((faq) => (
+                <div key={faq.question} className="glass-card rounded-xl p-6">
+                  <h3 className="font-semibold text-white mb-2">{faq.question}</h3>
+                  <p className="text-sm text-navy-300 leading-relaxed">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* CTA */}

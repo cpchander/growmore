@@ -89,6 +89,37 @@ GMHS's operational infrastructure (recruitment, training, quality systems) also 
 - [Smart Home Planner Tool](https://growmoresolutions.com/smart-home-planner)
 - [Get a Quote](https://growmoresolutions.com/get-quote)
 
+- [Home Automation Cost — Complete Pricing Guide](https://growmoresolutions.com/blog/home-automation-cost-india-complete-guide)
+- [From Smart Homes to Global Staffing: 17 Years of Technical Operations](https://growmoresolutions.com/blog/technical-operations-remote-staffing)
+
+## Services
+
+GMHS delivers end-to-end home automation services, each with a detailed page (pricing tiers, process, FAQs). Overview: https://growmoresolutions.com/services
+
+- [Home Automation](https://growmoresolutions.com/services/home-automation)
+- [Conceptual Lighting](https://growmoresolutions.com/services/conceptual-lighting)
+- [Home Theater & AV](https://growmoresolutions.com/services/home-theater)
+- [Smart Security & CCTV](https://growmoresolutions.com/services/home-security)
+- [Central Vacuum System](https://growmoresolutions.com/services/central-vacuum)
+- [Clean Air Systems](https://growmoresolutions.com/services/clean-air-systems)
+- [Solar Power Systems](https://growmoresolutions.com/services/solar-power)
+- [HVAC Automation](https://growmoresolutions.com/services/hvac-automation)
+- [Commercial Automation](https://growmoresolutions.com/services/commercial)
+- [Smart Locks & Access Control](https://growmoresolutions.com/services/smart-locks)
+- [Home Networking & WiFi](https://growmoresolutions.com/services/home-networking)
+- [Smart Switches & Keypads](https://growmoresolutions.com/services/smart-switches)
+- [Curtain & Gate Motors](https://growmoresolutions.com/services/curtain-gate-motors)
+- [Building Automation & BMS](https://growmoresolutions.com/services/building-automation-bms)
+
+## Brand Pages
+
+Certified, vendor-neutral partner across the major platforms — dedicated pages compare each for Indian homes. Overview: https://growmoresolutions.com/brands
+
+- [KNX Home Automation in India](https://growmoresolutions.com/brands/knx)
+- [Crestron Home Automation in India](https://growmoresolutions.com/brands/crestron)
+- [Control4 Home Automation in India](https://growmoresolutions.com/brands/control4)
+- [Lutron Home Automation in India](https://growmoresolutions.com/brands/lutron)
+- [Sonos Home Automation in India](https://growmoresolutions.com/brands/sonos)
 ## Cities We Serve
 
 GMHS provides home automation across 60 cities in India, each with a dedicated local page covering market specifics, pricing tiers, and anonymized project examples. Full directory: https://growmoresolutions.com/cities

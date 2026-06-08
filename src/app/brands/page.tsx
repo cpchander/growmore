@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 import { BRAND_DETAILS } from "@/lib/brands-data";
-import { createMetadata, breadcrumbJsonLd } from "@/lib/metadata";
+import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import {
   ArrowRight,
   Shield,
@@ -18,6 +18,29 @@ export const metadata: Metadata = createMetadata({
   path: "/brands",
 });
 
+const faqs = [
+  {
+    question: "Which home automation brands does Grow More Solutions install?",
+    answer:
+      `${COMPANY.name} is a certified partner for KNX, Crestron, Control4 and Lutron, plus Sonos for multi-room audio. We're vendor-neutral, so we specify the right platform per project rather than pushing one brand — and we have dedicated comparison pages for each.`,
+  },
+  {
+    question: "KNX vs Crestron vs Control4 — which is best for my home?",
+    answer:
+      "It depends on budget, scale and whether the home is wired or retrofit. KNX is the open, ultra-reliable wired standard ideal for large villas; Crestron is ultra-premium custom automation; Control4 is excellent mid-premium with strong AV and wireless options; Lutron leads on lighting and shading. We often combine them — e.g. a KNX backbone with Lutron lighting — and recommend based on your needs, not commissions.",
+  },
+  {
+    question: "Are you an authorized dealer for these brands?",
+    answer:
+      "Yes — we are an authorized dealer and certified installer, with in-house programming capability (KNX ETS, Crestron SIMPL, Control4 Composer Pro). That means no outsourced programming and proper warranty-backed systems rather than grey-market hardware.",
+  },
+  {
+    question: "Can different brands work together in one home?",
+    answer:
+      "Absolutely — multi-brand integration is one of our core strengths. A typical luxury build might use a KNX wired backbone for lighting and climate, Lutron for premium shading, a dedicated AV platform for the home theater, and Sonos for casual audio, all unified under one touch-panel and app interface.",
+  },
+];
+
 export default function BrandsPage() {
   return (
     <>
@@ -31,6 +54,10 @@ export default function BrandsPage() {
             ])
           ),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
       />
 
       <section className="section-padding">
@@ -164,6 +191,23 @@ export default function BrandsPage() {
                 Get Expert Advice <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-navy-900/50">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-10">
+            Brands <span className="text-gradient-gold">FAQs</span>
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <div key={faq.question} className="glass-card rounded-xl p-6">
+                <h3 className="font-semibold text-white mb-2">{faq.question}</h3>
+                <p className="text-sm text-navy-300 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
