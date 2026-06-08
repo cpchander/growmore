@@ -1,7 +1,7 @@
 export const content = `
-## Motorized Curtains & Blinds in India 2026: ₹8,000–₹2.4 Lakh+ Per Window — What 300+ GMHS Installations Reveal
+## Motorized Curtains & Blinds in India 2026: ₹8,000–₹2.4 Lakh+ Per Window — What 600+ GMHS Installations Reveal
 
-Based on 300+ GMHS installations across 12 Indian cities, motorized curtains and blinds for a premium home cost between ₹8,000 per window (basic Wi-Fi roller blinds) and ₹2.4 Lakh+ per window (Lutron Sivoia QS with linen fabric and KNX integration). In our project data, a typical 4BHK villa runs ₹4.5–₹18 Lakh for full motorized shading across 22–30 openings, and integrated occupancy + solar-tracking logic saves an additional 14–22% on HVAC load. This guide breaks down the Somfy vs Lutron vs Hunter Douglas decision, KNX/Modbus integration economics, and the design errors that force ₹2–6 Lakh in mid-project rework.
+Based on 600+ GMHS installations across 12 Indian cities, motorized curtains and blinds for a premium home cost between ₹8,000 per window (basic Wi-Fi roller blinds) and ₹2.4 Lakh+ per window (Lutron Sivoia QS with linen fabric and KNX integration). In our project data, a typical 4BHK villa runs ₹4.5–₹18 Lakh for full motorized shading across 22–30 openings, and integrated occupancy + solar-tracking logic saves an additional 14–22% on HVAC load. This guide breaks down the Somfy vs Lutron vs Hunter Douglas decision, KNX/Modbus integration economics, and the design errors that force ₹2–6 Lakh in mid-project rework.
 
 ---
 

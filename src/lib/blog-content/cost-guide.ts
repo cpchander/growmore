@@ -1,12 +1,12 @@
 export const content = `## Summary: Home Automation Cost in India — Complete Guide
 
-Home automation in India costs **₹2–5 Lakh** for basic 2–3 BHK wireless packages (Wipro, Sonoff), **₹5–15 Lakh** for mid-premium 3–4 BHK systems (Control4, Lutron), and **₹15–50 Lakh+** for luxury villa automation with KNX or Crestron. Based on 300+ GMHS installations across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune over 15+ years, the average 4BHK automation project costs ₹12–18 Lakh with professional installation, programming, and commissioning included.
+Home automation in India costs **₹2–5 Lakh** for basic 2–3 BHK wireless packages (Wipro, Sonoff), **₹5–15 Lakh** for mid-premium 3–4 BHK systems (Control4, Lutron), and **₹15–50 Lakh+** for luxury villa automation with KNX or Crestron. Based on 600+ GMHS installations across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune over 15+ years, the average 4BHK automation project costs ₹12–18 Lakh with professional installation, programming, and commissioning included.
 
 ## What Does Home Automation Cost in India?
 
 Home automation costs in India range from **₹2-5 Lakh** for basic packages to **₹50 Lakh or more** for luxury whole-home automation with premium brands like KNX or Crestron. The exact cost depends on your property size, number of rooms, automation features, brand selection, and whether you are building new or retrofitting an existing home.
 
-If you are searching for a definitive answer to "how much does a smart home cost in India," this guide will give you the complete picture — based on our **15+ years** of experience and **300+ completed projects** across India.
+If you are searching for a definitive answer to "how much does a smart home cost in India," this guide will give you the complete picture — based on our **15+ years** of experience and **600+ completed projects** across India.
 
 Unlike most guides that give vague ranges, we will break down the cost by property type, automation category, brand tier, and city — so you can build an accurate budget before your first consultation.
 
@@ -288,7 +288,7 @@ Budget ₹15,000-30,000 per year for an Annual Maintenance Contract (AMC). This 
 
 ## Why Choose Grow More Solutions for Home Automation?
 
-With [15+ years of experience](/about/our-story) and [300+ completed projects](/projects), we are among India's most experienced home automation specialists. Here is what sets us apart:
+With [15+ years of experience](/about/our-story) and [600+ completed projects](/projects), we are among India's most experienced home automation specialists. Here is what sets us apart:
 
 - **Multi-brand expertise** — certified KNX, Crestron, Control4, and Lutron partners
 - **End-to-end delivery** — consultation, design, wiring, installation, programming, and support

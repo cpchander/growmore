@@ -5,7 +5,7 @@ export const content = `
 
 If you are building or renovating a premium home in India and the automation conversation has begun, the single most consequential decision you will make — before picking brands, budgets, or room-by-room scope — is whether to go wired, wireless, or hybrid. Get this wrong and you are either ripping open finished walls 18 months later or accepting a system that drops commands every monsoon.
 
-This guide breaks down the wired vs wireless decision with real cost data from 300+ GMHS installations across 12 Indian cities, covers every protocol that matters in 2026 (KNX, Crestron, Control4, Lutron, Zigbee, Z-Wave, Matter/Thread, Wi-Fi), and gives you the decision framework we actually use when specifying systems for ₹2 Lakh to ₹50 Lakh+ projects.
+This guide breaks down the wired vs wireless decision with real cost data from 600+ GMHS installations across 12 Indian cities, covers every protocol that matters in 2026 (KNX, Crestron, Control4, Lutron, Zigbee, Z-Wave, Matter/Thread, Wi-Fi), and gives you the decision framework we actually use when specifying systems for ₹2 Lakh to ₹50 Lakh+ projects.
 
 ### Key Takeaways
 
@@ -238,5 +238,5 @@ Yes — this is the hybrid approach we recommend for 60%+ of projects. KNX suppo
 
 **Ready for a quote?** Use our [instant quote calculator](/get-quote) for a budget estimate, or [book a free consultation](/contact) at our Ghitorni, New Delhi showroom — we will walk you through a working hybrid KNX + wireless installation so you can see and feel the difference.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's leading home automation integrator with 15+ years of experience and 300+ installations across 12 cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's leading home automation integrator with 15+ years of experience and 600+ installations across 12 cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

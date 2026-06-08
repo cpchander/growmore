@@ -10,8 +10,9 @@ export const COMPANY = {
   foundedYear: 2009,
   experience: "15+",
   founderExperience: "25+", // Anupam Mahajan's total industry experience
-  projectsCompleted: "300+",
-  citiesServed: "15+",
+  projectsCompleted: "600+",
+  citiesServed: "25+",
+  referralRate: "40%",
   phone: "+91-96678-95926",
   whatsapp: "919667895926",
   email: "sales@growmoresolutions.com",
@@ -235,9 +236,9 @@ export const BRANDS = [
 
 export const STATS = [
   { value: 15, suffix: "+", label: "Years Experience" },
-  { value: 300, suffix: "+", label: "Projects Completed" },
-  { value: 15, suffix: "+", label: "Cities Served" },
-  { value: 25, suffix: "+", label: "Expert Engineers" },
+  { value: 600, suffix: "+", label: "Projects Completed" },
+  { value: 25, suffix: "+", label: "Cities Served" },
+  { value: 40, suffix: "%", label: "Client Referral Rate" },
 ] as const;
 
 export const PROCESS_STEPS = [

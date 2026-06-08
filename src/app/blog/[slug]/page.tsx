@@ -317,7 +317,7 @@ export default async function BlogPostPage({ params }: Props) {
       url: "https://growmoresolutions.com",
     },
     knowsAbout: ["home automation", "KNX", "Crestron", "Control4", "smart home design", "building automation", "HVAC"],
-    description: "25+ years in home automation and building technology. KNX-certified. Led 300+ residential automation projects across 12 Indian cities.",
+    description: "25+ years in home automation and building technology. KNX-certified. Led 600+ residential automation projects across 12 Indian cities.",
     image: "https://growmoresolutions.com/images/team/anupam-mahajan.webp",
   };
 
@@ -550,7 +550,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <p className="font-semibold text-white">Anupam Mahajan</p>
                   <p className="text-xs text-gold-500 mb-1">Co-Founder & Managing Director</p>
                   <p className="text-sm text-navy-400">
-                    25+ years in home automation. KNX-certified. Led 300+ residential automation projects across 12 Indian cities.
+                    25+ years in home automation. KNX-certified. Led 600+ residential automation projects across 12 Indian cities.
                   </p>
                   <Link href="/about/team" className="text-xs text-gold-500 hover:text-gold-400 mt-1 inline-block">
                     View full profile →
@@ -635,7 +635,7 @@ export default async function BlogPostPage({ params }: Props) {
                       `${COMPANY.experience} Years Experience`,
                       `${COMPANY.projectsCompleted} Projects Delivered`,
                       "Certified KNX & Crestron Partner",
-                      "15+ Cities Across India",
+                      "25+ Cities Across India",
                       "Free Site Assessment",
                     ].map((item) => (
                       <li

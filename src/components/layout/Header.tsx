@@ -21,7 +21,7 @@ const SOLUTION_LINKS = [
 ];
 
 const PROJECT_LINKS = [
-  { href: "/projects", label: "Project Gallery", desc: "300+ completed smart home projects", icon: FolderOpen },
+  { href: "/projects", label: "Project Gallery", desc: "600+ completed smart home projects", icon: FolderOpen },
   { href: "/brands", label: "Our Brands", desc: "KNX, Crestron, Lutron, Control4 & more", icon: Award },
   { href: "/compare", label: "Brand Comparison", desc: "Compare automation brands side-by-side", icon: GitCompare },
 ];

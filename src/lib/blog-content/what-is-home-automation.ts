@@ -3,7 +3,7 @@ export const content = `
 
 **Last updated: 8 June 2026**
 
-If you've heard the terms "home automation," "smart home," or "domotics" and wondered what they actually mean — and whether any of it is worth your money in an Indian home with power cuts, bad air, and old wiring — this guide is for you. We'll explain what home automation is, how it works in plain language, what you can automate, what it costs in India, and how to get started, drawing on 15+ years and 300+ installations across the country.
+If you've heard the terms "home automation," "smart home," or "domotics" and wondered what they actually mean — and whether any of it is worth your money in an Indian home with power cuts, bad air, and old wiring — this guide is for you. We'll explain what home automation is, how it works in plain language, what you can automate, what it costs in India, and how to get started, drawing on 15+ years and 600+ installations across the country.
 
 ### Key Takeaways
 
@@ -205,5 +205,5 @@ IoT (Internet of Things) is the broad technology of internet-connected devices t
 
 **Ready to talk to someone?** [Book a free consultation](/contact) at our Ghitorni, New Delhi Experience Center, where you can see a working smart home before you invest — and get a system designed around an Indian home's realities.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 300+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 600+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

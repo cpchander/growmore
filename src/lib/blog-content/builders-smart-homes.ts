@@ -2,7 +2,7 @@ export const content = `*Last updated: June 8, 2026*
 
 ## Summary: Why Smart Home Packages Are Essential for Builders in 2026
 
-Indian builders offering smart home automation packages report 8–15% higher per-square-foot realization, 2x faster sales velocity for premium units, and stronger brand differentiation. Based on GMHS data from 15+ years and 300+ projects across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune, the automation cost to builders is ₹1.5–3 Lakh per unit (3–4 BHK) while the premium realized is ₹5–12 Lakh — a 3–4x ROI on every smart-home-ready apartment delivered.
+Indian builders offering smart home automation packages report 8–15% higher per-square-foot realization, 2x faster sales velocity for premium units, and stronger brand differentiation. Based on GMHS data from 15+ years and 600+ projects across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune, the automation cost to builders is ₹1.5–3 Lakh per unit (3–4 BHK) while the premium realized is ₹5–12 Lakh — a 3–4x ROI on every smart-home-ready apartment delivered.
 
 ## Key Takeaways
 
@@ -100,7 +100,7 @@ Builders who start now build a reputation and operational capability that will b
 
 ## What Buyers Actually Want — Smart Home Features by Priority
 
-Based on our experience with 300+ projects and buyer feedback from builder partnerships:
+Based on our experience with 600+ projects and buyer feedback from builder partnerships:
 
 ### Must-Have Features (Non-Negotiable for Premium Units)
 
@@ -374,7 +374,7 @@ We advise builders on proper documentation and RERA-compliant pricing structures
 We are among India's most experienced home automation specialists for builder partnerships:
 
 - **15+ years** in home automation — since before it was mainstream
-- **300+ projects** delivered, including multi-tower residential and luxury villas
+- **600+ projects** delivered, including multi-tower residential and luxury villas
 - **Multi-brand certified** — [KNX, Crestron, Control4, Lutron](/about/certifications)
 - **End-to-end delivery** — design, wiring supervision, installation, programming, training, AMC
 - **No subcontracting** — our in-house team handles everything
@@ -392,7 +392,7 @@ Whether you are building a **20-unit boutique villa project** or a **500-unit to
 
 ### How much does smart home automation add to per-unit construction cost?
 
-At project scale (50+ units), a standard smart package adds **₹2-4 Lakh per unit** to construction cost — including hardware, installation, and programming. Pre-wiring alone (without devices) adds just **₹20,000-40,000 per unit.** For detailed cost analysis, see our [home automation cost guide](/blog/home-automation-cost-india-complete-guide) and the [2026 pricing breakdown from 300+ installations](/blog/home-automation-cost-2026).
+At project scale (50+ units), a standard smart package adds **₹2-4 Lakh per unit** to construction cost — including hardware, installation, and programming. Pre-wiring alone (without devices) adds just **₹20,000-40,000 per unit.** For detailed cost analysis, see our [home automation cost guide](/blog/home-automation-cost-india-complete-guide) and the [2026 pricing breakdown from 600+ installations](/blog/home-automation-cost-2026).
 
 ### Can smart home features be offered as an optional upgrade?
 
@@ -430,4 +430,4 @@ Yes. As part of our builder partnership, we provide:
 
 We deliver builder projects across [Delhi NCR](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow).
 
-*Prices indicative as of June 2026, subject to change based on scope, brand, and project size. All figures are based on GMHS installation data across 300+ projects in 12 Indian cities. Third-party market figures cited from Mordor Intelligence, JLL, Zillow and Reuters as of June 2026.*`;
+*Prices indicative as of June 2026, subject to change based on scope, brand, and project size. All figures are based on GMHS installation data across 600+ projects in 12 Indian cities. Third-party market figures cited from Mordor Intelligence, JLL, Zillow and Reuters as of June 2026.*`;

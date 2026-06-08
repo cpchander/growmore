@@ -1,7 +1,7 @@
 export const content = `
-## Smart HVAC & Climate Control in India: ₹2 Lakh–35 Lakh+ — What 300+ GMHS Installations Reveal
+## Smart HVAC & Climate Control in India: ₹2 Lakh–35 Lakh+ — What 600+ GMHS Installations Reveal
 
-Based on 300+ GMHS installations across 12 Indian cities, integrated smart HVAC & climate control for a premium home costs between ₹2 Lakh (multi-room split AC integration) and ₹35 Lakh+ (full VRV/VRF system with KNX zone control, IAQ sensors, and motorized dampers). In our project data, properly designed zone control reduces HVAC energy consumption by 28–42% in Indian conditions — far higher than the 15–20% commonly quoted by global brands, because Indian homes run AC 8–10 months a year. This guide breaks down VRV vs split system economics, KNX/Modbus integration costs, and the design mistakes that cost homeowners ₹3–8 Lakh in rework.
+Based on 600+ GMHS installations across 12 Indian cities, integrated smart HVAC & climate control for a premium home costs between ₹2 Lakh (multi-room split AC integration) and ₹35 Lakh+ (full VRV/VRF system with KNX zone control, IAQ sensors, and motorized dampers). In our project data, properly designed zone control reduces HVAC energy consumption by 28–42% in Indian conditions — far higher than the 15–20% commonly quoted by global brands, because Indian homes run AC 8–10 months a year. This guide breaks down VRV vs split system economics, KNX/Modbus integration costs, and the design mistakes that cost homeowners ₹3–8 Lakh in rework.
 
 ---
 

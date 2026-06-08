@@ -1,6 +1,6 @@
 export const content = `## Summary: What Home Automation Costs in India (2026)
 
-Home automation in India costs **₹5–50 Lakh+** for premium 3–6 BHK homes in Mumbai, Delhi NCR, and Bangalore, depending on brand selection, automation scope, and property size. Based on 300+ GMHS installations across 12 cities over 15 years: an average **4BHK villa costs ₹12–18 Lakh**, a **6BHK farmhouse runs ₹28–45 Lakh**, and the typical budget split is **40% lighting, 30% AV, 20% security, 10% climate control**.
+Home automation in India costs **₹5–50 Lakh+** for premium 3–6 BHK homes in Mumbai, Delhi NCR, and Bangalore, depending on brand selection, automation scope, and property size. Based on 600+ GMHS installations across 12 cities over 15 years: an average **4BHK villa costs ₹12–18 Lakh**, a **6BHK farmhouse runs ₹28–45 Lakh**, and the typical budget split is **40% lighting, 30% AV, 20% security, 10% climate control**.
 
 These are not estimates pulled from manufacturer brochures. These are real numbers from commissioned projects — with wiring installed, systems programmed, scenes tested, and homeowners trained.
 
@@ -8,7 +8,7 @@ This guide breaks down the cost by home size, brand, and automation scope so you
 
 ## Cost Breakdown by Home Size
 
-Every home automation project is different, but after 300+ installations, clear pricing patterns emerge by property size. The ranges below assume premium brands (KNX, Crestron, Control4, or Lutron) with professional installation and programming.
+Every home automation project is different, but after 600+ installations, clear pricing patterns emerge by property size. The ranges below assume premium brands (KNX, Crestron, Control4, or Lutron) with professional installation and programming.
 
 | Home Size | Typical Cost Range | What's Included | Average Project (GMHS Data) |
 |-----------|-------------------|-----------------|---------------------------|
@@ -102,7 +102,7 @@ Adds multi-room audio (Sonos or in-ceiling speakers), a dedicated home theater s
 
 Everything above, plus: IP CCTV (8–16 cameras), smart locks, video door phone, HVAC zone control, energy monitoring, gate automation, and centralized control via wall-mounted touch panels. This is where KNX and Crestron truly shine — the integration depth across subsystems is what justifies the premium.
 
-Our data from 300+ projects shows the average full automation project at GMHS is ₹18.6 Lakh, with the median at ₹15.2 Lakh. The gap between average and median reflects a small number of ultra-luxury projects (₹40 Lakh+) that pull the average up.
+Our data from 600+ projects shows the average full automation project at GMHS is ₹18.6 Lakh, with the median at ₹15.2 Lakh. The gap between average and median reflects a small number of ultra-luxury projects (₹40 Lakh+) that pull the average up.
 
 ## What Drives Cost Variation by City?
 
@@ -169,7 +169,7 @@ For a meaningful automation experience in a 3BHK apartment — smart lighting (1
 
 ### Does home automation increase property value?
 
-Yes. Our data from 300+ installations shows automated homes sell at **8–15% premium** over comparable non-automated properties. KNX and Crestron systems add the most value because buyers recognize them as permanent infrastructure, not removable gadgets. A ₹15 Lakh automation investment in a ₹2 Cr property typically adds ₹20–30 Lakh to resale value.
+Yes. Our data from 600+ installations shows automated homes sell at **8–15% premium** over comparable non-automated properties. KNX and Crestron systems add the most value because buyers recognize them as permanent infrastructure, not removable gadgets. A ₹15 Lakh automation investment in a ₹2 Cr property typically adds ₹20–30 Lakh to resale value.
 
 ### How long does a full automation installation take?
 

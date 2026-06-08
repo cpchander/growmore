@@ -1,7 +1,7 @@
 export const content = `
-## Home Theater & AV Automation in India: ₹3 Lakh–2 Crore+ — What 300+ GMHS Installations Reveal
+## Home Theater & AV Automation in India: ₹3 Lakh–2 Crore+ — What 600+ GMHS Installations Reveal
 
-Based on 300+ GMHS installations across 12 Indian cities, a true home theater with Dolby Atmos, 4K HDR projection, and one-touch automation costs between ₹3 Lakh (entry media room) and ₹2 Crore+ (reference-grade 13.1.6 cinema). The single biggest spend driver isn't the projector — it's the speaker package and acoustic treatment, which together consume 45–60% of any premium home theater budget. This guide breaks down real costs, channel configurations, AV automation choices, and the design mistakes that cost Indian homeowners ₹10–25 Lakh in rebuilds.
+Based on 600+ GMHS installations across 12 Indian cities, a true home theater with Dolby Atmos, 4K HDR projection, and one-touch automation costs between ₹3 Lakh (entry media room) and ₹2 Crore+ (reference-grade 13.1.6 cinema). The single biggest spend driver isn't the projector — it's the speaker package and acoustic treatment, which together consume 45–60% of any premium home theater budget. This guide breaks down real costs, channel configurations, AV automation choices, and the design mistakes that cost Indian homeowners ₹10–25 Lakh in rebuilds.
 
 ---
 
@@ -218,7 +218,7 @@ If you are building a villa, the home theater starts with the conduit drawings, 
 
 ### What is the realistic minimum budget for a Dolby Atmos home theater in India?
 
-Based on 300+ GMHS installations, ₹3 Lakh is the entry point for a 5.1.2 Atmos media room with budget speakers, an entry-level AVR (Denon AVR-X2800H), basic acoustic foam, and a 75–85" LED TV or short-throw projector. A genuinely good Atmos experience in a dedicated room typically starts at ₹8–12 Lakh with a 5.1.4 configuration, proper KEF/B&W speakers, a JVC or Sony projector, and at least minimal acoustic treatment. Below ₹3 Lakh, you are buying components — not building a theater.
+Based on 600+ GMHS installations, ₹3 Lakh is the entry point for a 5.1.2 Atmos media room with budget speakers, an entry-level AVR (Denon AVR-X2800H), basic acoustic foam, and a 75–85" LED TV or short-throw projector. A genuinely good Atmos experience in a dedicated room typically starts at ₹8–12 Lakh with a 5.1.4 configuration, proper KEF/B&W speakers, a JVC or Sony projector, and at least minimal acoustic treatment. Below ₹3 Lakh, you are buying components — not building a theater.
 
 ### How much does Dolby Atmos actually improve over 5.1 in a real Indian home?
 
@@ -262,5 +262,5 @@ For pricing on related smart-home work, see our [home automation cost guide for 
 
 {{CTA:Book a Free Home Theater Consultation:/get-quote}}
 
-*Prices indicative as of May 2026, subject to change based on customs duty, FX rates, and brand pricing. All recommendations are based on GMHS installation data across 300+ projects in 12 Indian cities; specific configurations depend on site conditions and project scope.*
+*Prices indicative as of May 2026, subject to change based on customs duty, FX rates, and brand pricing. All recommendations are based on GMHS installation data across 600+ projects in 12 Indian cities; specific configurations depend on site conditions and project scope.*
 `;

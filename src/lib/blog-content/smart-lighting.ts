@@ -1,12 +1,12 @@
 export const content = `## Summary: Smart Lighting Automation for Indian Homes
 
-Smart lighting automation in India costs **₹1–7 Lakh** for a 3BHK apartment and **₹4–15 Lakh** for a 4–5 BHK villa, depending on brand selection (KNX, Lutron, Control4, or wireless). Based on 300+ GMHS installations across 12 cities, lighting accounts for **25–35% of total automation budgets** but delivers over 50% of daily-use value — making it the highest-ROI entry point into home automation. Professional scene control, circadian dimming, and energy monitoring are now standard in premium Indian homes.
+Smart lighting automation in India costs **₹1–7 Lakh** for a 3BHK apartment and **₹4–15 Lakh** for a 4–5 BHK villa, depending on brand selection (KNX, Lutron, Control4, or wireless). Based on 600+ GMHS installations across 12 cities, lighting accounts for **25–35% of total automation budgets** but delivers over 50% of daily-use value — making it the highest-ROI entry point into home automation. Professional scene control, circadian dimming, and energy monitoring are now standard in premium Indian homes.
 
 ## Why Smart Lighting Is the #1 Home Automation Feature in India
 
 Smart lighting is the **most popular entry point** into home automation — and for good reason. It is visible every single day, dramatically transforms your living experience, and offers clear ROI through energy savings and convenience.
 
-If you are considering home automation for the first time, **start with lighting.** It accounts for **25-35% of most automation budgets** but delivers over 50% of the daily-use value. Every client we have worked with in our **15+ years and 300+ projects** across India agrees: smart lighting was the feature that made the biggest difference in their daily lives.
+If you are considering home automation for the first time, **start with lighting.** It accounts for **25-35% of most automation budgets** but delivers over 50% of the daily-use value. Every client we have worked with in our **15+ years and 600+ projects** across India agrees: smart lighting was the feature that made the biggest difference in their daily lives.
 
 This guide covers everything you need to know about smart lighting for Indian homes — from basic on/off control to advanced daylight harvesting and circadian rhythm lighting. Whether you live in a [2BHK apartment in Mumbai](/cities/mumbai) or a [luxury villa in Goa](/cities/goa), we will help you choose the right lighting system.
 
@@ -212,7 +212,7 @@ We collaborate closely with [architects](/solutions/for-architects) and interior
 4. **Program scenes** — create 5-10 scenes per room based on lifestyle analysis
 5. **Commission and tune** — adjust brightness levels and fade rates on-site
 
-This is our [conceptual lighting service](/services/conceptual-lighting) — one of the most requested services across our 300+ projects.
+This is our [conceptual lighting service](/services/conceptual-lighting) — one of the most requested services across our 600+ projects.
 
 {{CTA:Design Your Smart Lighting — Book Free Consultation:/contact}}
 

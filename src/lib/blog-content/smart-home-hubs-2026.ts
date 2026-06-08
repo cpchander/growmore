@@ -97,5 +97,5 @@ A consumer hub is a centralized, mostly-wireless, often cloud-dependent box for 
 
 **Planning a serious home?** A consumer hub may not be enough — explore our [home automation service](/services/home-automation) and [plan your system](/smart-home-planner), or [book a free consultation](/contact) to see a professional KNX/Control4 system working at our New Delhi Experience Center.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 300+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 600+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

@@ -89,5 +89,5 @@ A starter DIY setup — tunable bulbs, a couple of smart plugs, a smart AC contr
 
 **Ready to plan it?** Use the [Smart Home Planner](/smart-home-planner) to configure your office, or [book a free consultation](/contact) — we design the lighting, climate, blinds, and the network that makes it all reliable.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 300+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 600+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

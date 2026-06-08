@@ -264,7 +264,7 @@ export default async function ServicePage({ params }: Props) {
             <div className="grid sm:grid-cols-3 gap-3">
               <Link href="/blog/home-automation-cost-2026" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">
                 <p className="text-sm font-medium text-white mb-1">Cost Guide 2026</p>
-                <p className="text-xs text-navy-400">Real pricing from 300+ installations</p>
+                <p className="text-xs text-navy-400">Real pricing from 600+ installations</p>
               </Link>
               {slug === "home-theater" && (
                 <Link href="/blog/home-theater-av-automation-india" className="glass-card rounded-lg p-4 hover:border-gold-500/20 transition-colors">

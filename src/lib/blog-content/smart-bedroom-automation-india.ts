@@ -92,5 +92,5 @@ Sleep science favours a cooler room, but in Indian summers a realistic, power-se
 
 **Ready to design your bedroom?** Use the [Smart Home Planner](/smart-home-planner) to configure it room-by-room, or [book a free consultation](/contact) at our New Delhi Experience Center.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 300+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 600+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

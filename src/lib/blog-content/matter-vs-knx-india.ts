@@ -5,7 +5,7 @@ export const content = `
 
 If you are specifying automation for a new villa, penthouse, or apartment in India, you have almost certainly run into two names that sound like rivals: **KNX**, the decades-old professional building-control standard, and **Matter**, the consumer interoperability standard backed by Apple, Google, Amazon, and Samsung. The internet frames it as a fight. It isn't.
 
-This guide explains exactly what each standard is, where each genuinely wins, what they cost in India in 2026, and the insight almost every comparison buries: for a serious home, the right answer is usually **not** "Matter or KNX" but **"KNX as the backbone, Matter as the layer on top."** We base this on 15+ years and 300+ installations across India, and on the official position of the KNX Association itself.
+This guide explains exactly what each standard is, where each genuinely wins, what they cost in India in 2026, and the insight almost every comparison buries: for a serious home, the right answer is usually **not** "Matter or KNX" but **"KNX as the backbone, Matter as the layer on top."** We base this on 15+ years and 600+ installations across India, and on the official position of the KNX Association itself.
 
 ### Key Takeaways
 
@@ -111,7 +111,7 @@ Net: both can be secured to a high standard; Matter is secure out of the box, wh
 
 ## The GMHS Verdict
 
-After 300+ installations, our position mirrors the industry's honest consensus:
+After 600+ installations, our position mirrors the industry's honest consensus:
 
 - For a **new-build premium home or villa in India**, specify a **KNX wired backbone** for lighting, climate, shading, and energy. It is the system you install once and rely on for decades, and it protects the value of a home you have spent crores building.
 - **Add Matter via a gateway** when the family wants voice assistants, off-the-shelf consumer devices, or the flexibility of multiple app ecosystems. You get KNX reliability with Matter convenience.
@@ -155,5 +155,5 @@ Yes — arguably more so. Because KNX is a wired, deterministic bus that doesn't
 
 **Ready for a recommendation?** Use our [instant quote calculator](/get-quote) for a budget estimate, or [book a free consultation](/contact) at our Ghitorni, New Delhi Experience Center — we will show you a working KNX system, with Matter devices bridged in, so you can decide what's right for your home.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's leading home automation integrator with 15+ years of experience and 300+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's leading home automation integrator with 15+ years of experience and 600+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

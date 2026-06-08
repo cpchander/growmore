@@ -77,7 +77,7 @@ const MILESTONES = [
     title: "Digital-First Future",
     description:
       "Launched growmoresolutions.com — a digital-first platform for smart home planning, product comparison, and instant quotes. Pioneering AI-powered home automation with predictive climate and adaptive lighting.",
-    highlight: "300+ projects, digital transformation",
+    highlight: "600+ projects, digital transformation",
   },
 ];
 

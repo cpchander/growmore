@@ -54,7 +54,7 @@ export default async function ProjectPage({ params }: Props) {
     {
       question: `How much would a project like "${project.title}" cost?`,
       answer:
-        `Every project is scoped individually, but as a guide from 300+ installations, a ${kind} of this scale typically runs from ₹10–30 Lakh+ depending on the systems included and whether it's wired (KNX/Crestron) or wireless retrofit. We provide an exact, tiered quote after a free assessment of your property.`,
+        `Every project is scoped individually, but as a guide from 600+ installations, a ${kind} of this scale typically runs from ₹10–30 Lakh+ depending on the systems included and whether it's wired (KNX/Crestron) or wireless retrofit. We provide an exact, tiered quote after a free assessment of your property.`,
     },
     {
       question: `What home automation was used in this ${kind} in ${project.city}?`,

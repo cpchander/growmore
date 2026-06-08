@@ -89,5 +89,5 @@ The good ones do. Zigbee, Thread, and wired KNX sensors run locally through a hu
 
 **Ready to design it?** Use the [Smart Home Planner](/smart-home-planner) to configure your system, or [book a free consultation](/contact) — we'll specify the right sensors for your rooms, pets, and climate.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 300+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 600+ installations across 15+ cities. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

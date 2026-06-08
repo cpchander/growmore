@@ -157,7 +157,7 @@ export const BLOG_POSTS: BlogPost[] = [
     featured: true,
     image: "/images/blog/matter-vs-knx-india.webp",
     imageAlt:
-      "Matter vs KNX comparison for Indian homes 2026 — KNX wired bus backbone vs Matter wireless Thread mesh, showing reliability, cost, and the KNX-to-Matter gateway architecture based on 300+ GMHS installations",
+      "Matter vs KNX comparison for Indian homes 2026 — KNX wired bus backbone vs Matter wireless Thread mesh, showing reliability, cost, and the KNX-to-Matter gateway architecture based on 600+ GMHS installations",
     content: matterVsKnxContent,
   },
   {
@@ -172,7 +172,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "19 min",
     featured: true,
     image: "/images/blog/wired-vs-wireless-home-automation-india.webp",
-    imageAlt: "Wired vs wireless home automation comparison for Indian homes 2026 — KNX bus cable and Zigbee mesh diagram showing cost, reliability, and lifespan differences based on 300+ GMHS installations",
+    imageAlt: "Wired vs wireless home automation comparison for Indian homes 2026 — KNX bus cable and Zigbee mesh diagram showing cost, reliability, and lifespan differences based on 600+ GMHS installations",
     content: wiredVsWirelessContent,
   },
   {
@@ -187,7 +187,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "17 min",
     featured: true,
     image: "/images/blog/motorized-curtains-blinds-india.webp",
-    imageAlt: "Motorized curtains and blinds cost breakdown for Indian premium homes 2026 — tiers from ₹8K Wi-Fi roller to ₹2.4 Lakh+ Lutron Sivoia QS per window, based on 300+ GMHS installations",
+    imageAlt: "Motorized curtains and blinds cost breakdown for Indian premium homes 2026 — tiers from ₹8K Wi-Fi roller to ₹2.4 Lakh+ Lutron Sivoia QS per window, based on 600+ GMHS installations",
     content: motorizedCurtainsBlindsContent,
   },
   {
@@ -202,7 +202,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "18 min",
     featured: true,
     image: "/images/blog/smart-hvac-climate-control-india.webp",
-    imageAlt: "Smart HVAC and climate control cost breakdown for Indian premium homes 2026 — tiers from ₹2 Lakh IoT integration to ₹35 Lakh+ VRV with IAQ and zone control, based on 300+ GMHS installations",
+    imageAlt: "Smart HVAC and climate control cost breakdown for Indian premium homes 2026 — tiers from ₹2 Lakh IoT integration to ₹35 Lakh+ VRV with IAQ and zone control, based on 600+ GMHS installations",
     content: smartHvacClimateControlContent,
   },
   {
@@ -217,14 +217,14 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "17 min",
     featured: true,
     image: "/images/blog/home-theater-av-automation.webp",
-    imageAlt: "Home theater and AV automation cost breakdown for India 2026 showing tiers from ₹3 Lakh entry media room to ₹2 Crore+ reference Dolby Atmos cinema, based on 300+ GMHS installations",
+    imageAlt: "Home theater and AV automation cost breakdown for India 2026 showing tiers from ₹3 Lakh entry media room to ₹2 Crore+ reference Dolby Atmos cinema, based on 600+ GMHS installations",
     content: homeTheaterAvContent,
   },
   {
     slug: "smart-home-security-systems-india",
     title: "Smart Home Security Systems India 2026: Costs & Brands",
     excerpt:
-      "Smart home security costs in India: ₹80K–₹15L+. CCTV (post-STQC 2026), smart locks, intrusion sensors & KNX integration. Based on 300+ GMHS projects.",
+      "Smart home security costs in India: ₹80K–₹15L+. CCTV (post-STQC 2026), smart locks, intrusion sensors & KNX integration. Based on 600+ GMHS projects.",
     category: "Guides",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -298,9 +298,9 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "home-automation-cost-2026",
-    title: "Home Automation Cost in India 2026: Real Pricing from 300+ Premium Installations",
+    title: "Home Automation Cost in India 2026: Real Pricing from 600+ Premium Installations",
     excerpt:
-      "Home automation cost in India 2026 — real pricing from 300+ premium installations across budget, mid-range and luxury smart home tiers.",
+      "Home automation cost in India 2026 — real pricing from 600+ premium installations across budget, mid-range and luxury smart home tiers.",
     category: "Guides",
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
@@ -308,7 +308,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "12 min",
     featured: true,
     image: "/images/blog/home-automation-cost-2026.webp",
-    imageAlt: "Home automation cost breakdown in India 2026 showing pricing by home size, brand, and scope from ₹5 Lakh to ₹50 Lakh+ based on 300+ GMHS installations",
+    imageAlt: "Home automation cost breakdown in India 2026 showing pricing by home size, brand, and scope from ₹5 Lakh to ₹50 Lakh+ based on 600+ GMHS installations",
     content: homeAutomationCost2026Content,
   },
   {

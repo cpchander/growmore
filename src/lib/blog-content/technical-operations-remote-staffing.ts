@@ -1,6 +1,6 @@
 export const content = `## Summary: How Technical Operations Power Remote Staffing
 
-Grow More Solutions' 17 years of technical operations — serving 300+ home automation projects, 50+ architecture/MEP clients, and managing 50+ professionals across 12 Indian cities — directly powers Zedtreeo's global remote staffing platform. The same recruitment pipelines (70%+ rejection rate), 30-day structured onboarding, three-checkpoint QA systems, and enterprise IT infrastructure that delivered architecture and smart home projects since 2009 now enable remote talent placement within 48 hours at $5/hour starting rates.
+Grow More Solutions' 17 years of technical operations — serving 600+ home automation projects, 50+ architecture/MEP clients, and managing 50+ professionals across 12 Indian cities — directly powers Zedtreeo's global remote staffing platform. The same recruitment pipelines (70%+ rejection rate), 30-day structured onboarding, three-checkpoint QA systems, and enterprise IT infrastructure that delivered architecture and smart home projects since 2009 now enable remote talent placement within 48 hours at $5/hour starting rates.
 
 ## Introduction
 
@@ -68,7 +68,7 @@ The leap from MEP engineering to home automation was shorter than it appears. HV
 
 **Project delivery** — The same quality management process used for architecture and MEP projects was adapted for automation: detailed scope → design review → installation supervision → commissioning → documentation → handover. Each project produced a complete operations manual for the homeowner.
 
-**Result:** 300+ completed automation projects across Delhi NCR and pan-India. The division operates from a live [Experience Center](/experience) where clients can interact with working automation systems before committing. Today, Grow More is recognized as one of India's most experienced home automation companies, serving residential, corporate, and hospitality sectors.
+**Result:** 600+ completed automation projects across Delhi NCR and pan-India. The division operates from a live [Experience Center](/experience) where clients can interact with working automation systems before committing. Today, Grow More is recognized as one of India's most experienced home automation companies, serving residential, corporate, and hospitality sectors.
 
 ## Why Operations Experience Matters for Remote Staffing
 
@@ -258,7 +258,7 @@ Enterprise VPN with dedicated client tunnels, DLP (data loss prevention) control
 
 The home automation division that built this operational capability continues to deliver premium residential projects. Learn more about the technology and investment involved:
 
-- [Home Automation Cost in India 2026](/blog/home-automation-cost-2026) — Real pricing from 300+ premium installations, broken down by home size, brand, and scope
+- [Home Automation Cost in India 2026](/blog/home-automation-cost-2026) — Real pricing from 600+ premium installations, broken down by home size, brand, and scope
 - [KNX vs Crestron vs Control4](/blog/knx-vs-crestron-vs-control4-india) — Comprehensive brand comparison for Indian homes with per-point pricing
 
 ## Conclusion
@@ -267,7 +267,7 @@ The home automation division that built this operational capability continues to
 
 When you hire remote staff through an operations-backed provider, you are not just getting people. You are getting the systems that make those people successful. That is the difference between a placement and a productive team member.
 
-The journey from smart homes to global staffing was not a pivot — it was an expansion. The same operational DNA that delivers 300+ home automation projects now powers remote talent delivery for clients across the United States, Europe, Australia, and the Middle East through [Zedtreeo](https://zedtreeo.com).
+The journey from smart homes to global staffing was not a pivot — it was an expansion. The same operational DNA that delivers 600+ home automation projects now powers remote talent delivery for clients across the United States, Europe, Australia, and the Middle East through [Zedtreeo](https://zedtreeo.com).
 
 For companies ready to explore operations-backed remote staffing, the starting point is a conversation. [Book a consultation](/contact) or [visit Zedtreeo](https://zedtreeo.com/get-started) to see how 17 years of technical operations can work for your business.
 `;

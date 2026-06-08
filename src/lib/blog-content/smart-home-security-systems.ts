@@ -1,7 +1,7 @@
 export const content = `
-## Smart Home Security Systems in India: ₹1.5–15 Lakh+ Installed — What Actually Works After 300+ GMHS Projects
+## Smart Home Security Systems in India: ₹1.5–15 Lakh+ Installed — What Actually Works After 600+ GMHS Projects
 
-Based on 300+ GMHS installations across 12 Indian cities, a properly integrated smart home security system costs between ₹1.5 Lakh (2BHK apartment, wireless) and ₹15 Lakh+ (luxury villa, wired KNX-integrated). The critical difference between a ₹50,000 DIY setup and a ₹5 Lakh+ professional installation isn't the cameras — it's the unified automation layer that connects CCTV, access control, intrusion sensors, and your lighting/HVAC into a single response protocol. This guide covers real costs, brand recommendations post-2026 STQC regulations, and installation specifics from actual Indian projects.
+Based on 600+ GMHS installations across 12 Indian cities, a properly integrated smart home security system costs between ₹1.5 Lakh (2BHK apartment, wireless) and ₹15 Lakh+ (luxury villa, wired KNX-integrated). The critical difference between a ₹50,000 DIY setup and a ₹5 Lakh+ professional installation isn't the cameras — it's the unified automation layer that connects CCTV, access control, intrusion sensors, and your lighting/HVAC into a single response protocol. This guide covers real costs, brand recommendations post-2026 STQC regulations, and installation specifics from actual Indian projects.
 
 ---
 

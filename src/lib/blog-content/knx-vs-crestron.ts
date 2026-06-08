@@ -2,7 +2,7 @@ export const content = `## KNX vs Crestron vs Control4: Which Smart Home System 
 
 Choosing between **KNX, Crestron, and Control4** is one of the most important decisions in your smart home journey. Each platform has distinct strengths, and the wrong choice can mean overspending, vendor lock-in, or a system that does not match your lifestyle.
 
-This guide is based on our **15+ years of hands-on experience** installing all three systems across **300+ projects** in India — from 2BHK apartments in [Mumbai](/cities/mumbai) to luxury villas in [Goa](/cities/goa) and [Delhi](/cities/delhi). We are certified partners of all three brands, so our recommendation is based on what works for you — not on which brand pays us higher commissions.
+This guide is based on our **15+ years of hands-on experience** installing all three systems across **600+ projects** in India — from 2BHK apartments in [Mumbai](/cities/mumbai) to luxury villas in [Goa](/cities/goa) and [Delhi](/cities/delhi). We are certified partners of all three brands, so our recommendation is based on what works for you — not on which brand pays us higher commissions.
 
 If you want a quick answer: **KNX is best for long-term, future-proof installations. Crestron is best for ultra-luxury custom projects. Control4 is best for mid-premium homes that want great automation without extreme cost.**
 
@@ -294,7 +294,7 @@ Most automation companies in India specialize in one brand. GMHS is certified ac
 | Factor | GMHS | Typical Single-Brand Installer |
 |--------|------|-------------------------------|
 | Brands installed | KNX + Crestron + Control4 + Lutron | Usually 1–2 brands only |
-| Installation experience | 300+ completed projects across 12 cities | 20–50 projects typical |
+| Installation experience | 600+ completed projects across 12 cities | 20–50 projects typical |
 | Recommendation bias | None (certified in all, recommend based on fit) | Sells what they stock |
 | Programming team | In-house certified programmers for all 3 platforms | Often outsourced |
 | Pre-construction planning | Full wiring consultation + electrician coordination | Device-only focus |

@@ -98,5 +98,5 @@ Realistically, automated scheduling and occupancy control cut total energy in th
 
 **Planning a venue?** [Book a free consultation](/contact) and we'll scope a system around your zones, concept, and budget — or [get an estimate](/get-quote) to start.
 
-*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 300+ installations across 15+ cities, with hospitality and commercial automation experience. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
+*[Anupam Mahajan](/about/team) is Co-Founder & Managing Director of Grow More Solutions (GMHS), India's most experienced home automation integrator with 15+ years of experience and 600+ installations across 15+ cities, with hospitality and commercial automation experience. GMHS is a certified partner of KNX, Crestron, Control4, and Lutron.*
 `;

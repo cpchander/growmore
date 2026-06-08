@@ -332,7 +332,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "There's already a Control4 dealer in Coimbatore — why choose Grow More Solutions?",
         answer:
-          "Because we are vendor-neutral and multi-brand certified — KNX, Crestron, Lutron and Control4 — so we design around your home rather than around one product line. For a large Coimbatore villa that often means KNX for the wired backbone, Lutron for lighting and shading, and a dedicated AV platform for the theater, integrated cleanly. With 15+ years and 300+ projects, we bring system-design depth, honest tiered scoping and structured AMC, rather than fitting everything to a single brand's catalogue.",
+          "Because we are vendor-neutral and multi-brand certified — KNX, Crestron, Lutron and Control4 — so we design around your home rather than around one product line. For a large Coimbatore villa that often means KNX for the wired backbone, Lutron for lighting and shading, and a dedicated AV platform for the theater, integrated cleanly. With 15+ years and 600+ projects, we bring system-design depth, honest tiered scoping and structured AMC, rather than fitting everything to a single brand's catalogue.",
       },
       {
         question: "What is worth automating in Coimbatore's mild climate?",
@@ -505,7 +505,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "What's the premium option versus the local installers in Vizag?",
         answer:
-          "Several Vizag installers do volume Zigbee/Wi-Fi work, which is fine for basic smart switches. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration for the ₹1–4 crore villas in Yendada, Rushikonda and along the beach — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal environment, and backed by 15+ years, 300+ projects and structured AMC. We compete on system-design depth and durability, not on the lowest per-switch price.",
+          "Several Vizag installers do volume Zigbee/Wi-Fi work, which is fine for basic smart switches. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration for the ₹1–4 crore villas in Yendada, Rushikonda and along the beach — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal environment, and backed by 15+ years, 600+ projects and structured AMC. We compete on system-design depth and durability, not on the lowest per-switch price.",
       },
       {
         question: "Do you handle full villa automation in Visakhapatnam?",
@@ -594,7 +594,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "Is there a premium home automation specialist in Mangaluru?",
         answer:
-          "Most local presence is basic Zigbee/Wi-Fi work. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to the gated villas and premium apartments of Kadri, Bejai and Bendoorwell — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal environment, and backed by 15+ years and 300+ projects. Every project starts with a free survey and a tiered proposal.",
+          "Most local presence is basic Zigbee/Wi-Fi work. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to the gated villas and premium apartments of Kadri, Bejai and Bendoorwell — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal environment, and backed by 15+ years and 600+ projects. Every project starts with a free survey and a tiered proposal.",
       },
     ],
     recommendedReading: [
@@ -636,7 +636,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "What's the premium option versus local Zigbee installers?",
         answer:
-          "Local presence is mostly entry-level Zigbee/Wi-Fi, fine for a few smart switches. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration for the ₹1.5 crore-plus gated villas in Patia and Kalarahanga — vendor-neutral system design across lighting, climate, security and AV, engineered for Odisha's climate, backed by 15+ years, 300+ projects and structured AMC.",
+          "Local presence is mostly entry-level Zigbee/Wi-Fi, fine for a few smart switches. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration for the ₹1.5 crore-plus gated villas in Patia and Kalarahanga — vendor-neutral system design across lighting, climate, security and AV, engineered for Odisha's climate, backed by 15+ years, 600+ projects and structured AMC.",
       },
     ],
     recommendedReading: [
@@ -654,7 +654,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     marketNotes: [
       "Malabar Gulf-NRI families fund large independent villas — automation is increasingly fitted as standard in new Calicut builds",
       "Affluent pockets: Nadakkavu, Kottooli, Eranhipalam, West Hill and the Mavoor Road corridor",
-      "A genuine KNX-certified local player exists — we compete on authority, multi-brand depth and a 15+-year, 300+-project track record",
+      "A genuine KNX-certified local player exists — we compete on authority, multi-brand depth and a 15+-year, 600+-project track record",
       "Lock-and-leave NRI villa ownership makes remote monitoring, occupancy simulation and leak/flood detection central",
       "Heavy monsoon, humidity and salt air favour wired KNX, IP66 outdoor gear and corrosion-resistant blind/lock hardware",
     ],
@@ -673,7 +673,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "There's already a KNX integrator in Calicut — why choose Grow More Solutions?",
         answer:
-          "Because we are vendor-neutral and multi-brand certified — KNX, Crestron, Lutron and Control4 — so we design around your villa rather than around one product line, and we bring 15+ years and 300+ projects of system-design depth. For a large Malabar villa that often means KNX for the wired backbone with Lutron lighting and a dedicated AV platform, integrated cleanly, plus structured AMC. We compete on engineering quality, durability in the coastal climate and long-term support.",
+          "Because we are vendor-neutral and multi-brand certified — KNX, Crestron, Lutron and Control4 — so we design around your villa rather than around one product line, and we bring 15+ years and 600+ projects of system-design depth. For a large Malabar villa that often means KNX for the wired backbone with Lutron lighting and a dedicated AV platform, integrated cleanly, plus structured AMC. We compete on engineering quality, durability in the coastal climate and long-term support.",
       },
       {
         question: "How does automation cope with Calicut's monsoon and humidity?",
@@ -752,7 +752,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "Is there a premium home automation specialist in Thiruvananthapuram?",
         answer:
-          "Local presence is thin and mostly basic. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Kowdiar, Vellayambalam and the Technopark corridor — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal climate, and backed by 15+ years and 300+ projects across India. Every project begins with a free on-site survey and a tiered proposal, so you can scope from a starter package up to full villa integration.",
+          "Local presence is thin and mostly basic. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Kowdiar, Vellayambalam and the Technopark corridor — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal climate, and backed by 15+ years and 600+ projects across India. Every project begins with a free on-site survey and a tiered proposal, so you can scope from a starter package up to full villa integration.",
       },
       {
         question: "How does home automation cope with Trivandrum's coastal humidity?",
@@ -818,7 +818,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
   vadodara: {
     slug: "vadodara",
     intro:
-      "Vadodara's wealth runs deep — Reliance, L&T, pharma and chemical industry anchor an affluent western belt in Alkapuri (₹4,650/sqft, up ~27% year-on-year), Akota, Gotri and Sevasi, with premium apartments ₹65 lakh–1.1 crore. It is also the most competitive automation market in Gujarat: several local specialists are well established, including a homegrown brand headquartered here. That makes positioning the priority — Grow More Solutions leads with certified KNX, Crestron and Lutron whole-home integration and a 15+-year, 300+-project track record, rather than competing on basic Wi-Fi kits. Gujarat heat and dust make sealed climate control, automated shading and backup-aware automation the practical baseline.",
+      "Vadodara's wealth runs deep — Reliance, L&T, pharma and chemical industry anchor an affluent western belt in Alkapuri (₹4,650/sqft, up ~27% year-on-year), Akota, Gotri and Sevasi, with premium apartments ₹65 lakh–1.1 crore. It is also the most competitive automation market in Gujarat: several local specialists are well established, including a homegrown brand headquartered here. That makes positioning the priority — Grow More Solutions leads with certified KNX, Crestron and Lutron whole-home integration and a 15+-year, 600+-project track record, rather than competing on basic Wi-Fi kits. Gujarat heat and dust make sealed climate control, automated shading and backup-aware automation the practical baseline.",
     marketNotes: [
       "Industrial wealth (Reliance, L&T, pharma/chemicals) anchors the affluent western belt — Alkapuri (₹4,650/sqft, +~27% YoY), Akota, Gotri, Sevasi",
       "Premium apartments run ₹65 Lakh–1.1 Cr; growing villa stock toward Vasna-Bhayli and Old Padra Road",
@@ -836,7 +836,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "There are several automation companies in Vadodara — what makes Grow More Solutions different?",
         answer:
-          "Vendor-neutral, multi-brand depth and track record. We are certified across KNX, Crestron, Lutron and Control4, so we design around your home rather than around one product line — for a large Akota or Old Padra Road villa that often means a KNX backbone with Lutron lighting and a dedicated AV platform, integrated cleanly. With 15+ years and 300+ projects we bring system-design experience and structured AMC, and we scope honestly with tiered options rather than pushing a single kit.",
+          "Vendor-neutral, multi-brand depth and track record. We are certified across KNX, Crestron, Lutron and Control4, so we design around your home rather than around one product line — for a large Akota or Old Padra Road villa that often means a KNX backbone with Lutron lighting and a dedicated AV platform, integrated cleanly. With 15+ years and 600+ projects we bring system-design experience and structured AMC, and we scope honestly with tiered options rather than pushing a single kit.",
       },
       {
         question: "How does home automation handle Vadodara's heat and dust?",
@@ -888,7 +888,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "Is there a premium home automation specialist in Jalandhar?",
         answer:
-          "The local premium presence is thin — mostly basic Zigbee/Wi-Fi. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to the large kothis of Model Town, Urban Estate and the NRI colonies — vendor-neutral system design across lighting, climate, security and AV, with 15+ years, 300+ projects and structured AMC. Every project starts with a free survey and a tiered proposal.",
+          "The local premium presence is thin — mostly basic Zigbee/Wi-Fi. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to the large kothis of Model Town, Urban Estate and the NRI colonies — vendor-neutral system design across lighting, climate, security and AV, with 15+ years, 600+ projects and structured AMC. Every project starts with a free survey and a tiered proposal.",
       },
     ],
     recommendedReading: [
@@ -930,7 +930,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "What's the premium option versus the local installers?",
         answer:
-          "Local presence is mostly basic Zigbee/Wi-Fi. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration for premium 3–5 BHK homes and villas — vendor-neutral design across lighting, climate, security and AV, engineered for the climate, and backed by 15+ years, 300+ projects and structured AMC.",
+          "Local presence is mostly basic Zigbee/Wi-Fi. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration for premium 3–5 BHK homes and villas — vendor-neutral design across lighting, climate, security and AV, engineered for the climate, and backed by 15+ years, 600+ projects and structured AMC.",
       },
     ],
     recommendedReading: [
@@ -990,7 +990,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     marketNotes: [
       "Kerala's \"gold capital\" — high household wealth and large independent villas, many Gulf-NRI funded; KNX whole-home demand for 5BHK+ homes",
       "Affluent pockets: Punkunnam, Ayyanthole, Patturaikkal, Kuriachira and the city core",
-      "Genuine local high-end players exist — we compete on authority, multi-brand depth and a 15+-year, 300+-project record",
+      "Genuine local high-end players exist — we compete on authority, multi-brand depth and a 15+-year, 600+-project record",
       "Lock-and-leave NRI villa ownership makes remote monitoring, occupancy simulation and leak/flood detection central",
       "Heavy monsoon, humidity and salt air favour wired KNX, IP66 outdoor gear and corrosion-resistant hardware",
     ],
@@ -1009,7 +1009,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "There are local KNX integrators in Thrissur — why choose Grow More Solutions?",
         answer:
-          "Because we are vendor-neutral and multi-brand certified — KNX, Crestron, Lutron and Control4 — so we design around your villa rather than one product line, with 15+ years and 300+ projects of system-design depth. For a large 5BHK+ Thrissur villa that often means a KNX backbone with Lutron lighting and a dedicated AV platform, engineered for the coastal climate, plus structured AMC. We compete on engineering quality and long-term support.",
+          "Because we are vendor-neutral and multi-brand certified — KNX, Crestron, Lutron and Control4 — so we design around your villa rather than one product line, with 15+ years and 600+ projects of system-design depth. For a large 5BHK+ Thrissur villa that often means a KNX backbone with Lutron lighting and a dedicated AV platform, engineered for the coastal climate, plus structured AMC. We compete on engineering quality and long-term support.",
       },
       {
         question: "How does home automation cope with Thrissur's monsoon and humidity?",
@@ -1088,7 +1088,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "Is there a premium home automation specialist in Jamshedpur?",
         answer:
-          "Local premium presence is minimal. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Bistupur, Sonari, Kadma and the Circuit House Area — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 300+ projects and structured AMC. Every project begins with a free on-site survey and a tiered proposal, from a starter package up to full home integration.",
+          "Local premium presence is minimal. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Bistupur, Sonari, Kadma and the Circuit House Area — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 600+ projects and structured AMC. Every project begins with a free on-site survey and a tiered proposal, from a starter package up to full home integration.",
       },
       {
         question: "Do you serve Jamshedpur for a full home build?",
@@ -1340,7 +1340,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "There are many smart-home installers in Patna — what makes Grow More Solutions premium?",
         answer:
-          "Most local presence is entry-level Zigbee/Wi-Fi, fine for a few smart switches but not whole-home integration. Grow More Solutions is certified across KNX, Crestron and Lutron and designs vendor-neutral systems that integrate lighting, climate, security and AV reliably across a large apartment or house. With 15+ years, 300+ projects and structured AMC, we bring system-design depth and honest tiered scoping rather than the lowest per-switch price.",
+          "Most local presence is entry-level Zigbee/Wi-Fi, fine for a few smart switches but not whole-home integration. Grow More Solutions is certified across KNX, Crestron and Lutron and designs vendor-neutral systems that integrate lighting, climate, security and AV reliably across a large apartment or house. With 15+ years, 600+ projects and structured AMC, we bring system-design depth and honest tiered scoping rather than the lowest per-switch price.",
       },
       {
         question: "How does home automation handle Patna's heat and load-shedding?",
@@ -1382,7 +1382,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "Is there a premium home automation specialist in Ranchi?",
         answer:
-          "Local presence is mostly directory-level Zigbee work. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Harmu, Ashok Nagar and the Kanke Road belt — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 300+ projects and structured AMC. Every project begins with a free on-site survey and a tiered proposal.",
+          "Local presence is mostly directory-level Zigbee work. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Harmu, Ashok Nagar and the Kanke Road belt — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 600+ projects and structured AMC. Every project begins with a free on-site survey and a tiered proposal.",
       },
       {
         question: "Do you serve Ranchi for a full home build?",
@@ -1518,7 +1518,7 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
       {
         question: "Is there a premium automation specialist in Siliguri?",
         answer:
-          "Local premium presence is minimal. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Siliguri's gated villas and premium apartments — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 300+ projects and structured AMC, starting with a free survey and tiered proposal.",
+          "Local premium presence is minimal. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Siliguri's gated villas and premium apartments — vendor-neutral design across lighting, climate, security and AV, backed by 15+ years, 600+ projects and structured AMC, starting with a free survey and tiered proposal.",
       },
     ],
     recommendedReading: [
@@ -2137,7 +2137,7 @@ CITY_DETAILS.faridabad = {
     {
       question: "Do you offer understated, low-maintenance systems rather than flashy gadgets?",
       answer:
-        "Yes — and this is exactly how we work with Faridabad's industrialist and business families. Discreet wealth prefers hidden technology: concealed speakers behind fabric or panelling, automation that disappears into the architecture, durable warranty-backed hardware (Schneider, Hager, Vimar, KNX-certified modules) rather than consumer plastic, and reliable engineering with genuine after-sales support. We lead with reliability, build quality, and a 15+ year track record across 300+ projects — not gimmicks. Our systems are designed to run for a decade with minimal intervention, backed by AMC plans and a real service team, which is what matters to buyers who value durability and ROI over novelty.",
+        "Yes — and this is exactly how we work with Faridabad's industrialist and business families. Discreet wealth prefers hidden technology: concealed speakers behind fabric or panelling, automation that disappears into the architecture, durable warranty-backed hardware (Schneider, Hager, Vimar, KNX-certified modules) rather than consumer plastic, and reliable engineering with genuine after-sales support. We lead with reliability, build quality, and a 15+ year track record across 600+ projects — not gimmicks. Our systems are designed to run for a decade with minimal intervention, backed by AMC plans and a real service team, which is what matters to buyers who value durability and ROI over novelty.",
     },
     {
       question: "What does home automation cost in Faridabad compared to Gurgaon?",
@@ -2268,7 +2268,7 @@ CITY_DETAILS.jodhpur = {
     {
       question: "Why choose an experienced multi-brand integrator over a local installer in Jodhpur?",
       answer:
-        "Jodhpur's wealth is largely discreet Marwari business and defence money that values reliability, vendor trust, and long relationships over flashy demos — and premium KNX/Crestron-grade automation is essentially absent from the local market, which is mostly generic switch-and-CCTV dealers. Grow More Solutions brings 15+ years and 300+ projects of multi-brand engineering (certified KNX, Crestron, Control4, Lutron) to a market that hasn't had access to it. We recommend the right technology for your bungalow and budget rather than a single product line, build for the desert climate, and back it with AMC and a real service team — the durability and after-sales credibility that traditional Jodhpur families actually buy on.",
+        "Jodhpur's wealth is largely discreet Marwari business and defence money that values reliability, vendor trust, and long relationships over flashy demos — and premium KNX/Crestron-grade automation is essentially absent from the local market, which is mostly generic switch-and-CCTV dealers. Grow More Solutions brings 15+ years and 600+ projects of multi-brand engineering (certified KNX, Crestron, Control4, Lutron) to a market that hasn't had access to it. We recommend the right technology for your bungalow and budget rather than a single product line, build for the desert climate, and back it with AMC and a real service team — the durability and after-sales credibility that traditional Jodhpur families actually buy on.",
     },
   ],
   recommendedReading: [
@@ -2352,7 +2352,7 @@ CITY_DETAILS.indore = {
     {
       question: "How is Grow More Solutions different from Indore's existing automation companies?",
       answer:
-        "Indore does have credible local AV and automation players, which we respect — so our difference is depth and breadth. We are certified multi-brand integrators (KNX, Crestron, Control4, Lutron) with 15+ years and 300+ projects across India, so we recommend the right platform for your home rather than the single brand we happen to deal. We bring locality-specific design (a Super Corridor condo, a Bicholi Mardana villa, and a Palasia bungalow are three different problems), climate-aware engineering for the Malwa summer, and a live Experience Center where you can see automation working before you commit. For buyers comparing options in Indore, that engineering credibility and brand independence is the differentiator.",
+        "Indore does have credible local AV and automation players, which we respect — so our difference is depth and breadth. We are certified multi-brand integrators (KNX, Crestron, Control4, Lutron) with 15+ years and 600+ projects across India, so we recommend the right platform for your home rather than the single brand we happen to deal. We bring locality-specific design (a Super Corridor condo, a Bicholi Mardana villa, and a Palasia bungalow are three different problems), climate-aware engineering for the Malwa summer, and a live Experience Center where you can see automation working before you commit. For buyers comparing options in Indore, that engineering credibility and brand independence is the differentiator.",
     },
   ],
   recommendedReading: [
@@ -2436,7 +2436,7 @@ CITY_DETAILS.meerut = {
     {
       question: "What kind of automation suits Meerut's industrialist and Cantonment families?",
       answer:
-        "Meerut's signature wealth — sports-goods manufacturers, traders, agricultural HNIs, and Cantonment defence families — values discreet, durable, reliable systems over flashy gadgetry. We design accordingly: hidden technology, premium warranty-backed hardware, power-resilient engineering for the PVVNL grid, and clean low-maintenance operation. For large kothis we deliver whole-home wired KNX with proper climate, security, and energy management; for apartments and builder floors we offer tiered packages starting with lighting and security. The pitch is reliability, build quality, a 15+ year / 300+ project track record, and fast service — the things this buyer actually decides on.",
+        "Meerut's signature wealth — sports-goods manufacturers, traders, agricultural HNIs, and Cantonment defence families — values discreet, durable, reliable systems over flashy gadgetry. We design accordingly: hidden technology, premium warranty-backed hardware, power-resilient engineering for the PVVNL grid, and clean low-maintenance operation. For large kothis we deliver whole-home wired KNX with proper climate, security, and energy management; for apartments and builder floors we offer tiered packages starting with lighting and security. The pitch is reliability, build quality, a 15+ year / 600+ project track record, and fast service — the things this buyer actually decides on.",
     },
   ],
   recommendedReading: [

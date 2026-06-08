@@ -1,6 +1,6 @@
 export const content = `## Summary: Smart Home Wiring for New Construction in India
 
-Planning home automation wiring during construction costs **₹80,000–2,50,000** for a 4–6 BHK villa — compared to **₹4–8 Lakh** for the same wiring as a retrofit after construction. Based on 300+ GMHS installations across Delhi NCR, Mumbai, and Bangalore, pre-wiring during construction saves 60–70% on infrastructure costs, eliminates wall-breaking, and enables any automation brand (KNX, Crestron, Control4, Lutron) to be installed later. The critical window is **before your electrician starts first-fix wiring** — miss it, and your options narrow permanently.
+Planning home automation wiring during construction costs **₹80,000–2,50,000** for a 4–6 BHK villa — compared to **₹4–8 Lakh** for the same wiring as a retrofit after construction. Based on 600+ GMHS installations across Delhi NCR, Mumbai, and Bangalore, pre-wiring during construction saves 60–70% on infrastructure costs, eliminates wall-breaking, and enables any automation brand (KNX, Crestron, Control4, Lutron) to be installed later. The critical window is **before your electrician starts first-fix wiring** — miss it, and your options narrow permanently.
 
 ## Why Pre-Construction Planning Is the Most Important Decision
 
@@ -27,7 +27,7 @@ That is a **₹4–8 Lakh saving** — just by planning 4–6 weeks earlier in y
 
 ## When Exactly Should You Involve an Automation Consultant?
 
-The ideal timeline for bringing in a home automation consultant — based on 300+ GMHS projects — is:
+The ideal timeline for bringing in a home automation consultant — based on 600+ GMHS projects — is:
 
 **Phase 1: Design Stage (Before Architect Finalizes Electrical Layout)**
 
@@ -144,7 +144,7 @@ Here is what goes wrong when electricians handle automation wiring without guida
 
 Our recommendation: Your electrician does the physical cable pulling (they know conduit routing, wall chasing, and ceiling access). The automation consultant provides the wiring plan, supervises cable placement, and does all termination and testing. This collaboration model works on every GMHS project.
 
-> **"In 300+ projects, we have never had a successful installation where the electrician worked alone on automation wiring. Not once. The disciplines are too different. Our model is simple — we give your electrician a detailed point-to-point wiring schedule with cable types, conduit sizes, and routing diagrams. They pull the cables. We verify placement, do all terminations, and commission the system. This division of labor works every time."**
+> **"In 600+ projects, we have never had a successful installation where the electrician worked alone on automation wiring. Not once. The disciplines are too different. Our model is simple — we give your electrician a detailed point-to-point wiring schedule with cable types, conduit sizes, and routing diagrams. They pull the cables. We verify placement, do all terminations, and commission the system. This division of labor works every time."**
 > — Anupam Mahajan, GMHS
 
 ## What About Wireless? Do I Really Need Wiring?
@@ -162,7 +162,7 @@ Wireless automation (Zigbee, Z-Wave, Wi-Fi, Thread/Matter) is excellent for retr
 | Resale value | Adds 8–15% property value | Negligible (considered temporary) |
 | Maintenance | Near zero | Battery changes, firmware updates |
 
-**Our data:** Of our 300+ installations, 85% of new construction clients choose wired systems (KNX or Crestron). Of our retrofit clients, 70% choose wireless (Control4 wireless, Zigbee). The decision is simple — if you CAN wire, wire.
+**Our data:** Of our 600+ installations, 85% of new construction clients choose wired systems (KNX or Crestron). Of our retrofit clients, 70% choose wireless (Control4 wireless, Zigbee). The decision is simple — if you CAN wire, wire.
 
 For a complete comparison of KNX, Crestron, and Control4 systems, see our [Brand Comparison Guide](/blog/knx-vs-crestron-vs-control4-india).
 
@@ -200,7 +200,7 @@ Unless your electrician has specific KNX or Crestron wiring experience (ask for 
 
 ### How many days does pre-wiring add to my construction timeline?
 
-Zero extra days if coordinated properly. Automation wiring runs in parallel with regular electrical first-fix. Your electrician pulls KNX bus, Cat6A, and speaker wire alongside standard power cables. The only addition is 1–2 days for the automation team to verify placement and do continuity testing before walls close. In 300+ projects, we have never delayed a construction schedule.
+Zero extra days if coordinated properly. Automation wiring runs in parallel with regular electrical first-fix. Your electrician pulls KNX bus, Cat6A, and speaker wire alongside standard power cables. The only addition is 1–2 days for the automation team to verify placement and do continuity testing before walls close. In 600+ projects, we have never delayed a construction schedule.
 
 ### What is the minimum I should pre-wire if budget is tight?
 
@@ -224,5 +224,5 @@ If you are building a new home or planning a major renovation, now is the time t
 
 Every pre-construction consultation is free and obligation-free. We recommend the right infrastructure based on your future automation goals — so you wire once and never look back.
 
-*Prices indicative as of May 2026, subject to change based on cable spec, material costs, project scope, and site conditions. All recommendations are based on GMHS installation data across 300+ projects.*
+*Prices indicative as of May 2026, subject to change based on cable spec, material costs, project scope, and site conditions. All recommendations are based on GMHS installation data across 600+ projects.*
 `;

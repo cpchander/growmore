@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "How much does home automation cost in India?",
     answer:
-      "It depends on scope and property size. As a guide from 300+ installations: a 3BHK apartment runs roughly ₹5–10 Lakh, a 4BHK villa ₹10–20 Lakh, a 5BHK villa ₹18–30 Lakh, and a 6BHK+ farmhouse ₹28–50 Lakh+. Pre-wiring during construction is far cheaper than retrofit. We always provide an honest, tiered quote after a free assessment.",
+      "It depends on scope and property size. As a guide from 600+ installations: a 3BHK apartment runs roughly ₹5–10 Lakh, a 4BHK villa ₹10–20 Lakh, a 5BHK villa ₹18–30 Lakh, and a 6BHK+ farmhouse ₹28–50 Lakh+. Pre-wiring during construction is far cheaper than retrofit. We always provide an honest, tiered quote after a free assessment.",
   },
   {
     question: "Which automation brands do you work with?",
@@ -115,7 +115,7 @@ export default function ServicesPage() {
           <div className="grid sm:grid-cols-3 gap-4">
             <Link href="/blog/home-automation-cost-2026" className="glass-card rounded-xl p-5 hover:border-gold-500/20 transition-colors">
               <p className="text-sm font-medium text-white mb-1">Cost Guide 2026</p>
-              <p className="text-xs text-navy-400">Real pricing from 300+ installations</p>
+              <p className="text-xs text-navy-400">Real pricing from 600+ installations</p>
             </Link>
             <Link href="/blog/knx-vs-crestron-vs-control4-india" className="glass-card rounded-xl p-5 hover:border-gold-500/20 transition-colors">
               <p className="text-sm font-medium text-white mb-1">Brand Comparison</p>
