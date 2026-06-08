@@ -85,7 +85,6 @@ GMHS's operational infrastructure (recruitment, training, quality systems) also 
 - [Smart Home Security Systems Guide](https://growmoresolutions.com/blog/smart-home-security-systems-india)
 - [Smart Lighting Guide](https://growmoresolutions.com/blog/smart-lighting-guide-indian-homes)
 - [Why Builders Should Offer Smart Homes](https://growmoresolutions.com/blog/why-builders-should-offer-smart-homes)
-- [Builder Partnership Solutions](https://growmoresolutions.com/solutions/for-builders)
 - [Smart Home Planner Tool](https://growmoresolutions.com/smart-home-planner)
 - [Get a Quote](https://growmoresolutions.com/get-quote)
 
@@ -120,6 +119,25 @@ Certified, vendor-neutral partner across the major platforms — dedicated pages
 - [Control4 Home Automation in India](https://growmoresolutions.com/brands/control4)
 - [Lutron Home Automation in India](https://growmoresolutions.com/brands/lutron)
 - [Sonos Home Automation in India](https://growmoresolutions.com/brands/sonos)
+## Solutions
+
+Tailored home automation solutions by audience — each with its own page. Overview: https://growmoresolutions.com/solutions
+
+- [Home Automation for Homeowners](https://growmoresolutions.com/solutions/for-homeowners)
+- [Home Automation for Builders & Developers](https://growmoresolutions.com/solutions/for-builders)
+- [Home Automation for Architects](https://growmoresolutions.com/solutions/for-architects)
+- [Hotel & Hospitality Automation](https://growmoresolutions.com/solutions/for-hotels)
+
+## Featured Projects (Case Studies)
+
+Anonymized case studies from 300+ installations — scope, brands and outcomes. Gallery: https://growmoresolutions.com/projects
+
+- [Luxury Villa Automation — Bandra, Mumbai](https://growmoresolutions.com/projects/mumbai-bandra-villa)
+- [Smart Penthouse — Golf Links, Delhi](https://growmoresolutions.com/projects/delhi-golf-links-penthouse)
+- [200-Unit Smart Apartment Complex — Whitefield, Bangalore](https://growmoresolutions.com/projects/bangalore-whitefield-apartments)
+- [Contemporary Villa — Jubilee Hills, Hyderabad](https://growmoresolutions.com/projects/hyderabad-jubilee-hills-villa)
+- [Boutique Resort — 50 Rooms, North Goa](https://growmoresolutions.com/projects/goa-resort-automation)
+- [Premium 4BHK Automation — Koregaon Park, Pune](https://growmoresolutions.com/projects/pune-koregaon-park-apartment)
 ## Cities We Serve
 
 GMHS provides home automation across 60 cities in India, each with a dedicated local page covering market specifics, pricing tiers, and anonymized project examples. Full directory: https://growmoresolutions.com/cities
