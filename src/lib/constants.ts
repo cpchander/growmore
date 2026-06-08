@@ -195,6 +195,14 @@ export const CITIES = [
   { slug: "kozhikode", name: "Kozhikode", areas: ["Nadakkavu", "Kottooli", "Eranhipalam", "West Hill", "Cherootty Road", "Mavoor Road"] },
   { slug: "raipur", name: "Raipur", areas: ["Telibandha", "Shankar Nagar", "Civil Lines", "VIP Road", "Naya Raipur (Atal Nagar)", "Devendra Nagar"] },
   { slug: "thiruvananthapuram", name: "Thiruvananthapuram", areas: ["Kowdiar", "Kazhakkoottam", "Technopark", "Vellayambalam", "Sasthamangalam", "Pattom"] },
+  { slug: "nashik", name: "Nashik", areas: ["Gangapur Road", "College Road", "Pathardi Phata", "Mahatma Nagar", "Indira Nagar", "Govind Nagar"] },
+  { slug: "vadodara", name: "Vadodara", areas: ["Alkapuri", "Akota", "Gotri", "Sevasi", "Vasna-Bhayli", "Old Padra Road"] },
+  { slug: "jalandhar", name: "Jalandhar", areas: ["Model Town", "Urban Estate", "Guru Gobind Singh Avenue", "Maqsudan", "Cool Road", "GT Road"] },
+  { slug: "guwahati", name: "Guwahati", areas: ["Six Mile", "Zoo Road", "Beltola", "Dispur", "Ganeshguri", "Hatigaon"] },
+  { slug: "kanpur", name: "Kanpur", areas: ["Civil Lines", "Cantonment", "Swaroop Nagar", "Kakadeo", "Tilak Nagar", "Mall Road"] },
+  { slug: "thrissur", name: "Thrissur", areas: ["Ayyanthole", "Punkunnam", "Patturaikkal", "Kuriachira", "East Fort", "Poothole"] },
+  { slug: "mysuru", name: "Mysuru", areas: ["Jayalakshmipuram", "Gokulam", "Vijayanagar", "Yadavagiri", "Kuvempunagar", "Hebbal"] },
+  { slug: "jamshedpur", name: "Jamshedpur", areas: ["Bistupur", "Sonari", "Kadma", "Circuit House Area", "Telco Colony", "Sakchi"] },
 ] as const;
 
 export const BRANDS = [

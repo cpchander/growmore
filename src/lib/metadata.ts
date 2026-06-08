@@ -89,6 +89,14 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   Kozhikode: { lat: 11.2588, lng: 75.7804 },
   Raipur: { lat: 21.2514, lng: 81.6296 },
   Thiruvananthapuram: { lat: 8.5241, lng: 76.9366 },
+  Nashik: { lat: 19.9975, lng: 73.7898 },
+  Vadodara: { lat: 22.3072, lng: 73.1812 },
+  Jalandhar: { lat: 31.326, lng: 75.5762 },
+  Guwahati: { lat: 26.1445, lng: 91.7362 },
+  Kanpur: { lat: 26.4499, lng: 80.3319 },
+  Thrissur: { lat: 10.5276, lng: 76.2144 },
+  Mysuru: { lat: 12.2958, lng: 76.6394 },
+  Jamshedpur: { lat: 22.8046, lng: 86.2029 },
 };
 
 // ─── Shared certification credentials ────────────────────────────────
