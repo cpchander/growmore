@@ -189,6 +189,12 @@ export const CITIES = [
   { slug: "ludhiana", name: "Ludhiana", areas: ["Sarabha Nagar", "BRS Nagar", "Aggar Nagar", "Pakhowal Road", "Civil Lines", "Model Town"] },
   { slug: "nagpur", name: "Nagpur", areas: ["Dharampeth", "Civil Lines", "Shankar Nagar", "Ramdaspeth", "Wardha Road", "Manish Nagar"] },
   { slug: "visakhapatnam", name: "Visakhapatnam", areas: ["MVP Colony", "Madhurawada", "Rushikonda", "Lawsons Bay Colony", "Yendada", "Seethammadhara"] },
+  { slug: "amritsar", name: "Amritsar", areas: ["Ranjit Avenue", "Green Avenue", "Mall Road", "Majitha Road", "Cantonment", "GT Road"] },
+  { slug: "mangaluru", name: "Mangaluru", areas: ["Kadri", "Bejai", "Bendoorwell", "Kankanady", "Falnir", "Surathkal"] },
+  { slug: "bhubaneswar", name: "Bhubaneswar", areas: ["Patia", "Jayadev Vihar", "Chandrasekharpur", "Kalarahanga", "Nayapalli", "Khandagiri"] },
+  { slug: "kozhikode", name: "Kozhikode", areas: ["Nadakkavu", "Kottooli", "Eranhipalam", "West Hill", "Cherootty Road", "Mavoor Road"] },
+  { slug: "raipur", name: "Raipur", areas: ["Telibandha", "Shankar Nagar", "Civil Lines", "VIP Road", "Naya Raipur (Atal Nagar)", "Devendra Nagar"] },
+  { slug: "thiruvananthapuram", name: "Thiruvananthapuram", areas: ["Kowdiar", "Kazhakkoottam", "Technopark", "Vellayambalam", "Sasthamangalam", "Pattom"] },
 ] as const;
 
 export const BRANDS = [

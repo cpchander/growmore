@@ -521,6 +521,258 @@ export const CITY_DETAILS: Record<string, CityDetail> = {
     ],
   },
 
+  amritsar: {
+    slug: "amritsar",
+    intro:
+      "Amritsar's home automation market is driven by NRI money — Punjabi diaspora investment in the city crossed ₹1,500 crore in 2025, up roughly 40% on 2023, and around 70% of NRI purchases are ₹1 crore-plus, increasingly in gated communities and large kothis in Ranjit Avenue, Green Avenue and along Majitha Road. Many of these homes sit part-occupied while owners are abroad, which makes remote monitoring and occupancy-simulation security the headline use-case here — and agents note automation-equipped homes command a 15–20% premium. Local competition is entry-level Zigbee, leaving the premium KNX/Crestron slot open. Cold Punjab winters and grid fluctuation add heating-scheduling and backup-aware automation to the core brief.",
+    marketNotes: [
+      "NRI-funded purchases (₹1,500 Cr in 2025, ~70% above ₹1 Cr) drive demand — large kothis and gated villas in Ranjit Avenue, Green Avenue, Majitha Road",
+      "Part-occupied, absentee-owner homes make remote app monitoring and occupancy-simulation security the headline use-case",
+      "Automation-equipped homes reportedly command a 15–20% resale premium — a real selling point for NRI investor-owners",
+      "Cold winters make integrated geyser/heating/underfloor scheduling genuinely useful; 45°C summers need shading + AC automation",
+      "Local competition is entry-level Zigbee/Wi-Fi — the premium KNX/Crestron/Lutron slot is open",
+    ],
+    projectExamples: [
+      { area: "Ranjit Avenue", type: "NRI-owned 5BHK kothi", budget: "₹18 Lakh", scope: "Remote monitoring + occupancy simulation + KNX lighting + CCTV + heating scheduling" },
+      { area: "Green Avenue", type: "4BHK independent house", budget: "₹12 Lakh", scope: "Lighting + climate + Sonos + biometric access + backup scenes" },
+      { area: "Majitha Road", type: "Gated 6BHK villa", budget: "₹26 Lakh", scope: "Crestron whole-home + perimeter security + home theater + winter heating" },
+      { area: "Cantonment", type: "4BHK bungalow", budget: "₹8 Lakh", scope: "Wireless retrofit — switches + locks + video doorbell + away-mode" },
+    ],
+    extraFaqs: [
+      {
+        question: "I live abroad — can my Amritsar home be fully managed remotely?",
+        answer:
+          "Yes — this is the single most common Amritsar brief. For NRI owners we build a complete remote package: app-based live CCTV, motion and door/window alerts, water-leak and smoke/gas sensors, and occupancy simulation that runs lights and curtains so the kothi looks lived-in. You get instant push alerts in any timezone, a local caretaker can be given limited access, and the automation hub and NVR run on a UPS so monitoring survives Punjab's outages. One-tap away-mode arms the home and drops it to a safe, low-energy state.",
+      },
+      {
+        question: "Does home automation add resale value in Amritsar?",
+        answer:
+          "It can. Local agents report that automation-equipped homes command a noticeable premium, and for the NRI-investor segment that dominates Amritsar, a professionally integrated, well-documented system is a genuine differentiator at resale. We deliver wired KNX/Crestron systems with proper documentation and AMC rather than a patchwork of consumer gadgets, which holds value and reassures the next buyer — particularly other NRI purchasers who value remote-manageability.",
+      },
+      {
+        question: "Can home automation handle Amritsar's cold winters?",
+        answer:
+          "Yes — and it is one of the more useful features here. We integrate geyser, room-heater and underfloor heating into schedules and scenes so bathrooms and bedrooms are warm at wake-up and heating switches off when rooms are empty. Warm-tone lighting scenes and temperature-triggered automation round it out, and the same system manages summer AC and shading for genuine year-round comfort rather than single-season value.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for NRI-owned Amritsar kothis" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Why detached kothis suit a wired backbone" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Heating & cooling for Punjab's dual-season climate" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Amritsar kothis & villas" },
+    ],
+  },
+
+  mangaluru: {
+    slug: "mangaluru",
+    intro:
+      "Mangaluru is a hidden-gem luxury market built on Gulf-NRI wealth — the Dakshina Kannada and Udupi diaspora in Dubai, Qatar and Saudi funds a steady stream of premium gated villas and apartments, with Kadri and Bejai crossing ₹7,000–9,000/sqft and rising sharply year-on-year. Crucially, the local SERP has almost no high-end automation specialist, so the premium positioning is wide open. As with Kerala's coast, the defining challenge is environmental: heavy monsoon, humidity and salt air make wired-KNX reliability, IP-rated outdoor gear and corrosion-resistant hardware genuinely important, while absentee Gulf-based owners drive remote-monitoring demand for homes occupied only part of the year.",
+    marketNotes: [
+      "Gulf-NRI (Dubai/Qatar/Saudi) families from Dakshina Kannada/Udupi fund premium gated villas and apartments — the core buyer base",
+      "Premium pockets: Kadri and Bejai (₹7,000–9,000/sqft, rising sharply), Bendoorwell, Kankanady, Falnir",
+      "The local SERP has almost no high-end automation specialist — a wide-open premium positioning gap",
+      "Heavy monsoon, humidity and salt air favour wired KNX, IP66 outdoor cameras and corrosion-resistant blind/lock hardware over cheap wireless",
+      "Absentee Gulf-based owners drive remote app monitoring, occupancy simulation and leak/flood detection",
+    ],
+    projectExamples: [
+      { area: "Kadri", type: "NRI-owned 4BHK villa", budget: "₹15 Lakh", scope: "Remote monitoring + KNX lighting + marine-grade CCTV + dehumidification" },
+      { area: "Bejai", type: "Premium 3BHK apartment", budget: "₹8 Lakh", scope: "Lighting + climate + Sonos + biometric access + leak detection" },
+      { area: "Bendoorwell", type: "Gated 5BHK villa", budget: "₹22 Lakh", scope: "Crestron whole-home + 5.1.4 theater + corrosion-rated blinds + away-mode" },
+      { area: "Kankanady", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + voice + occupancy simulation" },
+    ],
+    extraFaqs: [
+      {
+        question: "I'm a Gulf NRI — can my Mangaluru home be managed from abroad?",
+        answer:
+          "Yes — it is the most common brief from the Dakshina Kannada Gulf community. We set up app-based live CCTV, motion and entry alerts, water-leak and flood detection (important in the monsoon), and occupancy simulation so the home appears lived-in. You receive instant push alerts in the Gulf, a local caretaker can be granted limited access, and the hub and NVR run on UPS so monitoring rides through outages. A one-tap away-mode secures the home whenever it is empty.",
+      },
+      {
+        question: "How does home automation survive Mangaluru's monsoon and salt air?",
+        answer:
+          "Coastal Mangaluru is demanding, so we engineer for it: a wired KNX backbone for reliability, IP66 outdoor cameras with marine-grade housings, corrosion-resistant motorized blind and lock hardware, corrosion-inhibitor and desiccant on outdoor terminations, and dehumidification tied to a moisture sensor. This is exactly where proper wired integration outperforms the budget wireless kits that fail within a year or two in salt air and heavy monsoon humidity.",
+      },
+      {
+        question: "Is there a premium home automation specialist in Mangaluru?",
+        answer:
+          "Most local presence is basic Zigbee/Wi-Fi work. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to the gated villas and premium apartments of Kadri, Bejai and Bendoorwell — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal environment, and backed by 15+ years and 300+ projects. Every project starts with a free survey and a tiered proposal.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for Gulf-NRI Mangaluru homes" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Why coastal Mangaluru favours wired KNX" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Dehumidification & climate for coastal homes" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Kadri & Bejai villas" },
+    ],
+  },
+
+  bhubaneswar: {
+    slug: "bhubaneswar",
+    intro:
+      "Bhubaneswar is eastern India's strongest premium-home market — over a hundred luxury villa listings, ultra-luxury gated communities like Metro Kings Court (4–6 BHK, ₹1.5–5.25 crore) and Mahima Villa in Kalarahanga, fed by HNI, senior-government and IT money concentrated in Patia, Jayadev Vihar and Chandrasekharpur. Competition is limited to entry-level Zigbee installers, leaving the premium KNX/Crestron slot open, and the page naturally captures twin-city Cuttack demand too. Odisha's hot, humid summers and cyclone exposure make sealed climate control, automated shading, surge/lightning protection and backup-aware automation the practical core of every build.",
+    marketNotes: [
+      "Over 100 luxury villa listings; ultra-luxury gated communities (Metro Kings Court ₹1.5–5.25 Cr, Mahima Villa) anchor the premium market",
+      "HNI, senior-government and IT buyers concentrate in Patia, Jayadev Vihar, Chandrasekharpur, Nayapalli and Kalarahanga",
+      "Competition is entry-level Zigbee only — the premium KNX/Crestron/Lutron slot is open; the page also captures twin-city Cuttack demand",
+      "Hot, humid summers make sealed climate control, automated blinds and AQI/fresh-air integration high-value",
+      "Cyclone exposure makes surge/lightning protection, IP66 outdoor gear and inverter/genset-aware backup essential",
+    ],
+    projectExamples: [
+      { area: "Patia", type: "4BHK gated villa", budget: "₹14 Lakh", scope: "KNX lighting + climate + CCTV + automated blinds + backup scenes" },
+      { area: "Jayadev Vihar", type: "5BHK independent house", budget: "₹19 Lakh", scope: "Crestron whole-home + perimeter security + home theater + surge protection" },
+      { area: "Chandrasekharpur", type: "3BHK IT-corridor apartment", budget: "₹7 Lakh", scope: "Wireless retrofit — lighting + locks + Sonos + voice control" },
+      { area: "Kalarahanga", type: "Ultra-luxury 6BHK villa", budget: "₹30 Lakh", scope: "KNX + Crestron AV + biometric access + 7.1.4 theater + dehumidification" },
+    ],
+    extraFaqs: [
+      {
+        question: "Do you serve both Bhubaneswar and Cuttack?",
+        answer:
+          "Yes — we cover the twin-city region end-to-end: survey, system design, supervised installation and AMC. Most premium demand sits in Bhubaneswar's Patia, Jayadev Vihar and Chandrasekharpur, with Cuttack adding established old-money households. For under-construction villas we plan a wired KNX/Crestron backbone; for finished homes we use wireless retrofit. Survey and quotation are free, with one accountable team throughout.",
+      },
+      {
+        question: "How does home automation handle Odisha's heat and cyclones?",
+        answer:
+          "We design Bhubaneswar builds for both. On climate: automated blinds, KNX/BACnet AC control and AQI/fresh-air integration hold comfort through hot, humid summers while cutting energy. On resilience: surge and lightning protection on panels and incoming lines, IP66 outdoor cameras, and inverter/genset-aware scenes with the hub and NVR on UPS so security and essential lighting ride through cyclone-season outages. Sea-influenced humidity also makes dehumidification integration worthwhile.",
+      },
+      {
+        question: "What's the premium option versus local Zigbee installers?",
+        answer:
+          "Local presence is mostly entry-level Zigbee/Wi-Fi, fine for a few smart switches. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration for the ₹1.5 crore-plus gated villas in Patia and Kalarahanga — vendor-neutral system design across lighting, climate, security and AV, engineered for Odisha's climate, backed by 15+ years, 300+ projects and structured AMC.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Surge protection & CCTV for cyclone-belt homes" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Sealed climate control for hot, humid Odisha summers" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Bhubaneswar gated villas" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Choosing the backbone for a Bhubaneswar villa" },
+    ],
+  },
+
+  kozhikode: {
+    slug: "kozhikode",
+    intro:
+      "Kozhikode (Calicut) sits on deep Malabar Gulf-NRI villa money — the diaspora across the Gulf funds large independent villas where home automation is increasingly fitted as standard in new builds. Unlike most tier-2 markets, Calicut has a genuine KNX-certified local player and an ultra-luxury experience centre, so this is about out-ranking real competition with stronger authority content and our 15+-year track record rather than an empty field. The buyer is the lock-and-leave NRI villa owner, which makes remote monitoring central, while heavy monsoon, humidity and coastal salt air make wired-KNX reliability and corrosion-resistant hardware genuinely important.",
+    marketNotes: [
+      "Malabar Gulf-NRI families fund large independent villas — automation is increasingly fitted as standard in new Calicut builds",
+      "Affluent pockets: Nadakkavu, Kottooli, Eranhipalam, West Hill and the Mavoor Road corridor",
+      "A genuine KNX-certified local player exists — we compete on authority, multi-brand depth and a 15+-year, 300+-project track record",
+      "Lock-and-leave NRI villa ownership makes remote monitoring, occupancy simulation and leak/flood detection central",
+      "Heavy monsoon, humidity and salt air favour wired KNX, IP66 outdoor gear and corrosion-resistant blind/lock hardware",
+    ],
+    projectExamples: [
+      { area: "Nadakkavu", type: "NRI-owned 5BHK villa", budget: "₹20 Lakh", scope: "KNX whole-home + remote monitoring + marine-grade CCTV + dehumidification" },
+      { area: "Kottooli", type: "4BHK independent house", budget: "₹12 Lakh", scope: "Lighting + climate + Sonos + biometric access + leak detection" },
+      { area: "West Hill", type: "Gated 4BHK villa", budget: "₹15 Lakh", scope: "Crestron lighting + CCTV + automated blinds + occupancy simulation" },
+      { area: "Eranhipalam", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + voice + away-mode" },
+    ],
+    extraFaqs: [
+      {
+        question: "I'm a Gulf NRI with a Calicut villa — what can be monitored remotely?",
+        answer:
+          "A complete package. We set up app-based live CCTV, motion and entry alerts, water-leak and flood detection for the monsoon, and occupancy simulation so the villa looks occupied while you are away. You get instant push alerts in the Gulf, a local caretaker can be given limited access, and the hub and NVR run on UPS so monitoring survives outages. One-tap away-mode secures the home, and you can grant temporary access for cleaning or maintenance visits.",
+      },
+      {
+        question: "There's already a KNX integrator in Calicut — why choose Grow More Solutions?",
+        answer:
+          "Because we are vendor-neutral and multi-brand certified — KNX, Crestron, Lutron and Control4 — so we design around your villa rather than around one product line, and we bring 15+ years and 300+ projects of system-design depth. For a large Malabar villa that often means KNX for the wired backbone with Lutron lighting and a dedicated AV platform, integrated cleanly, plus structured AMC. We compete on engineering quality, durability in the coastal climate and long-term support.",
+      },
+      {
+        question: "How does automation cope with Calicut's monsoon and humidity?",
+        answer:
+          "We engineer for the coast: a wired KNX backbone for reliability, IP66 outdoor cameras with marine-grade housings, corrosion-resistant motorized blind and lock hardware, and dehumidification tied to a moisture sensor. Outdoor terminations get corrosion-inhibitor and desiccant. This is where proper wired integration clearly outperforms cheap wireless that degrades within a couple of monsoons.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "Remote monitoring for NRI-owned Calicut villas" },
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Why coastal Calicut favours wired KNX reliability" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Dehumidification & climate for coastal Calicut" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Malabar NRI villas" },
+    ],
+  },
+
+  raipur: {
+    slug: "raipur",
+    intro:
+      "Raipur's wealth comes from steel, mining and rice-baron money, and the planned new capital of Naya Raipur (Atal Nagar) has added a fast-rising premium-housing layer, with prices up sharply year-on-year. Affluent demand concentrates in Telibandha, Shankar Nagar, Civil Lines and along VIP Road, plus the new villa stock in Naya Raipur. The local SERP is near-empty of any premium automation specialist — one of the cleanest rank-and-convert opportunities in central India. The defining local challenge is electrical and climatic: severe heat, dust and frequent power cuts make surge-safe smart wiring, inverter-integrated automation and sealed climate control the practical core of every Raipur build.",
+    marketNotes: [
+      "Steel, mining and rice-trade wealth plus the new Naya Raipur (Atal Nagar) capital drive premium demand — much of it new villa stock",
+      "Affluent pockets: Telibandha, Shankar Nagar, Civil Lines, VIP Road and Naya Raipur (Atal Nagar)",
+      "The SERP is near-empty of any premium automation specialist — one of the cleanest rank-and-convert opportunities in central India",
+      "Severe heat and dust make sealed climate control, automated blinds and AQI/fresh-air integration high-value",
+      "Frequent power cuts make surge-safe wiring and inverter/genset-aware scenes essential",
+    ],
+    projectExamples: [
+      { area: "Telibandha", type: "4BHK villa", budget: "₹13 Lakh", scope: "KNX lighting + climate + CCTV + automated blinds + inverter-aware backup" },
+      { area: "Shankar Nagar", type: "5BHK independent house", budget: "₹18 Lakh", scope: "Crestron whole-home + perimeter security + home theater + surge protection" },
+      { area: "Naya Raipur", type: "Gated 4BHK villa", budget: "₹10 Lakh", scope: "Smart lighting + climate + Sonos + biometric access + backup scenes" },
+      { area: "VIP Road", type: "3BHK apartment", budget: "₹6 Lakh", scope: "Wireless retrofit — lighting + locks + video doorbell + voice control" },
+    ],
+    extraFaqs: [
+      {
+        question: "How does home automation handle Raipur's heat and frequent power cuts?",
+        answer:
+          "This is the first thing we design for in Raipur. On power: surge-protected smart wiring, clean inverter/genset integration and load-shedding scenes that keep essential lighting, fans, network and security live while non-essential loads drop to extend backup runtime — with the hub, router and NVR on UPS. On climate: automated blinds, KNX/BACnet AC control and AQI/fresh-air integration to hold comfort through severe heat and dust. Together they deliver reliability that budget Wi-Fi-only kits cannot match here.",
+      },
+      {
+        question: "Do you serve Raipur and Naya Raipur, including new villa builds?",
+        answer:
+          "Yes — and Naya Raipur's new villa stock is an ideal fit. For homes under construction we plan and pre-wire a KNX or Crestron backbone, which is far cheaper and cleaner than retrofitting later, and lets us integrate lighting, climate, security and AV from day one. For finished homes in Telibandha, Shankar Nagar or Civil Lines we use wireless retrofit. We deliver end-to-end — survey, design, installation and AMC — with a free initial assessment.",
+      },
+      {
+        question: "Is wired or wireless better for a Raipur villa?",
+        answer:
+          "For a villa being built or renovated — common in Naya Raipur — wired KNX/Crestron is the stronger long-term backbone: reliable across many control points and scalable to climate, security and AV, which matters given the local power conditions. For an already-finished home we use Lutron RA3 or KNX RF wireless retrofit to reach most functionality without civil work. We recommend wired only where the build stage makes it pay back.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Beating Raipur's heat & dust with smart climate" },
+      { title: "Smart Home Wiring for New Construction", href: "/blog/smart-home-wiring-new-construction-india", description: "Pre-wiring Naya Raipur villas for KNX" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Raipur & Naya Raipur villas" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "CCTV, locks & backup-aware security for Raipur" },
+    ],
+  },
+
+  thiruvananthapuram: {
+    slug: "thiruvananthapuram",
+    intro:
+      "Thiruvananthapuram pairs capital-city wealth with Technopark — India's first and largest IT park — creating an affluent base of senior professionals and government families along the Kazhakkoottam–Technopark corridor and in Kowdiar, Vellayambalam and Sasthamangalam. Local automation presence is thin and the SERP is mostly directories, making this one of the easiest premium-positioning wins in Kerala. As a coastal Kerala city, the environmental brief mirrors Kochi's — humidity, salt air and monsoon favour wired-KNX reliability and corrosion-resistant hardware — while the IT-professional buyer skews toward clean, app-driven lighting, climate, security and convenience.",
+    marketNotes: [
+      "Capital + Technopark IT wealth — senior professionals and government families along Kazhakkoottam–Technopark and in Kowdiar/Vellayambalam/Sasthamangalam",
+      "Thin local automation presence and a directory-only SERP make this one of the easiest premium-positioning wins in Kerala",
+      "Coastal humidity, salt air and monsoon favour wired KNX, IP66 outdoor gear and corrosion-resistant hardware over cheap wireless",
+      "IT-professional buyers favour clean app-driven lighting, climate, security and convenience automation",
+      "Dehumidification and AQI/fresh-air integration are standard given year-round coastal humidity",
+    ],
+    projectExamples: [
+      { area: "Kowdiar", type: "4BHK independent house", budget: "₹14 Lakh", scope: "KNX lighting + climate + CCTV + automated blinds + dehumidification" },
+      { area: "Kazhakkoottam", type: "IT-professional 3BHK", budget: "₹7 Lakh", scope: "Wireless retrofit — lighting + locks + Sonos + voice + climate" },
+      { area: "Vellayambalam", type: "5BHK villa", budget: "₹20 Lakh", scope: "Crestron whole-home + 5.1.4 theater + biometric access + leak detection" },
+      { area: "Sasthamangalam", type: "4BHK apartment", budget: "₹9 Lakh", scope: "Lighting + climate + multi-room audio + away-mode scenes" },
+    ],
+    extraFaqs: [
+      {
+        question: "Is there a premium home automation specialist in Thiruvananthapuram?",
+        answer:
+          "Local presence is thin and mostly basic. Grow More Solutions brings certified KNX, Crestron and Lutron whole-home integration to Kowdiar, Vellayambalam and the Technopark corridor — vendor-neutral design across lighting, climate, security and AV, engineered for the coastal climate, and backed by 15+ years and 300+ projects across India. Every project begins with a free on-site survey and a tiered proposal, so you can scope from a starter package up to full villa integration.",
+      },
+      {
+        question: "How does home automation cope with Trivandrum's coastal humidity?",
+        answer:
+          "We engineer for it: a wired KNX backbone for reliability, IP66 outdoor cameras with marine-grade housings, corrosion-resistant motorized blind and lock hardware, and dehumidification tied to a moisture sensor, with AQI/fresh-air integration for year-round air quality. In a humid, monsoon-heavy coastal city this wired approach clearly outlasts the cheap wireless kits that degrade quickly in salt air.",
+      },
+      {
+        question: "What do Technopark professionals typically automate first?",
+        answer:
+          "The IT-professional buyer here tends to start with clean, app-driven essentials: zoned smart lighting with scenes, climate/AC control, and security (CCTV, smart locks, motion alerts), all controllable by app and voice. From there, multi-room audio, motorized shading and a media room are natural additions. We also add inverter/UPS-backed scenes so lighting, network and security stay up during outages, and sequence the build so the highest-value systems go in first.",
+      },
+    ],
+    recommendedReading: [
+      { title: "Wired vs Wireless Home Automation", href: "/blog/wired-vs-wireless-home-automation-india", description: "Why coastal Trivandrum favours wired KNX" },
+      { title: "Smart Home Security Systems Guide", href: "/blog/smart-home-security-systems-india", description: "CCTV, locks & app monitoring for Trivandrum homes" },
+      { title: "Smart HVAC & Climate Control", href: "/blog/smart-hvac-climate-control-india", description: "Dehumidification & climate for coastal Kerala" },
+      { title: "Home Automation Cost Guide 2026", href: "/blog/home-automation-cost-2026", description: "Pricing tiers for Kowdiar & Technopark-corridor homes" },
+    ],
+  },
+
   bangalore: {
     slug: "bangalore",
     intro:

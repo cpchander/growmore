@@ -83,6 +83,12 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   Ludhiana: { lat: 30.901, lng: 75.8573 },
   Nagpur: { lat: 21.1458, lng: 79.0882 },
   Visakhapatnam: { lat: 17.6868, lng: 83.2185 },
+  Amritsar: { lat: 31.634, lng: 74.8723 },
+  Mangaluru: { lat: 12.9141, lng: 74.856 },
+  Bhubaneswar: { lat: 20.2961, lng: 85.8245 },
+  Kozhikode: { lat: 11.2588, lng: 75.7804 },
+  Raipur: { lat: 21.2514, lng: 81.6296 },
+  Thiruvananthapuram: { lat: 8.5241, lng: 76.9366 },
 };
 
 // ─── Shared certification credentials ────────────────────────────────
