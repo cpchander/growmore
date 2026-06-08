@@ -27,6 +27,7 @@ export type BlogPost = {
   author: string;
   authorRole: string;
   publishedAt: string;
+  updatedAt?: string;
   readTime: string;
   featured: boolean;
   image: string;
@@ -288,6 +289,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Anupam Mahajan",
     authorRole: "Co-Founder & Managing Director",
     publishedAt: "2026-03-28",
+    updatedAt: "2026-06-08",
     readTime: "17 min",
     featured: false,
     image: "/images/blog/builders-smart-homes.webp",

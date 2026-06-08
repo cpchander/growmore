@@ -328,7 +328,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.excerpt,
     image: `https://growmoresolutions.com${post.image}`,
     datePublished: post.publishedAt,
-    dateModified: post.publishedAt,
+    dateModified: post.updatedAt ?? post.publishedAt,
     author: authorPersonSchema,
     publisher: {
       "@type": "Organization",
