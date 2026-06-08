@@ -1,5 +1,6 @@
 export type Project = {
   slug: string;
+  image: string;
   title: string;
   city: string;
   type: "Villa" | "Apartment" | "Penthouse" | "Commercial" | "Hotel";
@@ -14,6 +15,7 @@ export const PROJECT_TYPES = ["All", "Villa", "Apartment", "Penthouse", "Commerc
 export const PROJECTS: Project[] = [
   {
     slug: "mumbai-bandra-villa",
+    image: "/images/services/luxury-villa-exterior.webp",
     title: "Luxury Villa Automation — Bandra, Mumbai",
     city: "Mumbai",
     type: "Villa",
@@ -24,6 +26,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "delhi-golf-links-penthouse",
+    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
     title: "Smart Penthouse — Golf Links, Delhi",
     city: "Delhi NCR",
     type: "Penthouse",
@@ -34,6 +37,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "bangalore-whitefield-apartments",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80",
     title: "200-Unit Smart Apartment Complex — Whitefield, Bangalore",
     city: "Bangalore",
     type: "Apartment",
@@ -44,6 +48,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "hyderabad-jubilee-hills-villa",
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
     title: "Contemporary Villa — Jubilee Hills, Hyderabad",
     city: "Hyderabad",
     type: "Villa",
@@ -54,6 +59,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "goa-resort-automation",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200&q=80",
     title: "Boutique Resort — 50 Rooms, North Goa",
     city: "Goa",
     type: "Hotel",
@@ -64,6 +70,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "pune-koregaon-park-apartment",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80",
     title: "Premium 4BHK Automation — Koregaon Park, Pune",
     city: "Pune",
     type: "Apartment",

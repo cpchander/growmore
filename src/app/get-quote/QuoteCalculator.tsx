@@ -92,16 +92,18 @@ export default function QuoteCalculator() {
   };
 
   const [sendingQuote, setSendingQuote] = useState(false);
+  const [quoteError, setQuoteError] = useState(false);
 
   const handleSubmitLead = async () => {
     setSendingQuote(true);
+    setQuoteError(false);
     try {
       const totalRooms = rooms.reduce((s, r) => s + r.count, 0);
       const featureNames = selectedFeatures.map((id) => {
         const f = FEATURES.find((af) => af.id === id);
         return f ? f.label : id;
       });
-      await fetch("/api/contact", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -115,11 +117,10 @@ export default function QuoteCalculator() {
           message: `Rooms: ${rooms.filter((r) => r.count > 0).map((r) => `${r.name}: ${r.count}`).join(", ")}. Tier: ${tier}.`,
         }),
       });
+      // Only mark captured if the API actually accepted it
+      if (!res.ok) throw new Error("Request rejected");
       setLeadCaptured(true);
-    } catch {
-      // Silently fail — still show success to user, log in background
-      setLeadCaptured(true);
-      // GA4 conversion event
+      // GA4 conversion event — fire on SUCCESS
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const w = window as any;
       if (typeof w.gtag === "function") {
@@ -129,6 +130,9 @@ export default function QuoteCalculator() {
           value: 1,
         });
       }
+    } catch {
+      // Surface a real error instead of a false success
+      setQuoteError(true);
     } finally {
       setSendingQuote(false);
     }
@@ -329,6 +333,12 @@ export default function QuoteCalculator() {
                   >
                     {sendingQuote ? "Sending..." : "Get Expert Quote"} {!sendingQuote && <ArrowRight className="w-4 h-4" />}
                   </button>
+                  {quoteError && (
+                    <p className="text-xs text-red-400 text-center">
+                      Couldn&apos;t send — please check your name &amp; phone, or{" "}
+                      <a href={`tel:${COMPANY.phone}`} className="text-gold-500 underline">call us directly</a>.
+                    </p>
+                  )}
                 </div>
               ) : (
                 <div className="text-center py-4">

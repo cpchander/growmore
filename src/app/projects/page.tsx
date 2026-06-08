@@ -109,10 +109,17 @@ export default function ProjectsPage() {
                 key={project.slug}
                 className="group glass-card rounded-xl overflow-hidden hover:border-gold-500/30 transition-all"
               >
-                {/* Image Placeholder */}
-                <div className="aspect-video bg-navy-800 flex items-center justify-center relative">
-                  <span className="text-navy-600 text-sm">Project Image</span>
-                  <span className="absolute top-3 left-3 text-xs bg-gold-500/10 text-gold-500 px-2 py-0.5 rounded">
+                {/* Project Image */}
+                <div className="aspect-video bg-navy-800 relative overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} — smart home automation project`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 400px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/50 to-transparent" />
+                  <span className="absolute top-3 left-3 text-xs bg-gold-500/90 text-navy-900 font-semibold px-2 py-0.5 rounded">
                     {project.type}
                   </span>
                 </div>

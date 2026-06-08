@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY } from "@/lib/constants";
 import { PROJECTS } from "@/lib/projects-data";
 import { createMetadata, breadcrumbJsonLd, projectJsonLd, faqJsonLd } from "@/lib/metadata";
@@ -116,10 +117,18 @@ export default async function ProjectPage({ params }: Props) {
             <span className="text-white line-clamp-1">{project.title}</span>
           </nav>
 
-          {/* Hero Image Placeholder */}
-          <div className="aspect-video bg-navy-800 rounded-xl flex items-center justify-center mb-8 relative overflow-hidden">
-            <span className="text-navy-600">Project Hero Image</span>
-            <span className="absolute top-4 left-4 text-xs bg-gold-500/10 text-gold-500 px-3 py-1 rounded-full font-medium">
+          {/* Hero Image */}
+          <div className="aspect-video bg-navy-800 rounded-xl mb-8 relative overflow-hidden">
+            <Image
+              src={project.image}
+              alt={`${project.title} — home automation by Grow More Solutions`}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 900px"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 to-transparent" />
+            <span className="absolute top-4 left-4 text-xs bg-gold-500/90 text-navy-900 px-3 py-1 rounded-full font-semibold">
               {project.type}
             </span>
           </div>
@@ -198,23 +207,6 @@ export default async function ProjectPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Gallery Placeholder */}
-          <div className="mb-10">
-            <h2 className="text-xl font-bold text-white mb-4">
-              Project Gallery
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {[1, 2, 3, 4, 5, 6].map((n) => (
-                <div
-                  key={n}
-                  className="aspect-square bg-navy-800 rounded-lg flex items-center justify-center"
-                >
-                  <span className="text-navy-600 text-xs">Photo {n}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* CTA */}
           {/* FAQ */}
           <div className="mb-12">
@@ -269,8 +261,8 @@ export default async function ProjectPage({ params }: Props) {
                     href={`/projects/${r.slug}`}
                     className="group glass-card rounded-lg overflow-hidden hover:border-gold-500/30 transition-all"
                   >
-                    <div className="aspect-video bg-navy-800 flex items-center justify-center">
-                      <span className="text-navy-600 text-xs">Image</span>
+                    <div className="relative aspect-video bg-navy-800 overflow-hidden">
+                      <Image src={r.image} alt={r.title} fill sizes="280px" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                     <div className="p-4">
                       <h3 className="text-sm font-semibold text-white group-hover:text-gold-500 transition-colors line-clamp-2">
