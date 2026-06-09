@@ -83,8 +83,12 @@ export default function EstimatorClient({ fxRate, fxDate }: { fxRate: number; fx
 
     const html = `<!doctype html><html><head><meta charset="utf-8"><title>GMHS Estimate & BOQ</title></head>
     <body style="font-family:Arial,sans-serif;max-width:880px;margin:24px auto;color:#1a2744;">
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #D4A843;padding-bottom:10px;">
-        <div><h1 style="margin:0;color:#0a1424;">Indicative Estimate &amp; BOQ</h1><p style="margin:4px 0 0;color:#666;">Grow More Solutions · growmoresolutions.com</p></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #D4A843;padding-bottom:12px;">
+        <div>
+          <img src="https://growmoresolutions.com/images/company/gmhs.png" alt="Grow More Solutions" style="height:46px;display:block;margin-bottom:8px;" />
+          <h1 style="margin:0;color:#0a1424;font-size:22px;">Indicative Estimate &amp; BOQ</h1>
+          <p style="margin:3px 0 0;color:#666;">Grow More Hitech Solutions · growmoresolutions.com</p>
+        </div>
         <div style="text-align:right;font-size:13px;color:#666;">${PROPERTY_TYPES.find(p => p.id === propertyType)?.label}<br>${areaSqft.toLocaleString("en-IN")} sq ft · ${city} · ${tier} tier · ${automationSystem === "knx" ? "KNX" : "Wireless"}</div>
       </div>
       <h2 style="margin:18px 0 6px;color:#0a1424;">Budgetary Summary</h2>
