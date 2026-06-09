@@ -183,6 +183,14 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
+                  href="/nri"
+                  className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
+                >
+                  NRI Property Services
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/how-we-work"
                   className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
                 >

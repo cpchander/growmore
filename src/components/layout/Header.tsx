@@ -18,6 +18,7 @@ const SOLUTION_LINKS = [
   { href: "/solutions/for-builders", label: "For Builders & Developers", desc: "Bulk automation for residential projects", icon: Building2 },
   { href: "/solutions/for-architects", label: "For Architects & Designers", desc: "Specification & integration support", icon: PenTool },
   { href: "/solutions/for-hotels", label: "For Hotels & Hospitality", desc: "Guest room automation & energy savings", icon: Hotel },
+  { href: "/nri", label: "For NRIs", desc: "Care, build, buy & sell your India property from abroad", icon: Globe },
 ];
 
 const PROJECT_LINKS = [
