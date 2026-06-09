@@ -1,8 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { z } from "zod";
+import fs from "fs/promises";
+import path from "path";
 
 export const runtime = "nodejs";
+
+// NRI pitch deck attached to every acknowledgement email
+async function loadPitchDeck(): Promise<{ filename: string; content: Buffer }[]> {
+  try {
+    const buf = await fs.readFile(path.join(process.cwd(), "private-assets", "nri-pitch-deck.pdf"));
+    return [{ filename: "GMHS-NRI-Property-Concierge.pdf", content: buf }];
+  } catch {
+    return []; // never block the lead if the deck is missing
+  }
+}
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
@@ -80,10 +92,12 @@ export async function POST(req: NextRequest) {
         </div></div>`,
     });
 
-    // Acknowledgement → NRI
+    // Acknowledgement → NRI (with the pitch deck attached)
+    const deckAttachment = await loadPitchDeck();
     await transport.sendMail({
       from: '"Grow More Solutions" <noreply@growmoresolutions.com>',
       to: email,
+      attachments: deckAttachment,
       subject: "We've received your NRI property enquiry — Grow More Solutions",
       html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;">
         <div style="background:#0a1628;padding:32px;border-radius:12px;border:1px solid #1e3050;">
@@ -92,9 +106,12 @@ export async function POST(req: NextRequest) {
             Your enquiry has reached our NRI desk. A dedicated relationship manager will get back to you
             within <strong style="color:#d4a843;">1 working day</strong>, at a time that suits your timezone${s.country ? " in " + s.country : ""}.
           </p>
-          <p style="color:#8899aa;font-size:13px;line-height:1.6;margin:0;">
+          <p style="color:#8899aa;font-size:13px;line-height:1.6;margin:0 0 14px;">
             We look after NRI properties across India — care &amp; monitoring, building &amp; automating, and
             buying or selling with full title, FEMA and tax handling. Backed by a 40-year name and an on-ground team in Delhi-NCR.
+          </p>
+          <p style="color:#d4a843;font-size:13px;line-height:1.6;margin:0;font-weight:600;">
+            📎 We've attached a short overview of how we help NRIs — have a look before our call.
           </p>
         </div>
         <p style="color:#556677;font-size:11px;text-align:center;margin-top:16px;">Grow More Solutions — 15+ Years · 600+ Projects · 25+ Cities</p>

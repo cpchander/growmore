@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   // Bundle the gated (non-public) resource files into the protected download route
   outputFileTracingIncludes: {
     "/api/download": ["./private-assets/**"],
+    "/api/nri": ["./private-assets/nri-pitch-deck.pdf"],
   },
 
   images: {

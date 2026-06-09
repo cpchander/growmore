@@ -50,6 +50,9 @@ export default function NriPropertyCarePage() {
                 visit and the option to see it live from your phone. No more relying on a caretaker
                 you can&apos;t verify.
               </p>
+              <Link href="/nri/dashboard" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold-500 hover:gap-3 transition-all">
+                See a sample owner dashboard &rarr;
+              </Link>
               <div className="mt-8 space-y-4">
                 {INCLUDED.map((i) => (
                   <div key={i.title} className="flex items-start gap-3">
