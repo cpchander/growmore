@@ -1,8 +1,9 @@
 // ============================================================
 // HOME JOURNEY ESTIMATOR — deterministic rules engine (Phase 1)
-// Pure functions. No AI touches any number. Seeded from researched
-// 2026 India rate-cards + GMHS's real Digilux (wireless) & Schneider
-// (KNX wired) price lists. All figures INDICATIVE; GST extra.
+// Pure functions. No AI touches any number. Construction stages from
+// researched 2026 rate-cards; AUTOMATION BOQ replicates GMHS's real
+// proposal templates (Schneider KNX + Digilux wireless) — sectioned
+// device line-items with list → 30% discount → +18% GST → + install.
 // ============================================================
 
 export type Tier = "basic" | "standard" | "premium" | "luxury";
@@ -42,26 +43,8 @@ export const CIVIL_RATES: Record<string, Record<Tier, number>> = {
 export const ESTIMATOR_CITIES = Object.keys(CIVIL_RATES);
 const METRO_PREMIUM = ["Delhi NCR", "Gurgaon", "Mumbai", "Bangalore"];
 
-// Interior fit-out ₹/sq ft (furnishing/woodwork/modular beyond civil finish)
 const INTERIOR_RATES: Record<Tier, number> = { basic: 1000, standard: 1200, premium: 1400, luxury: 2000 };
 
-// Home automation — seeded from the real price lists
-const AUTOMATION = {
-  wireless: { // Digilux Zigbee/IoT
-    base: 56000, // WiFi gateway ₹44k + bridge ₹12k
-    perRoom: { basic: 15000, standard: 19000, premium: 25000, luxury: 32000 } as Record<Tier, number>,
-    baseLabel: "Zigbee WiFi gateway, bridge & network base",
-    roomLabel: "Smart switch modules, dimmers, scene keypads & controls (per room)",
-  },
-  knx: { // Schneider KNX (wired) + ELAN processor
-    base: 400000, // ELAN processor + AC control + gateways + power supply
-    perRoom: { basic: 55000, standard: 70000, premium: 100000, luxury: 140000 } as Record<Tier, number>,
-    baseLabel: "ELAN processor, power supply, AC control & gateways",
-    roomLabel: "KNX actuators, dimmers, designer keypads & bus wiring (per room)",
-  },
-};
-
-// Stage durations (months) {min,max}
 const DURATIONS: Record<StageId, { villa: [number, number]; apartment: [number, number] }> = {
   design: { villa: [3, 6], apartment: [0.5, 1] },
   approvals: { villa: [1, 3], apartment: [0, 0] },
@@ -70,33 +53,136 @@ const DURATIONS: Record<StageId, { villa: [number, number]; apartment: [number, 
   automation: { villa: [1, 2], apartment: [0.5, 1.5] },
 };
 
-export type BoqLine = { item: string; qty: number; unit: string; rateINR: number; amountINR: number };
+// ---- Real product prices (from the GMHS proposal templates) ----
+const KNX = {
+  powerSupply: 52000, output8Master: 35000, output8Ext: 27000, dimmer3ch: 41000, smartSwitch: 5000, knxWire: 200,
+  elanProcessor: 200000, viewerLicense: 31000, gateway: 55000, acControl: 150000, globalCache: 30000, emitter: 3500,
+  backBox: 500, unica4: 30000, unicaBedside: 20000, unica6: 35000, dlp8: 50000, screen: 70000,
+};
+const DIGI = {
+  ecoModule: { basic: 11000, standard: 14000 }, proModule: { premium: 26000, luxury: 31000 },
+  curtainModule: 11000, sceneModule: 11000, wifiGateway: 44000, bridge: 12000, rangeExtender: 5000,
+  rgbw: 9000, irController: 9000, sensor: 5000, contactor: 3000,
+};
+const DISCOUNT = 0.30, GST = 0.18, INSTALL = 0.12; // from the proposal sheets
+
+export type BoqLine = { item: string; make?: string; qty: number; unit: string; rateINR: number; amountINR: number };
+export type BoqSection = {
+  name: string; lines: BoqLine[];
+  listINR: number; discountINR: number; nettINR: number; gstINR: number; installINR: number; totalINR: number;
+};
 export type StageResult = {
-  id: StageId;
-  label: string;
-  lines: BoqLine[];
-  subtotalINR: number;
-  durationMin: number;
-  durationMax: number;
+  id: StageId; label: string;
+  lines?: BoqLine[]; sections?: BoqSection[];
+  subtotalINR: number; durationMin: number; durationMax: number;
 };
-export type EstimateResult = {
-  stages: StageResult[];
-  totalINR: number;
-  lowINR: number;
-  highINR: number;
-};
+export type EstimateResult = { stages: StageResult[]; totalINR: number; lowINR: number; highINR: number };
 
 export type EstimatorInput = {
-  propertyType: PropertyType;
-  areaSqft: number;
-  city: string;
-  tier: Tier;
-  stages: Record<StageId, boolean>;
-  automationSystem: AutomationSystem;
-  rooms: number;
+  propertyType: PropertyType; areaSqft: number; city: string; tier: Tier;
+  stages: Record<StageId, boolean>; automationSystem: AutomationSystem; rooms: number;
 };
 
 const round = (n: number, to = 1000) => Math.round(n / to) * to;
+const ceil = Math.ceil;
+
+function priceSection(name: string, lines: BoqLine[]): BoqSection {
+  const listINR = lines.reduce((s, l) => s + l.amountINR, 0);
+  const discountINR = Math.round(listINR * DISCOUNT);
+  const nettINR = listINR - discountINR;
+  const gstINR = Math.round(nettINR * GST);
+  const installINR = Math.round(nettINR * INSTALL);
+  return { name, lines, listINR, discountINR, nettINR, gstINR, installINR, totalINR: nettINR + gstINR + installINR };
+}
+const L = (item: string, make: string, qty: number, unit: string, rateINR: number): BoqLine =>
+  ({ item, make, qty, unit, rateINR, amountINR: qty * rateINR });
+
+// Derive device counts per room (calibrated to the sample proposals)
+function deviceCounts(rooms: number, tier: Tier) {
+  const f = {
+    sw: { basic: 4, standard: 5, premium: 6, luxury: 7 }[tier],
+    fan: 0.5,
+    dim: { basic: 0, standard: 0.5, premium: 1, luxury: 1.5 }[tier],
+    shut: { basic: 0.3, standard: 0.6, premium: 1, luxury: 1.3 }[tier],
+    hvac: 0.8,
+    keypad: { basic: 0.5, standard: 0.8, premium: 1, luxury: 1.3 }[tier],
+    smart: 0.5,
+  };
+  const n = (x: number) => Math.max(0, Math.round(x * rooms));
+  return { sw: n(f.sw), fan: n(f.fan), dim: n(f.dim), shut: n(f.shut), hvac: n(f.hvac), keypad: Math.max(1, n(f.keypad)), smart: n(f.smart) };
+}
+
+function knxSections(rooms: number, tier: Tier): BoqSection[] {
+  const d = deviceCounts(rooms, tier);
+  // Backend
+  const channels = d.sw + d.fan + d.shut * 2;
+  const modules = Math.max(1, ceil(channels / 8));
+  const ext = Math.max(0, modules - 1);
+  const ps = Math.max(1, ceil(modules / 4));
+  const dimmers = ceil(d.dim / 3);
+  const wire = rooms * 40;
+  const backend: BoqLine[] = [
+    L("Power supply 30V DC 640mA", "Schneider", ps, "no", KNX.powerSupply),
+    L("Output 8-ch Master", "Schneider", 1, "no", KNX.output8Master),
+  ];
+  if (ext > 0) backend.push(L("Output 8-ch Extension", "Schneider", ext, "no", KNX.output8Ext));
+  if (dimmers > 0) backend.push(L("3-Channel 1-10V Dimmer", "Schneider", dimmers, "no", KNX.dimmer3ch));
+  if (d.smart > 0) backend.push(L("Smart Switch", "Schneider", d.smart, "no", KNX.smartSwitch));
+  backend.push(L("KNX bus wire", "KNX", wire, "m", KNX.knxWire));
+
+  // Processor
+  const proc: BoqLine[] = [
+    L("Processor", "ELAN", 1, "no", KNX.elanProcessor),
+    L("Viewer License", "ELAN", 1, "no", KNX.viewerLicense),
+    L("Gateway / Converter", "Gateway", 1, "no", KNX.gateway),
+  ];
+  if (d.hvac > 0) {
+    proc.push(L("AC control system", "Intellisys", 1, "no", KNX.acControl));
+    proc.push(L("Global Cache", "Global Cache", Math.max(1, ceil(d.hvac / 8)), "no", KNX.globalCache));
+    proc.push(L("Emitters (AC control)", "Xtralink", d.hvac, "no", KNX.emitter));
+  }
+
+  // Keypads / Frontend
+  const lux = tier === "premium" || tier === "luxury";
+  const u4 = Math.max(1, Math.round(d.keypad * 0.4));
+  const u6 = Math.round(d.keypad * 0.3);
+  const bedside = Math.round(rooms * 0.25);
+  const dlp = lux ? Math.round(d.keypad * 0.15) : 0;
+  const screens = lux ? 1 : 0;
+  const totalKeypads = u4 + u6 + bedside + dlp;
+  const keypads: BoqLine[] = [
+    L("Back Box + Connector", "Schneider", totalKeypads, "no", KNX.backBox),
+    L("Unica 4-button keypad", "Schneider", u4, "no", KNX.unica4),
+  ];
+  if (u6 > 0) keypads.push(L("Unica 6-button keypad", "Schneider", u6, "no", KNX.unica6));
+  if (bedside > 0) keypads.push(L("Unica ELV bedside keypad", "Schneider", bedside, "no", KNX.unicaBedside));
+  if (dlp > 0) keypads.push(L("DLP 8-button keypad", "Schneider", dlp, "no", KNX.dlp8));
+  if (screens > 0) keypads.push(L('Touch Screen 4"', "Schneider", screens, "no", KNX.screen));
+
+  return [priceSection("Backend — Automation Devices", backend), priceSection("Processor", proc), priceSection("Frontend — Keypads & Screens", keypads)];
+}
+
+function wirelessSections(rooms: number, tier: Tier): BoqSection[] {
+  const d = deviceCounts(rooms, tier);
+  const isPro = tier === "premium" || tier === "luxury";
+  const modulePrice = isPro ? DIGI.proModule[tier as "premium" | "luxury"] : DIGI.ecoModule[tier as "basic" | "standard"];
+  const devices: BoqLine[] = [
+    L(`Crystal ${isPro ? "PRO" : "ECO"} smart switch module (per room)`, "Digilux", rooms, "no", modulePrice),
+  ];
+  if (d.shut > 0) devices.push(L("Crystal curtain/blind module", "Digilux", d.shut, "no", DIGI.curtainModule));
+  if (d.keypad > 0) devices.push(L("Crystal scene keypad", "Digilux", d.keypad, "no", DIGI.sceneModule));
+  if (d.hvac > 0) { devices.push(L("IR controller (AC)", "Digilux", d.hvac, "no", DIGI.irController)); devices.push(L("Contactor (AC)", "Digilux", d.hvac, "no", DIGI.contactor)); }
+  devices.push(L("Occupancy / motion sensor", "Digilux", Math.max(1, Math.round(rooms * 0.5)), "no", DIGI.sensor));
+  if (tier === "luxury") devices.push(L("RGBW controller", "Digilux", Math.round(rooms * 0.3), "no", DIGI.rgbw));
+
+  const network: BoqLine[] = [
+    L("Zigbee WiFi Gateway", "Digilux", 1, "no", DIGI.wifiGateway),
+    L("Zigbee Bridge", "Digilux", Math.max(1, ceil(rooms / 6)), "no", DIGI.bridge),
+  ];
+  if (rooms > 6) network.push(L("Range Extender", "Digilux", ceil(rooms / 8), "no", DIGI.rangeExtender));
+
+  return [priceSection("Smart Modules & Controls", devices), priceSection("Network & Gateways", network)];
+}
 
 export function estimate(input: EstimatorInput): EstimateResult {
   const { propertyType, areaSqft, city, tier, stages, automationSystem, rooms } = input;
@@ -104,66 +190,37 @@ export function estimate(input: EstimatorInput): EstimateResult {
   const dKey = isVilla ? "villa" : "apartment";
   const civil = (CIVIL_RATES[city] || CIVIL_RATES.Other)[tier];
   const out: StageResult[] = [];
-
-  const constructionCost = areaSqft * civil;
+  const dur = (id: StageId): [number, number] => DURATIONS[id][dKey];
 
   if (isVilla && stages.construction) {
-    out.push({
-      id: "construction", label: "Civil Construction (turnkey)",
-      lines: [{ item: `Turnkey construction — structure, finishing & MEP (${tier})`, qty: areaSqft, unit: "sq ft", rateINR: civil, amountINR: constructionCost }],
-      subtotalINR: constructionCost, durationMin: DURATIONS.construction[dKey][0], durationMax: DURATIONS.construction[dKey][1],
-    });
+    const cost = areaSqft * civil;
+    out.push({ id: "construction", label: "Civil Construction (turnkey)", lines: [{ item: `Turnkey construction — structure, finishing & MEP (${tier})`, qty: areaSqft, unit: "sq ft", rateINR: civil, amountINR: cost }], subtotalINR: cost, durationMin: dur("construction")[0], durationMax: dur("construction")[1] });
   }
-
   if (isVilla && stages.design) {
     const floor = areaSqft < 2000 ? 120 : areaSqft <= 5000 ? 90 : 60;
-    const fee = Math.max(constructionCost * 0.075, floor * areaSqft);
-    out.push({
-      id: "design", label: "Architecture & Design",
-      lines: [{ item: "Architectural & interior design fees (drawings, 3D, BOQ)", qty: areaSqft, unit: "sq ft", rateINR: Math.round(fee / areaSqft), amountINR: round(fee) }],
-      subtotalINR: round(fee), durationMin: DURATIONS.design[dKey][0], durationMax: DURATIONS.design[dKey][1],
-    });
+    const fee = round(Math.max(areaSqft * civil * 0.075, floor * areaSqft));
+    out.push({ id: "design", label: "Architecture & Design", lines: [{ item: "Architectural & interior design fees (drawings, 3D, BOQ)", qty: areaSqft, unit: "sq ft", rateINR: Math.round(fee / areaSqft), amountINR: fee }], subtotalINR: fee, durationMin: dur("design")[0], durationMax: dur("design")[1] });
   }
-
   if (isVilla && stages.approvals) {
     const fee = METRO_PREMIUM.includes(city) ? 150000 : 60000;
-    out.push({
-      id: "approvals", label: "Approvals & Sanctions",
-      lines: [{ item: "Building plan sanction, NOCs & regulatory liaison", qty: 1, unit: "lump", rateINR: fee, amountINR: fee }],
-      subtotalINR: fee, durationMin: DURATIONS.approvals[dKey][0], durationMax: DURATIONS.approvals[dKey][1],
-    });
+    out.push({ id: "approvals", label: "Approvals & Sanctions", lines: [{ item: "Building plan sanction, NOCs & regulatory liaison", qty: 1, unit: "lump", rateINR: fee, amountINR: fee }], subtotalINR: fee, durationMin: dur("approvals")[0], durationMax: dur("approvals")[1] });
   }
-
   if (stages.interiors) {
     let rate = INTERIOR_RATES[tier];
     if (METRO_PREMIUM.includes(city)) rate = Math.round(rate * 1.25);
     const cost = areaSqft * rate;
-    out.push({
-      id: "interiors", label: "Interiors & Fit-out",
-      lines: [{ item: `Modular kitchen, wardrobes, woodwork, false ceiling & furnishing (${tier})`, qty: areaSqft, unit: "sq ft", rateINR: rate, amountINR: cost }],
-      subtotalINR: cost, durationMin: DURATIONS.interiors[dKey][0], durationMax: DURATIONS.interiors[dKey][1],
-    });
+    out.push({ id: "interiors", label: "Interiors & Fit-out", lines: [{ item: `Modular kitchen, wardrobes, woodwork, false ceiling & furnishing (${tier})`, qty: areaSqft, unit: "sq ft", rateINR: rate, amountINR: cost }], subtotalINR: cost, durationMin: dur("interiors")[0], durationMax: dur("interiors")[1] });
   }
-
   if (stages.automation) {
-    const a = AUTOMATION[automationSystem];
-    const r = Math.max(1, rooms);
-    const perRoomCost = a.perRoom[tier] * r;
-    out.push({
-      id: "automation", label: `Home Automation (${automationSystem === "knx" ? "KNX wired" : "wireless / IoT"})`,
-      lines: [
-        { item: a.baseLabel, qty: 1, unit: "system", rateINR: a.base, amountINR: a.base },
-        { item: a.roomLabel, qty: r, unit: "room", rateINR: a.perRoom[tier], amountINR: perRoomCost },
-      ],
-      subtotalINR: a.base + perRoomCost, durationMin: DURATIONS.automation[dKey][0], durationMax: DURATIONS.automation[dKey][1],
-    });
+    const sections = automationSystem === "knx" ? knxSections(Math.max(1, rooms), tier) : wirelessSections(Math.max(1, rooms), tier);
+    const subtotal = sections.reduce((s, sec) => s + sec.totalINR, 0);
+    out.push({ id: "automation", label: `Home Automation — ${automationSystem === "knx" ? "KNX (wired)" : "Wireless / IoT"}`, sections, subtotalINR: subtotal, durationMin: dur("automation")[0], durationMax: dur("automation")[1] });
   }
 
   const totalINR = out.reduce((s, st) => s + st.subtotalINR, 0);
-  return { stages: out, totalINR, lowINR: round(totalINR * 0.9), highINR: round(totalINR * 1.15) };
+  return { stages: out, totalINR, lowINR: round(totalINR * 0.92), highINR: round(totalINR * 1.12) };
 }
 
-// Currency formatting
 export function formatINR(n: number): string {
   if (n >= 10000000) return `₹${(n / 10000000).toFixed(2)} Cr`;
   if (n >= 100000) return `₹${(n / 100000).toFixed(1)} L`;
