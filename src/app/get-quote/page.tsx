@@ -67,12 +67,6 @@ export default function GetQuotePage() {
               Get an instant estimate for your home automation project.
               Select your rooms and features below.
             </p>
-            <Link
-              href="/estimator"
-              className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold-500 hover:gap-3 transition-all"
-            >
-              Building a home, not just automating? Try the full Journey Estimator (₹ &amp; $) &rarr;
-            </Link>
           </div>
 
           <QuoteCalculator />

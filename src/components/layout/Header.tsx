@@ -30,7 +30,6 @@ const PROJECT_LINKS = [
 const RESOURCE_LINKS = [
   { href: "/blog", label: "Blog & Guides", desc: "Smart home tips, trends & how-tos", icon: BookOpen },
   { href: "/smart-home-planner", label: "Smart Home Planner", desc: "Build & price your automation system", icon: Calculator, highlight: true },
-  { href: "/estimator", label: "Cost Estimator & BOQ", desc: "Build-to-automation cost + downloadable BOQ (₹ & $)", icon: Calculator },
   { href: "/experience", label: "3D Experience", desc: "Interactive smart home walkthrough", icon: Sparkles },
   { href: "/villa-walkthrough", label: "Villa Walkthrough", desc: "8-zone luxury villa in 3D", icon: Sparkles },
   { href: "/about/our-story", label: "Our Story", desc: "15+ years of home automation expertise", icon: Users },

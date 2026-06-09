@@ -5,11 +5,15 @@ import { createMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/metadata";
 import { Sparkles } from "lucide-react";
 import EstimatorClient from "./EstimatorClient";
 
-export const metadata: Metadata = createMetadata({
-  title: "Home Construction & Automation Cost Estimator + BOQ Generator",
-  description: `Build-to-automation cost estimator for India — design, construction, interiors & smart-home automation with a downloadable itemized BOQ, in ₹ and US$. By ${COMPANY.name}.`,
-  path: "/estimator",
-});
+export const metadata: Metadata = {
+  ...createMetadata({
+    title: "Home Construction & Automation Cost Estimator + BOQ Generator",
+    description: `Build-to-automation cost estimator for India — design, construction, interiors & smart-home automation with a downloadable itemized BOQ, in ₹ and US$. By ${COMPANY.name}.`,
+    path: "/estimator",
+  }),
+  // Private for now — not indexed or publicly linked
+  robots: { index: false, follow: false },
+};
 
 async function getFxRate(): Promise<{ rate: number; date: string }> {
   try {

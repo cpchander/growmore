@@ -87,7 +87,6 @@ GMHS's operational infrastructure (recruitment, training, quality systems) also 
 - [Why Builders Should Offer Smart Homes](https://growmoresolutions.com/blog/why-builders-should-offer-smart-homes)
 - [Smart Home Planner Tool](https://growmoresolutions.com/smart-home-planner)
 - [Get a Quote](https://growmoresolutions.com/get-quote)
-- [Home Cost Estimator & BOQ Generator (₹ & US$)](https://growmoresolutions.com/estimator)
 - [How We Work — Our 5-Step Process](https://growmoresolutions.com/how-we-work)
 - [Free Resources Library (guides, checklists, company profile)](https://growmoresolutions.com/resources)
 - [NRI Property Services — care, build, buy & sell](https://growmoresolutions.com/nri)
