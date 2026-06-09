@@ -239,6 +239,7 @@ export const STATS = [
   { value: 600, suffix: "+", label: "Projects Completed" },
   { value: 25, suffix: "+", label: "Cities Served" },
   { value: 40, suffix: "%", label: "Client Referral Rate" },
+  { value: 10, suffix: "+", label: "Expert Engineers" },
 ] as const;
 
 export const PROCESS_STEPS = [

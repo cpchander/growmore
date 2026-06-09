@@ -11,6 +11,11 @@ export type ServiceContent = {
   pricing: { tier: string; range: string; includes: string }[];
   whyChooseUs: string[];
   faqs: { question: string; answer: string }[];
+  // Optional — used by Home Automation to show wired-vs-wireless positioning,
+  // an "everything we automate" grid, and a second (wireless) pricing table.
+  systems?: { knx: string; wireless: string };
+  automate?: { title: string; description: string }[];
+  pricingWireless?: { tier: string; range: string; includes: string }[];
 };
 
 export const SERVICE_CONTENT: ServiceContent[] = [
@@ -34,10 +39,34 @@ export const SERVICE_CONTENT: ServiceContent[] = [
       { title: "Farmhouses & Weekend Homes", description: "Remote monitoring and control via app — check CCTV, control lights, manage irrigation, and pre-cool the house before you arrive." },
       { title: "Penthouse & Duplex Units", description: "Multi-floor automation with floor-wise zones, staircase lighting automation, terrace scene control, and elevator integration." },
     ],
+    systems: {
+      knx: "Built for new constructions and full renovations, where the infrastructure can be planned from the ground up. KNX is bus-wired, rock-solid and infinitely scalable — engineered to last 25+ years. It's the right choice for villas and homes being built or gutted, delivering unmatched reliability across lighting, climate, shading, AV and security.",
+      wireless: "Ideal for retrofits, rentals and already-finished homes — smart living with no walls broken, installed in days. Zigbee / Wi-Fi mesh delivers most of what a wired system does (lighting, curtains, climate, locks, CCTV, audio) with zero civil work, so you can upgrade without the construction mess.",
+    },
+    automate: [
+      { title: "Lighting", description: "Walk into a room and have the lights set the exact mood — dim for a movie, wake to a sunrise scene, schedule everything, and never leave a light on again." },
+      { title: "Curtains, Blinds & Shading", description: "Curtains open with the morning sun and close at a tap of “Goodnight.” Blinds shade the harsh afternoon automatically — effortless comfort you didn't know you were missing." },
+      { title: "Climate & HVAC", description: "Come home to a perfectly cooled room without running the AC all day. Zone-by-zone control learns your schedule and cuts electricity bills without compromising comfort." },
+      { title: "Security & Access", description: "Know who's at the door before you open it, get alerts the moment someone enters, and lock or unlock from anywhere in the world." },
+      { title: "Entertainment & AV", description: "One button dims the lights, closes the curtains, drops the projector and starts the movie. Multi-room audio follows you from bedroom to kitchen to terrace." },
+      { title: "Doors, Gates & Access", description: "Never step out in the rain to open a gate again. Grant a guest entry from your phone, and set the garage to close every night automatically." },
+      { title: "Garden & Landscape", description: "Irrigation runs on schedule and adjusts to rain sensors; landscape lighting glows at sunset — your outdoors as smart as your interiors." },
+      { title: "Appliances & Devices", description: "Turn off everything with one tap as you leave, heat the geyser before your shower, and charge the EV at off-peak hours — using the appliances you already own." },
+      { title: "Energy & Power", description: "See exactly where your electricity goes, manage solar, battery and grid on one dashboard, and shift heavy loads to off-peak hours to save every month." },
+      { title: "Air Quality", description: "Real-time sensors track CO₂, PM2.5, humidity and VOCs, triggering purifiers and fresh-air systems automatically so you breathe cleaner air without thinking about it." },
+      { title: "Utility Systems", description: "Monitor sump and overhead tank levels, shut off the supply the instant a leak is detected, and run pumps only when needed — the silent systems, finally intelligent." },
+      { title: "Scenes & Modes", description: "Where it all comes together: a “Good Morning” scene opens curtains, plays music and starts the coffee; a “Leaving Home” mode powers down, arms security and locks up in one tap." },
+    ],
     pricing: [
-      { tier: "Essential", range: "₹2–5 Lakh", includes: "Smart lighting (scenes + dimming), 2–3 AC automation, basic security integration, app + voice control. Best for 2–3BHK apartments." },
-      { tier: "Premium", range: "₹5–15 Lakh", includes: "Full lighting + curtain automation, multi-zone HVAC, smart locks, CCTV integration, multi-room audio, touch panel. Best for 3–5BHK apartments and mid-size villas." },
-      { tier: "Luxury", range: "₹15–50 Lakh+", includes: "Whole-home KNX/Crestron with motorized everything, home theater, landscape automation, energy monitoring, dedicated touch panels per room, gate/elevator integration. For luxury villas and penthouses." },
+      { tier: "Essential", range: "₹4–7 Lakh", includes: "Smart lighting (scenes + dimming), 2–3 AC automation, basic keypads, app + voice control. Best for 2–3BHK." },
+      { tier: "Premium", range: "₹7–15 Lakh", includes: "Full lighting + curtain automation, multi-zone HVAC, TV & DTH control, premium keypads. Best for 3–5BHK & mid-size villas." },
+      { tier: "Luxury", range: "₹15–30 Lakh", includes: "Whole-home KNX, motorized everything, home theatre, landscape automation, smart locks, intrusion, multi-room audio, dedicated touch panels, gate/elevator integration." },
+      { tier: "Ultra Luxury", range: "₹30–50 Lakh+", includes: "The complete Grow More experience — KNX whole-home intelligence, custom scenes, architectural lighting, full estate security with AI analytics, VRV/VRF climate, multi-room audio, motorized blinds, solar & energy monitoring, structured networking, central vacuum and a dedicated project manager." },
+    ],
+    pricingWireless: [
+      { tier: "Essential", range: "₹1.5–3 Lakh", includes: "Smart living with no walls broken — Wi-Fi lighting control, 2–3 AC automation, app + voice (Alexa/Google). Installed in days. Best for 2–3BHK apartments & rentals." },
+      { tier: "Premium", range: "₹3–5 Lakh", includes: "A full smart-home upgrade without the construction mess — Zigbee mesh lighting, motorized curtains, multi-zone AC, smart locks, video door phone, motion sensors. All retrofittable." },
+      { tier: "Luxury", range: "₹5–10 Lakh+", includes: "The complete wireless smart home — Zigbee mesh backbone, architectural lighting scenes, motorized blinds, multi-zone climate, CCTV, multi-room audio, intrusion sensors, dedicated touch panels. Zero structural disruption." },
     ],
     whyChooseUs: [
       `${COMPANY.experience} years — India's longest-serving home automation company`,

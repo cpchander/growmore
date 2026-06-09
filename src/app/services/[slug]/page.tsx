@@ -152,6 +152,25 @@ export default async function ServicePage({ params }: Props) {
                 </p>
               </div>
 
+              {/* Wired (KNX) vs Wireless (IoT) */}
+              {content.systems && (
+                <div className="mb-12">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+                    Wired (KNX) vs Wireless (IoT) — Which Is Right for You?
+                  </h2>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="glass-card rounded-xl p-6 border-l-2 border-gold-500">
+                      <h3 className="font-semibold text-white mb-2">KNX — Wired</h3>
+                      <p className="text-sm text-navy-300 leading-relaxed">{content.systems.knx}</p>
+                    </div>
+                    <div className="glass-card rounded-xl p-6 border-l-2 border-gold-500/40">
+                      <h3 className="font-semibold text-white mb-2">IoT — Wireless</h3>
+                      <p className="text-sm text-navy-300 leading-relaxed">{content.systems.wireless}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Why It Matters */}
               <div className="mb-12">
                 <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
@@ -190,6 +209,23 @@ export default async function ServicePage({ params }: Props) {
                 </Link>
               </div>
 
+              {/* What We Can Automate */}
+              {content.automate && (
+                <div className="mb-12">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+                    What We Can Automate
+                  </h2>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {content.automate.map((a) => (
+                      <div key={a.title} className="glass-card rounded-xl p-5">
+                        <h3 className="font-semibold text-gold-500 mb-1.5">{a.title}</h3>
+                        <p className="text-sm text-navy-300 leading-relaxed">{a.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Use Cases */}
               <div className="mb-12">
                 <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
@@ -211,6 +247,9 @@ export default async function ServicePage({ params }: Props) {
                 <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                   {service.title} Cost in India
                 </h2>
+                {content.pricingWireless && (
+                  <h3 className="text-lg font-semibold text-gold-500 mb-3">KNX — Wired Systems</h3>
+                )}
                 <div className="space-y-4">
                   {content.pricing.map((tier) => (
                     <div key={tier.tier} className="glass-card rounded-xl p-5 border-l-2 border-gold-500">
@@ -225,6 +264,25 @@ export default async function ServicePage({ params }: Props) {
                     </div>
                   ))}
                 </div>
+                {content.pricingWireless && (
+                  <>
+                    <h3 className="text-lg font-semibold text-gold-500 mt-8 mb-3">Wireless / IoT Systems</h3>
+                    <div className="space-y-4">
+                      {content.pricingWireless.map((tier) => (
+                        <div key={tier.tier} className="glass-card rounded-xl p-5 border-l-2 border-gold-500/40">
+                          <div className="flex flex-wrap items-center gap-3 mb-2">
+                            <h3 className="font-semibold text-white">{tier.tier}</h3>
+                            <span className="inline-flex items-center gap-1 text-gold-500 font-semibold text-sm">
+                              <IndianRupee className="w-3.5 h-3.5" />
+                              {tier.range.replace("₹", "")}
+                            </span>
+                          </div>
+                          <p className="text-sm text-navy-300 leading-relaxed">{tier.includes}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
                 <p className="mt-4 text-xs text-navy-500">
                   * Prices are indicative and vary based on property size, brand selection, and feature scope. Contact us for an accurate quote.
                 </p>

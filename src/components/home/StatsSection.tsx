@@ -62,7 +62,7 @@ export default function StatsSection() {
   return (
     <section className="section-padding bg-navy-900/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
           {STATS.map((stat) => (
             <AnimatedCounter
               key={stat.label}
