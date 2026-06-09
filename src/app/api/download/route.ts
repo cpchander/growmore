@@ -10,6 +10,8 @@ export const runtime = "nodejs";
 const FILES: Record<string, { file: string; title: string }> = {
   "company-profile": { file: "company-profile.pdf", title: "GMHS-Company-Profile.pdf" },
   lookbook: { file: "project-lookbook.pdf", title: "GMHS-Project-Lookbook.pdf" },
+  "cost-guide": { file: "cost-guide.pdf", title: "GMHS-Smart-Home-Cost-Guide-2026.pdf" },
+  "prewiring-checklist": { file: "prewiring-checklist.pdf", title: "GMHS-Pre-Wiring-Checklist.pdf" },
 };
 
 export async function GET(req: NextRequest) {

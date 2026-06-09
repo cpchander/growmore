@@ -39,12 +39,10 @@ export default async function ResourceLibraryPage({ searchParams }: Props) {
   const dl = (file: string) => `/api/download?file=${file}&k=${token}`;
 
   const downloads = [
-    { icon: BookOpen, title: "Company Profile", desc: "Our full portfolio — 600+ projects, capabilities & partner brands.", file: "company-profile" },
-    { icon: Building2, title: "Project Lookbook", desc: "Flagship villas & penthouses — scope and brands used.", file: "lookbook" },
-  ];
-  const reads = [
-    { icon: IndianRupee, title: "Smart Home Cost Guide (India 2026)", desc: "Real price bands by home size & tier.", href: "/blog/home-automation-cost-2026" },
-    { icon: Plug, title: "Pre-Wiring Checklist", desc: "For under-construction villas — room by room.", href: "/blog/smart-home-wiring-new-construction-india" },
+    { icon: BookOpen, title: "Company Profile", desc: "Our full 61-page portfolio — 600+ projects, capabilities & partner brands.", file: "company-profile" },
+    { icon: Building2, title: "Project Lookbook", desc: "Flagship villas, penthouses & lighting showcases.", file: "lookbook" },
+    { icon: IndianRupee, title: "Smart Home Cost Guide — India 2026", desc: "Real price bands by home size, tier & feature.", file: "cost-guide" },
+    { icon: Plug, title: "Pre-Wiring Checklist", desc: "Room-by-room cabling for under-construction homes.", file: "prewiring-checklist" },
   ];
 
   return (
@@ -80,22 +78,6 @@ export default async function ResourceLibraryPage({ searchParams }: Props) {
                 </a>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Read-online guides */}
-        <h2 className="mt-12 mb-4 text-lg font-semibold text-white">Read online</h2>
-        <div className="space-y-4">
-          {reads.map((r) => (
-            <Link key={r.href} href={r.href}
-              className="glass-card rounded-xl p-6 flex items-center gap-4 hover:border-gold-500/30 transition-colors group">
-              <r.icon className="w-9 h-9 text-gold-500 shrink-0" />
-              <div className="flex-1">
-                <h3 className="font-semibold text-white">{r.title}</h3>
-                <p className="text-sm text-navy-400 mt-0.5">{r.desc}</p>
-              </div>
-              <ArrowRight className="w-5 h-5 text-gold-500 group-hover:translate-x-1 transition-transform" />
-            </Link>
           ))}
         </div>
 
