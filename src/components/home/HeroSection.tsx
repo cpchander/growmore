@@ -75,7 +75,7 @@ export default function HeroSection() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 border border-gold-500/50 hover:border-gold-500 text-white px-8 py-4 rounded-xl text-base font-medium transition-colors"
+                className="inline-flex items-center gap-2 bg-gold-500/15 border-2 border-gold-500 hover:bg-gold-500/25 text-white px-8 py-4 rounded-xl text-base font-semibold transition-colors"
               >
                 <MapPin className="w-5 h-5 text-gold-500" />
                 Visit the Experience Center
