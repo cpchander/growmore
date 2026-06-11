@@ -93,10 +93,20 @@ export async function POST(req: NextRequest) {
       "https://www.growmoresolutions.com",
     ];
 
-    // In production, reject requests from unknown origins
+    // In production, reject requests from unknown origins. Accept the
+    // production domains, OR any same-origin POST (Origin host === this
+    // deployment's own Host) so Vercel preview/branch deploys (*.vercel.app)
+    // keep working while cross-site CSRF is still blocked.
     if (process.env.NODE_ENV === "production") {
       const requestOrigin = origin || (referer ? new URL(referer).origin : null);
-      if (!requestOrigin || !allowedOrigins.includes(requestOrigin)) {
+      let ok = !!requestOrigin && allowedOrigins.includes(requestOrigin);
+      if (!ok && requestOrigin) {
+        try {
+          const oHost = new URL(requestOrigin).host;
+          ok = oHost === req.headers.get("host") || oHost.endsWith(".vercel.app");
+        } catch { ok = false; }
+      }
+      if (!ok) {
         return NextResponse.json(
           { error: "Forbidden — invalid origin" },
           { status: 403 }
