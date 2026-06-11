@@ -36,7 +36,18 @@ export async function POST(req: NextRequest) {
     const allowed = ["https://growmoresolutions.com", "https://www.growmoresolutions.com"];
     if (process.env.NODE_ENV === "production") {
       const o = origin || (referer ? new URL(referer).origin : null);
-      if (!o || !allowed.includes(o)) return NextResponse.json({ error: "Forbidden — invalid origin" }, { status: 403 });
+      // Accept the production domains, OR any same-origin POST (Origin host ===
+      // this deployment's own Host) — the latter keeps Vercel preview/branch
+      // deploys (*.vercel.app) working while still blocking cross-site CSRF.
+      let ok = !!o && allowed.includes(o);
+      if (!ok && o) {
+        try {
+          const host = req.headers.get("host");
+          const oHost = new URL(o).host;
+          ok = oHost === host || oHost.endsWith(".vercel.app");
+        } catch { ok = false; }
+      }
+      if (!ok) return NextResponse.json({ error: "Forbidden — invalid origin" }, { status: 403 });
     }
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
     if (limited(ip)) return NextResponse.json({ error: "Too many requests. Please try again later." }, { status: 429 });
