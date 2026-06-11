@@ -275,8 +275,8 @@ export default function EstimatorClient({ fxRate, fxDate }: { fxRate: number; fx
 
               <div className="glass-card rounded-xl p-6 text-center py-5">
                 <CheckCircle2 className="w-10 h-10 text-gold-500 mx-auto" />
-                <p className="text-white font-semibold mt-2">You&apos;re all set!</p>
-                <p className="text-sm text-navy-300 mt-1">Our team will review your scope and send a detailed, accurate quote within 1 working day.</p>
+                <p className="text-white font-semibold mt-2">Your estimate is on its way ✨</p>
+                <p className="text-sm text-navy-300 mt-1">We&apos;ve emailed your scope &amp; budget range to you — do check your inbox. A GMHS automation expert will personally review it and reach out within <span className="text-gold-500 font-medium">1 working day</span> with a precise, no-obligation quote, in your timezone.</p>
               </div>
             </>
           )}
