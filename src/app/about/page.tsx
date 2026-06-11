@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "Who is Grow More Solutions?",
     answer:
-      `Grow More Solutions (legally ${COMPANY.legalName}) is India's most experienced home automation company, founded in ${COMPANY.foundedYear} and based in Ghitorni, New Delhi. With ${COMPANY.experience} years of experience and ${COMPANY.projectsCompleted} completed projects across ${COMPANY.citiesServed} cities, we are certified partners of KNX, Crestron, Control4, and Lutron.`,
+      `Grow More Solutions (legally ${COMPANY.legalName}) is one of India's most experienced home automation companies, founded in ${COMPANY.foundedYear} and based in Ghitorni, New Delhi. With ${COMPANY.experience} years of experience and ${COMPANY.projectsCompleted} completed projects across ${COMPANY.citiesServed} cities, we are KNX-certified and design, install and integrate the world's leading automation brands.`,
   },
   {
     question: "What makes Grow More Solutions different?",

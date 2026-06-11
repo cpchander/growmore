@@ -203,30 +203,36 @@ export default async function CityPage({ params }: Props) {
             Automation Brands We Install in {city.name}
           </h2>
           <p className="text-navy-300 mb-6">
-            As certified partners of the world&apos;s leading automation brands,
-            we recommend the right technology based on your home, budget, and
-            long-term goals — not brand commissions.
+            We install and integrate the world&apos;s leading automation brands —
+            recommending the right technology based on your home, budget, and
+            long-term goals, not brand commissions.
           </p>
           <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-3 mb-12">
-            {BRANDS.map((brand) => (
-              <a
-                key={brand.slug}
-                href={brand.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-card rounded-lg p-3 flex flex-col items-center justify-center hover:border-gold-500/30 transition-all group"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={brand.logo}
-                  alt={brand.name}
-                  className="h-6 w-auto max-w-[80px] object-contain opacity-70 group-hover:opacity-100 transition-opacity mb-1.5"
-                />
-                <p className="text-[10px] font-semibold text-navy-400 group-hover:text-gold-500 transition-colors text-center">
-                  {brand.name}
-                </p>
-              </a>
-            ))}
+            {BRANDS.map((brand) => {
+              const body = (
+                <>
+                  {brand.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="h-6 w-auto max-w-[80px] object-contain opacity-70 group-hover:opacity-100 transition-opacity mb-1.5"
+                    />
+                  ) : (
+                    <span className="h-6 flex items-center text-sm font-bold text-navy-200 group-hover:text-gold-500 transition-colors mb-1.5">{brand.name}</span>
+                  )}
+                  <p className="text-[10px] font-semibold text-navy-400 group-hover:text-gold-500 transition-colors text-center">
+                    {brand.name}
+                  </p>
+                </>
+              );
+              const cls = "glass-card rounded-lg p-3 flex flex-col items-center justify-center hover:border-gold-500/30 transition-all group";
+              return brand.url ? (
+                <a key={brand.slug} href={brand.url} target="_blank" rel="noopener noreferrer" className={cls}>{body}</a>
+              ) : (
+                <div key={brand.slug} className={cls}>{body}</div>
+              );
+            })}
           </div>
 
           {/* Areas served */}

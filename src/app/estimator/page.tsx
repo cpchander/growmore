@@ -8,11 +8,9 @@ import EstimatorClient from "./EstimatorClient";
 export const metadata: Metadata = {
   ...createMetadata({
     title: "Home Construction & Automation Cost Estimator + BOQ Generator",
-    description: `Build-to-automation cost estimator for India — design, construction, interiors & smart-home automation with a downloadable itemized BOQ, in ₹ and US$. By ${COMPANY.name}.`,
+    description: `Build-to-automation cost estimator for India — design, construction, interiors & smart-home automation with a downloadable scope-of-work BOQ and an indicative budget range, in ₹ and US$. By ${COMPANY.name}.`,
     path: "/estimator",
   }),
-  // Private for now — not indexed or publicly linked
-  robots: { index: false, follow: false },
 };
 
 async function getFxRate(): Promise<{ rate: number; date: string }> {
@@ -59,7 +57,7 @@ export default async function EstimatorPage() {
             </h1>
             <p className="mt-4 text-lg text-navy-300">
               Estimate your whole home journey — design, construction, interiors and automation —
-              with a downloadable itemized BOQ, in ₹ and US$.
+              with an indicative budget range and a downloadable scope-of-work BOQ, in ₹ and US$.
             </p>
           </div>
 

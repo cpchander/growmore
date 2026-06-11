@@ -1,24 +1,24 @@
 import { COMPANY } from "@/lib/constants";
-import { Award, Clock, Wrench, HeadphonesIcon } from "lucide-react";
+import { Layers, Clock, Wrench, HeadphonesIcon } from "lucide-react";
 
 const reasons = [
   {
     icon: Clock,
     title: `${COMPANY.experience} Years of Expertise`,
     description:
-      "India's longest-serving home automation company. We've seen technologies come and go — and we know what works.",
+      "One of India's longest-serving home automation companies. We've seen technologies come and go — and we know what actually lasts.",
   },
   {
-    icon: Award,
-    title: "Certified Brand Partners",
+    icon: Layers,
+    title: "Open Standards, No Lock-In",
     description:
-      "Official KNX, Crestron, Control4, and Lutron partners. Your system is designed and installed by certified professionals.",
+      "We build on open standards like KNX, so your home stays upgradeable for years and you're never trapped in one brand. We recommend technology, not commissions.",
   },
   {
     icon: Wrench,
-    title: "End-to-End Execution",
+    title: "In-House, End-to-End",
     description:
-      "From consultation and design to installation and commissioning — one team handles everything. No subcontracting.",
+      "From consultation and design to installation and commissioning — our own certified engineers handle everything. No subcontracting, no finger-pointing.",
   },
   {
     icon: HeadphonesIcon,

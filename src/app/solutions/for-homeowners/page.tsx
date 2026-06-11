@@ -136,13 +136,15 @@ export default function ForHomeownersPage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
-            Make Your Home{" "}
-            <span className="text-gradient-gold">Brilliantly Smart</span>
+            A Smart Home That{" "}
+            <span className="text-gradient-gold">Responds to You</span>
           </h1>
           <p className="mt-4 text-lg text-navy-300 max-w-2xl">
-            From a single smart light to a fully automated villa — we design
-            and install custom smart home solutions that fit your lifestyle and
-            budget. Backed by {COMPANY.experience} years of expertise.
+            Walk in, and the lights, climate, music and curtains settle into your
+            evening — without a thought. We design smart homes that simply
+            understand how you live and quietly take care of the rest. From a
+            single room to a fully automated villa, backed by {COMPANY.experience} years
+            and our own certified engineers.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link

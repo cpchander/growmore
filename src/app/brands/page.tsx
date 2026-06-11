@@ -14,7 +14,7 @@ import {
 
 export const metadata: Metadata = createMetadata({
   title: `Our Automation Brands — KNX, Crestron, Control4, Lutron & Sonos`,
-  description: `Certified partner of KNX, Crestron, Control4, Lutron & Sonos. Compare the top home automation brands, installed across India by ${COMPANY.name}.`,
+  description: `Compare the top home automation brands — KNX, Crestron, Control4, Lutron & Sonos — designed, installed and integrated across India by ${COMPANY.name}.`,
   path: "/brands",
 });
 
@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "Which home automation brands does Grow More Solutions install?",
     answer:
-      `${COMPANY.name} is a certified partner for KNX, Crestron, Control4 and Lutron, plus Sonos for multi-room audio. We're vendor-neutral, so we specify the right platform per project rather than pushing one brand — and we have dedicated comparison pages for each.`,
+      `${COMPANY.name} designs and installs on open standards like KNX (KNX-certified) and integrates the leading platforms — including Crestron, Control4, Lutron and Sonos — into a unified system. We're vendor-neutral, so we specify the right platform per project rather than pushing one brand, and we have dedicated comparison pages for each.`,
   },
   {
     question: "KNX vs Crestron vs Control4 — which is best for my home?",
@@ -30,9 +30,9 @@ const faqs = [
       "It depends on budget, scale and whether the home is wired or retrofit. KNX is the open, ultra-reliable wired standard ideal for large villas; Crestron is ultra-premium custom automation; Control4 is excellent mid-premium with strong AV and wireless options; Lutron leads on lighting and shading. We often combine them — e.g. a KNX backbone with Lutron lighting — and recommend based on your needs, not commissions.",
   },
   {
-    question: "Are you an authorized dealer for these brands?",
+    question: "How do you work with these brands?",
     answer:
-      "Yes — we are an authorized dealer and certified installer, with in-house programming capability (KNX ETS, Crestron SIMPL, Control4 Composer Pro). That means no outsourced programming and proper warranty-backed systems rather than grey-market hardware.",
+      "We're a vendor-neutral integrator: we install on open standards like KNX with in-house KNX programming (ETS) — no outsourced programming — and integrate the major platforms into one system. We source genuine, warranty-backed hardware through authorized channels rather than grey-market imports.",
   },
   {
     question: "Can different brands work together in one home?",
@@ -73,13 +73,14 @@ export default function BrandsPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
               World-Class Brands,{" "}
-              <span className="text-gradient-gold">Certified Expertise</span>
+              <span className="text-gradient-gold">Independent Expertise</span>
             </h1>
             <p className="text-lg text-navy-300">
-              As certified partners of the world&apos;s leading home automation
-              brands, we design, install, and support systems that last decades —
-              not just years. {COMPANY.experience} years of hands-on experience
-              across {COMPANY.projectsCompleted} projects.
+              We design, install and integrate the world&apos;s leading home
+              automation brands — building on open standards so your system lasts
+              decades, not just years. {COMPANY.experience} years of hands-on
+              experience across {COMPANY.projectsCompleted} projects, recommending
+              technology on merit, not commissions.
             </p>
           </div>
 
@@ -97,9 +98,6 @@ export default function BrandsPage() {
                       <h2 className="text-2xl font-bold text-white">
                         {brand.name}
                       </h2>
-                      <span className="text-xs bg-gold-500/10 text-gold-500 px-2.5 py-0.5 rounded-full">
-                        Partner Since {brand.certifiedSince}
-                      </span>
                       <a
                         href={brand.website}
                         target="_blank"

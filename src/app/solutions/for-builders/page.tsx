@@ -90,13 +90,15 @@ export default function ForBuildersPage() {
             <Building2 className="w-10 h-10 text-gold-500 shrink-0 mt-1 hidden sm:block" />
             <div>
               <h1 className="text-4xl sm:text-5xl font-bold text-white">
-                Smart Home Automation for{" "}
-                <span className="text-gradient-gold">Builders & Developers</span>
+                The Project Buyers{" "}
+                <span className="text-gradient-gold">Fight Over</span>
               </h1>
               <p className="mt-4 text-lg text-navy-300 max-w-2xl">
-                Differentiate your projects, command premium pricing, and close
-                deals faster with smart-home-ready apartments. We handle
-                everything — from design-stage wiring to buyer handover.
+                Smart-home-ready homes sell faster and command a premium — and
+                buyers increasingly expect them. We make your project the obvious
+                choice, handling everything from design-stage wiring to buyer
+                handover, so the smart layer lifts your brand instead of
+                burdening your team.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
