@@ -74,7 +74,7 @@ export default function HeroSection() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/contact"
+                href="/#experience-center"
                 className="inline-flex items-center gap-2 bg-gold-500/15 border-2 border-gold-500 hover:bg-gold-500/25 text-white px-8 py-4 rounded-xl text-base font-semibold transition-colors"
               >
                 <MapPin className="w-5 h-5 text-gold-500" />
