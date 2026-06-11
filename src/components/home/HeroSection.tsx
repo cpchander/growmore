@@ -4,7 +4,14 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { COMPANY, BRANDS } from "@/lib/constants";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, MapPin, CheckCircle2 } from "lucide-react";
+
+const HERO_PROOFS = [
+  "In-house certified engineers — no subcontracting",
+  "1-yr warranty + AMC & 24/7 support",
+  `${COMPANY.referralRate} of clients refer us`,
+  "Works offline — even in a power cut",
+];
 
 const SmartHomeSceneLoader = dynamic(
   () => import("@/components/three/SmartHomeSceneLoader"),
@@ -47,16 +54,15 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              India&apos;s Most{" "}
-              <span className="text-gradient-gold">Experienced</span>
-              <br />
-              Smart Home Company
+              The Smart Home That{" "}
+              <span className="text-gradient-gold">Understands You</span>
             </h1>
 
             <p className="mt-6 text-lg text-navy-300 leading-relaxed max-w-lg">
-              {COMPANY.experience} years of transforming Indian homes with
-              intelligent automation. From smart lighting to whole-home control —
-              we design, install, and support your dream smart home.
+              For {COMPANY.experience} years, {COMPANY.name} has designed, installed
+              and <span className="text-navy-100 font-medium">maintained</span> some of
+              India&apos;s finest smart homes — whole-home control that simply works,
+              backed by engineers who never leave your side.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -68,37 +74,51 @@ export default function HeroSection() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/experience"
-                className="inline-flex items-center gap-2 border border-navy-600 hover:border-navy-400 text-white px-8 py-4 rounded-xl text-base font-medium transition-colors"
+                href="/contact"
+                className="inline-flex items-center gap-2 border border-gold-500/50 hover:border-gold-500 text-white px-8 py-4 rounded-xl text-base font-medium transition-colors"
               >
-                <Play className="w-5 h-5" />
-                Explore in 3D
+                <MapPin className="w-5 h-5 text-gold-500" />
+                Visit the Experience Center
               </Link>
             </div>
 
-            {/* Trust Logos */}
-            <div className="mt-12">
+            <Link href="/experience" className="mt-4 inline-flex items-center gap-2 text-sm text-navy-400 hover:text-gold-500 transition-colors">
+              <Play className="w-4 h-4" /> Or explore a smart home in 3D
+            </Link>
+
+            {/* After-sales proof bar */}
+            <ul className="mt-10 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+              {HERO_PROOFS.map((p) => (
+                <li key={p} className="flex items-start gap-2 text-sm text-navy-200">
+                  <CheckCircle2 className="w-4 h-4 text-gold-500 shrink-0 mt-0.5" />
+                  {p}
+                </li>
+              ))}
+            </ul>
+
+            {/* Technology we build on */}
+            <div className="mt-10">
               <p className="text-xs text-navy-400 uppercase tracking-wider mb-4">
-                Certified Partners
+                Technology We Build On
               </p>
-              <div className="flex items-center gap-4 flex-wrap">
-                {BRANDS.slice(0, 8).map((brand) => (
-                  <a
-                    key={brand.slug}
-                    href={brand.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center h-9 px-2.5 rounded-md bg-white/10 hover:bg-white/20 transition-all"
-                    title={brand.name}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="h-5 w-auto max-w-[80px] object-contain"
-                    />
-                  </a>
-                ))}
+              <div className="flex items-center gap-3 flex-wrap">
+                {BRANDS.slice(0, 8).map((brand) => {
+                  const inner = brand.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={brand.logo} alt={brand.name} className="h-5 w-auto max-w-[80px] object-contain" />
+                  ) : (
+                    <span className="text-xs font-semibold text-white/80 whitespace-nowrap">{brand.name}</span>
+                  );
+                  return brand.url ? (
+                    <a key={brand.slug} href={brand.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center h-9 px-2.5 rounded-md bg-white/10 hover:bg-white/20 transition-all" title={brand.name}>
+                      {inner}
+                    </a>
+                  ) : (
+                    <span key={brand.slug} className="flex items-center justify-center h-9 px-2.5 rounded-md bg-white/10" title={brand.name}>
+                      {inner}
+                    </span>
+                  );
+                })}
                 <Link href="/brands" className="text-xs text-navy-500 hover:text-gold-500 font-medium transition-colors">+{BRANDS.length - 8} more</Link>
               </div>
             </div>

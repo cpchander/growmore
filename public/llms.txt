@@ -1,6 +1,6 @@
 # Grow More Hitech Solutions (GMHS)
 
-> India's most experienced home automation company. 600+ premium installations, serving 25+ cities across India. 15+ years. Certified KNX, Crestron, Control4, and Lutron partner.
+> One of India's most experienced home automation companies. 600+ premium installations, serving 25+ cities across India. 15+ years. KNX-certified; we design, install and integrate the leading smart-home brands on open standards.
 
 ## Company Overview
 
@@ -27,22 +27,25 @@ GMHS provides end-to-end home automation services:
 - Centralized control systems (touch panels, app control, voice integration)
 - Pre-construction automation wiring and planning
 
-## Brands and Certifications
+## Brands We Work With
 
-GMHS is an authorized dealer and certified installer for:
+GMHS designs and installs on open standards like KNX, and works with / integrates the leading automation brands:
 
 - **KNX** (open standard, 500+ manufacturers — Schneider Electric, ABB, Gira, Jung, Basalte, Zennio)
-- **Crestron** (ultra-premium custom automation)
-- **Control4** (mid-premium, wireless and wired)
-- **Lutron** (premium lighting and shading — HomeWorks QSX, RadioRA3)
-- **Sonos** (multi-room audio)
+- **Schneider Electric, Vimar, Hager** (KNX & wiring devices)
+- **ELAN** (whole-home control & AV)
+- **Ajax** (wireless security)
+- **Digilux, Vurve** (smart switches & wireless automation)
+- **DrainVac** (central vacuum), **Cleanair** (indoor air), **Belyesse** (lighting)
+
+We can also integrate other major platforms (e.g. Crestron, Control4, Lutron, Sonos) into a project where a client already owns them.
 
 ## Key Differentiators
 
-1. **Certified in all major platforms** — KNX, Crestron, Control4, and Lutron. Recommendations are based on client needs, not brand commissions.
+1. **Open-standard & vendor-neutral** — we build on KNX and integrate the leading platforms. Recommendations are based on client needs, not brand commissions.
 2. **600+ completed installations** — Real pricing data and project experience, not manufacturer estimates.
 3. **Pre-construction specialization** — Wiring consultation during construction saves clients ₹4–8 Lakh vs retrofit.
-4. **In-house programming team** — KNX ETS, Crestron SIMPL, Control4 Composer Pro — no outsourced programming.
+4. **In-house programming team** — KNX ETS and major platform tools — no outsourced programming.
 5. **Experience Center in Delhi** — Live working demos of all systems for hands-on comparison.
 6. **Pan-India coverage** — 600+ projects across 25+ cities; local pages for 60 cities with installation support.
 
@@ -87,6 +90,7 @@ GMHS's operational infrastructure (recruitment, training, quality systems) also 
 - [Why Builders Should Offer Smart Homes](https://growmoresolutions.com/blog/why-builders-should-offer-smart-homes)
 - [Smart Home Planner Tool](https://growmoresolutions.com/smart-home-planner)
 - [Get a Quote](https://growmoresolutions.com/get-quote)
+- [Home Cost Estimator & BOQ Generator (₹ & US$)](https://growmoresolutions.com/estimator)
 - [How We Work — Our 5-Step Process](https://growmoresolutions.com/how-we-work)
 - [Free Resources Library (guides, checklists, company profile)](https://growmoresolutions.com/resources)
 - [NRI Property Services — care, build, buy & sell](https://growmoresolutions.com/nri)
@@ -119,7 +123,7 @@ GMHS delivers end-to-end home automation services, each with a detailed page (pr
 
 ## Brand Pages
 
-Certified, vendor-neutral partner across the major platforms — dedicated pages compare each for Indian homes. Overview: https://growmoresolutions.com/brands
+Vendor-neutral integrator — dedicated pages compare the major platforms for Indian homes. Overview: https://growmoresolutions.com/brands
 
 - [KNX Home Automation in India](https://growmoresolutions.com/brands/knx)
 - [Crestron Home Automation in India](https://growmoresolutions.com/brands/crestron)

@@ -91,13 +91,15 @@ export default function ForHotelsPage() {
             <Hotel className="w-10 h-10 text-gold-500 shrink-0 mt-1 hidden sm:block" />
             <div>
               <h1 className="text-4xl sm:text-5xl font-bold text-white">
-                Hotel & Hospitality{" "}
-                <span className="text-gradient-gold">Automation</span>
+                A Stay Your Guests{" "}
+                <span className="text-gradient-gold">Remember</span>
               </h1>
               <p className="mt-4 text-lg text-navy-300 max-w-2xl">
-                Deliver a 5-star guest experience while cutting energy costs
-                by 30-50%. From smart guest rooms to centralized building
-                management — we automate every touchpoint of your property.
+                The room that greets each guest, sets their perfect light and
+                climate, and quietly saves you 30–50% on energy the moment they
+                step out. We automate every touchpoint — guest rooms to
+                centralized BMS — so your property feels effortless to stay in,
+                and to run.
               </p>
               <Link
                 href="/contact"

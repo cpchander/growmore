@@ -115,22 +115,7 @@ const CREDENTIALS = [
   {
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "certification",
-    name: "KNX Certified Partner",
-  },
-  {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "certification",
-    name: "Crestron Certified Integrator",
-  },
-  {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "certification",
-    name: "Control4 Certified Dealer",
-  },
-  {
-    "@type": "EducationalOccupationalCredential",
-    credentialCategory: "certification",
-    name: "Lutron Certified Partner",
+    name: "KNX Certified",
   },
 ];
 

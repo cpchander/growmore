@@ -3,6 +3,7 @@ import HeroSection from "@/components/home/HeroSection";
 import ServicesGrid from "@/components/home/ServicesGrid";
 import StatsSection from "@/components/home/StatsSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
+import TrustSection from "@/components/home/TrustSection";
 import ExperienceCenterSection from "@/components/home/ExperienceCenterSection";
 import ProcessSection from "@/components/home/ProcessSection";
 import AudienceSection from "@/components/home/AudienceSection";
@@ -22,12 +23,22 @@ const homeFaqs = [
   {
     question: "What is the cost of home automation in India?",
     answer:
-      "Home automation costs in India range from ₹2-5 Lakh for basic lighting and security automation, ₹5-15 Lakh for comprehensive smart home packages, and ₹15-50 Lakh+ for luxury whole-home automation with premium brands like KNX, Crestron, or Control4. The exact cost depends on your home size, number of rooms, and automation features required.",
+      "Home automation costs in India range from ₹2-5 Lakh for basic lighting and security automation, ₹5-15 Lakh for comprehensive smart home packages, and ₹15-50 Lakh+ for luxury whole-home automation built on premium standards like KNX. The exact cost depends on your home size, number of rooms, and automation features required.",
   },
   {
     question: "Which is the best home automation company in India?",
     answer:
-      `${COMPANY.name} is India's most experienced home automation company with ${COMPANY.experience} years in the industry, ${COMPANY.projectsCompleted} completed projects, and presence across ${COMPANY.citiesServed} cities. As certified partners of KNX, Crestron, Control4, and Lutron, we offer end-to-end smart home solutions from consultation to lifetime support.`,
+      `${COMPANY.name} is one of India's most experienced home automation companies, with ${COMPANY.experience} years in the industry, ${COMPANY.projectsCompleted} completed projects, and presence across ${COMPANY.citiesServed} cities. We design and install on open standards like KNX with our own certified in-house engineers, offering end-to-end smart home solutions from consultation to lifetime support and AMC.`,
+  },
+  {
+    question: "Does home automation stop working if the internet or power goes off?",
+    answer:
+      "Not if it's designed properly. We build wired, locally-controlled systems (such as KNX) where your keypads, lights and curtains keep working without internet — and basic scenes continue during a power cut on backup. Internet is only needed for remote app access, not for your home to function day to day.",
+  },
+  {
+    question: "Will my smart home become obsolete in a few years?",
+    answer:
+      "We build on open standards like KNX rather than a single proprietary brand, so your system stays expandable and upgradeable for years. You can add devices or swap a component without ripping out the whole system — and you're never locked into one vendor's app or pricing.",
   },
   {
     question: "Is home automation worth it in India?",
@@ -69,6 +80,7 @@ export default function HomePage() {
       <ServicesGrid />
       <StatsSection />
       <WhyUsSection />
+      <TrustSection />
       <ExperienceCenterSection />
       <ProcessSection />
       <AudienceSection />

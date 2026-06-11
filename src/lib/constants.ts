@@ -217,22 +217,22 @@ export const CITIES = [
   { slug: "jammu", name: "Jammu", areas: ["Gandhi Nagar", "Trikuta Nagar", "Bakshi Nagar", "Canal Road", "Channi Himmat", "Sainik Colony"] },
 ] as const;
 
-export const BRANDS = [
+// Brands GMHS actually carries & installs. logo/url optional — brands without a
+// logo file render a text-badge fallback in the strip renderers.
+export type Brand = { slug: string; name: string; logo?: string; url?: string };
+export const BRANDS: Brand[] = [
   { slug: "knx", name: "KNX", logo: "/images/brands/knx.webp", url: "https://www.knx.org" },
-  { slug: "crestron", name: "Crestron", logo: "/brands/crestron.svg", url: "https://www.crestron.com" },
-  { slug: "control4", name: "Control4", logo: "/brands/control4.svg", url: "https://www.control4.com" },
-  { slug: "lutron", name: "Lutron", logo: "/brands/lutron.svg", url: "https://www.lutron.com" },
-  { slug: "sonos", name: "Sonos", logo: "/brands/sonos.svg", url: "https://www.sonos.com" },
   { slug: "schneider-electric", name: "Schneider Electric", logo: "/images/brands/schneider-electric.webp", url: "https://www.se.com" },
-  { slug: "digilux", name: "Digilux AI", logo: "/images/brands/digilux-ai.webp", url: "https://www.digilux.co.in" },
   { slug: "ajax", name: "Ajax Systems", logo: "/images/brands/ajax.webp", url: "https://ajax.systems" },
   { slug: "vimar", name: "Vimar", logo: "/images/brands/vimar.webp", url: "https://www.vimar.com" },
   { slug: "elan", name: "ELAN", logo: "/images/brands/elan.webp", url: "https://www.elancontrolsystems.com" },
-  { slug: "hager", name: "Hager", logo: "/images/brands/hager.webp", url: "https://www.hager.com" },
-  { slug: "belyuse-led", name: "Belyuse LED", logo: "/images/brands/belyuse-led.webp", url: "https://www.belyuse.com" },
-  { slug: "hunterdouglas", name: "HunterDouglas", logo: "/images/brands/hunterdouglas.webp", url: "https://www.hunterdouglas.com" },
+  { slug: "digilux", name: "Digilux AI", logo: "/images/brands/digilux-ai.webp", url: "https://www.digilux.co.in" },
   { slug: "drainvac", name: "DrainVac", logo: "/images/brands/drainvac.webp", url: "https://www.drainvac.com" },
-] as const;
+  { slug: "dali", name: "DALI Systems", url: "https://www.dali-alliance.org" },
+  { slug: "vurve", name: "Vurve" },
+  { slug: "cleanair", name: "Cleanair" },
+  { slug: "belyesse", name: "Belyesse" },
+];
 
 export const STATS = [
   { value: 15, suffix: "+", label: "Years Experience" },

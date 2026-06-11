@@ -92,13 +92,14 @@ export default function ForArchitectsPage() {
             <Ruler className="w-10 h-10 text-gold-500 shrink-0 mt-1 hidden sm:block" />
             <div>
               <h1 className="text-4xl sm:text-5xl font-bold text-white">
-                Your Design Vision +{" "}
-                <span className="text-gradient-gold">Our Automation Expertise</span>
+                Automation That{" "}
+                <span className="text-gradient-gold">Disappears Into Your Design</span>
               </h1>
               <p className="mt-4 text-lg text-navy-300 max-w-2xl">
-                We make home automation invisible in your designs and powerful in
-                execution. No extra work for your team — we handle specs, wiring,
-                and installation while you focus on creating beautiful spaces.
+                Technology should never fight your vision. We make automation
+                invisible in the space and flawless in execution — handling specs,
+                wiring and installation so it reads as your design, and you stay
+                the hero of the project. No extra work for your team.
               </p>
               <Link
                 href="#request-drawings"
