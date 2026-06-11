@@ -7,6 +7,7 @@ import {
   type Tier, type PropertyType, type AutomationSystem, type StageId, type EstimatorInput,
 } from "@/lib/estimator";
 import { Home, Building2, Hammer, Plus, Minus, Download, ArrowRight, Clock, Loader2, CheckCircle2, FileText, Lock } from "lucide-react";
+import { GMHS_LOGO_DATA_URI } from "@/lib/gmhs-logo";
 
 const STAGE_OPTIONS: { id: StageId; label: string; villaOnly?: boolean }[] = [
   { id: "design", label: "Architecture & Design", villaOnly: true },
@@ -75,7 +76,7 @@ export default function EstimatorClient({ fxRate, fxDate }: { fxRate: number; fx
     <body style="font-family:Arial,sans-serif;max-width:880px;margin:24px auto;color:#1a2744;">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #D4A843;padding-bottom:12px;">
         <div>
-          <img src="https://growmoresolutions.com/images/company/gmhs.png" alt="Grow More Solutions" style="height:46px;display:block;margin-bottom:8px;" />
+          <img src="${GMHS_LOGO_DATA_URI}" alt="Grow More Solutions" style="height:46px;display:block;margin-bottom:8px;" />
           <h1 style="margin:0;color:#0a1424;font-size:22px;">Indicative Estimate &amp; Scope (BOQ)</h1>
           <p style="margin:3px 0 0;color:#666;">Grow More Hitech Solutions · growmoresolutions.com</p>
         </div>

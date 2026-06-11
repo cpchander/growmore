@@ -74,19 +74,35 @@ export async function POST(req: NextRequest) {
         </div></div>`,
     });
 
+    // Acknowledgement to the visitor, WITH their estimate. Awaited on purpose —
+    // on serverless, a fire-and-forget send is killed when the function returns.
     if (email) {
-      transport.sendMail({
-        from: '"Grow More Solutions" <noreply@growmoresolutions.com>',
-        to: email,
-        subject: "We've received your home estimate — Grow More Solutions",
-        html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;">
-          <div style="background:#0a1628;padding:32px;border-radius:12px;border:1px solid #1e3050;">
-            <h1 style="color:#d4a843;margin:0 0 8px;font-size:22px;">Thanks, ${s.name} 🙏</h1>
-            <p style="color:#fff;font-size:14px;line-height:1.6;margin:0;">Our team will review your BOQ (${s.totalRange || "your estimate"}) and come back within <strong style="color:#d4a843;">1 working day</strong> with a detailed, accurate quote — in your timezone.</p>
-          </div>
-          <p style="color:#556677;font-size:11px;text-align:center;margin-top:16px;">Grow More Solutions — 15+ Years · 600+ Projects · 25+ Cities</p>
-        </div>`,
-      }).catch((e: unknown) => console.error("Estimator ack error:", e));
+      try {
+        await transport.sendMail({
+          from: '"Grow More Solutions" <noreply@growmoresolutions.com>',
+          to: email,
+          subject: "Your home estimate — Grow More Solutions",
+          html: `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;">
+            <div style="text-align:center;margin-bottom:14px;">
+              <img src="https://growmoresolutions.com/images/company/gmhs.png" alt="Grow More Solutions" style="height:42px;" />
+            </div>
+            <div style="background:#0a1628;padding:32px;border-radius:12px;border:1px solid #1e3050;">
+              <h1 style="color:#d4a843;margin:0 0 8px;font-size:22px;">Thanks, ${s.name} 🙏</h1>
+              <p style="color:#fff;font-size:14px;line-height:1.6;margin:0 0 18px;">Here's the indicative estimate you generated. Our team will review your scope and come back within <strong style="color:#d4a843;">1 working day</strong> with a detailed, accurate quote — in your timezone.</p>
+              <div style="background:#0f1d33;border:1px solid #1e3050;border-radius:10px;padding:16px;">
+                <p style="color:#8899aa;font-size:12px;margin:0 0 4px;text-transform:uppercase;letter-spacing:1px;">Indicative budget range</p>
+                <p style="color:#d4a843;font-size:20px;font-weight:700;margin:0 0 12px;">${s.totalRange || "Shared on your call"}</p>
+                <p style="color:#8899aa;font-size:12px;margin:0 0 4px;text-transform:uppercase;letter-spacing:1px;">Your scope</p>
+                <p style="color:#fff;font-size:13px;line-height:1.6;margin:0;">${s.summary || "—"}</p>
+              </div>
+              <p style="color:#8899aa;font-size:12px;line-height:1.6;margin:16px 0 0;">This is an indicative scope estimate, not a binding quote. Final pricing follows a site visit &amp; engineer review.</p>
+            </div>
+            <p style="color:#556677;font-size:11px;text-align:center;margin-top:16px;">Grow More Solutions — 15+ Years · 600+ Projects · 25+ Cities<br>+91-96678-95926 · sales@growmoresolutions.com</p>
+          </div>`,
+        });
+      } catch (e: unknown) {
+        console.error("Estimator ack error:", e);
+      }
     }
 
     return NextResponse.json({ success: true });

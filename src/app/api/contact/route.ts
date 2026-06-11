@@ -298,15 +298,18 @@ export async function POST(req: NextRequest) {
         </div>
       `;
 
-      // Send ack email — non-blocking (don't fail the response if this fails)
-      transport.sendMail({
-        from: '"Grow More Solutions" <noreply@growmoresolutions.com>',
-        to: email,
-        subject: `Thank you for contacting Grow More Solutions, ${safeName}!`,
-        html: ackHtml,
-      }).catch((err: unknown) => {
+      // Send ack email — awaited so serverless doesn't kill the send when the
+      // function returns; wrapped so it still doesn't fail the response.
+      try {
+        await transport.sendMail({
+          from: '"Grow More Solutions" <noreply@growmoresolutions.com>',
+          to: email,
+          subject: `Thank you for contacting Grow More Solutions, ${safeName}!`,
+          html: ackHtml,
+        });
+      } catch (err: unknown) {
         console.error("Ack email send error:", err);
-      });
+      }
     }
 
     return NextResponse.json({ success: true });
