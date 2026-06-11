@@ -87,7 +87,7 @@ export default function HomePage() {
       <CitiesSection />
 
       {/* Instagram Feed — real project images */}
-      <InstagramFeed count={6} />
+      <InstagramFeed count={3} />
 
       {/* FAQ Section — visible on page for SEO */}
       <section className="py-12 sm:py-16 bg-navy-950">
