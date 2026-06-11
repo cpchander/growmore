@@ -5,7 +5,7 @@ export type BrandDetail = {
   protocol: string;
   origin: string;
   certifiedSince?: string; // legacy field — no longer rendered (kept on old entries)
-  website: string;
+  website?: string; // omitted for GMHS in-house curated lines
   overview: string;
   bestFor: string;
   priceRange: string;
@@ -718,6 +718,129 @@ export const BRAND_DETAILS: BrandDetail[] = [
       { question: "Does Digilux need rewiring?", answer: "No — it's a retrofit system whose modules sit behind existing switches, so finished homes can be automated without tampering with the wiring. That makes it a practical choice for occupied apartments and villas." },
       { question: "What technology does Digilux use?", answer: "Primarily wireless Zigbee mesh, which is self-healing and doesn't need line-of-sight. The newer Digilux AI Wi-Fi panel works with Alexa and Google Assistant for voice control." },
       { question: "How much does a Digilux smart home cost?", answer: "As an indicative range, a full home typically runs ₹50,000 to ₹3,00,000 depending on size and the number of circuits automated — substantially less than premium wired systems. We scope the exact cost after understanding your rooms and requirements." },
+    ],
+  },
+  {
+    slug: "cleanair",
+    name: "Cleanair",
+    tagline: "Clean, Fresh Air for Every Room",
+    protocol: "Indoor air quality — fresh-air & ventilation",
+    origin: "A curated indoor-air-quality line by Grow More Solutions",
+    overview:
+      "Cleanair is Grow More Solutions' curated indoor-air-quality line — fresh-air ventilation, HEPA and activated-carbon purification, energy/heat-recovery ventilation (ERV/HRV) and live AQI (PM2.5/CO₂) monitoring, integrated into your home-automation system. Rather than a single off-the-shelf brand, we select proven IAQ equipment per project so ventilation responds automatically to air quality and ties into your scenes and app.",
+    bestFor:
+      "Homeowners in polluted Indian cities wanting filtered fresh air and live AQI control without opening windows.",
+    priceRange:
+      "Indicative ₹15,000–45,000 for a single-room fresh-air/ERV unit; ₹85,000–2.65 Lakh+ for whole-home ventilation, depending on airflow, filtration stages and room count",
+    features: [
+      { title: "Fresh-Air Intake", description: "Draws filtered outdoor air indoors so windows can stay shut against dust and noise." },
+      { title: "Multi-Stage Filtration", description: "Pre-filter, HEPA and activated carbon capture PM2.5, allergens and odours." },
+      { title: "Energy Recovery", description: "ERV/HRV cores recover heat or coolth from exhaust air to cut HVAC load." },
+      { title: "AQI Monitoring", description: "Onboard PM2.5/CO₂ sensors report live indoor air quality." },
+      { title: "Automation Integration", description: "Ventilation responds to AQI thresholds and home-automation scenes." },
+      { title: "App & Schedule Control", description: "Set fan speed, schedules and modes from a phone or wall keypad." },
+    ],
+    pros: [
+      "Continuous filtered fresh air without opening windows",
+      "Removes PM2.5, allergens and odours",
+      "Energy-recovery models reduce cooling/heating costs",
+      "Live AQI feedback you can act on",
+      "Integrates with whole-home automation scenes",
+      "Scales from a single room to the whole house",
+    ],
+    cons: [
+      "Whole-home systems need ducting / false-ceiling space",
+      "Recurring filter-replacement cost",
+      "Higher upfront cost than a plug-in purifier",
+      "Best designed in during construction or renovation",
+    ],
+    faqs: [
+      { question: "Is a fresh-air system better than a portable purifier?", answer: "A fresh-air/ERV system continuously brings in filtered outdoor air and removes stale indoor air (CO₂, odours), while a portable purifier only recirculates existing room air. For whole-home coverage, fresh-air systems are more comprehensive — we often combine both." },
+      { question: "Does it integrate with my home automation?", answer: "Yes — the systems we install can trigger on PM2.5/CO₂ thresholds and be controlled via app, keypad or voice as part of your automation scenes, so air quality is managed automatically." },
+      { question: "How often do filters need changing?", answer: "Typically every 6–12 months depending on local pollution and usage; HEPA and carbon stages are the main consumables. We flag the schedule and can include it in an AMC." },
+      { question: "Is Cleanair a single manufacturer?", answer: "No — Cleanair is our curated indoor-air-quality line. We select proven fresh-air, ERV and HEPA equipment per project rather than pushing one brand, and integrate it into your home automation." },
+    ],
+  },
+  {
+    slug: "belyesse",
+    name: "Belyesse",
+    tagline: "Architectural Light, Beautifully Engineered",
+    protocol: "Architectural & decorative LED lighting",
+    origin: "A curated architectural-lighting line by Grow More Solutions",
+    overview:
+      "Belyesse is Grow More Solutions' curated architectural and decorative lighting line — recessed downlights, linear/profile lights, facade and landscape fixtures, and accent lighting designed to integrate with dimming (phase/DALI) and smart-lighting control. Rather than a single catalogue brand, we specify the right fixtures per project so the lighting layers beautifully and ties into your automated scenes.",
+    bestFor:
+      "Premium residential and hospitality projects needing layered architectural lighting that ties into automated dimming and scenes.",
+    priceRange:
+      "Indicative ₹400–3,500 per downlight/spot; ₹1,500–15,000 per metre/unit for linear & facade fixtures; decorative pieces vary widely — depending on output, finish and dimming capability",
+    features: [
+      { title: "Architectural Downlights", description: "Recessed trims and spots for clean, glare-controlled ceiling light." },
+      { title: "Linear Profile Lights", description: "Continuous LED runs for coves, niches and accents." },
+      { title: "Facade & Landscape", description: "Outdoor-rated fixtures for elevations, gardens and pathways." },
+      { title: "Dimmable & Tunable", description: "Compatible with phase/DALI dimming and tunable-white scenes." },
+      { title: "Automation-Ready", description: "Integrates with smart-lighting control for scenes and schedules." },
+      { title: "Energy-Efficient LED", description: "Long-life, low-heat LED sources reduce running costs." },
+    ],
+    pros: [
+      "Covers ambient, accent and decorative needs",
+      "LED efficiency and long fixture life",
+      "Dimmable/tunable options for mood scenes",
+      "Indoor and outdoor (facade/landscape) coverage",
+      "Integrates with automated lighting control",
+      "Suits premium residential and hospitality interiors",
+    ],
+    cons: [
+      "Pricing varies widely by spec — needs project quotation",
+      "Best planned alongside the interior design stage",
+      "Decorative/imported pieces can carry longer lead times",
+      "DALI/tunable fixtures cost more than basic LED",
+    ],
+    faqs: [
+      { question: "Can Belyesse lighting be dimmed and automated?", answer: "Yes — the architectural fixtures we specify support dimming (phase or DALI) and integrate with smart-lighting control for scenes, schedules and voice/app operation, so lighting becomes part of your automation." },
+      { question: "Do you offer both indoor and outdoor fixtures?", answer: "Yes — the line spans interior downlights, linear/cove profiles, decorative pendants, and outdoor-rated facade and landscape lighting, so a whole property can be lit cohesively." },
+      { question: "Is Belyesse suitable for hotels and large homes?", answer: "Yes — layered architectural lighting of this type is well suited to premium residential and hospitality projects where lighting design and control matter. We design the layers and the control together." },
+      { question: "Is Belyesse a single manufacturer?", answer: "No — Belyesse is our curated architectural-lighting line. We specify fixtures per project to match the design and the control requirements rather than pushing one catalogue." },
+    ],
+  },
+  {
+    slug: "vurve",
+    name: "Vurve",
+    tagline: "Elegant Touch Control, Beautifully Integrated",
+    protocol: "Smart control panel (integrates with KNX / Crestron / Control4)",
+    origin: "A smart control panel integrated by Grow More Solutions",
+    overview:
+      "Vurve is an elegant touch-and-scene smart control panel we integrate on top of a wider automation system. From a single wall panel it manages lighting, climate, curtains, entertainment and security, and it's designed to sit over a KNX, Crestron or Control4 backbone. We use it where a minimalist, premium in-wall control surface suits the interior, unifying everyday control into one beautiful panel.",
+    bestFor:
+      "Premium homes and hospitality spaces wanting a minimalist in-wall touch panel for one-touch scene control over an existing automation backbone.",
+    priceRange:
+      "Indicative — premium glass touch/scene panels of this type typically run ₹10,000–30,000+ per panel depending on size, finish and integration (priced per project)",
+    features: [
+      { title: "Touch & Scene Control", description: "A wall panel that manages connected systems and one-touch scenes." },
+      { title: "Multi-System Control", description: "Handles lighting, climate, curtains, entertainment and security from one place." },
+      { title: "Integration-Friendly", description: "Designed to work over KNX, Crestron or Control4 backbones." },
+      { title: "Scene Automation", description: "Customisable scene-based control for one-touch moods and routines." },
+      { title: "Voice & App Alongside", description: "Works alongside app and voice control as part of the wider system." },
+      { title: "Minimalist Design", description: "An elegant, low-profile panel intended for premium interiors." },
+    ],
+    pros: [
+      "Premium, minimalist aesthetic for luxury interiors",
+      "Consolidates multiple controls into one panel",
+      "Sits over major backbones (KNX/Crestron/Control4)",
+      "One-touch scene control",
+      "Installed and supported by our in-house engineers",
+      "Works alongside app and voice control",
+    ],
+    cons: [
+      "A control surface — relies on the underlying automation backbone",
+      "Premium pricing versus basic switches",
+      "Best specified during the design stage",
+      "Final capability depends on the connected system",
+    ],
+    faqs: [
+      { question: "What can a Vurve panel control?", answer: "It controls lighting, climate, curtains, entertainment and security from a single touch panel, by driving the underlying automation backbone (such as KNX or Crestron) we install in your home." },
+      { question: "Which systems does Vurve work with?", answer: "It's designed to sit over major automation backbones like KNX, Crestron and Control4. We confirm the exact integration during design so the panel maps cleanly to your scenes and devices." },
+      { question: "Is Vurve a full automation system on its own?", answer: "No — it's an elegant control panel that we integrate on top of a wider automation system. The backbone does the heavy lifting; Vurve gives you a beautiful, minimalist way to control it." },
+      { question: "How much does a Vurve panel cost?", answer: "As an indicative figure, premium glass touch/scene panels of this type typically run ₹10,000–30,000+ per panel depending on size, finish and integration. We price it as part of the overall system after understanding your layout." },
     ],
   },
 ];

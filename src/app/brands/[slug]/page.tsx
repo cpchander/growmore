@@ -91,15 +91,17 @@ export default async function BrandPage({ params }: Props) {
               Automation in India
             </h1>
             <p className="text-lg text-navy-300 mb-2">{brand.tagline}</p>
-            <a
-              href={brand.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-gold-500 hover:text-gold-400 transition-colors mb-3"
-            >
-              <ExternalLink className="w-3.5 h-3.5" />
-              Official {brand.name} Website — {brand.website.replace("https://www.", "")}
-            </a>
+            {brand.website && (
+              <a
+                href={brand.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-gold-500 hover:text-gold-400 transition-colors mb-3"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                Official {brand.name} Website — {brand.website.replace("https://www.", "")}
+              </a>
+            )}
             <p className="text-navy-400 text-sm">
               Installed by {COMPANY.name} — India&apos;s most experienced smart
               home company with {COMPANY.experience} years and{" "}

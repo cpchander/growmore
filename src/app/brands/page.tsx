@@ -98,15 +98,17 @@ export default function BrandsPage() {
                       <h2 className="text-2xl font-bold text-white">
                         {brand.name}
                       </h2>
-                      <a
-                        href={brand.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-xs text-navy-400 hover:text-gold-500 transition-colors"
-                      >
-                        <ExternalLink className="w-3 h-3" />
-                        {brand.website.replace("https://www.", "")}
-                      </a>
+                      {brand.website && (
+                        <a
+                          href={brand.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1 text-xs text-navy-400 hover:text-gold-500 transition-colors"
+                        >
+                          <ExternalLink className="w-3 h-3" />
+                          {brand.website.replace("https://www.", "")}
+                        </a>
+                      )}
                     </div>
                     <p className="text-gold-500 text-sm font-medium mb-2">
                       {brand.tagline}
@@ -153,16 +155,20 @@ export default function BrandsPage() {
                         View {brand.name} Details
                         <ArrowRight className="w-4 h-4" />
                       </Link>
-                      <span className="text-navy-700">|</span>
-                      <a
-                        href={brand.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-sm text-navy-400 hover:text-white transition-colors"
-                      >
-                        Official {brand.name} Website
-                        <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
+                      {brand.website && (
+                        <>
+                          <span className="text-navy-700">|</span>
+                          <a
+                            href={brand.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-sm text-navy-400 hover:text-white transition-colors"
+                          >
+                            Official {brand.name} Website
+                            <ExternalLink className="w-3.5 h-3.5" />
+                          </a>
+                        </>
+                      )}
                     </div>
                   </div>
                 </div>
