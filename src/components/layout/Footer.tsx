@@ -226,7 +226,7 @@ export default function Footer() {
                   href="/about/certifications"
                   className="text-sm text-navy-300 hover:text-gold-500 transition-colors"
                 >
-                  Certifications
+                  Standards & Expertise
                 </Link>
               </li>
               <li>

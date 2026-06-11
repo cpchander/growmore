@@ -634,7 +634,7 @@ export default async function BlogPostPage({ params }: Props) {
                     {[
                       `${COMPANY.experience} Years Experience`,
                       `${COMPANY.projectsCompleted} Projects Delivered`,
-                      "Certified KNX & Crestron Partner",
+                      "KNX-Certified Integrator",
                       "25+ Cities Across India",
                       "Free Site Assessment",
                     ].map((item) => (

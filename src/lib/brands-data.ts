@@ -25,7 +25,7 @@ export const BRAND_DETAILS: BrandDetail[] = [
     certifiedSince: "2004",
     website: "https://www.knx.org",
     overview:
-      "KNX is the world's only open standard for home and building automation, backed by 500+ manufacturers including Schneider Electric, ABB, Gira, and Jung. It uses a wired, decentralized bus system that's virtually maintenance-free and lasts 20+ years. As India's longest-serving KNX partner, we've deployed KNX in luxury villas, penthouses, and commercial buildings across 15+ cities.",
+      "KNX is the world's only open standard for home and building automation, backed by 500+ manufacturers including Schneider Electric, ABB, Gira, and Jung. It uses a wired, decentralized bus system that's virtually maintenance-free and lasts 20+ years. As a long-serving, KNX-certified integrator in India, we've deployed KNX in luxury villas, penthouses, and commercial buildings across 25+ cities.",
     bestFor:
       "Luxury villas, penthouses, large residences, and commercial buildings where reliability and longevity matter most.",
     priceRange: "₹8–30 Lakh+ depending on property size and feature scope",
@@ -107,7 +107,7 @@ export const BRAND_DETAILS: BrandDetail[] = [
     certifiedSince: "2012",
     website: "https://www.crestron.com",
     overview:
-      "Crestron is the world's leading brand for ultra-luxury home automation and commercial AV. Every Crestron system is custom-programmed by certified engineers to deliver pixel-perfect control interfaces, seamless AV distribution, and unmatched precision. We are a certified Crestron dealer and programmer with installations in Mumbai, Delhi, Hyderabad, and Bangalore.",
+      "Crestron is the world's leading brand for ultra-luxury home automation and commercial AV. Every Crestron system is custom-programmed by certified engineers to deliver pixel-perfect control interfaces, seamless AV distribution, and unmatched precision. Where a client specifies Crestron — or already owns it — we integrate it into a unified, single-app home alongside the rest of the automation.",
     bestFor:
       "Ultra-luxury villas, celebrity homes, high-end penthouses, boardrooms, and clients who demand absolute perfection.",
     priceRange: "₹15–50 Lakh+ for residential; ₹50 Lakh+ for commercial",
@@ -271,7 +271,7 @@ export const BRAND_DETAILS: BrandDetail[] = [
     certifiedSince: "2014",
     website: "https://www.lutron.com",
     overview:
-      "Lutron invented the solid-state dimmer in 1961 and has been the global authority on lighting control ever since. Lutron systems — from Caseta to RadioRA 3 to HomeWorks QSX — deliver unmatched dimming precision, motorized shading, and energy savings. We install Lutron as a standalone lighting system or integrated with KNX, Crestron, or Control4.",
+      "Lutron invented the solid-state dimmer in 1961 and has been the global authority on lighting control ever since. Lutron systems — from Caseta to RadioRA 3 to HomeWorks QSX — deliver unmatched dimming precision, motorized shading, and energy savings. Lutron is typically used as a standalone lighting layer or integrated with a KNX backbone — we can specify and integrate it into your project.",
     bestFor:
       "Homeowners and designers who want the best possible lighting experience — dimming quality, scene control, and automated shading.",
     priceRange: "₹1.5–10 Lakh for lighting; ₹3–15 Lakh with shading",
@@ -353,7 +353,7 @@ export const BRAND_DETAILS: BrandDetail[] = [
     certifiedSince: "2016",
     website: "https://www.sonos.com",
     overview:
-      "Sonos is the world's leading multi-room audio system, delivering rich, room-filling sound with dead-simple setup and control. From the compact Era 100 to the cinematic Arc soundbar, Sonos products integrate with every major streaming service and automation platform. We design and install Sonos systems as part of whole-home automation packages.",
+      "Sonos is the world's leading multi-room audio system, delivering rich, room-filling sound with dead-simple setup and control. From the compact Era 100 to the cinematic Arc soundbar, Sonos products integrate with every major streaming service and automation platform. Sonos can be included as the audio layer in a whole-home automation package, integrated with the rest of the system.",
     bestFor:
       "Homeowners who want premium whole-home audio that's easy to use, expandable, and works with any automation system.",
     priceRange: "₹50,000–5 Lakh depending on zones and speaker selection",
@@ -412,7 +412,7 @@ export const BRAND_DETAILS: BrandDetail[] = [
       {
         question: "Can Sonos integrate with home automation systems?",
         answer:
-          "Yes. Sonos integrates natively with Control4, Crestron, Savant, and other automation platforms. It can also be controlled via KNX through IP integration. We typically include Sonos as the audio layer in our whole-home automation packages.",
+          "Yes. Sonos integrates natively with Control4, Crestron, Savant, and other automation platforms. It can also be controlled via KNX through IP integration — a popular choice for the audio layer in a whole-home automation package.",
       },
       {
         question: "Is Sonos better than a traditional AV receiver setup?",

@@ -39,10 +39,10 @@ const MILESTONES = [
   },
   {
     year: 2015,
-    title: "Brand Partnerships",
+    title: "Deep Brand Expertise",
     description:
-      "Became certified dealers for KNX, Crestron, Control4, Lutron, and Sonos. Positioned as a premium integrator for luxury residential and hospitality projects in the NCR region.",
-    highlight: "KNX, Crestron & Control4 certified",
+      "Became KNX-certified and built deep integration expertise across the leading platforms — KNX, Crestron, Control4, Lutron and Sonos — positioned as a premium, vendor-neutral integrator for luxury residential and hospitality projects in the NCR region.",
+    highlight: "KNX-certified, vendor-neutral integrator",
   },
   {
     year: 2017,
