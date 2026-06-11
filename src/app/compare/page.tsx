@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2, XCircle, Minus } from "lucide-react";
 
 export const metadata: Metadata = createMetadata({
   title: `KNX vs Crestron vs Control4 vs Lutron — Comparison Guide India (2026)`,
-  description: `Compare KNX, Crestron, Control4 & Lutron for Indian homes — pricing, reliability, features, pros & cons, from certified partner ${COMPANY.name}.`,
+  description: `Compare KNX, Crestron, Control4 & Lutron for Indian homes — pricing, reliability, features, pros & cons, from vendor-neutral integrator ${COMPANY.name}.`,
   path: "/compare",
 });
 
@@ -165,7 +165,7 @@ const FAQS = [
   {
     question: "Which is the best home automation system in India?",
     answer:
-      "The best system depends on your property, budget, and priorities. KNX is best for new construction with a long-term view. Crestron is best for ultra-luxury with heavy AV needs. Control4 offers the best balance of features and price. Lutron is the industry benchmark for architectural lighting control. As certified partners for all four, we recommend based on your specific needs.",
+      "The best system depends on your property, budget, and priorities. KNX is best for new construction with a long-term view. Crestron is best for ultra-luxury with heavy AV needs. Control4 offers the best balance of features and price. Lutron is the industry benchmark for architectural lighting control. As an independent, KNX-certified integrator working across all four, we recommend based on your specific needs.",
   },
   {
     question: "Can I mix different brands in one home?",

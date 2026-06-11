@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!brand) return {};
 
   return createMetadata({
-    title: `${brand.name} Home Automation — Certified ${brand.name} Partner`,
-    description: `${brand.name} home automation by India's most experienced certified partner. ${brand.priceRange}. ${COMPANY.experience} years, ${COMPANY.projectsCompleted} projects.`,
+    title: `${brand.name} Home Automation in India — Cost, Features & Install`,
+    description: `${brand.name} home automation in India — features, pricing and how it compares. Designed, installed and integrated by ${COMPANY.name}: ${COMPANY.experience} years, ${COMPANY.projectsCompleted} projects.`,
     path: `/brands/${slug}`,
   });
 }
@@ -84,22 +84,24 @@ export default async function BrandPage({ params }: Props) {
           {/* Hero */}
           <div className="mb-12">
             <span className="text-xs bg-gold-500/10 text-gold-500 px-3 py-1 rounded-full">
-              Certified Partner Since {brand.certifiedSince}
+              Installed &amp; Integrated Across India
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4 mb-3">
               <span className="text-gradient-gold">{brand.name}</span> Home
               Automation in India
             </h1>
             <p className="text-lg text-navy-300 mb-2">{brand.tagline}</p>
-            <a
-              href={brand.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-gold-500 hover:text-gold-400 transition-colors mb-3"
-            >
-              <ExternalLink className="w-3.5 h-3.5" />
-              Official {brand.name} Website — {brand.website.replace("https://www.", "")}
-            </a>
+            {brand.website && (
+              <a
+                href={brand.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-gold-500 hover:text-gold-400 transition-colors mb-3"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                Official {brand.name} Website — {brand.website.replace("https://www.", "")}
+              </a>
+            )}
             <p className="text-navy-400 text-sm">
               Installed by {COMPANY.name} — India&apos;s most experienced smart
               home company with {COMPANY.experience} years and{" "}
@@ -125,9 +127,9 @@ export default async function BrandPage({ params }: Props) {
             </div>
             <div className="glass-card rounded-lg p-4 text-center">
               <Calendar className="w-5 h-5 text-gold-500 mx-auto mb-2" />
-              <p className="text-xs text-navy-400">Our Partnership</p>
+              <p className="text-xs text-navy-400">Experience</p>
               <p className="text-sm text-white font-medium mt-0.5">
-                Since {brand.certifiedSince}
+                {COMPANY.experience} years
               </p>
             </div>
             <div className="glass-card rounded-lg p-4 text-center">
@@ -266,12 +268,12 @@ export default async function BrandPage({ params }: Props) {
           {/* CTA */}
           <div className="glass-card rounded-xl p-8 sm:p-10 text-center">
             <h2 className="text-2xl font-bold text-white mb-3">
-              Get {brand.name} Installed by Certified Experts
+              Get {brand.name} Designed &amp; Installed Right
             </h2>
             <p className="text-navy-300 max-w-lg mx-auto mb-6">
-              As a certified {brand.name} partner since {brand.certifiedSince},
-              we handle everything — system design, wiring, installation,
-              programming, and lifetime support.
+              We design, install, integrate and support {brand.name} systems
+              end-to-end — system design, wiring, installation, programming and
+              lifetime support, with our own certified in-house engineers.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link

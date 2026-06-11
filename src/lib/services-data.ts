@@ -111,7 +111,7 @@ export const SERVICE_CONTENT: ServiceContent[] = [
     ],
     whyChooseUs: [
       "Combined lighting design + automation expertise — most companies offer only one",
-      "Certified Lutron and KNX lighting partners with access to premium fixtures",
+      "KNX-certified lighting integrators with access to premium Lutron & architectural fixtures",
       "Extensive portfolio of residential, hospitality, and commercial lighting projects",
       "Energy-optimized designs that reduce lighting electricity by 30–50%",
       "Scene programming included — not just hardware installation",

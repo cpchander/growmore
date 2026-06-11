@@ -52,7 +52,7 @@ export default async function CityPage({ params }: Props) {
     },
     {
       question: `What brands do you install for home automation in ${city.name}?`,
-      answer: `We install all major home automation brands in ${city.name}: KNX (open standard, 500+ manufacturers), Crestron (ultra-luxury custom automation), Control4 (best balance of features and price), Lutron (premium lighting control), and Sonos (multi-room audio). As certified partners, we recommend the best brand based on your home, budget, and requirements — not commission margins.`,
+      answer: `We install and integrate all major home automation brands in ${city.name}: KNX (open standard, 500+ manufacturers), Crestron (ultra-luxury custom automation), Control4 (best balance of features and price), Lutron (premium lighting control), and Sonos (multi-room audio). As a KNX-certified, vendor-neutral integrator, we recommend the best brand based on your home, budget, and requirements — not commission margins.`,
     },
     {
       question: `Do you offer after-sales support and AMC in ${city.name}?`,

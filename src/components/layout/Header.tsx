@@ -35,7 +35,7 @@ const RESOURCE_LINKS = [
   { href: "/villa-walkthrough", label: "Villa Walkthrough", desc: "8-zone luxury villa in 3D", icon: Sparkles },
   { href: "/about/our-story", label: "Our Story", desc: "15+ years of home automation expertise", icon: Users },
   { href: "/about/team", label: "Our Team", desc: "Meet our engineers & leadership", icon: Users },
-  { href: "/about/certifications", label: "Certifications", desc: "Brand partnerships & accreditations", icon: BadgeCheck },
+  { href: "/about/certifications", label: "Standards & Expertise", desc: "KNX-certified, vendor-neutral integrator", icon: BadgeCheck },
   { href: "/get-quote", label: "Get Instant Quote", desc: "Online quote calculator", icon: Cpu },
   { href: "/ventures", label: "Ventures & Partnerships", desc: "Zedtreeo remote staffing & more", icon: Globe },
 ];

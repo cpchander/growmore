@@ -28,9 +28,9 @@ const SECTIONS = [
   {
     href: "/about/certifications",
     icon: Award,
-    title: "Certifications & Partnerships",
-    tagline: "KNX, Crestron, Control4 & Lutron certified",
-    desc: "Our brand partnerships and certifications — the credentials that let us recommend the right technology for your home rather than a single product line.",
+    title: "Standards & Expertise",
+    tagline: "KNX-certified, vendor-neutral integrator",
+    desc: "How we work — KNX-certified, vendor-neutral, building on open standards and integrating the leading platforms so we recommend the right technology for your home, not a single product line.",
   },
 ];
 

@@ -6,7 +6,7 @@ const MILESTONES_STATS = [
   { value: 2009, label: "Founded", prefix: "", suffix: "" },
   { value: 300, label: "Projects Completed", prefix: "", suffix: "+" },
   { value: 15, label: "Cities Across India", prefix: "", suffix: "+" },
-  { value: 10, label: "Brand Partnerships", prefix: "", suffix: "+" },
+  { value: 10, label: "Brands We Integrate", prefix: "", suffix: "+" },
 ];
 
 function Counter({ target, suffix, prefix }: { target: number; suffix: string; prefix: string }) {
