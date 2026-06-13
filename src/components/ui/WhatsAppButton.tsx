@@ -1,11 +1,11 @@
 "use client";
 
-import { COMPANY } from "@/lib/constants";
+// Dedicated AI auto-responder + CRM line — intentionally separate from the
+// published COMPANY.whatsapp number, so it stays a literal here. Do NOT change it.
+const WHATSAPP_NUMBER = "919560371221";
 
 export default function WhatsAppButton() {
-  const message = encodeURIComponent(
-    "Hi, I'm interested in home automation. Please share details."
-  );
+  const message = encodeURIComponent("Hi, I'm interested in smart home automation");
 
   const handleClick = () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -21,11 +21,11 @@ export default function WhatsAppButton() {
 
   return (
     <a
-      href={`https://wa.me/${COMPANY.whatsapp}?text=${message}`}
+      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600
+      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#1ebe5a]
                  text-white p-4 rounded-full shadow-2xl transition-all duration-300
                  hover:scale-110 group"
       aria-label="Chat on WhatsApp"
