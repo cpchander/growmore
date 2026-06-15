@@ -1,6 +1,17 @@
-export const content = `## Summary: Smart Lighting Automation for Indian Homes
+export const content = `*Last updated: June 15, 2026*
+
+## Summary: Smart Lighting Automation for Indian Homes
 
 Smart lighting automation in India costs **₹1–7 Lakh** for a 3BHK apartment and **₹4–15 Lakh** for a 4–5 BHK villa, depending on brand selection (KNX, Lutron, Control4, or wireless). Based on 600+ GMHS installations across 12 cities, lighting accounts for **25–35% of total automation budgets** but delivers over 50% of daily-use value — making it the highest-ROI entry point into home automation. Professional scene control, circadian dimming, and energy monitoring are now standard in premium Indian homes.
+
+## Key Takeaways
+
+- **Highest-ROI starting point:** Lighting is 25–35% of an automation budget but delivers 50%+ of daily-use value across 600+ GMHS projects.
+- **Cost (mid-range):** ₹1.5–3 Lakh for a 3BHK; **premium (KNX/Lutron HomeWorks):** ₹3.5–7 Lakh. Luxury villa lighting runs ₹7–25 Lakh.
+- **Market momentum:** India's smart lighting market was [valued at USD 945.5 million in 2024 and is projected to reach USD 10,965 million by 2033](https://www.imarcgroup.com/indian-smart-lighting-market) — a 28.7% CAGR, the fastest-growing automation segment.
+- **Energy savings:** Daylight harvesting plus occupancy sensors cut lighting energy 30–60%; one tracked Vasant Vihar villa saw a 39% total electricity drop.
+- **2026 product shift:** Lutron's new [Intelligent Lighting portfolio (Ketra + Orluna)](https://www.cepro.com/news/lutrons-ise-2026-announcement-shows-how-big-intelligent-lighting-has-become/625029/) brings natural-daylight-matching fixtures to luxury projects, rolling out from February 2026.
+- **Regulation:** [BIS QCO 2026 makes ISI certification mandatory from Oct 1, 2026](https://www.india-briefing.com/news/india-electrical-appliances-qco-2026-bis-certification-guide-for-foreign-manufacturers-44541.html/) for 90+ electrical appliance categories — buy BIS-compliant fixtures and drivers.
 
 ## Why Smart Lighting Is the #1 Home Automation Feature in India
 
@@ -96,6 +107,14 @@ Daylight harvesting uses **lux sensors** placed near windows to measure natural 
 **Our recommendation:** For most Indian homes, **Lutron Caseta or Control4** offers the best balance of quality, reliability, and price. For new luxury builds, **KNX** with premium keypads is the gold standard. See our full [brand comparison page](/compare) for side-by-side evaluation.
 
 For a deeper comparison of KNX, Crestron, and Control4, read our [detailed comparison article](/blog/knx-vs-crestron-vs-control4-india).
+
+## What Changed in 2026 — New Fixtures and BIS Compliance
+
+Two developments are reshaping premium lighting specs this year, and they directly affect how we quote new projects.
+
+**Lutron Intelligent Lighting (Ketra + Orluna).** At ISE 2026 Lutron unveiled its [Intelligent Lighting portfolio](https://essentialinstall.com/news/products/lutron-introduces-intelligent-lighting-portfolio/), merging the Ketra natural-light engine with Orluna architectural fixtures (Orluna was acquired by Lutron in June 2025). These fixtures replicate the colour-temperature and intensity shifts of real daylight across downlights, linear, tape, and floorwash — phased rollout began February 2026. For ultra-luxury villas where clients want light that "feels like morning sun," this is now the reference standard, though it carries a 20–40% premium over standard tunable-white fixtures. Most 3–4 BHK projects still get excellent circadian performance from KNX or Lutron RadioRA 3 at a fraction of the cost.
+
+**BIS QCO 2026 — buy compliant.** Under the [Quality Control Order effective October 1, 2026](https://www.india-briefing.com/news/india-electrical-appliances-qco-2026-bis-certification-guide-for-foreign-manufacturers-44541.html/), 90+ categories of electrical appliances — including LED drivers and control gear — must carry BIS ISI certification before sale in India. The updated [IS 16102 (Part 1): 2026 LED lamp standard](https://www.certification-india.com/en/india-updates-bis-requirements-for-led-lamps-standard-2026/) replaces the 2012 version (withdrawn after 2 August 2026). Practically: insist on BIS-certified dimmers, drivers, and fixtures so your installation stays compliant and warranty-backed. Every brand we deploy (KNX, Lutron, Control4) ships QCO-ready hardware.
 
 {{CTA:Get Smart Lighting Recommendations for Your Home:/contact}}
 
@@ -364,10 +383,18 @@ Yes. All major smart lighting systems integrate with **Alexa**, **Google Home**,
 
 **Wired systems (KNX, Lutron HomeWorks):** 20-30 years for the wiring and infrastructure, 10-15 years for individual devices. **Wireless systems (Control4, Lutron Caseta):** 10-15 years. **Budget Wi-Fi devices (Wipro, Sonoff):** 3-5 years on average. The wired backbone is always the better long-term investment for [homeowners](/solutions/for-homeowners) who plan to stay.
 
+### Does smart lighting hardware need BIS certification in India?
+
+Yes — increasingly so. Under [BIS QCO 2026, effective October 1, 2026](https://www.india-briefing.com/news/india-electrical-appliances-qco-2026-bis-certification-guide-for-foreign-manufacturers-44541.html/), LED drivers, control gear, and a wide range of electrical appliances must carry the ISI mark before sale. Always specify BIS-compliant fixtures and dimmers. All brands GMHS deploys (KNX, Lutron, Control4) supply QCO-ready hardware, which keeps your installation legally compliant and protects warranty cover.
+
+### What is circadian or human-centric lighting, and is it worth it?
+
+Circadian lighting automatically shifts colour temperature through the day — cool 5000K in the morning for alertness, warm 2200K at night to support melatonin and sleep. Tunable-white KNX or Lutron systems deliver this affordably; Lutron's 2026 [Ketra Intelligent Lighting](https://www.cepro.com/news/lutrons-ise-2026-announcement-shows-how-big-intelligent-lighting-has-become/625029/) takes it furthest by replicating natural daylight. For bedrooms, home offices, and homes with ageing parents or young children, it is one of the highest-value upgrades we install.
+
 ### Do you install smart lighting across India?
 
 Yes. We install smart lighting in [Delhi](/cities/delhi), [Mumbai](/cities/mumbai), [Bangalore](/cities/bangalore), [Hyderabad](/cities/hyderabad), [Pune](/cities/pune), [Chennai](/cities/chennai), [Kolkata](/cities/kolkata), [Ahmedabad](/cities/ahmedabad), [Goa](/cities/goa), [Jaipur](/cities/jaipur), [Chandigarh](/cities/chandigarh), and [Lucknow](/cities/lucknow). [Contact us](/contact) for availability in your city.
 
 ---
 
-*Disclaimer: All third-party product prices are indicative as of May 2026 and subject to change. Brand names and trademarks are property of their respective owners. Contact us for current pricing.*`;
+*Written by Anupam Mahajan, Co-Founder & Managing Director, GMHS. Disclaimer: All third-party product prices are indicative as of June 2026 and subject to change. Brand names and trademarks (KNX®, Lutron®, Ketra®, Control4®, Crestron®) are property of their respective owners. Contact us for current pricing.*`;

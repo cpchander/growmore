@@ -1,4 +1,6 @@
-export const content = `## KNX vs Crestron vs Control4: Which Smart Home System Is Best for India?
+export const content = `*Last updated: June 15, 2026*
+
+## KNX vs Crestron vs Control4: Which Smart Home System Is Best for India?
 
 Choosing between **KNX, Crestron, and Control4** is one of the most important decisions in your smart home journey. Each platform has distinct strengths, and the wrong choice can mean overspending, vendor lock-in, or a system that does not match your lifestyle.
 
@@ -336,6 +338,8 @@ For a new 3BHK, **KNX** with Schneider or ABB devices offers the best long-term 
 
 Yes. We are **certified partners** of KNX (via Schneider, ABB, Gira), Crestron, and Control4. Our team includes certified programmers for all three platforms. Visit our [certifications page](/about/certifications) to see our partnership credentials.
 
+**Related reading:** Weighing open standards? Read [Matter vs KNX for Indian homes](/blog/matter-vs-knx-india). New to automation? See [What Is Home Automation?](/blog/what-is-home-automation). Planning a new build? Review [wired vs wireless home automation](/blog/wired-vs-wireless-home-automation-india).
+
 ---
 
-*Prices indicative as of May 2026, subject to change based on FX rates, import duties, brand pricing updates, and project-specific scope. Request a [consultation](/contact) for accurate quoting.*`;
+*Prices indicative as of June 2026, subject to change based on FX rates, import duties, brand pricing updates, and project-specific scope. Request a [consultation](/contact) for accurate quoting.*`;
