@@ -18,6 +18,7 @@ import { content as smartMotionSensorsContent } from "./blog-content/smart-motio
 import { content as smartBedroomContent } from "./blog-content/smart-bedroom-automation-india";
 import { content as homeOfficeContent } from "./blog-content/home-office-automation-india";
 import { content as restaurantContent } from "./blog-content/restaurant-automation-india";
+import { content as cost3bhkBangaloreContent } from "./blog-content/home-automation-cost-3bhk-bangalore";
 
 export type BlogPost = {
   slug: string;
@@ -46,6 +47,24 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "home-automation-cost-3bhk-bangalore",
+    title:
+      "Home Automation Cost for a 3BHK in Bangalore (2026) — Real Pricing Guide",
+    excerpt:
+      "What does it cost to automate a 3BHK in Bangalore in 2026? Wireless ₹1.5–4L, wired ₹5–12L, luxury ₹12–25L+. Subsystem breakdown, brand tiers, and Whitefield/Sarjapur-specific factors from 600+ GMHS installs.",
+    category: "Guides",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-22",
+    updatedAt: "2026-06-22",
+    readTime: "13 min",
+    featured: true,
+    image: "/images/blog/home-automation-cost-3bhk-bangalore.webp",
+    imageAlt:
+      "Home automation cost breakdown for a 3BHK in Bangalore 2026 showing wireless, wired, and luxury pricing tiers from ₹1.5 Lakh to ₹25 Lakh+ across Whitefield and Sarjapur",
+    content: cost3bhkBangaloreContent,
+  },
   {
     slug: "what-is-home-automation",
     title:

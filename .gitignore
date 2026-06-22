@@ -49,3 +49,6 @@ next-env.d.ts
 
 # Raw uncompressed portfolio (compressed copy is in /private-assets, served gated)
 /public/GMHS_Complete_Portfolio Profile.pdf
+
+# Local Claude settings
+.claude/
