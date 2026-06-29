@@ -171,7 +171,7 @@ The [Digital Personal Data Protection Act 2023](https://www.ey.com/en_in/insight
 | Existing apartment, ₹3–8 Lakh budget | **Hybrid** — selective wiring for living/master + wireless rest | Professional-grade where it matters, flexible elsewhere |
 | Builder project (50+ units) | **Wired (KNX or Crestron)** standardised spec per unit | Consistent quality, lower per-unit cost at scale, premium positioning |
 | Hotel / hospitality | **Wired (KNX + BACnet)** mandatory | Guest experience demands zero dropouts; BMS integration required |
-| Farmhouse / weekend home | **Wireless (Z-Wave/Matter)** with local hub | No full-time occupancy means wired overkill; Z-Wave's range suits large plots |
+| Farmhouse / weekend home | **Hybrid** — wired backbone + wireless far corners | Perimeter, gates and load management need wired reliability; see our [farmhouse automation guide](/blog/farmhouse-home-automation-india) |
 | Heritage / protected structure | **Wireless only** | Cannot alter heritage walls; wireless is the only option |
 
 ---

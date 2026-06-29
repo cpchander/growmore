@@ -18,7 +18,7 @@ Every home automation project is different, but after 600+ installations, clear 
 | 6 BHK+ Farmhouse | ₹28–50 Lakh+ | Enterprise-grade KNX wiring, Dolby Atmos theater, pool automation, landscape lighting, BMS-level monitoring | ₹38 Lakh |
 | Ultra-Luxury Estate | ₹50 Lakh–1.5 Cr | Custom Crestron programming, Lutron Homeworks, biometric access, dedicated server room, white-glove commissioning | Project-specific |
 
-These averages are drawn from GMHS project records across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune. The variation within each tier comes from brand choice (covered below) and scope decisions.
+These averages are drawn from GMHS project records across Delhi NCR, Mumbai, Bangalore, Hyderabad, and Pune. The variation within each tier comes from brand choice (covered below) and scope decisions. The farmhouse and estate tiers are a special case — 60–70% of the spend goes to land infrastructure (perimeter, networking, gates, solar backup) rather than the building; our [farmhouse home automation guide](/blog/farmhouse-home-automation-india) breaks that down acre by acre.
 
 > **"A 4BHK villa owner in Gurgaon came to us with a ₹8 Lakh budget expecting full automation. We showed them exactly what ₹8 Lakh covers — smart lighting and basic security — versus what ₹15 Lakh delivers with multi-room audio and climate control. They went with ₹14.5 Lakh and told us six months later it was the best investment they made in the house."**
 > — Anupam Mahajan, Co-Founder & Managing Director, GMHS | 25+ years in home automation, KNX-certified

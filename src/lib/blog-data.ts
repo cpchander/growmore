@@ -19,6 +19,7 @@ import { content as smartBedroomContent } from "./blog-content/smart-bedroom-aut
 import { content as homeOfficeContent } from "./blog-content/home-office-automation-india";
 import { content as restaurantContent } from "./blog-content/restaurant-automation-india";
 import { content as cost3bhkBangaloreContent } from "./blog-content/home-automation-cost-3bhk-bangalore";
+import { content as farmhouseAutomationContent } from "./blog-content/farmhouse-home-automation-india";
 
 export type BlogPost = {
   slug: string;
@@ -47,6 +48,24 @@ export const BLOG_CATEGORIES = [
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "farmhouse-home-automation-india",
+    title:
+      "Farmhouse Home Automation in India (2026): Costs, Security & Estate Setup",
+    excerpt:
+      "What does it cost to automate a farmhouse in India? ₹15–60 Lakh+ (6BHK NCR avg ₹38L). Why 60–70% of the budget is land — perimeter security, estate networking, gates, solar backup — not the building. From 600+ GMHS installs.",
+    category: "Guides",
+    author: "Anupam Mahajan",
+    authorRole: "Co-Founder & Managing Director",
+    publishedAt: "2026-06-29",
+    updatedAt: "2026-06-29",
+    readTime: "14 min",
+    featured: true,
+    image: "/images/blog/farmhouse-home-automation-india.webp",
+    imageAlt:
+      "Farmhouse home automation cost and setup for India 2026 — estate layout showing layered perimeter security, gate automation, outdoor lighting, pool and pump control, networking and solar backup across 1–5 acres, from ₹15 Lakh to ₹60 Lakh+, based on 600+ GMHS installations",
+    content: farmhouseAutomationContent,
+  },
   {
     slug: "home-automation-cost-3bhk-bangalore",
     title:
