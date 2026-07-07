@@ -6,8 +6,8 @@ import Link from "next/link";
 import QuoteCalculator from "./QuoteCalculator";
 
 export const metadata: Metadata = createMetadata({
-  title: `Home Automation Cost Calculator India — Get Instant Quote`,
-  description: `Calculate your home automation cost in India instantly — pick rooms, features & budget for a personalized smart home quote, by ${COMPANY.name}.`,
+  title: `Home Automation Quote Builder India — Get an Expert Quote`,
+  description: `Build your home automation quote in India — pick your rooms, features & quality tier and our experts prepare a personalized smart home quote, by ${COMPANY.name}.`,
   path: "/get-quote",
 });
 
@@ -23,9 +23,9 @@ const quoteFaqs = [
       "Key factors include: number of rooms, type of automation (wired vs wireless), brand selection (KNX/Crestron vs budget brands), features chosen (lighting, security, HVAC, curtains, AV), property type (apartment vs villa), and whether it's a new construction or retrofit.",
   },
   {
-    question: "Is the quote from this calculator final?",
+    question: "Is the quote from this tool final?",
     answer:
-      "This calculator provides an estimated price range based on typical project costs. The final quote is determined after a free on-site consultation where our engineers assess your property, wiring requirements, and specific needs.",
+      "This tool captures your rooms, features and preferred quality tier so our team can prepare a personalized quote. The final quote is determined after a free on-site consultation where our engineers assess your property, wiring requirements, and specific needs.",
   },
 ];
 
@@ -61,18 +61,12 @@ export default function GetQuotePage() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold text-white">
               Smart Home{" "}
-              <span className="text-gradient-gold">Cost Calculator</span>
+              <span className="text-gradient-gold">Quote Builder</span>
             </h1>
             <p className="mt-4 text-lg text-navy-300">
-              Get an instant estimate for your home automation project.
-              Select your rooms and features below.
+              Configure your rooms and features below, and our experts
+              will prepare a personalized quote for your project.
             </p>
-            <Link
-              href="/estimator"
-              className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-gold-500 hover:gap-3 transition-all"
-            >
-              Building a home, not just automating? Try the full Journey Estimator (₹ &amp; $) &rarr;
-            </Link>
           </div>
 
           <QuoteCalculator />

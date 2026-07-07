@@ -23,7 +23,6 @@ type Feature = {
   icon: LucideIcon;
   category: ProductCategory;
   scope: "perRoom" | "perPrimary" | "flat";
-  price: Record<ProductTier, number>; // realistic INR, derived from the product catalog
   description: string;
 };
 
@@ -36,23 +35,21 @@ const ROOM_TYPES: RoomConfig[] = [
   { name: "Dining Room", count: 0 },
 ];
 
-const PRIMARY_ROOMS = ["Living Room", "Bedroom", "Home Office", "Dining Room"];
-
 const FEATURES: Feature[] = [
   { id: "lighting", label: "Smart Lighting", icon: Lightbulb, category: "lighting", scope: "perRoom",
-    price: { standard: 15000, premium: 45000, luxury: 110000 }, description: "Switches, dimmers, scenes & keypads" },
+    description: "Switches, dimmers, scenes & keypads" },
   { id: "climate", label: "Climate Control", icon: Thermometer, category: "climate", scope: "perRoom",
-    price: { standard: 6000, premium: 22000, luxury: 45000 }, description: "AC automation, thermostats, zones" },
+    description: "AC automation, thermostats, zones" },
   { id: "curtains", label: "Motorized Curtains", icon: PanelTop, category: "curtains", scope: "perPrimary",
-    price: { standard: 14000, premium: 50000, luxury: 85000 }, description: "Motorized tracks & roller blinds" },
+    description: "Motorized tracks & roller blinds" },
   { id: "security", label: "Security & CCTV", icon: Shield, category: "security", scope: "flat",
-    price: { standard: 55000, premium: 150000, luxury: 300000 }, description: "Cameras, smart locks, sensors" },
+    description: "Cameras, smart locks, sensors" },
   { id: "audio", label: "Multi-Room Audio", icon: Music, category: "audio", scope: "perPrimary",
-    price: { standard: 20000, premium: 75000, luxury: 130000 }, description: "In-ceiling & streaming audio" },
+    description: "In-ceiling & streaming audio" },
   { id: "theater", label: "Home Theater", icon: Tv, category: "theater", scope: "flat",
-    price: { standard: 200000, premium: 350000, luxury: 800000 }, description: "Projector, Dolby Atmos, seating" },
+    description: "Projector, Dolby Atmos, seating" },
   { id: "voice", label: "Voice & Control", icon: Mic, category: "voice", scope: "flat",
-    price: { standard: 20000, premium: 90000, luxury: 200000 }, description: "Touch panels & voice assistants" },
+    description: "Touch panels & voice assistants" },
 ];
 
 const TIERS: { id: ProductTier; label: string; description: string }[] = [
@@ -60,11 +57,6 @@ const TIERS: { id: ProductTier; label: string; description: string }[] = [
   { id: "premium", label: "Premium", description: "KNX / Lutron / Control4" },
   { id: "luxury", label: "Luxury", description: "Crestron / custom" },
 ];
-
-function formatPrice(n: number): string {
-  if (n >= 100000) return `₹${(n / 100000).toFixed(1)} Lakh`;
-  return `₹${n.toLocaleString("en-IN")}`;
-}
 
 export default function QuoteCalculator() {
   const [rooms, setRooms] = useState<RoomConfig[]>([...ROOM_TYPES]);
@@ -75,23 +67,6 @@ export default function QuoteCalculator() {
   const [contact, setContact] = useState({ name: "", phone: "", email: "", city: "" });
 
   const totalRooms = rooms.reduce((sum, r) => sum + r.count, 0);
-  const primaryRooms = rooms
-    .filter((r) => PRIMARY_ROOMS.includes(r.name))
-    .reduce((sum, r) => sum + r.count, 0);
-
-  const featureCost = (f: Feature): number => {
-    const p = f.price[tier];
-    if (f.scope === "flat") return p;
-    const n = f.scope === "perPrimary" ? primaryRooms || totalRooms : totalRooms;
-    return p * n;
-  };
-
-  const rawTotal = FEATURES.reduce(
-    (sum, f) => (selectedFeatures.includes(f.id) ? sum + featureCost(f) : sum),
-    0
-  );
-  const estimatedLow = Math.round(rawTotal * 0.85);
-  const estimatedHigh = Math.round(rawTotal * 1.4);
 
   // Example real products from the catalog for a selected feature at the chosen tier
   const exampleProducts = (f: Feature): AutomationProduct[] =>
@@ -135,7 +110,7 @@ export default function QuoteCalculator() {
           email: contact.email,
           propertyType: `Quote Calculator — ${totalRooms} rooms, ${tier} tier`,
           city: contact.city,
-          budget: `₹${(estimatedLow / 100000).toFixed(1)}–${(estimatedHigh / 100000).toFixed(1)} Lakh (estimated)`,
+          budget: "Awaiting site-visit quote",
           features: featureNames,
           message: `Rooms: ${rooms.filter((r) => r.count > 0).map((r) => `${r.name}: ${r.count}`).join(", ")}. Tier: ${tier}.`,
         }),
@@ -186,7 +161,7 @@ export default function QuoteCalculator() {
           </div>
         </div>
 
-        {/* Tier — moved up so feature prices reflect the choice */}
+        {/* Tier */}
         <div className="glass-card rounded-xl p-6">
           <h2 className="text-lg font-semibold text-white mb-4">2. Quality tier</h2>
           <div className="grid grid-cols-3 gap-3">
@@ -212,7 +187,6 @@ export default function QuoteCalculator() {
             {FEATURES.map((f) => {
               const Icon = f.icon;
               const isSel = selectedFeatures.includes(f.id);
-              const unit = f.scope === "flat" ? "" : f.scope === "perPrimary" ? "/room" : "/room";
               return (
                 <button
                   key={f.id}
@@ -225,11 +199,6 @@ export default function QuoteCalculator() {
                   <div>
                     <span className={`text-sm font-medium ${isSel ? "text-white" : "text-navy-200"}`}>{f.label}</span>
                     <p className="text-xs text-navy-400 mt-0.5">{f.description}</p>
-                    <p className="text-xs text-navy-500 mt-1">
-                      {f.scope === "flat" ? "From " : "~"}
-                      {formatPrice(f.price[tier])}
-                      {unit}
-                    </p>
                   </div>
                 </button>
               );
@@ -260,8 +229,6 @@ export default function QuoteCalculator() {
                         <span key={p.id} className="inline-flex items-center gap-1.5 text-xs bg-navy-800 border border-navy-700 rounded-lg px-2.5 py-1.5">
                           <span className="text-gold-500 font-medium">{p.brandLabel}</span>
                           <span className="text-navy-300">{p.name}</span>
-                          <span className="text-navy-500">·</span>
-                          <span className="text-white">{formatPrice(p.priceINR)}<span className="text-navy-500"> {p.unit}</span></span>
                         </span>
                       ))}
                     </div>
@@ -273,21 +240,17 @@ export default function QuoteCalculator() {
         )}
       </div>
 
-      {/* Right — Price Summary (sticky) */}
+      {/* Right — Quote Request (sticky) */}
       <div className="lg:col-span-1">
         <div className="lg:sticky lg:top-24 glass-card rounded-xl p-6 space-y-6">
-          <h3 className="text-lg font-semibold text-white">Estimated Cost</h3>
+          <h3 className="text-lg font-semibold text-white">Your Configuration</h3>
 
           {totalRooms === 0 || selectedFeatures.length === 0 ? (
-            <p className="text-sm text-navy-400">Select at least one room and one feature to see your estimate.</p>
+            <p className="text-sm text-navy-400">Select at least one room and one feature, then request your quote.</p>
           ) : (
             <>
-              <div className="text-center py-4">
-                <p className="text-sm text-navy-400 mb-1">Price Range</p>
-                <p className="text-3xl font-bold text-gradient-gold">
-                  {formatPrice(estimatedLow)} — {formatPrice(estimatedHigh)}
-                </p>
-                <p className="text-xs text-navy-500 mt-2">
+              <div className="py-2">
+                <p className="text-xs text-navy-500">
                   {totalRooms} room{totalRooms > 1 ? "s" : ""}, {selectedFeatures.length} feature
                   {selectedFeatures.length > 1 ? "s" : ""}, {TIERS.find((t) => t.id === tier)?.label} tier
                 </p>
@@ -295,21 +258,16 @@ export default function QuoteCalculator() {
 
               <div className="space-y-2 text-sm">
                 {selected.map((f) => (
-                  <div key={f.id} className="flex justify-between text-navy-300">
+                  <div key={f.id} className="flex items-center gap-2 text-navy-300">
+                    <CheckCircle className="w-4 h-4 shrink-0 text-gold-500" />
                     <span>{f.label}</span>
-                    <span>{formatPrice(featureCost(f))}</span>
                   </div>
                 ))}
-                <hr className="border-navy-700" />
-                <div className="flex justify-between font-semibold text-white">
-                  <span>Hardware + Install (est.)</span>
-                  <span>{formatPrice(rawTotal)}</span>
-                </div>
               </div>
 
               {!showResult ? (
                 <button onClick={handleGetQuote} className="w-full bg-gold-500 hover:bg-gold-600 text-navy-900 py-3 rounded-lg font-semibold transition-colors">
-                  Get Detailed Quote
+                  Request Your Quote
                 </button>
               ) : !leadCaptured ? (
                 <div className="space-y-3">
@@ -345,7 +303,7 @@ export default function QuoteCalculator() {
             </>
           )}
 
-          <p className="text-xs text-navy-500 text-center">Prices are indicative. Final quote after site visit.</p>
+          <p className="text-xs text-navy-500 text-center">A detailed quote follows a free site visit.</p>
         </div>
       </div>
     </div>

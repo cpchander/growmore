@@ -196,7 +196,6 @@ export default function ExperiencePage() {
           <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
             <Link href="/#experience-center" className="text-gold-500 hover:underline">Visit our live Experience Center →</Link>
             <Link href="/smart-home-planner" className="text-gold-500 hover:underline">Build & price your system →</Link>
-            <Link href="/estimator" className="text-gold-500 hover:underline">Estimate your project cost →</Link>
             <Link href="/blog/home-automation-cost-2026" className="text-gold-500 hover:underline">Home automation cost guide →</Link>
           </div>
 
