@@ -56,7 +56,7 @@ const faqs = [
   {
     question: "How soon will you respond after I submit the contact form?",
     answer:
-      `We typically respond within 2 hours during business hours (Monday to Saturday, 9 AM–6 PM IST). For urgent enquiries you can call us directly at ${COMPANY.phone} or message us on WhatsApp for an immediate reply.`,
+      `We typically respond within 2 hours during business hours (Monday to Saturday, 9 AM–6 PM IST). For urgent enquiries you can call us directly at ${COMPANY.phone} for an immediate reply.`,
   },
   {
     question: "What happens during the consultation?",
