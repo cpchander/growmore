@@ -185,7 +185,7 @@ pnpm lint             # ESLint
 ### Primary CTAs (in order of priority):
 1. "Book Free Consultation" → /contact (multi-step form)
 2. "Get Instant Quote" → /get-quote (interactive calculator)
-3. Floating click-to-call button → tel: link to `COMPANY.phone` (+91-96678-95926); WhatsApp button removed 2026-09-17
+3. WhatsApp floating button → wa.me/`COMPANY.whatsapp` (919667895926) with pre-filled message
 4. Phone number → click-to-call
 
 ### Lead Form Flow:

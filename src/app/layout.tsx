@@ -4,7 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import CallButton from "@/components/ui/CallButton";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { COMPANY } from "@/lib/constants";
 import { organizationJsonLd } from "@/lib/metadata";
 
@@ -110,7 +110,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 pt-20">{children}</main>
         <Footer />
-        <CallButton />
+        <WhatsAppButton />
       </body>
     </html>
   );
